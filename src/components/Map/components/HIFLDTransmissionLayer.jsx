@@ -1,10 +1,11 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react';
-import { getHIFLDLines, isSupabaseConfigured } from '../../../services/powerGridApi';
+import React, { useEffect, useState } from 'react';
 
 const HIFLD_SOURCE_ID = 'hifld-transmission-source';
 const HIFLD_GLOW_LAYER_ID = 'hifld-transmission-glow';
 const HIFLD_LINE_LAYER_ID = 'hifld-transmission-lines';
-const HIFLD_GEOJSON_URL = '/data/hifld_transmission_lines.json';
+// TODO: hifld_transmission_lines.json (355MB) must be hosted on a CDN (Vercel Blob / R2 / S3).
+// Replace this URL with the CDN URL before enabling this layer.
+const HIFLD_GEOJSON_URL = '/data/hifld_transmission_lines.json'; // NOT AVAILABLE LOCALLY - pending CDN upload
 
 const VOLTAGE_COLORS = {
   1: '#6366f1',
@@ -26,38 +27,11 @@ const VOLTAGE_GLOW_COLORS = {
 
 const HIFLDTransmissionLayer = ({ map, visible }) => {
   const [popup, setPopup] = useState(null);
-  const moveHandlerRef = useRef(null);
-  const loadingRef = useRef(false);
-
-  const loadViewportData = useCallback(async (mapInstance) => {
-    if (loadingRef.current) return;
-    loadingRef.current = true;
-    try {
-      const center = mapInstance.getCenter();
-      const bounds = mapInstance.getBounds();
-      const ne = bounds.getNorthEast();
-      const diagMeters = center.distanceTo(ne);
-      const radius = Math.min(Math.max(diagMeters, 20000), 500000);
-
-      const data = await getHIFLDLines({ lng: center.lng, lat: center.lat }, radius);
-      if (!data?.features) return;
-
-      const src = mapInstance.getSource(HIFLD_SOURCE_ID);
-      if (src) {
-        src.setData(data);
-      }
-    } catch (e) {
-      console.warn('HIFLD viewport load failed:', e);
-    } finally {
-      loadingRef.current = false;
-    }
-  }, []);
 
   useEffect(() => {
     if (!map?.current) return;
 
     if (!visible) {
-      if (moveHandlerRef.current) { map.current.off('moveend', moveHandlerRef.current); moveHandlerRef.current = null; }
       if (map.current.getLayer(HIFLD_LINE_LAYER_ID)) map.current.removeLayer(HIFLD_LINE_LAYER_ID);
       if (map.current.getLayer(HIFLD_GLOW_LAYER_ID)) map.current.removeLayer(HIFLD_GLOW_LAYER_ID);
       if (map.current.getSource(HIFLD_SOURCE_ID)) map.current.removeSource(HIFLD_SOURCE_ID);
@@ -72,19 +46,9 @@ const HIFLDTransmissionLayer = ({ map, visible }) => {
 
     const addLayer = async () => {
       try {
-        let data;
-        if (isSupabaseConfigured()) {
-          const center = map.current.getCenter();
-          const bounds = map.current.getBounds();
-          const ne = bounds.getNorthEast();
-          const diagMeters = center.distanceTo(ne);
-          const radius = Math.min(Math.max(diagMeters, 20000), 500000);
-          data = await getHIFLDLines({ lng: center.lng, lat: center.lat }, radius);
-        } else {
-          const resp = await fetch(HIFLD_GEOJSON_URL);
-          if (!resp.ok) throw new Error(`Failed to fetch HIFLD data: ${resp.statusText}`);
-          data = await resp.json();
-        }
+        const resp = await fetch(HIFLD_GEOJSON_URL);
+        if (!resp.ok) throw new Error(`Failed to fetch HIFLD data: ${resp.statusText}`);
+        const data = await resp.json();
         if (cancelled) return;
 
         if (map.current.getLayer(HIFLD_LINE_LAYER_ID)) map.current.removeLayer(HIFLD_LINE_LAYER_ID);
@@ -175,13 +139,6 @@ const HIFLDTransmissionLayer = ({ map, visible }) => {
             metadata: data.metadata
           });
         }
-
-        // Refresh data on pan/zoom when using Supabase backend
-        if (isSupabaseConfigured()) {
-          if (moveHandlerRef.current) map.current.off('moveend', moveHandlerRef.current);
-          moveHandlerRef.current = () => loadViewportData(map.current);
-          map.current.on('moveend', moveHandlerRef.current);
-        }
       } catch (e) {
         console.error('HIFLD: Failed to load transmission lines', e);
       }
@@ -198,9 +155,8 @@ const HIFLDTransmissionLayer = ({ map, visible }) => {
       if (handleClick) map.current?.off('click', HIFLD_LINE_LAYER_ID, handleClick);
       if (handleMouseEnter) map.current?.off('mouseenter', HIFLD_LINE_LAYER_ID, handleMouseEnter);
       if (handleMouseLeave) map.current?.off('mouseleave', HIFLD_LINE_LAYER_ID, handleMouseLeave);
-      if (moveHandlerRef.current) { map.current?.off('moveend', moveHandlerRef.current); moveHandlerRef.current = null; }
     };
-  }, [map, visible, loadViewportData]);
+  }, [map, visible]);
 
   if (!popup) return null;
 

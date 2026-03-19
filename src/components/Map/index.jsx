@@ -45,7 +45,21 @@ const ERCOTGISReportsLayer = React.lazy(() => import('./components/ERCOTGISRepor
 const ProducerConsumerCountiesLayer = React.lazy(() => import('./components/ProducerConsumerCountiesLayer'));
 const SpatialMismatchCountiesLayer = React.lazy(() => import('./components/SpatialMismatchCountiesLayer'));
 const REITLayer = React.lazy(() => import('./components/REITLayer'));
-
+const MemphisCountiesLayer = React.lazy(() => import('./components/MemphisCountiesLayer'));
+const MemphisAIExpansionLayer = React.lazy(() => import('./components/MemphisAIExpansionLayer'));
+const MLGW2026SubstationLayer = React.lazy(() => import('./components/MLGW2026SubstationLayer'));
+const XAISitesPublicLayer = React.lazy(() => import('./components/XAISitesPublicLayer'));
+const XAIToMLGWLinesLayer = React.lazy(() => import('./components/XAIToMLGWLinesLayer'));
+const MemphisColossusChangeLayer = React.lazy(() => import('./components/MemphisColossusChangeLayer'));
+const MemphisColossusTopParcelsLayer = React.lazy(() => import('./components/MemphisColossusTopParcelsLayer'));
+const ColossusPermitsLayer = React.lazy(() => import('./components/ColossusPermitsLayer'));
+const ColossusPermitsReviewQueueLayer = React.lazy(() => import('./components/ColossusPermitsReviewQueueLayer'));
+const MemphisPermitsHeatmapLayer = React.lazy(() => import('./components/MemphisPermitsHeatmapLayer'));
+const CouncilSignalsColossusLayer = React.lazy(() => import('./components/CouncilSignalsColossusLayer'));
+const ColossusPowerSignalsLayer = React.lazy(() => import('./components/ColossusPowerSignalsLayer'));
+const DesotoPermitsLayer = React.lazy(() => import('./components/DesotoPermitsLayer'));
+const DesotoPermitsReviewQueueLayer = React.lazy(() => import('./components/DesotoPermitsReviewQueueLayer'));
+const DesotoStatelineParcelLayer = React.lazy(() => import('./components/DesotoStatelineParcelLayer'));
 
 
 // Global error handler
@@ -379,6 +393,27 @@ const MapComponent = () => {
 
   // HIFLD US Power Grid Transmission Layer State
   const [showHIFLDTransmission, setShowHIFLDTransmission] = useState(false);
+
+  // Memphis Counties Layer State
+  const [showMemphisCounties, setShowMemphisCounties] = useState(false);
+
+  // Memphis AI Expansion Layer State
+  const [showMemphisAIExpansion, setShowMemphisAIExpansion] = useState(false);
+
+  // Memphis MLGW / xAI layers
+  const [showMLGW2026, setShowMLGW2026] = useState(false);
+  const [showXAISitesPublic, setShowXAISitesPublic] = useState(false);
+  const [showXAIToMLGW, setShowXAIToMLGW] = useState(false);
+  const [showMemphisColossusChange, setShowMemphisColossusChange] = useState(false);
+  const [showMemphisColossusTopParcels, setShowMemphisColossusTopParcels] = useState(false);
+  const [showColossusPermits, setShowColossusPermits] = useState(false);
+  const [showColossusPermitsReviewQueue, setShowColossusPermitsReviewQueue] = useState(false);
+  const [showMemphisPermitsHeatmap, setShowMemphisPermitsHeatmap] = useState(false);
+  const [showCouncilSignalsColossus, setShowCouncilSignalsColossus] = useState(false);
+  const [showColossusPowerSignals, setShowColossusPowerSignals] = useState(false);
+  const [showDesotoPermits, setShowDesotoPermits] = useState(false);
+  const [showDesotoPermitsReviewQueue, setShowDesotoPermitsReviewQueue] = useState(false);
+  const [showDesotoStatelineParcel, setShowDesotoStatelineParcel] = useState(false);
 
   const [showREIT, setShowREIT] = useState(false);
 
@@ -2610,6 +2645,21 @@ const MapComponent = () => {
           <ProducerConsumerCountiesLayer key={`producer-consumer-${mapThemeStyleKey}`} map={map} visible={!!showProducerConsumerCounties} />
           <SpatialMismatchCountiesLayer key={`spatial-mismatch-${mapThemeStyleKey}`} map={map} visible={!!showSpatialMismatchCounties} />
           <REITLayer key={`reit-${mapThemeStyleKey}`} map={map} visible={!!showREIT} />
+          <MemphisCountiesLayer key={`memphis-counties-${mapThemeStyleKey}`} map={map} visible={!!showMemphisCounties} />
+          <MemphisAIExpansionLayer key={`memphis-ai-expansion-${mapThemeStyleKey}`} map={map} visible={!!showMemphisAIExpansion} />
+          <MLGW2026SubstationLayer key={`mlgw-2026-${mapThemeStyleKey}`} map={map} visible={!!showMLGW2026} />
+          <XAISitesPublicLayer key={`xai-sites-public-${mapThemeStyleKey}`} map={map} visible={!!showXAISitesPublic} />
+          <XAIToMLGWLinesLayer key={`xai-to-mlgw-${mapThemeStyleKey}`} map={map} visible={!!showXAIToMLGW} />
+          <MemphisColossusChangeLayer key={`memphis-colossus-change-${mapThemeStyleKey}`} map={map} visible={!!showMemphisColossusChange} />
+          <MemphisColossusTopParcelsLayer key={`memphis-colossus-top-parcels-${mapThemeStyleKey}`} map={map} visible={!!showMemphisColossusTopParcels} />
+          <ColossusPermitsLayer key={`colossus-permits-${mapThemeStyleKey}`} map={map} visible={!!showColossusPermits} />
+          <ColossusPermitsReviewQueueLayer key={`colossus-permits-review-queue-${mapThemeStyleKey}`} map={map} visible={!!showColossusPermitsReviewQueue} />
+          <MemphisPermitsHeatmapLayer key={`memphis-permits-heatmap-${mapThemeStyleKey}`} map={map} visible={!!showMemphisPermitsHeatmap} />
+          <CouncilSignalsColossusLayer key={`council-signals-colossus-${mapThemeStyleKey}`} map={map} visible={!!showCouncilSignalsColossus} />
+          <ColossusPowerSignalsLayer key={`colossus-power-signals-${mapThemeStyleKey}`} map={map} visible={!!showColossusPowerSignals} />
+          <DesotoPermitsLayer key={`desoto-permits-${mapThemeStyleKey}`} map={map} visible={!!showDesotoPermits} />
+          <DesotoPermitsReviewQueueLayer key={`desoto-permits-review-queue-${mapThemeStyleKey}`} map={map} visible={!!showDesotoPermitsReviewQueue} />
+          <DesotoStatelineParcelLayer key={`desoto-stateline-parcel-${mapThemeStyleKey}`} map={map} visible={!!showDesotoStatelineParcel} />
         </Suspense>
       )}
       
@@ -2685,6 +2735,39 @@ const MapComponent = () => {
           setShowSpatialMismatchCounties={setShowSpatialMismatchCounties}
           showRoadParticles={showRoadParticles}
           setShowRoadParticles={setShowRoadParticles}
+
+          // Memphis layer states
+          showMemphisCounties={showMemphisCounties}
+          setShowMemphisCounties={setShowMemphisCounties}
+          showMemphisAIExpansion={showMemphisAIExpansion}
+          setShowMemphisAIExpansion={setShowMemphisAIExpansion}
+          showMLGW2026={showMLGW2026}
+          setShowMLGW2026={setShowMLGW2026}
+          showXAISitesPublic={showXAISitesPublic}
+          setShowXAISitesPublic={setShowXAISitesPublic}
+          showXAIToMLGW={showXAIToMLGW}
+          setShowXAIToMLGW={setShowXAIToMLGW}
+          showMemphisColossusChange={showMemphisColossusChange}
+          setShowMemphisColossusChange={setShowMemphisColossusChange}
+          showMemphisColossusTopParcels={showMemphisColossusTopParcels}
+          setShowMemphisColossusTopParcels={setShowMemphisColossusTopParcels}
+          showColossusPermits={showColossusPermits}
+          setShowColossusPermits={setShowColossusPermits}
+          showColossusPermitsReviewQueue={showColossusPermitsReviewQueue}
+          setShowColossusPermitsReviewQueue={setShowColossusPermitsReviewQueue}
+          showMemphisPermitsHeatmap={showMemphisPermitsHeatmap}
+          setShowMemphisPermitsHeatmap={setShowMemphisPermitsHeatmap}
+          showCouncilSignalsColossus={showCouncilSignalsColossus}
+          setShowCouncilSignalsColossus={setShowCouncilSignalsColossus}
+          showColossusPowerSignals={showColossusPowerSignals}
+          setShowColossusPowerSignals={setShowColossusPowerSignals}
+          showDesotoPermits={showDesotoPermits}
+          setShowDesotoPermits={setShowDesotoPermits}
+          showDesotoPermitsReviewQueue={showDesotoPermitsReviewQueue}
+          setShowDesotoPermitsReviewQueue={setShowDesotoPermitsReviewQueue}
+          showDesotoStatelineParcel={showDesotoStatelineParcel}
+          setShowDesotoStatelineParcel={setShowDesotoStatelineParcel}
+
           onTransmissionLayerStateUpdate={handleTransmissionLayerStateUpdate}
         />
       )}

@@ -13,7 +13,7 @@ const CSV_FILE = path.join(__dirname, '../public/companies-9-15-2025.csv');
 const OUTPUT_FILE = path.join(__dirname, '../public/startup-companies.json');
 
 // Google Places API configuration
-const GOOGLE_PLACES_API_KEY = 'AIzaSyBGFqyws8LGGGkof2ZbP_Mt8l3hf_glfpE';
+const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY || process.env.REACT_APP_GOOGLE_PLACES_API_KEY;
 const GOOGLE_PLACES_SEARCH_URL = 'https://maps.googleapis.com/maps/api/place/textsearch/json';
 const GOOGLE_GEOCODING_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 

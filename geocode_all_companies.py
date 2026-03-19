@@ -4,12 +4,13 @@ Geocode all companies in batches using Google Places API
 """
 
 import json
+import os
 import time
 import requests
 from typing import Dict, List, Any, Optional
 
 # API Configuration
-GOOGLE_PLACES_API_KEY = "AIzaSyBGFqyws8LGGGkof2ZbP_Mt8l3hf_glfpE"
+GOOGLE_PLACES_API_KEY = os.environ.get("GOOGLE_PLACES_API_KEY", "")
 GEOCODING_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 
 def geocode_location(location: str) -> Dict[str, Any]:

@@ -4,8 +4,7 @@
 
 require('dotenv').config({ path: '../.env' });
 
-// Test the provided API key
-const GOOGLE_PLACES_API_KEY = 'AIzaSyBGFqyws8LGGGkof2ZbP_Mt8l3hf_glfpE';
+const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY || process.env.REACT_APP_GOOGLE_PLACES_API_KEY;
 
 async function testGooglePlacesAPI() {
   console.log('🔍 Testing Google Places API...');

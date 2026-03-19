@@ -135,7 +135,7 @@ def main():
     output_file = "/Users/yairtitelboim/Documents/Kernel/ALLAPPS/HOU_FIFA/public/companies/companies-9-24-2025-geocoded.json"
     
     # API key - using the provided Google Places API key
-    api_key = "AIzaSyBGFqyws8LGGGkof2ZbP_Mt8l3hf_glfpE"
+    api_key = os.environ.get("GOOGLE_PLACES_API_KEY", "")
     
     print(f"🔑 Using Google Places API key: {api_key[:20]}...")
     

@@ -247,7 +247,7 @@ def main():
     print("=" * 80)
     
     # Use the API key from the user
-    api_key = "AIzaSyBGFqyws8LGGGkof2ZbP_Mt8l3hf_glfpE"
+    api_key = os.environ.get("GOOGLE_PLACES_API_KEY", "")
     
     # Load the Houston companies data
     print("\n📂 Loading Houston companies data...")

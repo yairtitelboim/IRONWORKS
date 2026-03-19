@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Scanner Signals Export</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #e0e0e0;
+    }
+    h1 {
+      color: #ffffff;
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 10px;
+    }
+    .stats {
+      background: #2d2d2d;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      color: #e0e0e0;
+    }
+    .signal {
+      background: #2d2d2d;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      border-left: 4px solid #555;
+    }
+    .signal.constraint {
+      border-left-color: #ff5252;
+    }
+    .signal.commitment {
+      border-left-color: #4CAF50;
+    }
+    .signal.context {
+      border-left-color: #64b5f6;
+    }
+    .signal-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .lane {
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .lane.constraint {
+      background: rgba(255, 82, 82, 0.2);
+      color: #ff5252;
+      border: 1px solid rgba(255, 82, 82, 0.3);
+    }
+    .lane.commitment {
+      background: rgba(76, 175, 80, 0.2);
+      color: #4CAF50;
+      border: 1px solid rgba(76, 175, 80, 0.3);
+    }
+    .lane.context {
+      background: rgba(100, 181, 246, 0.2);
+      color: #64b5f6;
+      border: 1px solid rgba(100, 181, 246, 0.3);
+    }
+    .confidence {
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    .confidence.high {
+      background: rgba(255, 82, 82, 0.2);
+      color: #ff5252;
+      border: 1px solid rgba(255, 82, 82, 0.3);
+    }
+    .confidence.med {
+      background: rgba(255, 183, 77, 0.2);
+      color: #ffb74d;
+      border: 1px solid rgba(255, 183, 77, 0.3);
+    }
+    .confidence.low {
+      background: rgba(186, 104, 200, 0.2);
+      color: #ba68c8;
+      border: 1px solid rgba(186, 104, 200, 0.3);
+    }
+    .headline {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 10px 0;
+    }
+    .meta {
+      color: #b0b0b0;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 10px 0;
+    }
+    .tag {
+      background: #3d3d3d;
+      color: #e0e0e0;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      border: 1px solid #555;
+    }
+    .url {
+      color: #64b5f6;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .url:hover {
+      color: #90caf9;
+      text-decoration: underline;
+    }
+    .summary {
+      background: #1e1e1e;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #d0d0d0;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Scanner Signals Export - Projects (South Central US)</h1>
+  <div class="stats">
+    <strong>Projects:</strong> 4<br>
+    <strong>Filter:</strong> COMMITMENT signals in South Central US (TX, OK, AR, LA, NM, KS, MO)<br>
+    <strong>Date Range:</strong> All time<br>
+    <strong>Exported:</strong> 12/22/2025, 3:09:43 PM
+  </div>
+  
+  
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence med">MED confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">INTERCONNECTION_UPDATE</span>
+      </div>
+      <div class="headline">Important Texas Regulatory Updates for Data Centers - Mayer Brown</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.mayerbrown.com/en/insights/publications/2025/07/important-texas-regulatory-updates-for-data-centers" target="_blank" class="url">https://www.mayerbrown.com/en/insights/publications/2025/07/important-texas-regulatory-updates-for-data-centers</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">interconnection_update</span></div>
+      <div class="summary">maintain grid reliability<br>• SB-6 was signed by Texas governor Greg Abbott on June 20<br>• SB-6 primarily aims to ensure that large-load customers contribute fairly to the recovery of costs incurred by electric utilities when interconnecting and serving these loads</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Controversial southwest Fort Worth data center gets ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://fortworthreport.org/2024/09/17/controversial-southwest-fort-worth-data-center-gets-approval-but-more-steps-remain/" target="_blank" class="url">https://fortworthreport.org/2024/09/17/controversial-southwest-fort-worth-data-center-gets-approval-but-more-steps-remain/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">The council voted 7-2 to approve a zoning change that was required before the site could be used for construction of the five-building data</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Data center project approval</span>
+      </div>
+      <div class="headline">Fort Worth Data Center Approved Over Residents' Opposition</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.govtech.com/infrastructure/fort-worth-data-center-approved-over-residents-opposition" target="_blank" class="url">https://www.govtech.com/infrastructure/fort-worth-data-center-approved-over-residents-opposition</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">opposition</span></div>
+      <div class="summary">govtech-logo-rev-no-block<br>• The developer said it would be an economic boon, not a threat<br>• Aerial view of Fort Worth</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">APPROVED</span>
+      </div>
+      <div class="headline">City Council denies preferred scenario change for a data ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://universitystar.com/32459/news/city-council-denies-zoning-change-for-a-data-center-passes-land-annexation/" target="_blank" class="url">https://universitystar.com/32459/news/city-council-denies-zoning-change-for-a-data-center-passes-land-annexation/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">approved</span></div>
+      <div class="summary">The PSA was tied with the zoning amendment for the data center; one could not pass without the other<br>• Both needed a super majority vote, at least six yes votes, to pass<br>• The PSA was denied two votes for no by council members Amanda Rodriguez and Saul Gonzales</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+</body>
+</html>

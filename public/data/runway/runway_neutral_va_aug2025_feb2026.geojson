@@ -1,0 +1,14 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "layer_type": "labels",
+    "geography": "Virginia (NEUTRAL) - selected counties: Loudoun, Fairfax, Stafford, Fauquier, Spotsylvania",
+    "source": "Primary sources: county agenda/packet PDF(s)",
+    "source_url": "https://www.loudoun.gov/3426/Board-of-Supervisors-Meetings-Packets",
+    "created": "2026-02-08",
+    "feature_count": 0,
+    "data_date": "2025-08 to 2026-02",
+    "notes": "Optional neutral layer scaffold. No neutral events ingested yet."
+  },
+  "features": []
+}

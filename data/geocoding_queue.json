@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-03-08T17:51:26Z",
+  "records": [
+    {
+      "project_id": "proj_ex_ea2e96bb",
+      "company": "Poolside AI",
+      "city": "Fort Stockton",
+      "state": "TX",
+      "query": "Poolside AI data center Fort Stockton Texas",
+      "lat": null,
+      "long": null
+    },
+    {
+      "project_id": "proj_ex_4b164330",
+      "company": "Cipher Mining",
+      "city": "Brady",
+      "state": "TX",
+      "query": "Cipher Mining data center Brady Texas",
+      "lat": null,
+      "long": null
+    },
+    {
+      "project_id": "proj_ex_a4f16af0",
+      "company": "Cleanspark",
+      "city": "Houston",
+      "state": "TX",
+      "query": "Cleanspark data center Houston Texas",
+      "lat": null,
+      "long": null
+    }
+  ]
+}

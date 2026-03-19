@@ -1,0 +1,1657 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -105.0081692,
+              39.7490843
+            ],
+            [
+              -105.0082383,
+              39.7490405
+            ],
+            [
+              -105.0083382,
+              39.7489729
+            ],
+            [
+              -105.0084388,
+              39.7488574
+            ],
+            [
+              -105.0084981,
+              39.7487262
+            ],
+            [
+              -105.0085118,
+              39.7486028
+            ],
+            [
+              -105.0084984,
+              39.7484981
+            ],
+            [
+              -105.0084491,
+              39.7483822
+            ],
+            [
+              -105.0083698,
+              39.7482807
+            ],
+            [
+              -105.0082679,
+              39.7481997
+            ],
+            [
+              -105.0081586,
+              39.748144
+            ],
+            [
+              -105.0080982,
+              39.7481139
+            ],
+            [
+              -105.0080773,
+              39.7481559
+            ],
+            [
+              -105.0079391,
+              39.7481211
+            ],
+            [
+              -105.0078502,
+              39.7481145
+            ],
+            [
+              -105.007829,
+              39.748063
+            ],
+            [
+              -105.0078721,
+              39.7480395
+            ],
+            [
+              -105.007854,
+              39.7479964
+            ],
+            [
+              -105.0078343,
+              39.7479496
+            ],
+            [
+              -105.0078133,
+              39.7478996
+            ],
+            [
+              -105.0077935,
+              39.7478526
+            ],
+            [
+              -105.0077732,
+              39.7478042
+            ],
+            [
+              -105.0077562,
+              39.7477639
+            ],
+            [
+              -105.0074839,
+              39.7479804
+            ],
+            [
+              -105.0074461,
+              39.7479877
+            ],
+            [
+              -105.007248,
+              39.7479765
+            ],
+            [
+              -105.0072536,
+              39.7480375
+            ],
+            [
+              -105.0072237,
+              39.7479964
+            ],
+            [
+              -105.00704,
+              39.74808
+            ],
+            [
+              -105.0068777,
+              39.7481882
+            ],
+            [
+              -105.00693,
+              39.7482228
+            ],
+            [
+              -105.0068496,
+              39.7483096
+            ],
+            [
+              -105.0068103,
+              39.7483721
+            ],
+            [
+              -105.0067698,
+              39.7484527
+            ],
+            [
+              -105.006749,
+              39.7485233
+            ],
+            [
+              -105.0066236,
+              39.74863
+            ],
+            [
+              -105.0066377,
+              39.7486414
+            ],
+            [
+              -105.006521,
+              39.7487357
+            ],
+            [
+              -105.0067336,
+              39.7487357
+            ],
+            [
+              -105.0067376,
+              39.7487569
+            ],
+            [
+              -105.0067664,
+              39.7487569
+            ],
+            [
+              -105.0067765,
+              39.7488237
+            ],
+            [
+              -105.0067962,
+              39.748878
+            ],
+            [
+              -105.0068602,
+              39.7489855
+            ],
+            [
+              -105.0068857,
+              39.7490091
+            ],
+            [
+              -105.0069596,
+              39.7490765
+            ],
+            [
+              -105.0069193,
+              39.7491029
+            ],
+            [
+              -105.0069857,
+              39.7491435
+            ],
+            [
+              -105.007099,
+              39.7491977
+            ],
+            [
+              -105.0070722,
+              39.74924
+            ],
+            [
+              -105.0068737,
+              39.749291
+            ],
+            [
+              -105.006921,
+              39.7493222
+            ],
+            [
+              -105.006962,
+              39.7493493
+            ],
+            [
+              -105.0071563,
+              39.7494344
+            ],
+            [
+              -105.0071902,
+              39.7494493
+            ],
+            [
+              -105.0071914,
+              39.7494671
+            ],
+            [
+              -105.0073055,
+              39.7495005
+            ],
+            [
+              -105.00745,
+              39.7495246
+            ],
+            [
+              -105.0076328,
+              39.7495349
+            ],
+            [
+              -105.0076127,
+              39.7494854
+            ],
+            [
+              -105.0078836,
+              39.7494544
+            ],
+            [
+              -105.0078688,
+              39.7493854
+            ],
+            [
+              -105.0079855,
+              39.7493513
+            ],
+            [
+              -105.007971,
+              39.749323
+            ],
+            [
+              -105.007956,
+              39.7492936
+            ],
+            [
+              -105.0080177,
+              39.7492771
+            ],
+            [
+              -105.0079935,
+              39.7492317
+            ],
+            [
+              -105.0080374,
+              39.7492216
+            ],
+            [
+              -105.0080431,
+              39.7492348
+            ],
+            [
+              -105.0080941,
+              39.7492214
+            ],
+            [
+              -105.0080754,
+              39.7491833
+            ],
+            [
+              -105.0081853,
+              39.7491152
+            ],
+            [
+              -105.0081692,
+              39.7490843
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Ball Arena",
+        "leisure": "stadium",
+        "amenity": null,
+        "osm_id": 25312645,
+        "osm_type": "way",
+        "tags": {
+          "addr:city": "Denver",
+          "addr:housenumber": "1000",
+          "addr:postcode": "80204",
+          "addr:state": "CO",
+          "addr:street": "Chopper Circle",
+          "building": "commercial",
+          "ele": "1582",
+          "gnis:feature_id": "2432103",
+          "height": "22",
+          "leisure": "stadium",
+          "name": "Ball Arena",
+          "name:en": "Ball Arena",
+          "name:uk": "Ball Arena",
+          "old_name": "Pepsi Center",
+          "sport": "basketball;hockey",
+          "start_date": "1999",
+          "wheelchair": "yes",
+          "wikidata": "Q795470",
+          "wikipedia": "en:Ball Arena"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0028045,
+          39.7540864
+        ]
+      },
+      "properties": {
+        "name": "Colorado Athletic Club",
+        "leisure": "sports_centre",
+        "amenity": null,
+        "osm_id": 3923285191,
+        "osm_type": "node",
+        "tags": {
+          "addr:city": "Denver",
+          "addr:housenumber": "1601",
+          "addr:postcode": "80202",
+          "addr:state": "CO",
+          "addr:street": "Wewatta Street",
+          "leisure": "sports_centre",
+          "name": "Colorado Athletic Club"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0084388,
+          39.7488574
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403246,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0083698,
+          39.7482807
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403265,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0084491,
+          39.7483822
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403266,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0084984,
+          39.7484981
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403267,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0085118,
+          39.7486028
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403268,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0084981,
+          39.7487262
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403269,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0083382,
+          39.7489729
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216406359,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0080773,
+          39.7481559
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 275731805,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0079391,
+          39.7481211
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 275731806,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.007248,
+          39.7479765
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 4569769208,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0068602,
+          39.7489855
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216357774,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0067962,
+          39.748878
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216357775,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0067765,
+          39.7488237
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216357776,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0078721,
+          39.7480395
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216368890,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0077562,
+          39.7477639
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216368893,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0074839,
+          39.7479804
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216383986,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0067698,
+          39.7484527
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216383992,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0068103,
+          39.7483721
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216383993,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0068496,
+          39.7483096
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216383994,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.00693,
+          39.7482228
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216383995,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0068777,
+          39.7481882
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216383996,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.00704,
+          39.74808
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216383997,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0074461,
+          39.7479877
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216383998,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0072536,
+          39.7480375
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384000,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0072237,
+          39.7479964
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384001,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0067664,
+          39.7487569
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384008,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0067376,
+          39.7487569
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384009,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0067336,
+          39.7487357
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384010,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.006521,
+          39.7487357
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384011,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0066377,
+          39.7486414
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384012,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0066236,
+          39.74863
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384013,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.006749,
+          39.7485233
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216384016,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0080982,
+          39.7481139
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216393571,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0069193,
+          39.7491029
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216393576,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0069596,
+          39.7490765
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216393577,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0081586,
+          39.748144
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403263,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0082679,
+          39.7481997
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403264,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0080754,
+          39.7491833
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403270,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0081853,
+          39.7491152
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403274,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0080941,
+          39.7492214
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403275,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0080431,
+          39.7492348
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216403276,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0078502,
+          39.7481145
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216406356,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.007829,
+          39.748063
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216406357,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0082383,
+          39.7490405
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216406360,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0081692,
+          39.7490843
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216406361,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0069857,
+          39.7491435
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216416541,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0080374,
+          39.7492216
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216416548,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0079935,
+          39.7492317
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216416549,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0080177,
+          39.7492771
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216416550,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.007956,
+          39.7492936
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216416551,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.007971,
+          39.749323
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216416552,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0079855,
+          39.7493513
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216416554,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0073055,
+          39.7495005
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424573,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0071902,
+          39.7494493
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424574,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.006962,
+          39.7493493
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424576,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0068737,
+          39.749291
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424577,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0070722,
+          39.74924
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424578,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.007099,
+          39.7491977
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424579,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0078688,
+          39.7493854
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424588,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0078836,
+          39.7494544
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424589,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0076127,
+          39.7494854
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424590,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0076328,
+          39.7495349
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424591,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.00745,
+          39.7495246
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424592,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0071914,
+          39.7494671
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 5216424593,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.006921,
+          39.7493222
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 6650021355,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0071563,
+          39.7494344
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 6650021356,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0078343,
+          39.7479496
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 7293059524,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.007854,
+          39.7479964
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 7293059525,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0078133,
+          39.7478996
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 7293059526,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0077935,
+          39.7478526
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 7293059527,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0077732,
+          39.7478042
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 7293059528,
+        "osm_type": "node",
+        "tags": {}
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.0068857,
+          39.7490091
+        ]
+      },
+      "properties": {
+        "name": "Unnamed Sports Point",
+        "leisure": null,
+        "amenity": null,
+        "osm_id": 8493059490,
+        "osm_type": "node",
+        "tags": {}
+      }
+    }
+  ]
+}

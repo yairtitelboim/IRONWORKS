@@ -1,0 +1,5768 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.37881410280526,
+              31.931425257989556
+            ],
+            [
+              -97.37872427168777,
+              31.931425257989556
+            ],
+            [
+              -97.37872427168777,
+              31.931515089107055
+            ],
+            [
+              -97.37881410280526,
+              31.931515089107055
+            ],
+            [
+              -97.37881410280526,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 1,
+        "embedding_distance": 0.3234207099517727,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7970262129855318,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3234207099517727,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7970262129855318,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.32)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.37351404262895,
+              31.91795052872776
+            ],
+            [
+              -97.37342421151146,
+              31.91795052872776
+            ],
+            [
+              -97.37342421151146,
+              31.91804035984526
+            ],
+            [
+              -97.37351404262895,
+              31.91804035984526
+            ],
+            [
+              -97.37351404262895,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 2,
+        "embedding_distance": 0.4669450491015987,
+        "last_change_timestamp": 1755115352010,
+        "confidence": 0.8400835147304795,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4669450491015987,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8400835147304795,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.47)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.37351404262895,
+              31.92244210514836
+            ],
+            [
+              -97.37342421151146,
+              31.92244210514836
+            ],
+            [
+              -97.37342421151146,
+              31.92253193626586
+            ],
+            [
+              -97.37351404262895,
+              31.92253193626586
+            ],
+            [
+              -97.37351404262895,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 3,
+        "embedding_distance": 0.442384257783149,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.8327152773349447,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.442384257783149,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8327152773349447,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.44)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.37351404262895,
+              31.926933681568958
+            ],
+            [
+              -97.37342421151146,
+              31.926933681568958
+            ],
+            [
+              -97.37342421151146,
+              31.927023512686457
+            ],
+            [
+              -97.37351404262895,
+              31.927023512686457
+            ],
+            [
+              -97.37351404262895,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 4,
+        "embedding_distance": 0.6043681032976246,
+        "last_change_timestamp": 1754769752010,
+        "confidence": 0.8813104309892873,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.6043681032976246,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8813104309892873,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.60)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.37351404262895,
+              31.931425257989556
+            ],
+            [
+              -97.37342421151146,
+              31.931425257989556
+            ],
+            [
+              -97.37342421151146,
+              31.931515089107055
+            ],
+            [
+              -97.37351404262895,
+              31.931515089107055
+            ],
+            [
+              -97.37351404262895,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 5,
+        "embedding_distance": 0.7092902805476484,
+        "last_change_timestamp": 1754510552010,
+        "confidence": 0.9127870841642944,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.7092902805476484,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.9127870841642944,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.71)",
+          "confidence_level": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.37351404262895,
+              31.935916834410154
+            ],
+            [
+              -97.37342421151146,
+              31.935916834410154
+            ],
+            [
+              -97.37342421151146,
+              31.936006665527653
+            ],
+            [
+              -97.37351404262895,
+              31.936006665527653
+            ],
+            [
+              -97.37351404262895,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 6,
+        "embedding_distance": 0.39135900744343166,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8174077022330295,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.39135900744343166,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8174077022330295,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.39)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.37351404262895,
+              31.94040841083075
+            ],
+            [
+              -97.37342421151146,
+              31.94040841083075
+            ],
+            [
+              -97.37342421151146,
+              31.940498241948248
+            ],
+            [
+              -97.37351404262895,
+              31.940498241948248
+            ],
+            [
+              -97.37351404262895,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 7,
+        "embedding_distance": 0.48916242939050564,
+        "last_change_timestamp": 1755115352010,
+        "confidence": 0.8467487288171516,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.48916242939050564,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8467487288171516,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.49)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.37351404262895,
+              31.944899987251347
+            ],
+            [
+              -97.37342421151146,
+              31.944899987251347
+            ],
+            [
+              -97.37342421151146,
+              31.944989818368846
+            ],
+            [
+              -97.37351404262895,
+              31.944989818368846
+            ],
+            [
+              -97.37351404262895,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 8,
+        "embedding_distance": 0.4107114013004555,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8232134203901366,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4107114013004555,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8232134203901366,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.41)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.913458952307163
+            ],
+            [
+              -97.36812415133515,
+              31.913458952307163
+            ],
+            [
+              -97.36812415133515,
+              31.913548783424663
+            ],
+            [
+              -97.36821398245264,
+              31.913548783424663
+            ],
+            [
+              -97.36821398245264,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 9,
+        "embedding_distance": 0.1832402256995064,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7549720677098519,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.1832402256995064,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7549720677098519,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.18)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.91795052872776
+            ],
+            [
+              -97.36812415133515,
+              31.91795052872776
+            ],
+            [
+              -97.36812415133515,
+              31.91804035984526
+            ],
+            [
+              -97.36821398245264,
+              31.91804035984526
+            ],
+            [
+              -97.36821398245264,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 10,
+        "embedding_distance": 0.20186828116355335,
+        "last_change_timestamp": 1755806552010,
+        "confidence": 0.760560484349066,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.20186828116355335,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.760560484349066,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.20)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.92244210514836
+            ],
+            [
+              -97.36812415133515,
+              31.92244210514836
+            ],
+            [
+              -97.36812415133515,
+              31.92253193626586
+            ],
+            [
+              -97.36821398245264,
+              31.92253193626586
+            ],
+            [
+              -97.36821398245264,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 11,
+        "embedding_distance": 0.4211988164764666,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8263596449429399,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4211988164764666,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8263596449429399,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.42)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.926933681568958
+            ],
+            [
+              -97.36812415133515,
+              31.926933681568958
+            ],
+            [
+              -97.36812415133515,
+              31.927023512686457
+            ],
+            [
+              -97.36821398245264,
+              31.927023512686457
+            ],
+            [
+              -97.36821398245264,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 12,
+        "embedding_distance": 0.4003504489252362,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8201051346775708,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4003504489252362,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8201051346775708,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.40)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.931425257989556
+            ],
+            [
+              -97.36812415133515,
+              31.931425257989556
+            ],
+            [
+              -97.36812415133515,
+              31.931515089107055
+            ],
+            [
+              -97.36821398245264,
+              31.931515089107055
+            ],
+            [
+              -97.36821398245264,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 13,
+        "embedding_distance": 0.8720390099851285,
+        "last_change_timestamp": 1754078552010,
+        "confidence": 0.9616117029955384,
+        "change_type": "vegetation_change",
+        "risk_level": "medium",
+        "category": "vegetation_change",
+        "magnitude": 0.8720390099851285,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "vegetation",
+          "health_score": 0.9616117029955384,
+          "risk_level": "medium"
+        },
+        "business_impact": {
+          "roi_flag": "yellow",
+          "impact_description": "Environmental change detected (distance: 0.87)",
+          "confidence_level": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.935916834410154
+            ],
+            [
+              -97.36812415133515,
+              31.935916834410154
+            ],
+            [
+              -97.36812415133515,
+              31.936006665527653
+            ],
+            [
+              -97.36821398245264,
+              31.936006665527653
+            ],
+            [
+              -97.36821398245264,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 14,
+        "embedding_distance": 0.567018205714258,
+        "last_change_timestamp": 1754856152010,
+        "confidence": 0.8701054617142774,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.567018205714258,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8701054617142774,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.57)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.94040841083075
+            ],
+            [
+              -97.36812415133515,
+              31.94040841083075
+            ],
+            [
+              -97.36812415133515,
+              31.940498241948248
+            ],
+            [
+              -97.36821398245264,
+              31.940498241948248
+            ],
+            [
+              -97.36821398245264,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 15,
+        "embedding_distance": 0.3565861589671855,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8069758476901556,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3565861589671855,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8069758476901556,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.36)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.944899987251347
+            ],
+            [
+              -97.36812415133515,
+              31.944899987251347
+            ],
+            [
+              -97.36812415133515,
+              31.944989818368846
+            ],
+            [
+              -97.36821398245264,
+              31.944989818368846
+            ],
+            [
+              -97.36821398245264,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 16,
+        "embedding_distance": 0.46527290518200853,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.8395818715546025,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.46527290518200853,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8395818715546025,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.47)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36821398245264,
+              31.949391563671945
+            ],
+            [
+              -97.36812415133515,
+              31.949391563671945
+            ],
+            [
+              -97.36812415133515,
+              31.949481394789444
+            ],
+            [
+              -97.36821398245264,
+              31.949481394789444
+            ],
+            [
+              -97.36821398245264,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 17,
+        "embedding_distance": 0.4255730003154249,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8276719000946274,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4255730003154249,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8276719000946274,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.43)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.90896737588657
+            ],
+            [
+              -97.36282409115886,
+              31.90896737588657
+            ],
+            [
+              -97.36282409115886,
+              31.909057207004068
+            ],
+            [
+              -97.36291392227635,
+              31.909057207004068
+            ],
+            [
+              -97.36291392227635,
+              31.90896737588657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 18,
+        "embedding_distance": 0.14193739113459697,
+        "last_change_timestamp": 1755979352010,
+        "confidence": 0.7425812173403791,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.14193739113459697,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7425812173403791,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.14)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.913458952307163
+            ],
+            [
+              -97.36282409115886,
+              31.913458952307163
+            ],
+            [
+              -97.36282409115886,
+              31.913548783424663
+            ],
+            [
+              -97.36291392227635,
+              31.913548783424663
+            ],
+            [
+              -97.36291392227635,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 19,
+        "embedding_distance": 0.1883278953436748,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7564983686031024,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.1883278953436748,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7564983686031024,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.19)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.91795052872776
+            ],
+            [
+              -97.36282409115886,
+              31.91795052872776
+            ],
+            [
+              -97.36282409115886,
+              31.91804035984526
+            ],
+            [
+              -97.36291392227635,
+              31.91804035984526
+            ],
+            [
+              -97.36291392227635,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 20,
+        "embedding_distance": 0.22693011392751455,
+        "last_change_timestamp": 1755806552010,
+        "confidence": 0.7680790341782543,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.22693011392751455,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7680790341782543,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.23)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.92244210514836
+            ],
+            [
+              -97.36282409115886,
+              31.92244210514836
+            ],
+            [
+              -97.36282409115886,
+              31.92253193626586
+            ],
+            [
+              -97.36291392227635,
+              31.92253193626586
+            ],
+            [
+              -97.36291392227635,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 21,
+        "embedding_distance": 0.42277663609412885,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8268329908282386,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.42277663609412885,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8268329908282386,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.42)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.926933681568958
+            ],
+            [
+              -97.36282409115886,
+              31.926933681568958
+            ],
+            [
+              -97.36282409115886,
+              31.927023512686457
+            ],
+            [
+              -97.36291392227635,
+              31.927023512686457
+            ],
+            [
+              -97.36291392227635,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 22,
+        "embedding_distance": 0.3620479527020803,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8086143858106241,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3620479527020803,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8086143858106241,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.36)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.931425257989556
+            ],
+            [
+              -97.36282409115886,
+              31.931425257989556
+            ],
+            [
+              -97.36282409115886,
+              31.931515089107055
+            ],
+            [
+              -97.36291392227635,
+              31.931515089107055
+            ],
+            [
+              -97.36291392227635,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 23,
+        "embedding_distance": 0.5217269274107509,
+        "last_change_timestamp": 1755028952010,
+        "confidence": 0.8565180782232252,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.5217269274107509,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8565180782232252,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.52)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.935916834410154
+            ],
+            [
+              -97.36282409115886,
+              31.935916834410154
+            ],
+            [
+              -97.36282409115886,
+              31.936006665527653
+            ],
+            [
+              -97.36291392227635,
+              31.936006665527653
+            ],
+            [
+              -97.36291392227635,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 24,
+        "embedding_distance": 0.398927546083625,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8196782638250875,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.398927546083625,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8196782638250875,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.40)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.94040841083075
+            ],
+            [
+              -97.36282409115886,
+              31.94040841083075
+            ],
+            [
+              -97.36282409115886,
+              31.940498241948248
+            ],
+            [
+              -97.36291392227635,
+              31.940498241948248
+            ],
+            [
+              -97.36291392227635,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 25,
+        "embedding_distance": 0.4779260862053026,
+        "last_change_timestamp": 1755115352010,
+        "confidence": 0.8433778258615907,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4779260862053026,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8433778258615907,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.48)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.944899987251347
+            ],
+            [
+              -97.36282409115886,
+              31.944899987251347
+            ],
+            [
+              -97.36282409115886,
+              31.944989818368846
+            ],
+            [
+              -97.36291392227635,
+              31.944989818368846
+            ],
+            [
+              -97.36291392227635,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 26,
+        "embedding_distance": 0.2851013913229793,
+        "last_change_timestamp": 1755633752010,
+        "confidence": 0.7855304173968938,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.2851013913229793,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7855304173968938,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.29)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.949391563671945
+            ],
+            [
+              -97.36282409115886,
+              31.949391563671945
+            ],
+            [
+              -97.36282409115886,
+              31.949481394789444
+            ],
+            [
+              -97.36291392227635,
+              31.949481394789444
+            ],
+            [
+              -97.36291392227635,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 27,
+        "embedding_distance": 0.3576549094396508,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8072964728318952,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3576549094396508,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8072964728318952,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.36)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.36291392227635,
+              31.953883140092543
+            ],
+            [
+              -97.36282409115886,
+              31.953883140092543
+            ],
+            [
+              -97.36282409115886,
+              31.953972971210042
+            ],
+            [
+              -97.36291392227635,
+              31.953972971210042
+            ],
+            [
+              -97.36291392227635,
+              31.953883140092543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 28,
+        "embedding_distance": 0.4555367590575939,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.8366610277172781,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4555367590575939,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8366610277172781,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.46)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.90896737588657
+            ],
+            [
+              -97.35752403098255,
+              31.90896737588657
+            ],
+            [
+              -97.35752403098255,
+              31.909057207004068
+            ],
+            [
+              -97.35761386210004,
+              31.909057207004068
+            ],
+            [
+              -97.35761386210004,
+              31.90896737588657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 29,
+        "embedding_distance": 0.14850195585075307,
+        "last_change_timestamp": 1755979352010,
+        "confidence": 0.7445505867552259,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.14850195585075307,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7445505867552259,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.15)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.913458952307163
+            ],
+            [
+              -97.35752403098255,
+              31.913458952307163
+            ],
+            [
+              -97.35752403098255,
+              31.913548783424663
+            ],
+            [
+              -97.35761386210004,
+              31.913548783424663
+            ],
+            [
+              -97.35761386210004,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 30,
+        "embedding_distance": 0.18670157905748058,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7560104737172442,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.18670157905748058,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7560104737172442,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.19)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.91795052872776
+            ],
+            [
+              -97.35752403098255,
+              31.91795052872776
+            ],
+            [
+              -97.35752403098255,
+              31.91804035984526
+            ],
+            [
+              -97.35761386210004,
+              31.91804035984526
+            ],
+            [
+              -97.35761386210004,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 31,
+        "embedding_distance": 0.42655732552769343,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.827967197658308,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.42655732552769343,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.827967197658308,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.43)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.92244210514836
+            ],
+            [
+              -97.35752403098255,
+              31.92244210514836
+            ],
+            [
+              -97.35752403098255,
+              31.92253193626586
+            ],
+            [
+              -97.35761386210004,
+              31.92253193626586
+            ],
+            [
+              -97.35761386210004,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 32,
+        "embedding_distance": 0.4369203471396879,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.8310761041419064,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4369203471396879,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8310761041419064,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.44)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.926933681568958
+            ],
+            [
+              -97.35752403098255,
+              31.926933681568958
+            ],
+            [
+              -97.35752403098255,
+              31.927023512686457
+            ],
+            [
+              -97.35761386210004,
+              31.927023512686457
+            ],
+            [
+              -97.35761386210004,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 33,
+        "embedding_distance": 0.3242425548656327,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7972727664596898,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3242425548656327,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7972727664596898,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.32)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.931425257989556
+            ],
+            [
+              -97.35752403098255,
+              31.931425257989556
+            ],
+            [
+              -97.35752403098255,
+              31.931515089107055
+            ],
+            [
+              -97.35761386210004,
+              31.931515089107055
+            ],
+            [
+              -97.35761386210004,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 34,
+        "embedding_distance": 0.3533380401026879,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8060014120308063,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3533380401026879,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8060014120308063,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.35)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.935916834410154
+            ],
+            [
+              -97.35752403098255,
+              31.935916834410154
+            ],
+            [
+              -97.35752403098255,
+              31.936006665527653
+            ],
+            [
+              -97.35761386210004,
+              31.936006665527653
+            ],
+            [
+              -97.35761386210004,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 35,
+        "embedding_distance": 0.4371778947849105,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.831153368435473,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4371778947849105,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.831153368435473,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.44)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.94040841083075
+            ],
+            [
+              -97.35752403098255,
+              31.94040841083075
+            ],
+            [
+              -97.35752403098255,
+              31.940498241948248
+            ],
+            [
+              -97.35761386210004,
+              31.940498241948248
+            ],
+            [
+              -97.35761386210004,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 36,
+        "embedding_distance": 0.32089170372310416,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7962675111169312,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.32089170372310416,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7962675111169312,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.32)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.944899987251347
+            ],
+            [
+              -97.35752403098255,
+              31.944899987251347
+            ],
+            [
+              -97.35752403098255,
+              31.944989818368846
+            ],
+            [
+              -97.35761386210004,
+              31.944989818368846
+            ],
+            [
+              -97.35761386210004,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 37,
+        "embedding_distance": 0.40012520358765513,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8200375610762964,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.40012520358765513,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8200375610762964,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.40)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.949391563671945
+            ],
+            [
+              -97.35752403098255,
+              31.949391563671945
+            ],
+            [
+              -97.35752403098255,
+              31.949481394789444
+            ],
+            [
+              -97.35761386210004,
+              31.949481394789444
+            ],
+            [
+              -97.35761386210004,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 38,
+        "embedding_distance": 0.41720862499129424,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8251625874973882,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.41720862499129424,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8251625874973882,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.42)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35761386210004,
+              31.953883140092543
+            ],
+            [
+              -97.35752403098255,
+              31.953883140092543
+            ],
+            [
+              -97.35752403098255,
+              31.953972971210042
+            ],
+            [
+              -97.35761386210004,
+              31.953972971210042
+            ],
+            [
+              -97.35761386210004,
+              31.953883140092543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 39,
+        "embedding_distance": 0.464454728475318,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.8393364185425953,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.464454728475318,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8393364185425953,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.46)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.90896737588657
+            ],
+            [
+              -97.35222397080624,
+              31.90896737588657
+            ],
+            [
+              -97.35222397080624,
+              31.909057207004068
+            ],
+            [
+              -97.35231380192373,
+              31.909057207004068
+            ],
+            [
+              -97.35231380192373,
+              31.90896737588657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 40,
+        "embedding_distance": 0.1853394229947633,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7556018268984289,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.1853394229947633,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7556018268984289,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.19)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.913458952307163
+            ],
+            [
+              -97.35222397080624,
+              31.913458952307163
+            ],
+            [
+              -97.35222397080624,
+              31.913548783424663
+            ],
+            [
+              -97.35231380192373,
+              31.913548783424663
+            ],
+            [
+              -97.35231380192373,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 41,
+        "embedding_distance": 0.19766560046416073,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7592996801392482,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.19766560046416073,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7592996801392482,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.20)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.91795052872776
+            ],
+            [
+              -97.35222397080624,
+              31.91795052872776
+            ],
+            [
+              -97.35222397080624,
+              31.91804035984526
+            ],
+            [
+              -97.35231380192373,
+              31.91804035984526
+            ],
+            [
+              -97.35231380192373,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 42,
+        "embedding_distance": 0.4300876702500032,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.829026301075001,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4300876702500032,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.829026301075001,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.43)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.92244210514836
+            ],
+            [
+              -97.35222397080624,
+              31.92244210514836
+            ],
+            [
+              -97.35222397080624,
+              31.92253193626586
+            ],
+            [
+              -97.35231380192373,
+              31.92253193626586
+            ],
+            [
+              -97.35231380192373,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 43,
+        "embedding_distance": 0.39610363569645984,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8188310907089379,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.39610363569645984,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8188310907089379,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.40)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.926933681568958
+            ],
+            [
+              -97.35222397080624,
+              31.926933681568958
+            ],
+            [
+              -97.35222397080624,
+              31.927023512686457
+            ],
+            [
+              -97.35231380192373,
+              31.927023512686457
+            ],
+            [
+              -97.35231380192373,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 44,
+        "embedding_distance": 0.3263650703592985,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7979095211077896,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3263650703592985,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7979095211077896,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.33)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.931425257989556
+            ],
+            [
+              -97.35222397080624,
+              31.931425257989556
+            ],
+            [
+              -97.35222397080624,
+              31.931515089107055
+            ],
+            [
+              -97.35231380192373,
+              31.931515089107055
+            ],
+            [
+              -97.35231380192373,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 45,
+        "embedding_distance": 0.4077553601968045,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8223266080590412,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4077553601968045,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8223266080590412,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.41)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.935916834410154
+            ],
+            [
+              -97.35222397080624,
+              31.935916834410154
+            ],
+            [
+              -97.35222397080624,
+              31.936006665527653
+            ],
+            [
+              -97.35231380192373,
+              31.936006665527653
+            ],
+            [
+              -97.35231380192373,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 46,
+        "embedding_distance": 0.5449500484331301,
+        "last_change_timestamp": 1754942552010,
+        "confidence": 0.863485014529939,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.5449500484331301,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.863485014529939,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.54)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.94040841083075
+            ],
+            [
+              -97.35222397080624,
+              31.94040841083075
+            ],
+            [
+              -97.35222397080624,
+              31.940498241948248
+            ],
+            [
+              -97.35231380192373,
+              31.940498241948248
+            ],
+            [
+              -97.35231380192373,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 47,
+        "embedding_distance": 0.34390173420114406,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8031705202603432,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.34390173420114406,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8031705202603432,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.34)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.944899987251347
+            ],
+            [
+              -97.35222397080624,
+              31.944899987251347
+            ],
+            [
+              -97.35222397080624,
+              31.944989818368846
+            ],
+            [
+              -97.35231380192373,
+              31.944989818368846
+            ],
+            [
+              -97.35231380192373,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 48,
+        "embedding_distance": 0.41846179133927464,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8255385374017823,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.41846179133927464,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8255385374017823,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.42)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.949391563671945
+            ],
+            [
+              -97.35222397080624,
+              31.949391563671945
+            ],
+            [
+              -97.35222397080624,
+              31.949481394789444
+            ],
+            [
+              -97.35231380192373,
+              31.949481394789444
+            ],
+            [
+              -97.35231380192373,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 49,
+        "embedding_distance": 0.4114890867721742,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8234467260316523,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4114890867721742,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8234467260316523,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.41)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35231380192373,
+              31.953883140092543
+            ],
+            [
+              -97.35222397080624,
+              31.953883140092543
+            ],
+            [
+              -97.35222397080624,
+              31.953972971210042
+            ],
+            [
+              -97.35231380192373,
+              31.953972971210042
+            ],
+            [
+              -97.35231380192373,
+              31.953883140092543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 50,
+        "embedding_distance": 0.4731937129415794,
+        "last_change_timestamp": 1755115352010,
+        "confidence": 0.8419581138824738,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4731937129415794,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8419581138824738,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.47)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.90447579946597
+            ],
+            [
+              -97.34692391062994,
+              31.90447579946597
+            ],
+            [
+              -97.34692391062994,
+              31.90456563058347
+            ],
+            [
+              -97.34701374174743,
+              31.90456563058347
+            ],
+            [
+              -97.34701374174743,
+              31.90447579946597
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 51,
+        "embedding_distance": 0.18606001754261775,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7558180052627853,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.18606001754261775,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7558180052627853,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.19)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.90896737588657
+            ],
+            [
+              -97.34692391062994,
+              31.90896737588657
+            ],
+            [
+              -97.34692391062994,
+              31.909057207004068
+            ],
+            [
+              -97.34701374174743,
+              31.909057207004068
+            ],
+            [
+              -97.34701374174743,
+              31.90896737588657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 52,
+        "embedding_distance": 0.19135969592925706,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7574079087787771,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.19135969592925706,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7574079087787771,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.19)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.913458952307163
+            ],
+            [
+              -97.34692391062994,
+              31.913458952307163
+            ],
+            [
+              -97.34692391062994,
+              31.913548783424663
+            ],
+            [
+              -97.34701374174743,
+              31.913548783424663
+            ],
+            [
+              -97.34701374174743,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 53,
+        "embedding_distance": 0.19270084890371209,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7578102546711136,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.19270084890371209,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7578102546711136,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.19)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.91795052872776
+            ],
+            [
+              -97.34692391062994,
+              31.91795052872776
+            ],
+            [
+              -97.34692391062994,
+              31.91804035984526
+            ],
+            [
+              -97.34701374174743,
+              31.91804035984526
+            ],
+            [
+              -97.34701374174743,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 54,
+        "embedding_distance": 0.19942786677857147,
+        "last_change_timestamp": 1755892952010,
+        "confidence": 0.7598283600335713,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.19942786677857147,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7598283600335713,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.20)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.92244210514836
+            ],
+            [
+              -97.34692391062994,
+              31.92244210514836
+            ],
+            [
+              -97.34692391062994,
+              31.92253193626586
+            ],
+            [
+              -97.34701374174743,
+              31.92253193626586
+            ],
+            [
+              -97.34701374174743,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 55,
+        "embedding_distance": 0.36129200166010045,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.80838760049803,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.36129200166010045,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.80838760049803,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.36)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.926933681568958
+            ],
+            [
+              -97.34692391062994,
+              31.926933681568958
+            ],
+            [
+              -97.34692391062994,
+              31.927023512686457
+            ],
+            [
+              -97.34701374174743,
+              31.927023512686457
+            ],
+            [
+              -97.34701374174743,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 56,
+        "embedding_distance": 0.3977080476416306,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8193124142924891,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3977080476416306,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8193124142924891,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.40)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.931425257989556
+            ],
+            [
+              -97.34692391062994,
+              31.931425257989556
+            ],
+            [
+              -97.34692391062994,
+              31.931515089107055
+            ],
+            [
+              -97.34701374174743,
+              31.931515089107055
+            ],
+            [
+              -97.34701374174743,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 57,
+        "embedding_distance": 0.6495877692167557,
+        "last_change_timestamp": 1754683352010,
+        "confidence": 0.8948763307650267,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.6495877692167557,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8948763307650267,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.65)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.935916834410154
+            ],
+            [
+              -97.34692391062994,
+              31.935916834410154
+            ],
+            [
+              -97.34692391062994,
+              31.936006665527653
+            ],
+            [
+              -97.34701374174743,
+              31.936006665527653
+            ],
+            [
+              -97.34701374174743,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 58,
+        "embedding_distance": 0.41430306372278813,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8242909191168364,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.41430306372278813,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8242909191168364,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.41)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.94040841083075
+            ],
+            [
+              -97.34692391062994,
+              31.94040841083075
+            ],
+            [
+              -97.34692391062994,
+              31.940498241948248
+            ],
+            [
+              -97.34701374174743,
+              31.940498241948248
+            ],
+            [
+              -97.34701374174743,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 59,
+        "embedding_distance": 0.3401890966147991,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8020567289844397,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3401890966147991,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8020567289844397,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.34)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.944899987251347
+            ],
+            [
+              -97.34692391062994,
+              31.944899987251347
+            ],
+            [
+              -97.34692391062994,
+              31.944989818368846
+            ],
+            [
+              -97.34701374174743,
+              31.944989818368846
+            ],
+            [
+              -97.34701374174743,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 60,
+        "embedding_distance": 0.39839347128400837,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8195180413852025,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.39839347128400837,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8195180413852025,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.40)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.949391563671945
+            ],
+            [
+              -97.34692391062994,
+              31.949391563671945
+            ],
+            [
+              -97.34692391062994,
+              31.949481394789444
+            ],
+            [
+              -97.34701374174743,
+              31.949481394789444
+            ],
+            [
+              -97.34701374174743,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 61,
+        "embedding_distance": 0.37528398028808335,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8125851940864249,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.37528398028808335,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8125851940864249,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.38)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.953883140092543
+            ],
+            [
+              -97.34692391062994,
+              31.953883140092543
+            ],
+            [
+              -97.34692391062994,
+              31.953972971210042
+            ],
+            [
+              -97.34701374174743,
+              31.953972971210042
+            ],
+            [
+              -97.34701374174743,
+              31.953883140092543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 62,
+        "embedding_distance": 0.42882419397470467,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8286472581924114,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.42882419397470467,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8286472581924114,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.43)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34701374174743,
+              31.95837471651314
+            ],
+            [
+              -97.34692391062994,
+              31.95837471651314
+            ],
+            [
+              -97.34692391062994,
+              31.95846454763064
+            ],
+            [
+              -97.34701374174743,
+              31.95846454763064
+            ],
+            [
+              -97.34701374174743,
+              31.95837471651314
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 63,
+        "embedding_distance": 0.3860239492755385,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8158071847826616,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3860239492755385,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8158071847826616,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.39)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.90896737588657
+            ],
+            [
+              -97.34162385045363,
+              31.90896737588657
+            ],
+            [
+              -97.34162385045363,
+              31.909057207004068
+            ],
+            [
+              -97.34171368157112,
+              31.909057207004068
+            ],
+            [
+              -97.34171368157112,
+              31.90896737588657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 64,
+        "embedding_distance": 0.22032581543380242,
+        "last_change_timestamp": 1755806552010,
+        "confidence": 0.7660977446301407,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.22032581543380242,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7660977446301407,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.22)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.913458952307163
+            ],
+            [
+              -97.34162385045363,
+              31.913458952307163
+            ],
+            [
+              -97.34162385045363,
+              31.913548783424663
+            ],
+            [
+              -97.34171368157112,
+              31.913548783424663
+            ],
+            [
+              -97.34171368157112,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 65,
+        "embedding_distance": 0.21697994650555374,
+        "last_change_timestamp": 1755806552010,
+        "confidence": 0.7650939839516661,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.21697994650555374,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7650939839516661,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.22)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.91795052872776
+            ],
+            [
+              -97.34162385045363,
+              31.91795052872776
+            ],
+            [
+              -97.34162385045363,
+              31.91804035984526
+            ],
+            [
+              -97.34171368157112,
+              31.91804035984526
+            ],
+            [
+              -97.34171368157112,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 66,
+        "embedding_distance": 0.7188779574109129,
+        "last_change_timestamp": 1754510552010,
+        "confidence": 0.9156633872232738,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.7188779574109129,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.9156633872232738,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.72)",
+          "confidence_level": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.92244210514836
+            ],
+            [
+              -97.34162385045363,
+              31.92244210514836
+            ],
+            [
+              -97.34162385045363,
+              31.92253193626586
+            ],
+            [
+              -97.34171368157112,
+              31.92253193626586
+            ],
+            [
+              -97.34171368157112,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 67,
+        "embedding_distance": 0.23902703322779498,
+        "last_change_timestamp": 1755720152010,
+        "confidence": 0.7717081099683385,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.23902703322779498,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7717081099683385,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.24)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.926933681568958
+            ],
+            [
+              -97.34162385045363,
+              31.926933681568958
+            ],
+            [
+              -97.34162385045363,
+              31.927023512686457
+            ],
+            [
+              -97.34171368157112,
+              31.927023512686457
+            ],
+            [
+              -97.34171368157112,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 68,
+        "embedding_distance": 0.5972811243038431,
+        "last_change_timestamp": 1754856152010,
+        "confidence": 0.8791843372911529,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.5972811243038431,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8791843372911529,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.60)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.931425257989556
+            ],
+            [
+              -97.34162385045363,
+              31.931425257989556
+            ],
+            [
+              -97.34162385045363,
+              31.931515089107055
+            ],
+            [
+              -97.34171368157112,
+              31.931515089107055
+            ],
+            [
+              -97.34171368157112,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 69,
+        "embedding_distance": 0.41896266225265855,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8256887986757975,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.41896266225265855,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8256887986757975,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.42)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.935916834410154
+            ],
+            [
+              -97.34162385045363,
+              31.935916834410154
+            ],
+            [
+              -97.34162385045363,
+              31.936006665527653
+            ],
+            [
+              -97.34171368157112,
+              31.936006665527653
+            ],
+            [
+              -97.34171368157112,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 70,
+        "embedding_distance": 0.323221506198757,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7969664518596271,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.323221506198757,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7969664518596271,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.32)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.94040841083075
+            ],
+            [
+              -97.34162385045363,
+              31.94040841083075
+            ],
+            [
+              -97.34162385045363,
+              31.940498241948248
+            ],
+            [
+              -97.34171368157112,
+              31.940498241948248
+            ],
+            [
+              -97.34171368157112,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 71,
+        "embedding_distance": 0.30279891948802734,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7908396758464081,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.30279891948802734,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7908396758464081,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.30)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.944899987251347
+            ],
+            [
+              -97.34162385045363,
+              31.944899987251347
+            ],
+            [
+              -97.34162385045363,
+              31.944989818368846
+            ],
+            [
+              -97.34171368157112,
+              31.944989818368846
+            ],
+            [
+              -97.34171368157112,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 72,
+        "embedding_distance": 0.3279152789259339,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7983745836777801,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3279152789259339,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7983745836777801,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.33)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.949391563671945
+            ],
+            [
+              -97.34162385045363,
+              31.949391563671945
+            ],
+            [
+              -97.34162385045363,
+              31.949481394789444
+            ],
+            [
+              -97.34171368157112,
+              31.949481394789444
+            ],
+            [
+              -97.34171368157112,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 73,
+        "embedding_distance": 0.3278355293340225,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7983506588002067,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3278355293340225,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7983506588002067,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.33)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.34171368157112,
+              31.953883140092543
+            ],
+            [
+              -97.34162385045363,
+              31.953883140092543
+            ],
+            [
+              -97.34162385045363,
+              31.953972971210042
+            ],
+            [
+              -97.34171368157112,
+              31.953972971210042
+            ],
+            [
+              -97.34171368157112,
+              31.953883140092543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 74,
+        "embedding_distance": 0.45040422221764254,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.8351212666652927,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.45040422221764254,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8351212666652927,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.45)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.90896737588657
+            ],
+            [
+              -97.33641362180573,
+              31.90896737588657
+            ],
+            [
+              -97.33641362180573,
+              31.909057207004068
+            ],
+            [
+              -97.33650345292322,
+              31.909057207004068
+            ],
+            [
+              -97.33650345292322,
+              31.90896737588657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 75,
+        "embedding_distance": 0.42401010253447585,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8272030307603427,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.42401010253447585,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8272030307603427,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.42)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.913458952307163
+            ],
+            [
+              -97.33641362180573,
+              31.913458952307163
+            ],
+            [
+              -97.33641362180573,
+              31.913548783424663
+            ],
+            [
+              -97.33650345292322,
+              31.913548783424663
+            ],
+            [
+              -97.33650345292322,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 76,
+        "embedding_distance": 0.880550102378598,
+        "last_change_timestamp": 1754078552010,
+        "confidence": 0.9641650307135794,
+        "change_type": "vegetation_change",
+        "risk_level": "medium",
+        "category": "vegetation_change",
+        "magnitude": 0.880550102378598,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "vegetation",
+          "health_score": 0.9641650307135794,
+          "risk_level": "medium"
+        },
+        "business_impact": {
+          "roi_flag": "yellow",
+          "impact_description": "Environmental change detected (distance: 0.88)",
+          "confidence_level": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.91795052872776
+            ],
+            [
+              -97.33641362180573,
+              31.91795052872776
+            ],
+            [
+              -97.33641362180573,
+              31.91804035984526
+            ],
+            [
+              -97.33650345292322,
+              31.91804035984526
+            ],
+            [
+              -97.33650345292322,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 77,
+        "embedding_distance": 0.7254040166113118,
+        "last_change_timestamp": 1754510552010,
+        "confidence": 0.9176212049833935,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.7254040166113118,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.9176212049833935,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.73)",
+          "confidence_level": "high"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.92244210514836
+            ],
+            [
+              -97.33641362180573,
+              31.92244210514836
+            ],
+            [
+              -97.33641362180573,
+              31.92253193626586
+            ],
+            [
+              -97.33650345292322,
+              31.92253193626586
+            ],
+            [
+              -97.33650345292322,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 78,
+        "embedding_distance": 0.6236441012130499,
+        "last_change_timestamp": 1754769752010,
+        "confidence": 0.887093230363915,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.6236441012130499,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.887093230363915,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.62)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.926933681568958
+            ],
+            [
+              -97.33641362180573,
+              31.926933681568958
+            ],
+            [
+              -97.33641362180573,
+              31.927023512686457
+            ],
+            [
+              -97.33650345292322,
+              31.927023512686457
+            ],
+            [
+              -97.33650345292322,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 79,
+        "embedding_distance": 0.4742533958058831,
+        "last_change_timestamp": 1755115352010,
+        "confidence": 0.8422760187417648,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4742533958058831,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8422760187417648,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.47)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.931425257989556
+            ],
+            [
+              -97.33641362180573,
+              31.931425257989556
+            ],
+            [
+              -97.33641362180573,
+              31.931515089107055
+            ],
+            [
+              -97.33650345292322,
+              31.931515089107055
+            ],
+            [
+              -97.33650345292322,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 80,
+        "embedding_distance": 0.5765832827660811,
+        "last_change_timestamp": 1754856152010,
+        "confidence": 0.8729749848298243,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.5765832827660811,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8729749848298243,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.58)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.935916834410154
+            ],
+            [
+              -97.33641362180573,
+              31.935916834410154
+            ],
+            [
+              -97.33641362180573,
+              31.936006665527653
+            ],
+            [
+              -97.33650345292322,
+              31.936006665527653
+            ],
+            [
+              -97.33650345292322,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 81,
+        "embedding_distance": 0.44604213256717334,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.833812639770152,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.44604213256717334,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.833812639770152,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.45)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.94040841083075
+            ],
+            [
+              -97.33641362180573,
+              31.94040841083075
+            ],
+            [
+              -97.33641362180573,
+              31.940498241948248
+            ],
+            [
+              -97.33650345292322,
+              31.940498241948248
+            ],
+            [
+              -97.33650345292322,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 82,
+        "embedding_distance": 0.3480792771463718,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8044237831439115,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3480792771463718,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8044237831439115,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.35)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.944899987251347
+            ],
+            [
+              -97.33641362180573,
+              31.944899987251347
+            ],
+            [
+              -97.33641362180573,
+              31.944989818368846
+            ],
+            [
+              -97.33650345292322,
+              31.944989818368846
+            ],
+            [
+              -97.33650345292322,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 83,
+        "embedding_distance": 0.27313492023259023,
+        "last_change_timestamp": 1755633752010,
+        "confidence": 0.781940476069777,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.27313492023259023,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.781940476069777,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.27)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.949391563671945
+            ],
+            [
+              -97.33641362180573,
+              31.949391563671945
+            ],
+            [
+              -97.33641362180573,
+              31.949481394789444
+            ],
+            [
+              -97.33650345292322,
+              31.949481394789444
+            ],
+            [
+              -97.33650345292322,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 84,
+        "embedding_distance": 0.36024198325486145,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8080725949764584,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.36024198325486145,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8080725949764584,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.36)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33650345292322,
+              31.953883140092543
+            ],
+            [
+              -97.33641362180573,
+              31.953883140092543
+            ],
+            [
+              -97.33641362180573,
+              31.953972971210042
+            ],
+            [
+              -97.33650345292322,
+              31.953972971210042
+            ],
+            [
+              -97.33650345292322,
+              31.953883140092543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 85,
+        "embedding_distance": 0.3075017400677008,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7922505220203102,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3075017400677008,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7922505220203102,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.31)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.90896737588657
+            ],
+            [
+              -97.33111356162944,
+              31.90896737588657
+            ],
+            [
+              -97.33111356162944,
+              31.909057207004068
+            ],
+            [
+              -97.33120339274693,
+              31.909057207004068
+            ],
+            [
+              -97.33120339274693,
+              31.90896737588657
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 86,
+        "embedding_distance": 0.3584475060639543,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8075342518191863,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3584475060639543,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8075342518191863,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.36)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.913458952307163
+            ],
+            [
+              -97.33111356162944,
+              31.913458952307163
+            ],
+            [
+              -97.33111356162944,
+              31.913548783424663
+            ],
+            [
+              -97.33120339274693,
+              31.913548783424663
+            ],
+            [
+              -97.33120339274693,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 87,
+        "embedding_distance": 0.5916209036351161,
+        "last_change_timestamp": 1754856152010,
+        "confidence": 0.8774862710905348,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.5916209036351161,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8774862710905348,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.59)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.91795052872776
+            ],
+            [
+              -97.33111356162944,
+              31.91795052872776
+            ],
+            [
+              -97.33111356162944,
+              31.91804035984526
+            ],
+            [
+              -97.33120339274693,
+              31.91804035984526
+            ],
+            [
+              -97.33120339274693,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 88,
+        "embedding_distance": 0.3136153412712839,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7940846023813851,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3136153412712839,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7940846023813851,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.31)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.92244210514836
+            ],
+            [
+              -97.33111356162944,
+              31.92244210514836
+            ],
+            [
+              -97.33111356162944,
+              31.92253193626586
+            ],
+            [
+              -97.33120339274693,
+              31.92253193626586
+            ],
+            [
+              -97.33120339274693,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 89,
+        "embedding_distance": 0.3928668679490136,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.817860060384704,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3928668679490136,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.817860060384704,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.39)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.926933681568958
+            ],
+            [
+              -97.33111356162944,
+              31.926933681568958
+            ],
+            [
+              -97.33111356162944,
+              31.927023512686457
+            ],
+            [
+              -97.33120339274693,
+              31.927023512686457
+            ],
+            [
+              -97.33120339274693,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 90,
+        "embedding_distance": 0.33756525463479664,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8012695763904389,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.33756525463479664,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8012695763904389,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.34)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.931425257989556
+            ],
+            [
+              -97.33111356162944,
+              31.931425257989556
+            ],
+            [
+              -97.33111356162944,
+              31.931515089107055
+            ],
+            [
+              -97.33120339274693,
+              31.931515089107055
+            ],
+            [
+              -97.33120339274693,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 91,
+        "embedding_distance": 0.39325382365688916,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8179761470970667,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.39325382365688916,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8179761470970667,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.39)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.935916834410154
+            ],
+            [
+              -97.33111356162944,
+              31.935916834410154
+            ],
+            [
+              -97.33111356162944,
+              31.936006665527653
+            ],
+            [
+              -97.33120339274693,
+              31.936006665527653
+            ],
+            [
+              -97.33120339274693,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 92,
+        "embedding_distance": 0.3860208222066156,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8158062466619846,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3860208222066156,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8158062466619846,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.39)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.94040841083075
+            ],
+            [
+              -97.33111356162944,
+              31.94040841083075
+            ],
+            [
+              -97.33111356162944,
+              31.940498241948248
+            ],
+            [
+              -97.33120339274693,
+              31.940498241948248
+            ],
+            [
+              -97.33120339274693,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 93,
+        "embedding_distance": 0.45707657061932677,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.8371229711857979,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.45707657061932677,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8371229711857979,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.46)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.944899987251347
+            ],
+            [
+              -97.33111356162944,
+              31.944899987251347
+            ],
+            [
+              -97.33111356162944,
+              31.944989818368846
+            ],
+            [
+              -97.33120339274693,
+              31.944989818368846
+            ],
+            [
+              -97.33120339274693,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 94,
+        "embedding_distance": 0.3587679527654686,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8076303858296405,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3587679527654686,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8076303858296405,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.36)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.949391563671945
+            ],
+            [
+              -97.33111356162944,
+              31.949391563671945
+            ],
+            [
+              -97.33111356162944,
+              31.949481394789444
+            ],
+            [
+              -97.33120339274693,
+              31.949481394789444
+            ],
+            [
+              -97.33120339274693,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 95,
+        "embedding_distance": 0.2983667971903876,
+        "last_change_timestamp": 1755633752010,
+        "confidence": 0.7895100391571163,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.2983667971903876,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7895100391571163,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.30)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.33120339274693,
+              31.953883140092543
+            ],
+            [
+              -97.33111356162944,
+              31.953883140092543
+            ],
+            [
+              -97.33111356162944,
+              31.953972971210042
+            ],
+            [
+              -97.33120339274693,
+              31.953972971210042
+            ],
+            [
+              -97.33120339274693,
+              31.953883140092543
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 96,
+        "embedding_distance": 0.4199925708093045,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8259977712427913,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4199925708093045,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8259977712427913,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.42)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.913458952307163
+            ],
+            [
+              -97.32581350145313,
+              31.913458952307163
+            ],
+            [
+              -97.32581350145313,
+              31.913548783424663
+            ],
+            [
+              -97.32590333257062,
+              31.913548783424663
+            ],
+            [
+              -97.32590333257062,
+              31.913458952307163
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 97,
+        "embedding_distance": 0.39681892834072835,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8190456785022184,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.39681892834072835,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8190456785022184,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.40)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.91795052872776
+            ],
+            [
+              -97.32581350145313,
+              31.91795052872776
+            ],
+            [
+              -97.32581350145313,
+              31.91804035984526
+            ],
+            [
+              -97.32590333257062,
+              31.91804035984526
+            ],
+            [
+              -97.32590333257062,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 98,
+        "embedding_distance": 0.34939660794203714,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8048189823826111,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.34939660794203714,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8048189823826111,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.35)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.92244210514836
+            ],
+            [
+              -97.32581350145313,
+              31.92244210514836
+            ],
+            [
+              -97.32581350145313,
+              31.92253193626586
+            ],
+            [
+              -97.32590333257062,
+              31.92253193626586
+            ],
+            [
+              -97.32590333257062,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 99,
+        "embedding_distance": 0.33392042635154856,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8001761279054646,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.33392042635154856,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8001761279054646,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.33)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.926933681568958
+            ],
+            [
+              -97.32581350145313,
+              31.926933681568958
+            ],
+            [
+              -97.32581350145313,
+              31.927023512686457
+            ],
+            [
+              -97.32590333257062,
+              31.927023512686457
+            ],
+            [
+              -97.32590333257062,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 100,
+        "embedding_distance": 0.40310557285347975,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8209316718560439,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.40310557285347975,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8209316718560439,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.40)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.931425257989556
+            ],
+            [
+              -97.32581350145313,
+              31.931425257989556
+            ],
+            [
+              -97.32581350145313,
+              31.931515089107055
+            ],
+            [
+              -97.32590333257062,
+              31.931515089107055
+            ],
+            [
+              -97.32590333257062,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 101,
+        "embedding_distance": 0.5367715814041631,
+        "last_change_timestamp": 1754942552010,
+        "confidence": 0.8610314744212488,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.5367715814041631,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8610314744212488,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.54)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.935916834410154
+            ],
+            [
+              -97.32581350145313,
+              31.935916834410154
+            ],
+            [
+              -97.32581350145313,
+              31.936006665527653
+            ],
+            [
+              -97.32590333257062,
+              31.936006665527653
+            ],
+            [
+              -97.32590333257062,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 102,
+        "embedding_distance": 0.432547811724915,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8297643435174744,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.432547811724915,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8297643435174744,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.43)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.94040841083075
+            ],
+            [
+              -97.32581350145313,
+              31.94040841083075
+            ],
+            [
+              -97.32581350145313,
+              31.940498241948248
+            ],
+            [
+              -97.32590333257062,
+              31.940498241948248
+            ],
+            [
+              -97.32590333257062,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 103,
+        "embedding_distance": 0.3369060015637339,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8010718004691201,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3369060015637339,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8010718004691201,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.34)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.944899987251347
+            ],
+            [
+              -97.32581350145313,
+              31.944899987251347
+            ],
+            [
+              -97.32581350145313,
+              31.944989818368846
+            ],
+            [
+              -97.32590333257062,
+              31.944989818368846
+            ],
+            [
+              -97.32590333257062,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 104,
+        "embedding_distance": 0.41241674937605477,
+        "last_change_timestamp": 1755288152010,
+        "confidence": 0.8237250248128164,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.41241674937605477,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8237250248128164,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.41)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32590333257062,
+              31.949391563671945
+            ],
+            [
+              -97.32581350145313,
+              31.949391563671945
+            ],
+            [
+              -97.32581350145313,
+              31.949481394789444
+            ],
+            [
+              -97.32590333257062,
+              31.949481394789444
+            ],
+            [
+              -97.32590333257062,
+              31.949391563671945
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 105,
+        "embedding_distance": 0.3118029914511265,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.793540897435338,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3118029914511265,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.793540897435338,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.31)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32060327239431,
+              31.91795052872776
+            ],
+            [
+              -97.32051344127682,
+              31.91795052872776
+            ],
+            [
+              -97.32051344127682,
+              31.91804035984526
+            ],
+            [
+              -97.32060327239431,
+              31.91804035984526
+            ],
+            [
+              -97.32060327239431,
+              31.91795052872776
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 106,
+        "embedding_distance": 0.38450494612073893,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8153514838362217,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.38450494612073893,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8153514838362217,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.38)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32060327239431,
+              31.92244210514836
+            ],
+            [
+              -97.32051344127682,
+              31.92244210514836
+            ],
+            [
+              -97.32051344127682,
+              31.92253193626586
+            ],
+            [
+              -97.32060327239431,
+              31.92253193626586
+            ],
+            [
+              -97.32060327239431,
+              31.92244210514836
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 107,
+        "embedding_distance": 0.35069267070997645,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8052078012129928,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.35069267070997645,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8052078012129928,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.35)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32060327239431,
+              31.926933681568958
+            ],
+            [
+              -97.32051344127682,
+              31.926933681568958
+            ],
+            [
+              -97.32051344127682,
+              31.927023512686457
+            ],
+            [
+              -97.32060327239431,
+              31.927023512686457
+            ],
+            [
+              -97.32060327239431,
+              31.926933681568958
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 108,
+        "embedding_distance": 0.3111828939182451,
+        "last_change_timestamp": 1755547352010,
+        "confidence": 0.7933548681754735,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3111828939182451,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.7933548681754735,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.31)",
+          "confidence_level": "low"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32060327239431,
+              31.931425257989556
+            ],
+            [
+              -97.32051344127682,
+              31.931425257989556
+            ],
+            [
+              -97.32051344127682,
+              31.931515089107055
+            ],
+            [
+              -97.32060327239431,
+              31.931515089107055
+            ],
+            [
+              -97.32060327239431,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 109,
+        "embedding_distance": 0.33718391964927297,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8011551758947818,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.33718391964927297,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8011551758947818,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.34)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32060327239431,
+              31.935916834410154
+            ],
+            [
+              -97.32051344127682,
+              31.935916834410154
+            ],
+            [
+              -97.32051344127682,
+              31.936006665527653
+            ],
+            [
+              -97.32060327239431,
+              31.936006665527653
+            ],
+            [
+              -97.32060327239431,
+              31.935916834410154
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 110,
+        "embedding_distance": 0.479753345283549,
+        "last_change_timestamp": 1755115352010,
+        "confidence": 0.8439260035850646,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.479753345283549,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8439260035850646,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.48)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32060327239431,
+              31.94040841083075
+            ],
+            [
+              -97.32051344127682,
+              31.94040841083075
+            ],
+            [
+              -97.32051344127682,
+              31.940498241948248
+            ],
+            [
+              -97.32060327239431,
+              31.940498241948248
+            ],
+            [
+              -97.32060327239431,
+              31.94040841083075
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 111,
+        "embedding_distance": 0.4355721393889347,
+        "last_change_timestamp": 1755201752010,
+        "confidence": 0.8306716418166804,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.4355721393889347,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8306716418166804,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.44)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.32060327239431,
+              31.944899987251347
+            ],
+            [
+              -97.32051344127682,
+              31.944899987251347
+            ],
+            [
+              -97.32051344127682,
+              31.944989818368846
+            ],
+            [
+              -97.32060327239431,
+              31.944989818368846
+            ],
+            [
+              -97.32060327239431,
+              31.944899987251347
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 112,
+        "embedding_distance": 0.3599355227901166,
+        "last_change_timestamp": 1755460952010,
+        "confidence": 0.8079806568370349,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3599355227901166,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8079806568370349,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.36)",
+          "confidence_level": "medium"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.31530321221801,
+              31.931425257989556
+            ],
+            [
+              -97.31521338110052,
+              31.931425257989556
+            ],
+            [
+              -97.31521338110052,
+              31.931515089107055
+            ],
+            [
+              -97.31530321221801,
+              31.931515089107055
+            ],
+            [
+              -97.31530321221801,
+              31.931425257989556
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "pixel_id": 113,
+        "embedding_distance": 0.3689280439302406,
+        "last_change_timestamp": 1755374552010,
+        "confidence": 0.8106784131790721,
+        "change_type": "soil_change",
+        "risk_level": "low",
+        "category": "soil_change",
+        "magnitude": 0.3689280439302406,
+        "time_period": "2022-2024",
+        "environmental_indicator": {
+          "type": "soil",
+          "health_score": 0.8106784131790721,
+          "risk_level": "low"
+        },
+        "business_impact": {
+          "roi_flag": "green",
+          "impact_description": "Environmental change detected (distance: 0.37)",
+          "confidence_level": "medium"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+# Python files (these are for local development only)
+*.py
+requirements*.txt
+alphaearth_*.py
+alphaearth_*.geojson
+generate_*.py
+comprehensive_detection.py
+
+# Local development servers
+proxy-server/
+scripts/
+scanner/
+
+# Large files (exceed Vercel 100MB limit)
+*.db
+public/data/memphis_council_pdfs/
+public/data/hifld_transmission_lines.json
+public/data/ercot/ercot_gis_reports.geojson
+public/ARZ/
+public/osm/
+public/geoai-sites/
+public/DukeTransmissionEasements.geojson
+public/bosque_landcover_*.geojson
+public/blockgroups_*.geojson
+public/*-cache.json
+public/Listings/
+public/companies/
+
+# Data files
+output/
+/data/
+
+# Documentation (not needed for deployment)
+*README.md
+*_DOCS_*.md
+*_PLAN.md
+*_IMPLEMENTATION.md
+
+# OS files
+.DS_Store
+**/.DS_Store
+
+# Local runtime/build artifacts
+.venv/
+node_modules/
+.cursor/
+
+# Local build artifacts
+build/

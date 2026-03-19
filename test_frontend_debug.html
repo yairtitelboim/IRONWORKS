@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Grid Analysis - Debug</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .toggle-button {
+            padding: 8px 16px;
+            border: 2px solid #334155;
+            background: #1e293b;
+            color: #f1f5f9;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .toggle-button:hover {
+            background: #334155;
+        }
+        .toggle-button.active {
+            background: #3b82f6;
+            border-color: #3b82f6;
+        }
+        .response-container {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid #334155;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+        
+        function PowerGridDebug() {
+            const [currentViewMode, setCurrentViewMode] = useState('node');
+            const [currentCategory, setCurrentCategory] = useState('all');
+            
+            console.log('PowerGridDebug component rendering...');
+            
+            const testData = {
+                nodeLevel: `## NODE 1: **Whitney Power Plant**
+**Type:** Power Plant (Coal-fired)
+⚡ **Power Score:** 8/10
+📊 **Nameplate Capacity:** 1,200 MW
+
+## NODE 2: **Whitney Substation**
+**Type:** Transmission Substation
+⚡ **Power Score:** 9/10
+📊 **Voltage Level:** 345/138 kV`
+            };
+            
+            const displayResponse = () => {
+                if (currentCategory === 'all') {
+                    return (
+                        <div>
+                            <h3>📊 Infrastructure Analysis Summary</h3>
+                            <p>Showing all nodes for category: {currentCategory}</p>
+                            <div style={{ background: '#0f172a', padding: '15px', borderRadius: '8px', marginTop: '10px' }}>
+                                <pre style={{ color: '#e2e8f0', fontSize: '14px' }}>{testData.nodeLevel}</pre>
+                            </div>
+                        </div>
+                    );
+                } else {
+                    return (
+                        <div>
+                            <h3>Category: {currentCategory}</h3>
+                            <p>Filtered content would go here...</p>
+                        </div>
+                    );
+                }
+            };
+            
+            return (
+                <div className="container">
+                    <h1>Power Grid Analysis - Debug</h1>
+                    <p>NODE-level infrastructure analysis with category filtering</p>
+                    
+                    <div className="controls">
+                        <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                            <span style={{ color: '#94a3b8' }}>View Mode:</span>
+                            <button 
+                                className={`toggle-button ${currentViewMode === 'node' ? 'active' : ''}`}
+                                onClick={() => setCurrentViewMode('node')}
+                            >
+                                NODE
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentViewMode === 'site' ? 'active' : ''}`}
+                                onClick={() => setCurrentViewMode('site')}
+                            >
+                                SITE
+                            </button>
+                        </div>
+                        
+                        <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                            <span style={{ color: '#94a3b8' }}>Categories:</span>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'all' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('all')}
+                            >
+                                ALL
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'power_generation' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('power_generation')}
+                            >
+                                PWR
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'transmission' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('transmission')}
+                            >
+                                TRN
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'local_utilities' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('local_utilities')}
+                            >
+                                UTL
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'risk_redundancy' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('risk_redundancy')}
+                            >
+                                RISK
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div className="response-container">
+                        {displayResponse()}
+                    </div>
+                </div>
+            );
+        }
+        
+        console.log('About to render PowerGridDebug...');
+        ReactDOM.render(<PowerGridDebug />, document.getElementById('root'));
+        console.log('PowerGridDebug rendered successfully!');
+    </script>
+</body>
+</html>
+
+

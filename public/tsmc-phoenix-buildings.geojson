@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "TSMC Arizona Semiconductor Fab",
+    "facility": "TSMC",
+    "location": "Phoenix, AZ",
+    "address": "5088 W. Innovation Circle, Phoenix, AZ 85083",
+    "investment": "$40B+",
+    "phase": "Phase 1 & 2"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TSMC Arizona Fab - Phase 1",
+        "building": "semiconductor",
+        "height": 45,
+        "building:levels": "5",
+        "building:material": "concrete",
+        "building:use": "semiconductor",
+        "tsmc_facility": true,
+        "phase": "Phase 1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-112.205, 33.595],
+          [-112.195, 33.595],
+          [-112.195, 33.605],
+          [-112.205, 33.605],
+          [-112.205, 33.595]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TSMC Arizona Fab - Phase 2",
+        "building": "semiconductor",
+        "height": 45,
+        "building:levels": "5",
+        "building:material": "concrete",
+        "building:use": "semiconductor",
+        "tsmc_facility": true,
+        "phase": "Phase 2"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-112.195, 33.595],
+          [-112.185, 33.595],
+          [-112.185, 33.605],
+          [-112.195, 33.605],
+          [-112.195, 33.595]
+        ]]
+      }
+    }
+  ]
+}
+

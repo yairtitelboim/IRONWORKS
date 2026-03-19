@@ -1,0 +1,486 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "name": "Lucid Motors 3D Buildings",
+    "description": "3D building data for Lucid Motors EV Manufacturing Campus in Casa Grande, AZ",
+    "source": "OpenStreetMap",
+    "generated": "2025-10-08T17:20:16.125Z",
+    "facility": "Lucid Motors",
+    "location": "Casa Grande, AZ",
+    "coordinates": "32.8576°N, -111.7830°W"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1103796451,
+        "name": "Lucid Building 1",
+        "building": "industrial",
+        "height": 25,
+        "building:levels": "9",
+        "building:material": "concrete",
+        "building:use": "industrial",
+        "building:part": "yes",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "osm_id": 1103796451,
+        "source": "OpenStreetMap",
+        "lucid_facility": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.7902152,
+              32.8633328
+            ],
+            [
+              -111.7902128,
+              32.8627034
+            ],
+            [
+              -111.7898192,
+              32.8627045
+            ],
+            [
+              -111.7898114,
+              32.8607107
+            ],
+            [
+              -111.7878996,
+              32.860716
+            ],
+            [
+              -111.7878957,
+              32.8597303
+            ],
+            [
+              -111.7874596,
+              32.8597315
+            ],
+            [
+              -111.7874638,
+              32.8608622
+            ],
+            [
+              -111.7878668,
+              32.8608612
+            ],
+            [
+              -111.7878737,
+              32.8627782
+            ],
+            [
+              -111.7876783,
+              32.8627787
+            ],
+            [
+              -111.7876804,
+              32.8633398
+            ],
+            [
+              -111.7902152,
+              32.8633328
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254715758,
+        "name": "Lucid Building 2",
+        "building": "industrial",
+        "height": 30,
+        "building:levels": "10",
+        "building:material": "concrete",
+        "building:use": "industrial",
+        "building:part": "yes",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "osm_id": 1254715758,
+        "source": "OpenStreetMap",
+        "lucid_facility": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.780653,
+              32.8611605
+            ],
+            [
+              -111.7798349,
+              32.8611616
+            ],
+            [
+              -111.7798345,
+              32.8609555
+            ],
+            [
+              -111.7801863,
+              32.8609551
+            ],
+            [
+              -111.7801859,
+              32.8607566
+            ],
+            [
+              -111.7806522,
+              32.860756
+            ],
+            [
+              -111.780653,
+              32.8611605
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254715759,
+        "name": "Lucid Building 3",
+        "building": "industrial",
+        "height": 35,
+        "building:levels": "12",
+        "building:material": "concrete",
+        "building:use": "industrial",
+        "building:part": "yes",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "osm_id": 1254715759,
+        "source": "OpenStreetMap",
+        "lucid_facility": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.7788376,
+              32.8602623
+            ],
+            [
+              -111.7785036,
+              32.8602622
+            ],
+            [
+              -111.7785036,
+              32.8601925
+            ],
+            [
+              -111.7788377,
+              32.8601926
+            ],
+            [
+              -111.7788376,
+              32.8602623
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254715761,
+        "name": "Lucid Building 4",
+        "building": "industrial",
+        "height": 40,
+        "building:levels": "14",
+        "building:material": "concrete",
+        "building:use": "industrial",
+        "building:part": "yes",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "osm_id": 1254715761,
+        "source": "OpenStreetMap",
+        "lucid_facility": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.7785448,
+              32.8625236
+            ],
+            [
+              -111.7785421,
+              32.8614049
+            ],
+            [
+              -111.7790235,
+              32.8614041
+            ],
+            [
+              -111.7790262,
+              32.8625227
+            ],
+            [
+              -111.7785448,
+              32.8625236
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254715762,
+        "name": "Lucid Building 5",
+        "building": "industrial",
+        "height": 20,
+        "building:levels": "7",
+        "building:material": "concrete",
+        "building:use": "industrial",
+        "building:part": "yes",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "osm_id": 1254715762,
+        "source": "OpenStreetMap",
+        "lucid_facility": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.7810124,
+              32.8619614
+            ],
+            [
+              -111.7810115,
+              32.8625426
+            ],
+            [
+              -111.7790481,
+              32.8625403
+            ],
+            [
+              -111.779049,
+              32.8619592
+            ],
+            [
+              -111.7810124,
+              32.8619614
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254715763,
+        "name": "Lucid Building 6",
+        "building": "industrial",
+        "height": 28,
+        "building:levels": "10",
+        "building:material": "concrete",
+        "building:use": "industrial",
+        "building:part": "yes",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "osm_id": 1254715763,
+        "source": "OpenStreetMap",
+        "lucid_facility": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.7767994,
+              32.8601731
+            ],
+            [
+              -111.7785036,
+              32.8601738
+            ],
+            [
+              -111.7785036,
+              32.8601925
+            ],
+            [
+              -111.7785036,
+              32.8602622
+            ],
+            [
+              -111.7785022,
+              32.8626454
+            ],
+            [
+              -111.776798,
+              32.8626447
+            ],
+            [
+              -111.7767994,
+              32.8601731
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254715764,
+        "name": "Lucid Building 7",
+        "building": "industrial",
+        "height": 32,
+        "building:levels": "11",
+        "building:material": "concrete",
+        "building:use": "industrial",
+        "building:part": "yes",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "osm_id": 1254715764,
+        "source": "OpenStreetMap",
+        "lucid_facility": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.7788382,
+              32.8593186
+            ],
+            [
+              -111.7790852,
+              32.8593187
+            ],
+            [
+              -111.7822302,
+              32.85932
+            ],
+            [
+              -111.7822301,
+              32.8595497
+            ],
+            [
+              -111.7819056,
+              32.8595496
+            ],
+            [
+              -111.7819056,
+              32.8596408
+            ],
+            [
+              -111.7818343,
+              32.8596408
+            ],
+            [
+              -111.781834,
+              32.8602635
+            ],
+            [
+              -111.7788376,
+              32.8602623
+            ],
+            [
+              -111.7788377,
+              32.8601926
+            ],
+            [
+              -111.7788382,
+              32.8593186
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1254715765,
+        "name": "Lucid Building 8",
+        "building": "industrial",
+        "height": 38,
+        "building:levels": "13",
+        "building:material": "concrete",
+        "building:use": "industrial",
+        "building:part": "yes",
+        "roof:material": "metal",
+        "roof:shape": "flat",
+        "osm_id": 1254715765,
+        "source": "OpenStreetMap",
+        "lucid_facility": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.7789575,
+              32.8587354
+            ],
+            [
+              -111.7789573,
+              32.8591396
+            ],
+            [
+              -111.7790853,
+              32.8591396
+            ],
+            [
+              -111.7790852,
+              32.8593187
+            ],
+            [
+              -111.7788382,
+              32.8593186
+            ],
+            [
+              -111.7788384,
+              32.8589029
+            ],
+            [
+              -111.7787379,
+              32.8589028
+            ],
+            [
+              -111.7787379,
+              32.8588309
+            ],
+            [
+              -111.7775309,
+              32.8588304
+            ],
+            [
+              -111.7775309,
+              32.8588513
+            ],
+            [
+              -111.7772385,
+              32.8588511
+            ],
+            [
+              -111.7772386,
+              32.8587134
+            ],
+            [
+              -111.7775283,
+              32.8587135
+            ],
+            [
+              -111.7775282,
+              32.8587348
+            ],
+            [
+              -111.7789575,
+              32.8587354
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

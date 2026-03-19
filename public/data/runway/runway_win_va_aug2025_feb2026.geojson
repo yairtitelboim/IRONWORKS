@@ -1,0 +1,2227 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "layer_type": "labels",
+    "geography": "Virginia (WIN) - selected counties: Loudoun, Fairfax, Stafford, Fauquier, Spotsylvania",
+    "source": "Primary sources: county agenda/packet PDF(s) (Laserfiche/CivicEngage) collected Aug 2025\u2013Feb 2026",
+    "source_url": "https://www.loudoun.gov/3426/Board-of-Supervisors-Meetings-Packets",
+    "created": "2026-02-07",
+    "feature_count": 67,
+    "data_date": "2025-08 to 2026-02",
+    "notes": "This layer currently contains only 1 ingested WIN-side event (Loudoun BOS packet). Legistar endpoints tested for Loudoun returned 'Invalid parameters!' (blocked). Remaining counties not yet ingested in this pass. Added Loudoun BOS items (Sep\u2013Nov 2025) focusing on data centers, substations, eminent domain/ROW, roadway projects, stormwater standards, solar exemption, and Runway 30 noise mitigation. Added 21 Loudoun BOS packet-derived WIN events for Dec 2025\u2013Feb 2026 (contracts, transit items, stormwater MOAs, CTP CPAM, electrical infrastructure CPAM, easements).",
+    "updated": "2026-02-09"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-03",
+        "layer": "Infrastructure",
+        "event_type": "easement_conveyance",
+        "outcome": "Proposed",
+        "summary": "BOS packet item proposes conveying easements to Dominion Energy Virginia and Comcast to serve Town of Purcellville water storage tank.",
+        "quote": "PURPOSE: The Town of Purcellville (Town) requests the conveyance of two easements on County-owned property (PIN 522-29-5928-002) to Dominion Energy Virginia and Comcast Cable Communications Management, LLC for the purpose of serving the Town\u2019s water storage tank located at 300 Centreville Farm Drive, Purcellville, VA (PIN 522-30-6374-000).",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1960573/Item%2010%20Prop%20Conveyance%20of%20Easements%20near%20Mountain%20View%20ES-Woodgrove%20HS%20to%20Dominion-Comcast.pdf",
+        "source_doc_title": "Loudoun County BOS Business Meeting Packet - Item 10 (Dominion/Comcast Easements)",
+        "source_doc_date": "2025-09-03",
+        "tags": [
+          "RUNWAY_INFRA_WATER",
+          "RUNWAY_INFRA_POWER"
+        ],
+        "operator": "Virginia Electric and Power Company d.b.a. Dominion Energy Virginia",
+        "project_name": "Purcellville water storage tank service easements (Dominion Energy + Comcast)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Woodgrove High School, Purcellville, VA 20132",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7273726,
+          39.1556362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-10",
+        "layer": "Infrastructure",
+        "event_type": "easement_conveyance",
+        "outcome": "Proposed",
+        "summary": "Public hearing item proposes granting a 35-foot wide access easement to Loudoun Water through Lucketts Community Park.",
+        "quote": "PURPOSE: The purpose of this item is to hold a public hearing for the Board of Supervisors (Board) to consider granting a 35-foot wide access easement to Loudoun Water through and across a portion of County-owned property known as the Lucketts Community Park.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1960544/Item%2001%20Proposed%20Conveyance%20of%20Easement%20within%20Lucketts%20Park%20to%20Loudoun%20Water.pdf",
+        "source_doc_title": "Loudoun County BOS Public Hearing Packet - Item 01 (Lucketts Community Park access easement to Loudoun Water)",
+        "source_doc_date": "2025-09-10",
+        "tags": [
+          "RUNWAY_INFRA_WATER"
+        ],
+        "operator": "Loudoun County Sanitation Authority d.b.a. Loudoun Water",
+        "project_name": "Lucketts Community Park access easement to Loudoun Water",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Lucketts Community Park, Lucketts, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5340249,
+          39.2121183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-10",
+        "layer": "Infrastructure",
+        "event_type": "easement_assignment",
+        "outcome": "Proposed",
+        "summary": "Public hearing item proposes assigning a sanitary sewer easement to Loudoun Water.",
+        "quote": "PURPOSE: The purpose of this item is to assign a sanitary sewer easement granted to the Board of Supervisors (Board) to the Loudoun County Sanitation Authority d.b.a. Loudoun Water (Loudoun Water).",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1960545/Item%2002%20Proposed%20Assignment%20of%20County%20Easements%20to%20Loudoun%20Water.pdf",
+        "source_doc_title": "Loudoun County BOS Public Hearing Packet - Item 02 (assignment of sanitary sewer easement to Loudoun Water)",
+        "source_doc_date": "2025-09-10",
+        "tags": [
+          "RUNWAY_INFRA_SEWER"
+        ],
+        "operator": "Loudoun County Sanitation Authority d.b.a. Loudoun Water",
+        "project_name": "Assignment of sanitary sewer easement to Loudoun Water (Sterling district)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Sterling, Loudoun County, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4033349,
+          39.0017455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-10",
+        "layer": "Infrastructure",
+        "event_type": "eminent_domain",
+        "outcome": "Proposed",
+        "summary": "Public hearing item proposes authorizing eminent domain to acquire right-of-way and easements for the Evergreen Mills Road realignment project.",
+        "quote": "PURPOSE: The purpose of this item is to hold a public hearing and receive public comment for the proposed adoption of a resolution by the Board of Supervisors (Board) authorizing the use of eminent domain (condemnation) and Certificate of Take/Certificate of Deposit (or \u201cquick take\u201d proceedings) to acquire the right-of-way and easements necessary for the Evergreen Mills Road",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1960546/Item%2003%20Resolution%20to%20Authorize%20Emenient%20Domain-Evergreen%20Mills%20at%20Reservoir%20and%20Watson%20Roads.pdf",
+        "source_doc_title": "Loudoun County BOS Public Hearing Packet - Item 03 (Evergreen Mills Road realignment eminent domain authorization)",
+        "source_doc_date": "2025-09-10",
+        "tags": [
+          "RUNWAY_INFRA_ROAD"
+        ],
+        "operator": "Loudoun County Board of Supervisors",
+        "project_name": "Evergreen Mills Road realignment at Reservoir and Watson Roads (ROW/easements acquisition)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Evergreen Mills Road, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5723575,
+          39.0847356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-16",
+        "layer": "Land Use",
+        "event_type": "comp_plan_amendment",
+        "outcome": "Proposed",
+        "summary": "TLUC report seeks Board approval of Phase 2 scope for Data Center Standards and Locations CPAM/ZOAM, including clarifying policy on data center encroachment into Transition Policy Area place types.",
+        "quote": "PURPOSE: The purpose of this item is to: 1) update the Board of Supervisors (Board) on the Transportation and Land Use Committee\u2019s (TLUC) discussion and recommendations regarding Phase 2 of the Data Center Standards and Locations Comprehensive Plan Amendment (CPAM)-2025-0001 and Zoning Ordinance Amendment (ZOAM)-2025-0001 (Phase 2), and 2) seek Board approval of the proposed scope outlined in the Project Plan (Attachment 1).",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1961041/Item%2002a%20TLUC%20Report-Data%20Center%20Standards%20and%20Locations.pdf",
+        "source_doc_title": "Loudoun BOS 09-16-25 Business Meeting - Item 02a (Data Center Standards and Locations, Phase 2)",
+        "source_doc_date": "2025-09-16",
+        "tags": [
+          "RUNWAY_LANDUSE_DATA_CENTERS",
+          "RUNWAY_POLICY_COMP_PLAN"
+        ],
+        "operator": "Loudoun County Department of Planning and Zoning",
+        "project_name": "CPAM-2025-0001 & ZOAM-2025-0001 Data Center Standards and Locations (Phase 2)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5620801,
+          39.1137804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-16",
+        "layer": "Infrastructure",
+        "event_type": "substation",
+        "outcome": "Proposed",
+        "summary": "Special Exception (SPEX) and Minor SPEX applications to permit a utility substation (Tuscarora Landbay 3) and adjust buffer yard requirements adjacent to data center use.",
+        "quote": "PURPOSE: To consider Special Exception (SPEX) and Minor SPEX applications to permit a utility substation in the Industrial Park (IP) Zoning District and eliminate a required substation buffer yard adjacent to data center use.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1961016/Item%2006%20LEGI-2024-0043,%20Tuscarora%20Landbay%203%20Substation.pdf",
+        "source_doc_title": "Loudoun BOS 09-16-25 Business Meeting - Item 06 (Tuscarora Landbay 3 Substation)",
+        "source_doc_date": "2025-09-16",
+        "tags": [
+          "RUNWAY_INFRA_POWER",
+          "RUNWAY_LANDUSE_DATA_CENTERS"
+        ],
+        "operator": "Applicant (utility substation) / Loudoun County BOS",
+        "project_name": "LEGI-2024-0043 Tuscarora Landbay 3 Substation (SPEX-2024-0059 & SPEX-2024-0060)",
+        "case_id": "LEGI-2024-0043",
+        "anchor_type": "site",
+        "geocode_query": "Crosstrail Boulevard, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5204588,
+          39.0876675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-16",
+        "layer": "Infrastructure",
+        "event_type": "road_project",
+        "outcome": "Proposed",
+        "summary": "BMI response presents Village of Waxpool traffic study findings and seeks Board endorsement; includes renaming segments of Waxpool Road and Truro Parish Drive.",
+        "quote": "PURPOSE: The purpose of this item is to present the findings of the Village of Waxpool Traffic Study (the Study) to the Board of Supervisors (Board) and to obtain the Board's endorsement of the Study\u2019s findings.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1961098/Item%2010%20Response%20to%20BMI-Waxpool%20Area%20Traffic%20Studies.pdf",
+        "source_doc_title": "Loudoun BOS 09-16-25 Business Meeting - Item 10 (Waxpool Area Traffic Studies)",
+        "source_doc_date": "2025-09-16",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_LANDUSE_DATA_CENTERS"
+        ],
+        "operator": "Loudoun County Transportation and Capital Infrastructure",
+        "project_name": "Village of Waxpool Traffic Study (BMI response)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Waxpool Road and Belmont Ridge Road, Loudoun County, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.48722935,
+          39.04204855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-15",
+        "layer": "Infrastructure",
+        "event_type": "eminent_domain",
+        "outcome": "Proposed",
+        "summary": "Public hearing to authorize eminent domain/quick-take to acquire property interests for Algonkian Parkway/Hardwood Forest Drive/Noble Terrace signalization and intersection improvements.",
+        "quote": "PURPOSE: The purpose of this item is to hold a public hearing and receive public comment for the proposed adoption of a resolution by the Board of Supervisors (Board) authorizing the use of eminent domain (condemnation) and Certificate of Take/Certificate of Deposit (or \u201cquick take\u201d",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1962705/Item%2001%20Resolution%20to%20Authorize%20Eminent%20Domain-Algonkian%20Pkwy-Hardwood%20Forest%20Dr-Noble%20Terr.pdf",
+        "source_doc_title": "Loudoun BOS 10-15-25 Public Hearing - Item 01 (Algonkian Pkwy intersection improvements eminent domain)",
+        "source_doc_date": "2025-10-15",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_ROW"
+        ],
+        "operator": "Loudoun County Board of Supervisors",
+        "project_name": "Algonkian Pkwy / Hardwood Forest Dr / Noble Terrace signalization & intersection improvement (ROW/easements)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Algonkian Parkway and Hardwood Forest Drive, Loudoun County, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3758646,
+          39.04646185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-12",
+        "layer": "Infrastructure",
+        "event_type": "eminent_domain",
+        "outcome": "Proposed",
+        "summary": "Public hearing to authorize eminent domain/quick-take to acquire easements for the Sterling Boulevard Overpass transportation project.",
+        "quote": "PURPOSE: The purpose of this item is to hold a public hearing and receive public comment for the proposed adoption of a Resolution by the Board of Supervisors (Board) authorizing the use of eminent domain (condemnation) and Certificate of Take/Certificate of Deposit (or \u201cquick take\u201d proceedings) to acquire the easements necessary for the Construction of the Sterling Boulevard",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1964794/Item%2006%20Resolution%20to%20Authorize%20Eminent%20Domain%20for%20Sterling%20Blvd%20Overpass.pdf",
+        "source_doc_title": "Loudoun BOS 11-12-25 Public Hearing - Item 06 (Sterling Blvd Overpass eminent domain)",
+        "source_doc_date": "2025-11-12",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_ROW"
+        ],
+        "operator": "Loudoun County Board of Supervisors",
+        "project_name": "Sterling Boulevard Overpass transportation project (easement acquisition)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Sterling Boulevard, Sterling, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.41265215,
+          39.01024605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-12",
+        "layer": "Energy",
+        "event_type": "ordinance_amendment",
+        "outcome": "Proposed",
+        "summary": "Ordinance amendments to align Loudoun County Code with Virginia Code regarding exemption for certified solar energy equipment.",
+        "quote": "PURPOSE: To amend Chapter 868 of the Codified Ordinances of Loudoun County to align with the Virginia Code.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1964661/Item%2001%20Amendments%20to%20Chapter%20868%20-%20Exemption%20for%20Certified%20Solar%20Equipment.pdf",
+        "source_doc_title": "Loudoun BOS 11-12-25 Public Hearing - Item 01 (Solar energy equipment exemption)",
+        "source_doc_date": "2025-11-12",
+        "tags": [
+          "RUNWAY_ENERGY_RENEWABLES"
+        ],
+        "operator": "Loudoun County Commissioner of the Revenue",
+        "project_name": "Chapter 868 amendments: exemption for certified solar energy equipment",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5620801,
+          39.1137804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-12",
+        "layer": "Infrastructure",
+        "event_type": "ordinance_amendment",
+        "outcome": "Proposed",
+        "summary": "Facilities Standards Manual (FSM) amendments for zoning ordinance implementation, stormwater/erosion standards, and preliminary soils reviews (Virginia Stormwater Management Handbook update).",
+        "quote": "PURPOSE: The purpose of this item is to consider Development Ordinance Amendment (DOAM)-2025-0002, which proposes to amend the Loudoun County Facilities Standards Manual (FSM) to support implementation of the Loudoun County Zoning Ordinance (Zoning Ordinance).",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1964667/Item%2007%20DOAM-2025-0002,%20FSM%20Amendments-Stormwater%20and%20Soils%20Review.pdf",
+        "source_doc_title": "Loudoun BOS 11-12-25 Public Hearing - Item 07 (FSM amendments - stormwater/soils review)",
+        "source_doc_date": "2025-11-12",
+        "tags": [
+          "RUNWAY_INFRA_STORMWATER"
+        ],
+        "operator": "Loudoun County Building and Development",
+        "project_name": "DOAM-2025-0002 FSM amendments (stormwater handbook + preliminary soils review)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5620801,
+          39.1137804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Energy",
+        "event_type": "program",
+        "outcome": "Proposed",
+        "summary": "TLUC report proposes hosting an Energy Innovation Forum in spring 2026 with NREL and others to discuss energy best practices (relevant to power-demand growth).",
+        "quote": "PURPOSE: To present for consideration to the Board of Supervisors (Board) the Transportation and Land Use Committee (TLUC) recommended Energy Innovation Forum (Forum) proposed to be hosted in the spring of 2026.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965038/Item%2002a%20TLUC%20Report-Energy%20Innovation%20Forum.pdf",
+        "source_doc_title": "Loudoun BOS 11-18-25 Business Meeting - Item 02a (Energy Innovation Forum)",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_ENERGY_POWER_PLANNING"
+        ],
+        "operator": "Loudoun County General Services",
+        "project_name": "Energy Innovation Forum (spring 2026 proposed)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5620801,
+          39.1137804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Infrastructure",
+        "event_type": "road_project",
+        "outcome": "Proposed",
+        "summary": "FGOEDC report seeks Board endorsement of project location and major design elements for Northstar Boulevard widening (Tall Cedars Pkwy to Braddock Rd).",
+        "quote": "PURPOSE: To seek Board of Supervisors (Board) endorsement of the Northstar Boulevard Widening \u2013 Tall Cedars Parkway to Braddock Road project location and major design elements.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965101/Item%2001j%20FGOEDC%20Report-Location%20and%20Design%20Endorsement,%20Northstar%20Blvd-Tall%20Cedars%20Pkwy%20to%20Braddock%20Rd.pdf",
+        "source_doc_title": "Loudoun BOS 11-18-25 Business Meeting - Item 01j (Northstar Blvd widening endorsement)",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_INFRA_ROAD"
+        ],
+        "operator": "Loudoun County Transportation and Capital Infrastructure",
+        "project_name": "Northstar Boulevard widening (Tall Cedars Pkwy to Braddock Rd)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Northstar Boulevard & Braddock Road, Loudoun County, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.57444105,
+          38.97177035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Aviation",
+        "event_type": "policy_report",
+        "outcome": "Proposed",
+        "summary": "TLUC report presents Design Group recommendations intended to reduce overflight noise burdens on communities near Runway 30 at Washington Dulles International Airport.",
+        "quote": "PURPOSE: The purpose of this item is to present recommendations formulated by the Design Group that are intended to reduce overflight noise burdens on communities near to Runway 30 at Washington Dulles International Airport (IAD).",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965040/Item%2002c%20TLUC%20Report-Runway%2030%20Aviation%20Noise%20Mitigation%20Project.pdf",
+        "source_doc_title": "Loudoun BOS 11-18-25 Business Meeting - Item 02c (Runway 30 Aviation Noise Mitigation Project)",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_AVIATION_NOISE",
+          "RUNWAY_IAD_RUNWAY30"
+        ],
+        "operator": "Loudoun County Department of Planning and Zoning",
+        "project_name": "Runway 30 Aviation Noise Mitigation Project (Design Group recommendations)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Washington Dulles International Airport",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4534849,
+          38.9522663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-12",
+        "layer": "Land Use",
+        "event_type": "comp_plan_amendment",
+        "outcome": "Proposed",
+        "summary": "Staff presentation describes 2024 review of the 2019 General Plan as housekeeping/cleanup and addressing issues from the Zoning Ordinance Rewrite, including repurposing of office/commercial and affordable dwelling unit policy items.",
+        "quote": "Background and Purpose\n\u2022 Housekeeping and clean-up for the Loudoun County 2019 General Plan (2019 GP)\n\u2022 Address issues from Zoning Ordinance Rewrite: repurposing of office/commercial and land in lieu of Affordable Dwelling Units (ADUs)",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1964965/Item%2012%20CPAM-2024-0003,%202024%20Review%20of%20the%202019%20GP-Staff%20Presentation.pdf",
+        "source_doc_title": "Loudoun BOS 11-12-25 Public Hearing - Item 12 (2019 General Plan review - staff presentation)",
+        "source_doc_date": "2025-11-12",
+        "tags": [
+          "RUNWAY_POLICY_COMP_PLAN"
+        ],
+        "operator": "Loudoun County Department of Planning and Zoning",
+        "project_name": "CPAM-2024-0003 2024 Review of the Loudoun County 2019 General Plan",
+        "case_id": "CPAM-2024-0003",
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5620801,
+          39.1137804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Infrastructure",
+        "event_type": "road_project",
+        "outcome": "Proposed",
+        "summary": "Contract award for construction engineering inspection services for Crosstrail Boulevard Segment C (Sycolin Rd to Dulles Greenway).",
+        "quote": "PURPOSE: The purpose of this item is to award a contract for Construction Engineering Inspection (CEI) Services for the Crosstrail Boulevard Segment C \u2013 Sycolin Road to Dulles Greenway project.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965326/Item%2001a%20FGOEDC%20Report-Contract%20Award%20Construction%20Engineering%20Inspection%20Services,%20Crosstrail%20Boulevard%20Segment%20C.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 01a (CEI services, Crosstrail Boulevard Segment C)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_INFRA_ROAD"
+        ],
+        "operator": "Loudoun County Transportation and Capital Infrastructure",
+        "project_name": "Crosstrail Boulevard Segment C \u2013 Sycolin Road to Dulles Greenway (CEI services contract award)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Crosstrail Boulevard, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5204588,
+          39.0876675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Infrastructure",
+        "event_type": "road_project",
+        "outcome": "Proposed",
+        "summary": "Contract award for construction engineering inspection services for the Sterling Boulevard Extension project.",
+        "quote": "PURPOSE: The purpose of this item is to award a contract for Construction Engineering Inspection Services (CEI) for the Sterling Boulevard Extension project.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965327/Item%2001b%20FGOEDC%20Report-Contract%20Award%20Construction%20Engineering%20Inspection%20Services,%20Sterling%20Boulevard%20Extension.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 01b (CEI services, Sterling Boulevard Extension)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_INFRA_ROAD"
+        ],
+        "operator": "Loudoun County Transportation and Capital Infrastructure",
+        "project_name": "Sterling Boulevard Extension (CEI services contract award)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Sterling Boulevard, Sterling, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3901697,
+          39.0164227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Infrastructure",
+        "event_type": "contract",
+        "outcome": "Proposed",
+        "summary": "Renewal of task-order contracts for transportation planning and preliminary engineering consultant services.",
+        "quote": "PURPOSE: The purpose of this item is to renew task order contracts for Consultant Services for Transportation Planning and Preliminary Engineering.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965330/Item%2001d%20FGOEDC%20Report-Contract%20Renewal%20Transportation%20Planning%20and%20Preliminary%20Engineering.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 01d (transportation planning & preliminary engineering task orders)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_TRANSPORT_PLANNING"
+        ],
+        "operator": "Loudoun County Transportation and Capital Infrastructure",
+        "project_name": "Transportation Planning and Preliminary Engineering consultant services (task order renewals)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Infrastructure",
+        "event_type": "contract",
+        "outcome": "Proposed",
+        "summary": "Renewal of contract for public safety radio system infrastructure expansion (Motorola Solutions).",
+        "quote": "PURPOSE: The purpose of this item is to renew the contract for the Public Safety Radio System Infrastructure Expansion with Motorola Solutions, Inc. in the amount of $6,850,000.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965334/Item%2001f%20FGOEDC%20Report-Contract%20Renewal-Public%20Safety%20Radio%20System%20Infrastructure%20Expansion.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 01f (Public Safety Radio System Infrastructure Expansion)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_INFRA_COMMS"
+        ],
+        "operator": "Motorola Solutions, Inc. / Loudoun County",
+        "project_name": "Public Safety Radio System Infrastructure Expansion (contract renewal)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Infrastructure",
+        "event_type": "contract",
+        "outcome": "Proposed",
+        "summary": "Award of as-needed general construction job order contracts (JOC).",
+        "quote": "PURPOSE: The purpose of this item is to award contracts for the Job Order Contracts (JOC) for as-needed general construction work.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965329/Item%2001c%20FGOEDC%20Report-Contract%20Award%20Job%20Order%20Contract%20for%20General%20Construction.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 01c (General Construction JOC contract awards)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_INFRA_CAPITAL_PROJECTS"
+        ],
+        "operator": "Loudoun County",
+        "project_name": "Job Order Contracts (JOC) for as-needed general construction work (contract awards)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Infrastructure",
+        "event_type": "trails_project",
+        "outcome": "Proposed",
+        "summary": "Board asked to endorse major design elements for the Linear Parks and Trails (LPAT) Signature Project.",
+        "quote": "PURPOSE: The purpose of this item is to seek the Finance/Government Operations and Economic Development Committee (FGOEDC) recommendation for the Board of Supervisors (Board) to endorse the major design elements for the Linear Parks and Trails (LPAT) Signature Project.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965336/Item%2001g%20FGOEDC%20Report-Design%20Endorsement%20LPAT%20Signature%20Project.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 01g (LPAT Signature Project design endorsement)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_INFRA_ACTIVE_TRANSPORT"
+        ],
+        "operator": "Loudoun County Parks, Recreation, and Community Services / Transportation and Capital Infrastructure",
+        "project_name": "Linear Parks and Trails (LPAT) Signature Project (major design elements endorsement)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Infrastructure",
+        "event_type": "transit_program",
+        "outcome": "Proposed",
+        "summary": "DMVMoves regional transit funding and coordination initiative: Board asked for conceptual endorsement of funding proposal.",
+        "quote": "PURPOSE: The purpose of this item is to inform the Board of Supervisors (Board) about the DMVMoves regional transit funding and coordination initiative and to seek conceptual endorsement of the Funding Proposal (Plan).",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965345/Item%2004%20Endorsement%20of%20the%20DMVMoves%20Funding%20Proposal.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 04 (DMVMoves funding proposal endorsement)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_INFRA_TRANSIT"
+        ],
+        "operator": "DMVMoves / Loudoun County",
+        "project_name": "DMVMoves regional transit funding and coordination initiative (conceptual endorsement)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Infrastructure",
+        "event_type": "stormwater_program",
+        "outcome": "Proposed",
+        "summary": "MOAs with towns to administer Virginia Erosion and Stormwater Management Program (VESMP) within town boundaries.",
+        "quote": "PURPOSE: The purpose of this item is to obtain the Board of Supervisors (Board) approval of Memorandums of Agreement (MOA) with the Towns of Hamilton, Hillsboro, Lovettsville, Middleburg, Purcellville, and Round Hill (Towns) for the purposes of administering the Virginia Erosion and Stormwater Management Program (VESMP) within the Towns\u2019 respective boundaries...",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965347/Item%2006%20VA%20Erosion%20and%20Stormwater%20Management%20Program%20MOA%20with%20Towns.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 06 (VESMP MOAs with towns)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_INFRA_STORMWATER"
+        ],
+        "operator": "Loudoun County / participating towns",
+        "project_name": "VESMP administration MOAs with Loudoun towns",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Purcellville, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.714845,
+          39.1367039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "layer": "Land Use",
+        "event_type": "comp_plan_amendment",
+        "outcome": "Proposed",
+        "summary": "Project plan for CPAM-2025-0002: 2026 review of the Countywide Transportation Plan (2019 CTP).",
+        "quote": "PURPOSE: The purpose of this item is to seek the Board of Supervisors (Board) approval of the staff recommended Project Plan (Attachment 1) for the 2026 Review of the Loudoun County 2019 Countywide Transportation Plan (2019 CTP) Comprehensive Plan Amendment (CPAM)...",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965446/Item%2007%20CPAM-2025-0002,%202026%20CTP%20Review.pdf",
+        "source_doc_title": "Loudoun BOS 12-02-25 Business Meeting - Item 07 (CPAM-2025-0002 2026 CTP Review project plan)",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_POLICY_COMP_PLAN",
+          "RUNWAY_INFRA_ROAD"
+        ],
+        "operator": "Loudoun County Department of Planning and Zoning",
+        "project_name": "CPAM-2025-0002 2026 Review of the 2019 Countywide Transportation Plan",
+        "case_id": "CPAM-2025-0002",
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-08",
+        "layer": "Infrastructure",
+        "event_type": "transit_service",
+        "outcome": "Proposed",
+        "summary": "Transit Summit item provides update on Loudoun Transit on-demand service.",
+        "quote": "PURPOSE: This item provides the Board of Supervisors (Board) with an update on Loudoun",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965669/Item%2001%20On%20Demand%20Service.pdf",
+        "source_doc_title": "Loudoun BOS 12-08-25 Transit Summit - Item 01 (On Demand Service update)",
+        "source_doc_date": "2025-12-08",
+        "tags": [
+          "RUNWAY_INFRA_TRANSIT"
+        ],
+        "operator": "Loudoun County Transit",
+        "project_name": "Loudoun Transit on-demand service update",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-08",
+        "layer": "Infrastructure",
+        "event_type": "transit_program",
+        "outcome": "Proposed",
+        "summary": "Information on insourcing Loudoun\u2019s contracted transit operations and maintenance services.",
+        "quote": "PURPOSE: To provide information to the Board of Supervisors (Board) regarding the concept of insourcing of the County\u2019s contracted transit operations and maintenance services.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965670/Item%2002%20Scope%20-%20Insource%20Transit%20Services.pdf",
+        "source_doc_title": "Loudoun BOS 12-08-25 Transit Summit - Item 02 (Insource Transit Services scope)",
+        "source_doc_date": "2025-12-08",
+        "tags": [
+          "RUNWAY_INFRA_TRANSIT"
+        ],
+        "operator": "Loudoun County Transit",
+        "project_name": "Insource transit operations/maintenance services (concept overview)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-08",
+        "layer": "Infrastructure",
+        "event_type": "transit_service",
+        "outcome": "Proposed",
+        "summary": "Transit Summit discussion topics for commuter bus services (metrics, new service to/from Leesburg Park and Ride, relocation to Loudoun Gateway, etc.).",
+        "quote": "PURPOSE: This item seeks to facilitate Board of Supervisors (Board) discussion on several key transit topics related to commuter bus services, including performance metrics... adding direct service to and from the Leesburg Park and Ride lot, relocating commuter bus operations from the Dulles Transit Center to Loudoun Gateway...",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965671/Item%2003%20Commuter%20Bus%20Service.pdf",
+        "source_doc_title": "Loudoun BOS 12-08-25 Transit Summit - Item 03 (Commuter Bus Service topics)",
+        "source_doc_date": "2025-12-08",
+        "tags": [
+          "RUNWAY_INFRA_TRANSIT"
+        ],
+        "operator": "Loudoun County Transit",
+        "project_name": "Commuter bus service planning and service changes (discussion item)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5636015,
+          39.1156615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-08",
+        "layer": "Infrastructure",
+        "event_type": "transit_service",
+        "outcome": "Proposed",
+        "summary": "Transit Summit discussion topics for local fixed route transit services (budget/metrics, bus stop request process, transition to low/no-emission vehicles).",
+        "quote": "PURPOSE: This item seeks to facilitate Board of Supervisors (Board) discussion on several key transit topics related to local fixed route services... and the transit fleet transition to low/no emission vehicles.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965657/Item%2004%20Local%20Fixed%20Route%20Transit%20Service.pdf",
+        "source_doc_title": "Loudoun BOS 12-08-25 Transit Summit - Item 04 (Local Fixed Route Transit Service topics)",
+        "source_doc_date": "2025-12-08",
+        "tags": [
+          "RUNWAY_INFRA_TRANSIT",
+          "RUNWAY_ENERGY_RENEWABLES"
+        ],
+        "operator": "Loudoun County Transit",
+        "project_name": "Local fixed-route transit service planning and fleet transition (discussion item)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5636015,
+          39.1156615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-16",
+        "layer": "Infrastructure",
+        "event_type": "bridge_project",
+        "outcome": "Proposed",
+        "summary": "Contract award for construction of Sterling Boulevard Washington & Old Dominion (W&OD) Trail Overpass.",
+        "quote": "PURPOSE: The purpose of this item is to award a contract for the Construction of the Sterling Boulevard Washington & Old Dominion (W&OD) Trail Overpass.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1965831/Item%2001a%20FGOEDC%20Report-CA%20Sterling%20Blvd%20WOD%20Trail%20Overpass.pdf",
+        "source_doc_title": "Loudoun BOS 12-16-25 Business Meeting - Item 01a (Sterling Blvd W&OD Trail Overpass contract award)",
+        "source_doc_date": "2025-12-16",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_ACTIVE_TRANSPORT"
+        ],
+        "operator": "Loudoun County Transportation and Capital Infrastructure",
+        "project_name": "Sterling Boulevard W&OD Trail Overpass (construction contract award)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Sterling Boulevard, Sterling, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3901697,
+          39.0164227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2026-01-06",
+        "layer": "Infrastructure",
+        "event_type": "road_project",
+        "outcome": "Proposed",
+        "summary": "Budget adjustment request for additional funding for land acquisition and utility relocations for Shellhorn Road (formerly Sterling Blvd) Extension project (Moran Rd to Pacific Blvd).",
+        "quote": "PURPOSE: The purpose of this item is to request authorization to amend the Fiscal Year (FY) 2026 Capital Improvement Program (CIP) by directing staff to execute a budget adjustment of $20,000,000... for land acquisition and utility relocations for the Shellhorn Road (formerly Sterling Boulevard) Extension - Moran Road to Pacific Boulevard project...",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1966240/Item%2001f%20FGOEDC%20Report-Shellhorn%20Rd%20Extension%20Additional%20Funding%20Request.pdf",
+        "source_doc_title": "Loudoun BOS 01-06-26 Business Meeting - Item 01f (Shellhorn Rd Extension additional funding)",
+        "source_doc_date": "2026-01-06",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_UTILITIES"
+        ],
+        "operator": "Loudoun County Transportation and Capital Infrastructure",
+        "project_name": "Shellhorn Road Extension (Moran Rd to Pacific Blvd) land acquisition + utility relocations funding",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Pacific Boulevard, Sterling, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4357554,
+          38.9906061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2026-01-06",
+        "layer": "Energy",
+        "event_type": "policy_report",
+        "outcome": "Proposed",
+        "summary": "Environmental Commission recommendations on Dominion Energy Virginia net metering proposal to Virginia SCC.",
+        "quote": "PURPOSE: To provide the Board of Supervisors (Board) with recommendations of the Environmental Commission (EC) regarding the Dominion Energy\u2019s Net Metering Proposal to the State Corporation Commission (SCC) (SCC Case PUR-2025-00079)...",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1966230/Item%2004%20Net%20Metering%20Position%20Statement.pdf",
+        "source_doc_title": "Loudoun BOS 01-06-26 Business Meeting - Item 04 (Net Metering position statement)",
+        "source_doc_date": "2026-01-06",
+        "tags": [
+          "RUNWAY_ENERGY_POWER_POLICY"
+        ],
+        "operator": "Dominion Energy Virginia / Loudoun County Environmental Commission",
+        "project_name": "Net metering proposal (SCC Case PUR-2025-00079) - Loudoun position statement",
+        "case_id": "PUR-2025-00079",
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2026-01-06",
+        "layer": "Land Use",
+        "event_type": "policy_report",
+        "outcome": "Proposed",
+        "summary": "BMI directs staff to develop a publicly accessible fact sheet on the data center industry\u2019s impacts on Loudoun County.",
+        "quote": "PURPOSE: This Board Member Initiative (BMI) intends to direct staff to develop a publicly accessible informational fact sheet of the data center industry\u2019s comprehensive impact on Loudoun County.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1966231/Item%2005%20BMI-Data%20Center%20Informational%20Fact%20Sheet.pdf",
+        "source_doc_title": "Loudoun BOS 01-06-26 Business Meeting - Item 05 (Data Center Informational Fact Sheet BMI)",
+        "source_doc_date": "2026-01-06",
+        "tags": [
+          "RUNWAY_LANDUSE_DATA_CENTERS",
+          "RUNWAY_POLICY_DATA_CENTERS"
+        ],
+        "operator": "Loudoun County Board of Supervisors",
+        "project_name": "Data Center Informational Fact Sheet (BMI)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2026-01-14",
+        "layer": "Energy",
+        "event_type": "comp_plan_amendment",
+        "outcome": "Proposed",
+        "summary": "CPAM proposes amendments to the 2019 General Plan for siting/design of high voltage transmission corridors and electrical infrastructure (\u2265138 kV).",
+        "quote": "PURPOSE: The purpose of this item is to consider a Comprehensive Plan Amendment (CPAM) proposing amendments to the Loudoun County 2019 General Plan (2019 GP) to provide map, text, and policy amendments related to the preferred location, siting, design, and aesthetics of high voltage transmission corridors (defined as any electric line with a voltage equal to or greater than 138 kilovolts (kV)) and electrical infrastructure.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1966243/Item%2006%20CPAM-2024-0005,%20Electrical%20Infrastructure.pdf",
+        "source_doc_title": "Loudoun BOS 01-14-26 Public Hearing - Item 06 (CPAM-2024-0005 Electrical Infrastructure)",
+        "source_doc_date": "2026-01-14",
+        "tags": [
+          "RUNWAY_INFRA_POWER",
+          "RUNWAY_POLICY_COMP_PLAN"
+        ],
+        "operator": "Loudoun County Department of Planning and Zoning",
+        "project_name": "CPAM-2024-0005 Electrical Infrastructure (high-voltage transmission corridors + electrical infrastructure policies)",
+        "case_id": "CPAM-2024-0005",
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2026-02-11",
+        "layer": "Infrastructure",
+        "event_type": "easement_conveyance",
+        "outcome": "Proposed",
+        "summary": "Public hearing seeks Board approval to convey water main easements on County-owned property along Loudoun County Parkway at Marblehead Drive to Loudoun Water.",
+        "quote": "PURPOSE: The purpose of this item is to hold a public hearing and seek the Board of Supervisors (Board) approval to convey 15\u2019 and 20\u2019 water main easements on County owned property located along the east side of Loudoun County Parkway at Marblehead Drive to Loudoun County Sanitation Authority d.b.a Loudoun Water.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1967143/Item%2002%20Proposed%20Conveyance%20of%20Easement%20within%20PINs%20040-26-1254-000%20and%20040-35-3126-000.pdf",
+        "source_doc_title": "Loudoun BOS 02-11-26 Public Hearing - Item 02 (water main easements to Loudoun Water)",
+        "source_doc_date": "2026-02-11",
+        "tags": [
+          "RUNWAY_INFRA_WATER"
+        ],
+        "operator": "Loudoun Water",
+        "project_name": "Water main easements conveyance (Loudoun County Parkway at Marblehead Dr)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Marblehead Drive, Ashburn, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4602463,
+          39.0370559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2026-02-11",
+        "layer": "Infrastructure",
+        "event_type": "easement_conveyance",
+        "outcome": "Proposed",
+        "summary": "Public hearing seeks Board approval to convey a sidewalk easement along Loudoun County Parkway at Marblehead Drive to Commonwealth Center Owners Association.",
+        "quote": "PURPOSE: The purpose of this item is to hold a public hearing and seek the Board of Supervisors (Board) approval to convey a sidewalk easement on County owned property located along the east side of Loudoun County Parkway at Marblehead Drive to Commonwealth Center Owners Association, Inc.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1967144/Item%2003%20Proposed%20Conveyance%20of%20Easement%20within%20PIN%20040-26-1254-000.pdf",
+        "source_doc_title": "Loudoun BOS 02-11-26 Public Hearing - Item 03 (sidewalk easement conveyance)",
+        "source_doc_date": "2026-02-11",
+        "tags": [
+          "RUNWAY_INFRA_ROW"
+        ],
+        "operator": "Commonwealth Center Owners Association, Inc.",
+        "project_name": "Sidewalk easement conveyance (Loudoun County Parkway at Marblehead Dr)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Marblehead Drive, Ashburn, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4602463,
+          39.0370559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2026-02-11",
+        "layer": "Land Use",
+        "event_type": "open_space_easement",
+        "outcome": "Proposed",
+        "summary": "Resolution to authorize acquiring new open-space easements as substitute property for diversion of existing open-space easements (Virginia Code \u00a7 10.1-1704).",
+        "quote": "PURPOSE: The purpose of this item is for the Board of Supervisors (Board) to consider adopting a resolution authorizing the County Administrator and County Attorney to acquire new open-space easements (OSE) across specified parcels and to utilize such easements as substitute property for the diversion of existing open-space easements in accordance with Virginia Code \u00a7 10.1-1704.",
+        "source_url": "https://lfportal.loudoun.gov/LFPortalinternet/0/edoc/1967145/Item%2004%20Resolution%20for%20Acceptance%20of%20New%20Open-Space%20Easements%20and%20Diversion%20of%20Open-Space%20Easements.pdf",
+        "source_doc_title": "Loudoun BOS 02-11-26 Public Hearing - Item 04 (open-space easements acceptance/diversion resolution)",
+        "source_doc_date": "2026-02-11",
+        "tags": [
+          "RUNWAY_LANDUSE_OPEN_SPACE",
+          "RUNWAY_POLICY_STATE_CODE"
+        ],
+        "operator": "Loudoun County",
+        "project_name": "Acceptance/diversion of open-space easements (VA Code \u00a710.1-1704)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Loudoun County Government Center, Leesburg, VA",
+        "geocode_source": "nominatim",
+        "county": "Loudoun",
+        "jurisdiction": "Loudoun County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5617589,
+          39.1137057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-09",
+        "layer": "Infrastructure",
+        "event_type": "substation",
+        "outcome": "Proposed",
+        "summary": "Board item extends the statutory review period for a Dominion Energy 2232 application for the proposed Edsall electrical distribution substation intended to serve an adjacent data center complex.",
+        "quote": "Dominion Energy is requesting 2232 approval to construct a proposed electrical distribution substation facility to serve the adjacent data center complex and electrical demands of the surrounding area.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/September9-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County BOS Meeting Package (Final)",
+        "source_doc_date": "2025-09-09",
+        "tags": [
+          "RUNWAY_INFRA_POWER",
+          "RUNWAY_LANDUSE_DATA_CENTERS"
+        ],
+        "operator": "Virginia Electric and Power Company d/b/a Dominion Energy",
+        "project_name": "Edsall Substation (2232-2025-MA-00007) review period extension",
+        "case_id": "2232-2025-MA-00007",
+        "anchor_type": "site",
+        "geocode_query": "Edsall Road, Alexandria, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.1416749,
+          38.8065767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-09",
+        "layer": "Infrastructure",
+        "event_type": "pump_station",
+        "outcome": "Proposed",
+        "summary": "Board item extends review period for a DPWES 2232 application to upgrade Jones Point Pump Station, including replacement pump station and screening/metering facilities.",
+        "quote": "This project will construct a new replacement pump station, screening facility, and metering station, and demolish the existing pump station.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/September9-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County BOS Meeting Package (Final)",
+        "source_doc_date": "2025-09-09",
+        "tags": [
+          "RUNWAY_INFRA_SEWER",
+          "RUNWAY_INFRA_WATER"
+        ],
+        "operator": "Fairfax County Department of Public Works and Environmental Services",
+        "project_name": "Jones Point Pump Station upgrade (2232-2024-MV-00010) review period extension",
+        "case_id": "2232-2024-MV-00010",
+        "anchor_type": "site",
+        "geocode_query": "5800 Hunting Creek Road, Alexandria, VA 22303",
+        "geocode_source": "nominatim",
+        "geocode_query_fallback": "Fairfax County Government Center, 12000 Government Center Pkwy, Fairfax, VA 22035",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-09",
+        "layer": "Infrastructure",
+        "event_type": "wastewater_facility",
+        "outcome": "Proposed",
+        "summary": "Board item extends review period for DPWES 2232 application for the Lincoln Lewis Vannoy (LLV) Odor Control Facility project.",
+        "quote": "Staff recommends an extension of the 2232 application review to March 17, 2026, prior to the current application period expiring on September 23, 2025.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/September9-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County BOS Meeting Package (Final)",
+        "source_doc_date": "2025-09-09",
+        "tags": [
+          "RUNWAY_INFRA_SEWER"
+        ],
+        "operator": "Fairfax County Department of Public Works and Environmental Services",
+        "project_name": "Lincoln Lewis Vannoy Odor Control Facility (2232-2025-SP-00003) review period extension",
+        "case_id": "2232-2025-SP-00003",
+        "anchor_type": "site",
+        "geocode_query": "Lincoln Lewis Vannoy Odor Control Facility, Springfield, VA",
+        "geocode_source": "nominatim",
+        "geocode_query_fallback": "Fairfax County Government Center, 12000 Government Center Pkwy, Fairfax, VA 22035",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-09",
+        "layer": "Infrastructure",
+        "event_type": "land_conveyance",
+        "outcome": "Proposed",
+        "summary": "Board item authorizes advertising a public hearing to convey fee simple land and easements from County-owned stormwater acquisition parcels to VDOT for Richmond Highway Corridor Improvements, including Dogue Creek bridge replacement and shared-use path.",
+        "quote": "VDOT has asked the County to convey from the Property 21,107 square feet of land in fee simple and to dedicate permanent easements for stormwater drainage and sight distance encompassing 34,641 square feet, utility easements of 11,972 square feet and a temporary construction easement of 5,972 square feet.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/September9-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County BOS Meeting Package (Final)",
+        "source_doc_date": "2025-09-09",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_STORMWATER",
+          "RUNWAY_INFRA_ROW"
+        ],
+        "operator": "Virginia Department of Transportation / Fairfax County",
+        "project_name": "Richmond Highway Corridor Improvements (Dogue Creek Bridge) \u2013 conveyance/easements authorization",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "8800 Richmond Highway, Alexandria, VA 22309",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.056737,
+          38.7926156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-09",
+        "layer": "Land Use",
+        "event_type": "comp_plan_amendment",
+        "outcome": "Proposed",
+        "summary": "Public hearing item considers a Dulles Suburban Center plan amendment and concurrent rezoning in the Airport Noise Impact Overlay (ANOID) to allow selected industrial uses (contractor\u2019s office/shop, vehicle storage/impound, storage yard) on a Route 50-area parcel without a street address.",
+        "quote": "Public Hearing on RZ 2020-SU-005 (A&A Contracting) to Rezone from I-3 (Light Intensity Industrial), Airport Noise Impact Overlay (ANOID) and Water Supply Protection Overlay (WSPOD) Districts to the I-5 (General Industrial), ANOID and WSPOD Districts.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/September9-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County BOS Meeting Package (Final)",
+        "source_doc_date": "2025-09-09",
+        "tags": [
+          "RUNWAY_POLICY_COMP_PLAN",
+          "RUNWAY_LANDUSE_INDUSTRIAL",
+          "RUNWAY_IAD_AIRPORT_OVERLAY"
+        ],
+        "operator": "Fairfax County Board of Supervisors",
+        "project_name": "SSPA 2023-III-2BR + RZ 2020-SU-005 (A&A Contracting) Dulles Suburban Center industrial-use policy/rezoning",
+        "case_id": "RZ 2020-SU-005",
+        "anchor_type": "site",
+        "geocode_query": "Route 50, Chantilly, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4558233,
+          38.9040746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-30",
+        "layer": "Infrastructure",
+        "event_type": "eminent_domain",
+        "outcome": "Proposed",
+        "summary": "Board item (Sept. 30) involves Richmond Highway Bus Rapid Transit (RHBRT) project land-rights acquisitions needed to allow utility relocation and construction scheduling.",
+        "quote": "This grouping of properties must be acquired to allow utility relocation to proceed as scheduled.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/September30-Board-Package.pdf",
+        "source_doc_title": "Fairfax County BOS Meeting Package",
+        "source_doc_date": "2025-09-30",
+        "tags": [
+          "RUNWAY_INFRA_TRANSIT",
+          "RUNWAY_INFRA_ROW",
+          "RUNWAY_INFRA_UTILITIES"
+        ],
+        "operator": "Fairfax County Department of Transportation",
+        "project_name": "Richmond Highway Bus Rapid Transit (RHBRT) Project 2G40-162-004 \u2013 land rights acquisitions",
+        "case_id": "2G40-162-004",
+        "anchor_type": "site",
+        "geocode_query": "Richmond Highway, Hybla Valley, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0934482,
+          38.736829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-14",
+        "layer": "Infrastructure",
+        "event_type": "ordinance_amendment",
+        "outcome": "Proposed",
+        "summary": "Board authorizes advertising public hearings for amendments to Fairfax County Chapter 124.1 (Erosion and Stormwater Management Ordinance) to implement changes to Virginia stormwater regulations and clarify local requirements.",
+        "quote": "The purpose of the proposed amendments is to implement changes to the Regulation and clarify existing requirements in the ESMO, including a clarification that failure to maintain installed stormwater management facilities, as prescribed in a maintenance agreement, is a violation of the ordinance.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/October14-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County BOS Meeting Package (Final)",
+        "source_doc_date": "2025-10-14",
+        "tags": [
+          "RUNWAY_INFRA_STORMWATER",
+          "RUNWAY_POLICY_ORDINANCE"
+        ],
+        "operator": "Fairfax County Department of Land Development Services",
+        "project_name": "Chapter 124.1 Erosion and Stormwater Management Ordinance amendments (state regulation changes)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Fairfax County Government Center, 12000 Government Center Pkwy, Fairfax, VA 22035",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-28",
+        "layer": "Infrastructure",
+        "event_type": "eminent_domain",
+        "outcome": "Proposed",
+        "summary": "Public hearing seeks condemnation authority for land rights needed for Richmond Highway Bus Rapid Transit (RHBRT) project, citing utility relocation and quick-take powers to maintain construction schedule.",
+        "quote": "it may be necessary for the Board to utilize quick-take eminent domain powers to commence construction of this project on schedule.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/October28-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County BOS Meeting Package (Final)",
+        "source_doc_date": "2025-10-28",
+        "tags": [
+          "RUNWAY_INFRA_TRANSIT",
+          "RUNWAY_INFRA_ROW",
+          "RUNWAY_INFRA_UTILITIES"
+        ],
+        "operator": "Fairfax County Department of Transportation",
+        "project_name": "Richmond Highway Bus Rapid Transit (RHBRT) Project 2G40-162-004 \u2013 condemnation authority",
+        "case_id": "2G40-162-004",
+        "anchor_type": "site",
+        "geocode_query": "Huntington Metro Station, Alexandria, VA",
+        "geocode_source": "nominatim",
+        "geocode_query_fallback": "Fairfax County Government Center, 12000 Government Center Pkwy, Fairfax, VA 22035",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-11",
+        "layer": "Energy",
+        "event_type": "policy_resolution",
+        "outcome": "Proposed",
+        "summary": "Fauquier BOS agenda includes a resolution opposing Dominion Energy alternate transmission line routing plans between Morrisville and Wishing Star.",
+        "quote": "A Resolution Opposing Dominion Energy's Alternate Transmission Line Routing Plans Between Morrisville and Wishing Star",
+        "source_url": "https://fauquier-va.granicus.com/AgendaViewer.php?view_id=1&clip_id=1186",
+        "source_doc_title": "Fauquier County BOS Regular Meeting Agenda",
+        "source_doc_date": "2025-09-11",
+        "tags": [
+          "RUNWAY_INFRA_POWER",
+          "RUNWAY_ENERGY_TRANSMISSION",
+          "RUNWAY_POLICY_POWER"
+        ],
+        "operator": "Virginia Electric and Power Company d/b/a Dominion Energy",
+        "project_name": "Opposition to Dominion alternate transmission routing (Morrisville\u2013Wishing Star)",
+        "case_id": null,
+        "anchor_type": "district",
+        "geocode_query": "Fauquier County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fauquier",
+        "jurisdiction": "Fauquier County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8141221,
+          38.7513714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-11",
+        "layer": "Infrastructure",
+        "event_type": "utility_easement",
+        "outcome": "Proposed",
+        "summary": "Fauquier BOS agenda includes an ordinance to grant a private utility easement for underground water lines across County-owned Corral Farm on Bingham Road to serve Laurel Ridge Educational Foundation property.",
+        "quote": "An Ordinance Authorizing the County Administrator to Grant a Private Utility Easement for Underground Water Lines Across County-Owned Property, More Particularly Identified as Corral Farm on Bingham Road, to Service Property Owned by Laurel Ridge Educational Foundation, Inc.",
+        "source_url": "https://fauquier-va.granicus.com/AgendaViewer.php?view_id=1&clip_id=1186",
+        "source_doc_title": "Fauquier County BOS Regular Meeting Agenda",
+        "source_doc_date": "2025-09-11",
+        "tags": [
+          "RUNWAY_INFRA_WATER",
+          "RUNWAY_INFRA_ROW"
+        ],
+        "operator": "Fauquier County",
+        "project_name": "Corral Farm (Bingham Rd) private utility easement for underground water lines",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Bingham Road, Fauquier County, VA",
+        "geocode_source": "nominatim",
+        "county": "Fauquier",
+        "jurisdiction": "Fauquier County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.7774686,
+          38.6779511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-11",
+        "layer": "Energy",
+        "event_type": "energy_storage",
+        "outcome": "Proposed",
+        "summary": "Fauquier BOS agenda includes authorization for an energy storage facility siting agreement with Dominion and a special exception for the Remington Battery Energy Storage System (Tier 2 BESS).",
+        "quote": "A Resolution to Authorize the Execution of an Energy Storage Facility Siting Agreement with Virginia Electric and Power Company (dba Dominion) and to Approve Special Exception SPEX-25-024369, Remington Battery Energy Storage System - An Application for a Category 20 Special Exception to Install a Tier 2 Battery Energy Storage System",
+        "source_url": "https://fauquier-va.granicus.com/AgendaViewer.php?view_id=1&clip_id=1186",
+        "source_doc_title": "Fauquier County BOS Regular Meeting Agenda",
+        "source_doc_date": "2025-09-11",
+        "tags": [
+          "RUNWAY_INFRA_POWER",
+          "RUNWAY_ENERGY_STORAGE"
+        ],
+        "operator": "Virginia Electric and Power Company d/b/a Dominion Energy",
+        "project_name": "Remington Battery Energy Storage System (SPEX-25-024369) + siting agreement",
+        "case_id": "SPEX-25-024369",
+        "anchor_type": "site",
+        "geocode_query": "Remington, VA 22734",
+        "geocode_source": "nominatim",
+        "county": "Fauquier",
+        "jurisdiction": "Fauquier County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8084073,
+          38.5333517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-09",
+        "layer": "Energy",
+        "event_type": "policy_resolution",
+        "outcome": "Proposed",
+        "summary": "Fauquier BOS agenda includes a resolution to support underground HVDC transmission lines proposed by Dominion Energy through the PJM proposal process.",
+        "quote": "A Resolution to Support Underground High-Voltage Direct Current (HVDC) Transmission Lines as Proposed by Dominion Energy through the PJM Proposal Process",
+        "source_url": "https://fauquier-va.granicus.com/AgendaViewer.php?view_id=1&clip_id=1190",
+        "source_doc_title": "Fauquier County BOS Regular Meeting Agenda",
+        "source_doc_date": "2025-10-09",
+        "tags": [
+          "RUNWAY_ENERGY_TRANSMISSION",
+          "RUNWAY_POLICY_POWER"
+        ],
+        "operator": "Virginia Electric and Power Company d/b/a Dominion Energy",
+        "project_name": "Support for underground HVDC transmission (Dominion PJM proposal)",
+        "case_id": null,
+        "anchor_type": "district",
+        "geocode_query": "Fauquier County, VA",
+        "geocode_source": "nominatim",
+        "county": "Fauquier",
+        "jurisdiction": "Fauquier County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8141221,
+          38.7513714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-09",
+        "layer": "Infrastructure",
+        "event_type": "row_easements",
+        "outcome": "Proposed",
+        "summary": "Fauquier BOS agenda includes a resolution to schedule a public hearing on a subdivision/dedication for extension of Melody Lane and granting utility, construction, storm drain and stormwater easements across county-owned property in Marshall.",
+        "quote": "a 50-Foot-Wide Dedication of Land to Public Use for the Extension of Melody Lane and the Granting of Utility, Construction, Storm Drain and Stormwater Easements",
+        "source_url": "https://fauquier-va.granicus.com/AgendaViewer.php?view_id=1&clip_id=1190",
+        "source_doc_title": "Fauquier County BOS Regular Meeting Agenda",
+        "source_doc_date": "2025-10-09",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_ROW",
+          "RUNWAY_INFRA_STORMWATER"
+        ],
+        "operator": "Fauquier County",
+        "project_name": "Melody Lane extension \u2013 dedication + utility/stormwater easements (PIN 6060-70-2278-000)",
+        "case_id": "PIN 6060-70-2278-000",
+        "anchor_type": "site",
+        "geocode_query": "Marshall, VA 20115",
+        "geocode_source": "nominatim",
+        "county": "Fauquier",
+        "jurisdiction": "Fauquier County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8580207,
+          38.8646975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-09",
+        "layer": "Aviation",
+        "event_type": "grant",
+        "outcome": "Proposed",
+        "summary": "Fauquier BOS agenda includes a resolution to accept and appropriate grant funding from the Virginia Department of Aviation.",
+        "quote": "A Resolution to Accept and Appropriate Grant Funding from the Virginia Department of Aviation",
+        "source_url": "https://fauquier-va.granicus.com/AgendaViewer.php?view_id=1&clip_id=1190",
+        "source_doc_title": "Fauquier County BOS Regular Meeting Agenda",
+        "source_doc_date": "2025-10-09",
+        "tags": [
+          "RUNWAY_AVIATION",
+          "RUNWAY_GRANT"
+        ],
+        "operator": "Virginia Department of Aviation / Fauquier County",
+        "project_name": "VDOA grant acceptance (Fauquier County)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Fauquier County Airport, Midland, VA",
+        "geocode_source": "nominatim",
+        "geocode_query_fallback": "Warrenton, VA",
+        "county": "Fauquier",
+        "jurisdiction": "Fauquier County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.795367,
+          38.7135498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-09",
+        "layer": "Land Use",
+        "event_type": "open_space_easement",
+        "outcome": "Proposed",
+        "summary": "Fauquier BOS agenda includes a resolution authorizing acceptance of a deed of open space easement (land conservation) from the Afro-American Historical Association of Fauquier County, Inc.",
+        "quote": "A Resolution Authorizing Acceptance of a Deed of Open Space Easement from the Afro-American Historical Association of Fauquier County, Inc.",
+        "source_url": "https://fauquier-va.granicus.com/AgendaViewer.php?view_id=1&clip_id=1190",
+        "source_doc_title": "Fauquier County BOS Regular Meeting Agenda",
+        "source_doc_date": "2025-10-09",
+        "tags": [
+          "RUNWAY_LANDUSE_OPEN_SPACE",
+          "RUNWAY_POLICY_EASEMENT"
+        ],
+        "operator": "Fauquier County",
+        "project_name": "Acceptance of deed of open space easement (Afro-American Historical Association of Fauquier County, Inc.)",
+        "case_id": null,
+        "anchor_type": "district",
+        "geocode_query": "Fauquier County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fauquier",
+        "jurisdiction": "Fauquier County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.8141221,
+          38.7513714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Policy",
+        "event_type": "data_center_standards",
+        "outcome": "Info",
+        "summary": "Fairfax materials outline data-center-specific criteria for rezonings/special exceptions, including energy/water/air/noise topics.",
+        "quote": "A new criteria section provides guidance specific to data center development. These criteria build upon the January 2024 data center report and subsequent adopted Zoning Ordinance Amendment... and would apply to data centers seeking rezoning and/or special exception approval. These criteria include: Land Use and Site Design; Building Design; Green Building; Energy Demand; Water Demand; Water Quality; Air Quality and Noise.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/Nov18-Board-Package-Final-II.pdf",
+        "source_doc_title": "Fairfax County BOS Board Package",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_WIN",
+          "DATA_CENTER_POLICY",
+          "FAIRFAX"
+        ],
+        "operator": null,
+        "project_name": "Countywide data center criteria",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Fairfax County Government Center, Fairfax, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Policy",
+        "event_type": "transmission_substation_guidance",
+        "outcome": "Info",
+        "summary": "Fairfax data center criteria include guidance on proximity to substations/transmission and undergrounding transmission lines where practicable.",
+        "quote": "Data centers proposals should provide the distance from existing substations and transmission lines... If a substation is proposed on the same site as the data center it is serving, it should be located or designed to minimize visibility... Transmission lines should be placed underground to the extent practicable.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/Nov18-Board-Package-Final-II.pdf",
+        "source_doc_title": "Fairfax County BOS Board Package",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_WIN",
+          "GRID_POLICY",
+          "FAIRFAX"
+        ],
+        "operator": null,
+        "project_name": "Data center grid siting guidance",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Fairfax County Government Center, Fairfax, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Infrastructure",
+        "event_type": "sewer_capacity",
+        "outcome": "Info",
+        "summary": "Fairfax planning materials flag a critical sewer capacity issue tied to pump stations operating at maximum capacity in a study area.",
+        "quote": "A critical sewer capacity issue given that the sites are served by two pump stations which are currently operating at maximum capacity and do not currently have sufficient capacity to accommodate flows from either of the proposals.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/Nov18-Board-Package-Final-II.pdf",
+        "source_doc_title": "Fairfax County BOS Board Package",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_WIN",
+          "WATER_SEWER",
+          "FAIRFAX"
+        ],
+        "operator": null,
+        "project_name": "Fairfax Center Area sewer capacity",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Fairfax Center, Fairfax, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Infrastructure",
+        "event_type": "quick_take_eminent_domain",
+        "outcome": "Proposed",
+        "summary": "Fairfax item notes use of quick-take eminent domain powers may be necessary to keep a construction project on schedule due to stalled acquisitions.",
+        "quote": "Negotiations are in progress... however, because resolution of these acquisitions is not imminent, it may become necessary for the Board to utilize quick-take eminent domain powers to commence construction of this project on schedule.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/Nov18-Board-Package-Final-II.pdf",
+        "source_doc_title": "Fairfax County BOS Board Package",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_WIN",
+          "ROW",
+          "FAIRFAX"
+        ],
+        "operator": null,
+        "project_name": "ROW acquisitions (quick-take authority)",
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Fairfax County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2836849,
+          38.8156356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Policy",
+        "event_type": "environment_element_update",
+        "outcome": "Info",
+        "summary": "Fairfax environment element update work references research papers including stormwater management policies and green building policies.",
+        "quote": "Staff... produced a series of papers on Conservation Corridors, Green Building Policies, and Stormwater Management Policies... Staff therefore focused on improving the element and alignment with other adopted county plans.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/Nov18-Board-Package-Final-II.pdf",
+        "source_doc_title": "Fairfax County BOS Board Package",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_WIN",
+          "STORMWATER_POLICY",
+          "FAIRFAX"
+        ],
+        "operator": null,
+        "project_name": "Environment element update",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Fairfax County Government Center, Fairfax, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-09",
+        "layer": "Policy",
+        "event_type": "zoning_ordinance_amendment",
+        "outcome": "Approved",
+        "summary": "Fairfax BOS agenda shows an approved public hearing on a proposed zoning ordinance amendment re: electrical substations.",
+        "quote": "Approved Public Hearing on a Proposed Zoning Ordinance Amendment Re: Electrical Substations",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/December09-Final-Board-Package.pdf",
+        "source_doc_title": "Fairfax County BOS Board Package (Agenda)",
+        "source_doc_date": "2025-12-09",
+        "tags": [
+          "RUNWAY_WIN",
+          "SUBSTATION_POLICY",
+          "FAIRFAX"
+        ],
+        "operator": null,
+        "project_name": "Electrical Substations (ordinance amendment)",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Fairfax County Government Center, Fairfax, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-09",
+        "layer": "Policy",
+        "event_type": "stormwater_ordinance",
+        "outcome": "Approved",
+        "summary": "Fairfax BOS agenda shows approved adoption of amendments to Chapter 124.1 (erosion and stormwater management ordinance) to implement Virginia regulation changes.",
+        "quote": "Approved Public Hearing on Adoption of Amendments to Chapter 124.1 (Erosion and Stormwater Management Ordinance)... to Implement Changes to the Virginia Erosion and Stormwater Management Regulation",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/December09-Final-Board-Package.pdf",
+        "source_doc_title": "Fairfax County BOS Board Package (Agenda)",
+        "source_doc_date": "2025-12-09",
+        "tags": [
+          "RUNWAY_WIN",
+          "STORMWATER_POLICY",
+          "FAIRFAX"
+        ],
+        "operator": null,
+        "project_name": "Chapter 124.1 stormwater ordinance amendments",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Fairfax County Government Center, Fairfax, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3568219,
+          38.8541195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-09",
+        "layer": "Power",
+        "event_type": "waste_to_energy_power_sale",
+        "outcome": "Info",
+        "summary": "Board package text notes Reworld Fairfax waste-to-energy facility electric capacity sold to Dominion Virginia Power.",
+        "quote": "The facility has a dependable electric capacity rating of 63 megawatts for sale to Dominion Virginia Power, although it has the ability to generate over 80 megawatts.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/December09-Final-Board-Package.pdf",
+        "source_doc_title": "Fairfax County BOS Board Package",
+        "source_doc_date": "2025-12-09",
+        "tags": [
+          "RUNWAY_WIN",
+          "POWER_SUPPLY",
+          "FAIRFAX"
+        ],
+        "operator": "Reworld Fairfax, LLC",
+        "project_name": "E/RRF power output to Dominion",
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "Lorton, VA 22079",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.220343,
+          38.7043397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-14",
+        "layer": "Infrastructure",
+        "event_type": "right_of_way_acquisition",
+        "outcome": "Proposed",
+        "summary": "Board authorized advertising a public hearing to acquire land rights for Columbia Pike Complete Streets Phase I / Columbia Pike Streetscapes Phase I.",
+        "quote": "Authorization to Advertise a Public Hearing on the Acquisition of\nCertain Land Rights Necessary for the Construction of Columbia\nPike Complete Streets Phase I and Project 2G40-188-000 AKA\nColumbia Pike Streetscapes, Phase I - AA1400159-21 (Mason\nDistrict)",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/October14-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County Board of Supervisors - October 14, 2025 Final Board Package",
+        "source_doc_date": "2025-10-14",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_ROW",
+          "RUNWAY_INFRA_COMPLETE_STREETS"
+        ],
+        "operator": "Fairfax County Board of Supervisors",
+        "project_name": "Columbia Pike Complete Streets Phase I / Columbia Pike Streetscapes Phase I (Project 2G40-188-000; Grant 1400159-2021)",
+        "case_id": "AA1400159-21",
+        "anchor_type": "corridor",
+        "geocode_query": "Fairfax County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2836849,
+          38.8156356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-14",
+        "layer": "Infrastructure",
+        "event_type": "ordinance_amendment",
+        "outcome": "Proposed",
+        "summary": "Board authorized advertising public hearings on amendments to Fairfax County Code Chapter 124.1 (Erosion and Stormwater Management Ordinance) to implement changes to Virginia Erosion and Stormwater Management Regulation.",
+        "quote": "Authorization to Advertise Public Hearings on Adoption of\nAmendments to Chapter 124.1 (Erosion and Stormwater\nManagement Ordinance) of the Code of the County of Fairfax,\nVirginia to Implement Changes to the Virginia Erosion and\nStormwater Management Regulation",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/October14-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County Board of Supervisors - October 14, 2025 Final Board Package",
+        "source_doc_date": "2025-10-14",
+        "tags": [
+          "RUNWAY_INFRA_STORMWATER",
+          "RUNWAY_POLICY_ORDINANCE"
+        ],
+        "operator": "Fairfax County Board of Supervisors",
+        "project_name": "Chapter 124.1 amendments (erosion and stormwater management ordinance)",
+        "case_id": null,
+        "anchor_type": "government_center",
+        "geocode_query": "Fairfax County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2836849,
+          38.8156356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-14",
+        "layer": "Infrastructure",
+        "event_type": "policy_adoption",
+        "outcome": "Approved",
+        "summary": "Board adopted the updated 2025 Countywide Flood Risk Reduction Policy, establishing a framework for prioritizing flood risk projects/programs and addressing climate-adjusted 100-year storm risks.",
+        "quote": "Staff recommend that the Board of Supervisors (Board) adopt the 2025 Countywide\nFlood Risk Reduction Policy which provides a strategy for managing flood risk,\nestablishes a level of service, outlines objectives of land development regulations,\nprovides a revised prioritization of capital projects, and provides guidance for flood risk\nprograms.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/October14-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County Board of Supervisors - October 14, 2025 Final Board Package",
+        "source_doc_date": "2025-10-14",
+        "tags": [
+          "RUNWAY_INFRA_FLOOD",
+          "RUNWAY_POLICY_RESILIENCE"
+        ],
+        "operator": "Fairfax County Department of Public Works and Environmental Services (DPWES)",
+        "project_name": "2025 Countywide Flood Risk Reduction Policy",
+        "case_id": null,
+        "anchor_type": "government_center",
+        "geocode_query": "Fairfax County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2836849,
+          38.8156356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-28",
+        "layer": "Infrastructure",
+        "event_type": "eminent_domain",
+        "outcome": "Approved",
+        "summary": "Public hearing held and approved to acquire land rights / seek condemnation authority for the Richmond Highway Bus Rapid Transit (RHBRT) project.",
+        "quote": "Public Hearing on the Acquisition of Certain Land Rights\nNecessary for the Construction of Request for Condemnation\nAuthority for the Richmond Highway Bus Rapid Transit (RHBRT)\nProject 2G40-162-004 (Franconia District and Mount Vernon\nDistrict)",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/October28-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County Board of Supervisors - October 28, 2025 Final Board Package",
+        "source_doc_date": "2025-10-28",
+        "tags": [
+          "RUNWAY_INFRA_TRANSIT",
+          "RUNWAY_INFRA_ROW"
+        ],
+        "operator": "Fairfax County Board of Supervisors",
+        "project_name": "Richmond Highway Bus Rapid Transit (RHBRT) Project 2G40-162-004 (condemnation authority / land rights)",
+        "case_id": "2G40-162-004",
+        "anchor_type": "corridor",
+        "geocode_query": "Fairfax County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2836849,
+          38.8156356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-28",
+        "layer": "Land Use",
+        "event_type": "ordinance_amendment",
+        "outcome": "Approved",
+        "summary": "Public hearings held and approved on amendments to subdivision and zoning ordinances regarding plat/site plan/subdivision plan review times and processing.",
+        "quote": "Public Hearings on Proposed Amendments to Chapter 101\n(Subdivision Ordinance) and Chapter 112.2 (Zoning Ordinance)\nof The Code of the County of Fairfax (Code), Regarding Plat, Site\nPlan and Subdivision Plan Review Times and Processing",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/October28-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County Board of Supervisors - October 28, 2025 Final Board Package",
+        "source_doc_date": "2025-10-28",
+        "tags": [
+          "RUNWAY_POLICY_PERMITTING",
+          "RUNWAY_LANDUSE_DEVELOPMENT_REVIEW"
+        ],
+        "operator": "Fairfax County Board of Supervisors",
+        "project_name": "Ordinance amendments: subdivision + zoning review times/processing (plats, site plans, subdivision plans)",
+        "case_id": null,
+        "anchor_type": "government_center",
+        "geocode_query": "Fairfax County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2836849,
+          38.8156356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-28",
+        "layer": "Land Use",
+        "event_type": "rezoning_proffer_amendment",
+        "outcome": "Proposed",
+        "summary": "Boston Properties request to amend proffers/conditions and development plans in Reston Town Center area, including bonus density for affordable housing, across ~37.5 acres in PRC zoning.",
+        "quote": "Public Hearing on PCA-86-C-119-09/ PRCA 86-C-119-03/ DPA 86-C-119-05 (RZPA 2024HM-00019) (Boston Properties Limited Partnership) to Amend the Proffers, Conditions,\nand the Development Plans for RZ 86-C-119 ... Including Bonus\nDensity for Affordable Housing...\nThis property is located on the N. side of Sunset Hills Rd., W. side of Reston Pkwy., and\nE. of Town Center Pkwy.",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/October28-Board-Package-Final.pdf",
+        "source_doc_title": "Fairfax County Board of Supervisors - October 28, 2025 Final Board Package",
+        "source_doc_date": "2025-10-28",
+        "tags": [
+          "RUNWAY_LANDUSE_RESTON",
+          "RUNWAY_LANDUSE_DENSITY",
+          "RUNWAY_HOUSING_AFFORDABLE"
+        ],
+        "operator": "Boston Properties Limited Partnership / Fairfax County Department of Planning and Development",
+        "project_name": "RZPA 2024-HM-00019 (PCA/PRCA/DPA for RZ 86-C-119) Reston Town Center area modifications + affordable housing bonus density",
+        "case_id": "RZPA 2024-HM-00019",
+        "anchor_type": "site",
+        "geocode_query": "Reston Town Center Parkway, Reston, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3647912,
+          38.9627081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Infrastructure",
+        "event_type": "right_of_way_acquisition",
+        "outcome": "Approved",
+        "summary": "Public hearing held and approved for acquisition of land rights for Columbia Pike Complete Streets Phase I (Grant 1400159-2021).",
+        "quote": "Public Hearing on the Acquisition of Certain Land Rights\nNecessary for the Construction of Columbia Pike Complete\nStreets Phase I, Grant 1400159-2021 (Mason District)",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/Nov18-Board-Package-Final-II.pdf",
+        "source_doc_title": "Fairfax County Board of Supervisors - November 18, 2025 Final Board Package (Final II)",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_INFRA_ROAD",
+          "RUNWAY_INFRA_ROW",
+          "RUNWAY_INFRA_COMPLETE_STREETS"
+        ],
+        "operator": "Fairfax County Board of Supervisors",
+        "project_name": "Columbia Pike Complete Streets Phase I (Grant 1400159-2021) land rights acquisition",
+        "case_id": "1400159-2021",
+        "anchor_type": "corridor",
+        "geocode_query": "Fairfax County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2836849,
+          38.8156356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "layer": "Land Use",
+        "event_type": "comp_plan_amendment",
+        "outcome": "Proposed",
+        "summary": "Plan Amendment 2023-I-3J (Prosperity Business Campus) proposes adding a Comprehensive Plan option for residential mixed-use redevelopment up to 1.35 FAR (up to ~2,173 dwelling units) along Prosperity Avenue in the Merrifield Suburban Center.",
+        "quote": "Plan Amendment (PA) 2023-I-3J proposes to amend the Comprehensive Plan\nrecommendations for a portion of Land Unit D in the Merrifield Suburban Center...\non Prosperity Avenue, by adding a Plan option for residential mixed-use redevelopment\nup to an intensity of 1.35 floor area ratio (FAR)... The development potential could yield up to 2,173 dwelling units...",
+        "source_url": "https://www.fairfaxcounty.gov/boardofsupervisors/sites/boardofsupervisors/files/Assets/meeting-materials/2025/Nov18-Board-Package-Final-II.pdf",
+        "source_doc_title": "Fairfax County Board of Supervisors - November 18, 2025 Final Board Package (Final II)",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_LANDUSE_MERRIFIELD",
+          "RUNWAY_POLICY_COMP_PLAN",
+          "RUNWAY_HOUSING_AFFORDABLE"
+        ],
+        "operator": "Fairfax County Department of Planning and Development (DPD)",
+        "project_name": "SSPA-2023-I-3J Prosperity Business Campus (Merrifield Suburban Center) Comprehensive Plan Amendment",
+        "case_id": "2023-I-3J",
+        "anchor_type": "site",
+        "geocode_query": "Prosperity Avenue, Merrifield, VA",
+        "geocode_source": "nominatim",
+        "county": "Fairfax",
+        "jurisdiction": "Fairfax County, VA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2332016,
+          38.8810886
+        ]
+      }
+    }
+  ]
+}

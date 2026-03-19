@@ -1,0 +1,38 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Whitney",
+    "admin_level": "8",
+    "place": "city",
+    "state": "TX",
+    "source": "Approximate boundary generated for Whitney, TX planning analysis",
+    "osm_id": null
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -97.366,
+          31.961
+        ],
+        [
+          -97.302,
+          31.961
+        ],
+        [
+          -97.302,
+          31.909
+        ],
+        [
+          -97.366,
+          31.909
+        ],
+        [
+          -97.366,
+          31.961
+        ]
+      ]
+    ]
+  }
+}

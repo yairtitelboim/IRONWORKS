@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shared map + AI animation keyframes */
+@import './components/Map/styles/animationTheme.css';
+
+body {
+  @apply bg-gray-900 text-white;
+}
+
+/* Custom styling for startup intelligence popups to remove Mapbox default styling */
+.startup-intelligence-popup {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.startup-intelligence-popup .mapboxgl-popup-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+  width: auto !important;
+}
+
+.startup-intelligence-popup .mapboxgl-popup-tip {
+  border-top-color: #1f2937 !important;
+}
+
+/* Target the outer popup container more aggressively */
+.mapboxgl-popup.startup-intelligence-popup {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Remove any remaining Mapbox styling */
+.mapboxgl-popup.startup-intelligence-popup * {
+  box-sizing: border-box;
+}
+
+/* Target all possible Mapbox popup elements */
+.mapboxgl-popup.startup-intelligence-popup,
+.mapboxgl-popup.startup-intelligence-popup .mapboxgl-popup-content,
+.mapboxgl-popup.startup-intelligence-popup .mapboxgl-popup-tip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  outline: none !important;
+}
+
+/* Ensure no background or border on Mapbox wrapper elements only */
+.mapboxgl-popup.startup-intelligence-popup,
+.mapboxgl-popup.startup-intelligence-popup .mapboxgl-popup-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Mapbox markers are handled by the library - no custom CSS needed */
+
+/* ── Onboarding Tour (driver.js) dark theme override ── */
+.pha-tour-popover.driver-popover {
+  background: rgba(17, 24, 39, 0.98) !important;
+  border: 1px solid rgba(59, 130, 246, 0.35) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.15) !important;
+  color: #e5e7eb !important;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  max-width: 280px !important;
+}
+.pha-tour-popover .driver-popover-title {
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  margin-bottom: 6px !important;
+}
+.pha-tour-popover .driver-popover-description {
+  color: rgba(229, 231, 235, 0.85) !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+}
+.pha-tour-popover .driver-popover-description em {
+  color: #60a5fa !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+}
+.pha-tour-popover .driver-popover-next-btn {
+  background: rgba(59, 130, 246, 0.85) !important;
+  border: none !important;
+  border-radius: 6px !important;
+  color: #fff !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  padding: 5px 12px !important;
+  cursor: pointer !important;
+}
+.pha-tour-popover .driver-popover-next-btn:hover {
+  background: rgba(59, 130, 246, 1) !important;
+}
+.pha-tour-popover .driver-popover-close-btn {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.pha-tour-popover .driver-popover-close-btn:hover {
+  color: #fff !important;
+}
+.pha-tour-popover .driver-popover-arrow-side-bottom::before,
+.pha-tour-popover .driver-popover-arrow-side-top::before,
+.pha-tour-popover .driver-popover-arrow-side-left::before,
+.pha-tour-popover .driver-popover-arrow-side-right::before {
+  border-color: rgba(17, 24, 39, 0.98) transparent transparent transparent !important;
+}
+/* Spotlight overlay */
+.driver-overlay {
+  background: rgba(0, 0, 0, 0.55) !important;
+}

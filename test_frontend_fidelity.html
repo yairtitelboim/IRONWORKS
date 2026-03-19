@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Grid Analysis - High Fidelity Test</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@tanstack/react-virtual@3.11.2/dist/umd/index.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+            overflow: hidden; /* Prevent scrolling to match real app */
+        }
+
+        /* Import the exact styles from BaseCard.jsx */
+        @keyframes cardSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        @keyframes cardPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+
+        @keyframes questionCardShimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        
+        @keyframes buttonSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes cacheCountdownPulse {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+        
+        @keyframes buttonShimmer {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            20% {
+                opacity: 0.3;
+            }
+            80% {
+                opacity: 0.3;
+            }
+            100% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes skeletonPulse {
+            0%, 100% {
+                opacity: 0.6;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes skeletonShimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+        
+        @keyframes slideInFromRight {
+            0% {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Custom scrollbar styling */
+        .sources-scroll::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .sources-scroll::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .sources-scroll::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+        }
+        
+        .sources-scroll::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Test container to simulate map viewport */
+        .test-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef, useCallback, useMemo } = React;
+        
+        // Mock the useAIQuery hook
+        const useAIQuery = (map, updateToolFeedback, handleMarkerClick) => {
+            const [isLoading, setIsLoading] = useState(false);
+            const [responses, setResponses] = useState([]);
+            const [citations, setCitations] = useState([]);
+            const [pendingRequests, setPendingRequests] = useState([]);
+
+            const handleAIQuery = useCallback((query) => {
+                console.log('Mock AI Query:', query);
+                setIsLoading(true);
+                
+                // Simulate API call
+                setTimeout(() => {
+                    const mockResponse = {
+                        content: `Mock response for: ${query}`,
+                        timestamp: Date.now()
+                    };
+                    setResponses(prev => [...prev, mockResponse]);
+                    setIsLoading(false);
+                }, 1000);
+            }, []);
+
+            return {
+                isLoading,
+                responses,
+                citations,
+                pendingRequests,
+                handleAIQuery
+            };
+        };
+
+        // Mock the PowerGridToolExecutor
+        const resetGlobalMarkerStyling = () => {
+            console.log('Mock: Reset global marker styling');
+        };
+
+        // Mock the ResponseCache
+        const clearResponseCache = () => {
+            console.log('Mock: Clear response cache');
+        };
+
+        const getResponseCacheStats = () => {
+            return { totalEntries: 0 };
+        };
+
+        // Mock textUtils
+        const createClickableTruncation = (text, maxLength) => {
+            if (text.length <= maxLength) return text;
+            return text.substring(0, maxLength) + '...';
+        };
+
+        // Mock map object
+        const mockMap = {
+            current: {
+                getLayer: () => true,
+                setPaintProperty: () => {},
+                flyTo: () => {}
+            }
+        };
+
+        // Test data - same as before
+        const testData = {
+            "nodeLevel": `Below is a structured reliability analysis for each specified infrastructure node near Whitney, Texas, using only the required public data sources. Where plant-level data is unavailable, regional Texas data from EIA, ERCOT, or FERC is provided as instructed.
+
+## NODE 1: **Whitney Power Plant**
+**Type:** Power Plant (Coal-fired)
+⚡ **Power Score:** 8/10
+**Risk Level:** Medium
+**Available Capacity:** 1,200 MW
+**Transmission Queue Depth:** 2.3 years
+**Weather Resilience:** 85%
+**Redundancy:** Single circuit
+
+**Analysis:**
+The Whitney Power Plant represents a critical power generation asset with substantial capacity. However, its coal-fired nature presents environmental and regulatory risks. The 2.3-year transmission queue depth indicates moderate development pressure in the region.
+
+**Key Metrics:**
+- **EIA Plant ID:** 55812
+- **Capacity Factor:** 78%
+- **Last Major Outage:** 2019 (planned maintenance)
+- **Environmental Compliance:** Meets current standards
+
+**Source Links:**
+- [EIA-860 Form Data](https://www.eia.gov/electricity/data/eia860/)
+- [ERCOT Generation Reports](https://www.ercot.com/mktinfo/reports)
+
+## NODE 2: **Whitney Substation**
+**Type:** Transmission Substation
+⚡ **Power Score:** 9/10
+**Risk Level:** Low
+**Available Capacity:** 500 MW
+**Transmission Queue Depth:** 1.8 years
+**Weather Resilience:** 95%
+**Redundancy:** Dual circuit
+
+**Analysis:**
+The Whitney Substation provides excellent transmission infrastructure with high reliability scores. Its dual-circuit redundancy ensures minimal service interruption risk.
+
+**Key Metrics:**
+- **Voltage Level:** 345 kV
+- **Interconnection Points:** 3
+- **Last Upgrade:** 2021
+- **Maintenance Schedule:** Quarterly
+
+**Source Links:**
+- [FERC Transmission Studies](https://www.ferc.gov/industries-data/electric/power-sales-and-markets/transmission-planning)
+- [ERCOT Transmission Planning](https://www.ercot.com/gridinfo/planning)
+
+## NODE 3: **Whitney Water Supply**
+**Type:** Water Treatment Facility
+⚡ **Power Score:** 6/10
+**Risk Level:** High
+**Available Capacity:** 50 MW
+**Transmission Queue Depth:** 4.1 years
+**Weather Resilience:** 70%
+**Redundancy:** Limited
+
+**Analysis:**
+While providing essential water services, this facility has limited power generation capacity and higher risk due to water dependency and limited redundancy.
+
+**Key Metrics:**
+- **Water Treatment Capacity:** 10 MGD
+- **Power Generation:** Hydroelectric (limited)
+- **Backup Systems:** Diesel generators
+- **Last Major Incident:** 2020 (flooding)
+
+**Source Links:**
+- [Texas PUC Water Reports](https://www.puc.texas.gov/industry/electric/reports)
+- [EIA Electric Power Monthly](https://www.eia.gov/electricity/monthly/)
+
+## NODE 4: **Whitney Data Center**
+**Type:** Data Center Facility
+⚡ **Power Score:** 7/10
+**Risk Level:** Medium
+**Available Capacity:** 200 MW
+**Transmission Queue Depth:** 3.2 years
+**Weather Resilience:** 90%
+**Redundancy:** N+1 configuration
+
+**Analysis:**
+Modern data center with good power infrastructure and redundancy. However, high power consumption and growing demand create capacity constraints.
+
+**Key Metrics:**
+- **IT Load:** 150 MW
+- **Cooling Systems:** 50 MW
+- **UPS Capacity:** 200 MW
+- **PUE Rating:** 1.3
+
+**Source Links:**
+- [EIA-860 Form Data](https://www.eia.gov/electricity/data/eia860/)
+- [EIA Electric Power Monthly](https://www.eia.gov/electricity/monthly/)
+- [FERC Transmission Studies](https://www.ferc.gov/industries-data/electric/power-sales-and-markets/transmission-planning)`
+        };
+
+        // Mock AIQuestionsSection component
+        const AIQuestionsSection = ({ aiState, handleAIQuery, viewMode, onViewModeChange, selectedMarker, handleMarkerClick, handleBackToAnalysis }) => {
+            const [currentCategory, setCurrentCategory] = useState('all');
+            const [nodeListOpen, setNodeListOpen] = useState(false);
+
+            // Parse node data for the table
+            const nodeData = useMemo(() => {
+                const nodes = [];
+                const nodeRegex = /## NODE (\d+): \*\*(.*?)\*\*/g;
+                let match;
+                
+                while ((match = nodeRegex.exec(testData.nodeLevel)) !== null) {
+                    const nodeNumber = match[1];
+                    const nodeName = match[2];
+                    
+                    // Extract data for this node
+                    const nodeStart = match.index;
+                    
+                    // Find the next node without advancing the regex
+                    const remainingText = testData.nodeLevel.substring(nodeStart + match[0].length);
+                    const nextNodeMatch = /## NODE (\d+): \*\*(.*?)\*\*/.exec(remainingText);
+                    const nodeEnd = nextNodeMatch ? nodeStart + match[0].length + nextNodeMatch.index : testData.nodeLevel.length;
+                    
+                    const nodeContent = testData.nodeLevel.substring(nodeStart, nodeEnd);
+                    
+                    const typeMatch = nodeContent.match(/\*\*Type:\*\* (.+?)(?:\n|$)/);
+                    const powerScoreMatch = nodeContent.match(/⚡ \*\*Power Score:\*\* (\d+)\/10/);
+                    const riskMatch = nodeContent.match(/\*\*Risk Level:\*\* (.+?)(?:\n|$)/);
+                    
+                    nodes.push({
+                        id: nodeNumber,
+                        name: nodeName,
+                        type: typeMatch ? typeMatch[1].trim() : 'Unknown',
+                        powerScore: powerScoreMatch ? parseInt(powerScoreMatch[1]) : 0,
+                        risk: riskMatch ? riskMatch[1].trim() : 'N/A',
+                        content: nodeContent
+                    });
+                }
+                
+                return nodes;
+            }, []);
+
+            const getTypeAbbreviation = (type) => {
+                if (type.includes('Power Plant')) return 'PWR';
+                if (type.includes('Substation')) return 'TXM';
+                if (type.includes('Data Center')) return 'DST';
+                if (type.includes('Utility')) return 'UTL';
+                return 'UNK';
+            };
+
+            const generateSummaryResponse = (nodes) => {
+                if (!nodes || nodes.length === 0) return 'No data available';
+                
+                let response = `## INFRASTRUCTURE ANALYSIS SUMMARY\n\n`;
+                response += `**Total Nodes:** ${nodes.length}\n`;
+                response += `**Analysis Date:** ${new Date().toLocaleDateString()}\n\n`;
+                
+                response += `### KEY METRICS\n\n`;
+                response += `| Node | Type | Power Score | Risk | Capacity | Queue Depth |\n`;
+                response += `|------|------|-------------|------|----------|-------------|\n`;
+                
+                nodes.forEach(node => {
+                    const capacityMatch = node.content.match(/\*\*Available Capacity:\*\* (.+?)(?:\n|$)/);
+                    const queueMatch = node.content.match(/\*\*Transmission Queue Depth:\*\* (.+?)(?:\n|$)/);
+                    
+                    const capacity = capacityMatch ? capacityMatch[1].trim() : 'N/A';
+                    const queueDepth = queueMatch ? queueMatch[1].trim() : 'N/A';
+                    
+                    response += `| ${node.id} | ${getTypeAbbreviation(node.type)} | ${node.powerScore}/10 | ${node.risk} | ${capacity} | ${queueDepth} |\n`;
+                });
+                
+                response += `\n### RECOMMENDATIONS\n\n`;
+                response += `**Primary Site Recommendation:** Node 2 (Whitney Substation)\n`;
+                response += `- Highest power score (9/10)\n`;
+                response += `- Lowest risk level\n`;
+                response += `- Excellent redundancy\n`;
+                response += `- Shortest queue depth (1.8 years)\n\n`;
+                
+                response += `**Backup Option:** Node 1 (Whitney Power Plant)\n`;
+                response += `- High capacity (1,200 MW)\n`;
+                response += `- Established infrastructure\n`;
+                response += `- Moderate queue depth (2.3 years)\n`;
+                
+                return response;
+            };
+
+            const filterNodeLevelResponse = (category) => {
+                if (category === 'all') {
+                    return generateSummaryResponse(selectedMarker ? [selectedMarker] : nodeData);
+                }
+                
+                const keywords = {
+                    'pwr': ['Power Plant', 'Generation', 'Coal-fired', 'Hydroelectric', 'Natural Gas'],
+                    'trn': ['Substation', 'Transmission', '345 kV', '138 kV', 'Grid'],
+                    'utl': ['Utility', 'Distribution', 'Local', 'Municipal'],
+                    'risk': ['Weather', 'Resilience', 'Redundancy', 'Risk', 'Vulnerable']
+                };
+
+                const categoryKeywords = keywords[category] || [];
+                let filteredNodes = nodeData.filter(node => 
+                    categoryKeywords.some(keyword => 
+                        node.content.toLowerCase().includes(keyword.toLowerCase())
+                    )
+                );
+
+                // Additional filtering for specific categories
+                if (category === 'utl') {
+                    filteredNodes = filteredNodes.filter(node => 
+                        !node.type.includes('Substation') && 
+                        !node.type.includes('Transmission')
+                    );
+                }
+
+                if (category === 'trn') {
+                    filteredNodes = filteredNodes.filter(node => 
+                        !node.type.includes('Power Plant') && 
+                        !node.type.includes('Data Center') &&
+                        !node.type.includes('Utility')
+                    );
+                }
+
+                // Return formatted text response instead of nodes
+                if (filteredNodes.length === 0) {
+                    return `## ${category.toUpperCase()} Analysis\n\nNo ${category} infrastructure found in the current analysis.`;
+                }
+
+                let response = `## ${category.toUpperCase()} Analysis\n\n`;
+                filteredNodes.forEach(node => {
+                    response += `### NODE ${node.id}: **${node.name}**\n`;
+                    response += `**Type:** ${node.type}\n`;
+                    response += `⚡ **Power Score:** ${node.powerScore}/10\n`;
+                    response += `**Risk Level:** ${node.risk}\n\n`;
+                    response += node.content + '\n\n';
+                });
+
+                return response;
+            };
+
+            const filteredResponse = useMemo(() => {
+                if (viewMode === 'node') {
+                    return filterNodeLevelResponse(currentCategory);
+                }
+                return testData.siteLevel || 'Site-level analysis not available';
+            }, [viewMode, currentCategory, selectedMarker]);
+
+            return (
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    width: '320px',
+                    borderRadius: '12px',
+                    transition: 'all 0.3s ease'
+                }}>
+                    {/* Header */}
+                    <div style={{
+                        textAlign: 'center',
+                        marginBottom: '20px',
+                        width: '100%'
+                    }}>
+                        <h1 style={{
+                            fontSize: '1.5rem',
+                            fontWeight: '700',
+                            background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            marginBottom: '8px'
+                        }}>
+                            Power Grid Analysis
+                        </h1>
+                        <p style={{
+                            color: '#94a3b8',
+                            fontSize: '0.9rem'
+                        }}>
+                            {viewMode.toUpperCase()}-level infrastructure analysis
+                        </p>
+                    </div>
+
+                    {/* View Mode Toggle */}
+                    <div style={{
+                        display: 'flex',
+                        gap: '8px',
+                        marginBottom: '20px',
+                        width: '100%'
+                    }}>
+                        <button
+                            onClick={() => onViewModeChange('node')}
+                            style={{
+                                flex: 1,
+                                padding: '8px 16px',
+                                borderRadius: '8px',
+                                border: '1px solid rgba(255, 255, 255, 0.2)',
+                                background: viewMode === 'node' ? 'rgba(59, 130, 246, 0.2)' : 'transparent',
+                                color: viewMode === 'node' ? '#ffffff' : 'rgba(255, 255, 255, 0.7)',
+                                cursor: 'pointer',
+                                transition: 'all 0.2s ease'
+                            }}
+                        >
+                            NODE
+                        </button>
+                        <button
+                            onClick={() => onViewModeChange('site')}
+                            style={{
+                                flex: 1,
+                                padding: '8px 16px',
+                                borderRadius: '8px',
+                                border: '1px solid rgba(255, 255, 255, 0.2)',
+                                background: viewMode === 'site' ? 'rgba(59, 130, 246, 0.2)' : 'transparent',
+                                color: viewMode === 'site' ? '#ffffff' : 'rgba(255, 255, 255, 0.7)',
+                                cursor: 'pointer',
+                                transition: 'all 0.2s ease'
+                            }}
+                        >
+                            SITE
+                        </button>
+                    </div>
+
+                    {/* Category Filter Buttons */}
+                    <div style={{
+                        display: 'flex',
+                        gap: '6px',
+                        marginBottom: '20px',
+                        width: '100%',
+                        flexWrap: 'wrap'
+                    }}>
+                        {['all', 'pwr', 'trn', 'utl', 'risk'].map(category => (
+                            <button
+                                key={category}
+                                onClick={() => setCurrentCategory(category)}
+                                style={{
+                                    padding: '6px 12px',
+                                    borderRadius: '6px',
+                                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                                    background: currentCategory === category ? 'rgba(59, 130, 246, 0.3)' : 'transparent',
+                                    color: currentCategory === category ? '#ffffff' : 'rgba(255, 255, 255, 0.7)',
+                                    cursor: 'pointer',
+                                    fontSize: '11px',
+                                    fontWeight: '500',
+                                    transition: 'all 0.2s ease'
+                                }}
+                            >
+                                {category.toUpperCase()}
+                            </button>
+                        ))}
+                    </div>
+
+                    {/* Response Display with Category-Specific Tables */}
+                    <div style={{
+                        maxHeight: '400px',
+                        overflow: 'auto',
+                        padding: '16px',
+                        borderRadius: '12px',
+                        marginBottom: '2px',
+                        width: '100%',
+                        maxWidth: '320px',
+                        position: 'relative',
+                        background: 'rgba(255, 255, 255, 0.03)',
+                        border: '1px solid rgba(255, 255, 255, 0.05)'
+                    }}>
+                        {(() => {
+                            const filteredNodes = nodeData.filter(node => {
+                                if (currentCategory === 'all') return true;
+                                
+                                const keywords = {
+                                    'pwr': ['Power Plant', 'Coal-fired', 'Generation', 'plant'],
+                                    'trn': ['Substation', 'Transmission', '345 kV', '138 kV', 'Grid'],
+                                    'utl': ['Water Supply', 'Water Treatment', 'Utility', 'Municipal'],
+                                    'risk': ['Weather', 'Resilience', 'Redundancy', 'Risk', 'Vulnerable']
+                                };
+                                
+                                const categoryKeywords = keywords[currentCategory] || [];
+                                return categoryKeywords.some(keyword => 
+                                    node.content.toLowerCase().includes(keyword.toLowerCase())
+                                );
+                            });
+
+                            // Additional filtering for specific categories
+                            let finalFilteredNodes = filteredNodes;
+                            if (currentCategory === 'utl') {
+                                // Keep only water utilities, exclude power and transmission
+                                finalFilteredNodes = filteredNodes.filter(node => 
+                                    node.type.includes('Water') || 
+                                    node.type.includes('Utility')
+                                );
+                            }
+                            if (currentCategory === 'trn') {
+                                // Keep only transmission infrastructure
+                                finalFilteredNodes = filteredNodes.filter(node => 
+                                    node.type.includes('Substation') || 
+                                    node.type.includes('Transmission')
+                                );
+                            }
+                            if (currentCategory === 'pwr') {
+                                // Keep only power generation
+                                finalFilteredNodes = filteredNodes.filter(node => 
+                                    node.type.includes('Power Plant') || 
+                                    node.type.includes('Generation')
+                                );
+                            }
+
+                            if (finalFilteredNodes.length === 0) {
+                                return (
+                                    <div style={{
+                                        textAlign: 'center',
+                                        color: '#6b7280',
+                                        fontSize: '14px',
+                                        padding: '40px 20px'
+                                    }}>
+                                        No {currentCategory.toUpperCase()} infrastructure found
+                                    </div>
+                                );
+                            }
+
+                            return (
+                                <div>
+                                    <div style={{
+                                        fontSize: '16px',
+                                        fontWeight: '600',
+                                        color: '#ffffff',
+                                        marginBottom: '16px',
+                                        textAlign: 'center'
+                                    }}>
+                                        {currentCategory === 'all' && '📊 Infrastructure Analysis Summary'}
+                                        {currentCategory === 'pwr' && '⚡ Power Generation Analysis'}
+                                        {currentCategory === 'trn' && '🔌 Transmission Infrastructure'}
+                                        {currentCategory === 'utl' && '🏢 Local Utilities'}
+                                        {currentCategory === 'risk' && '⚠️ Risk & Redundancy Analysis'}
+                                    </div>
+                                    
+                                    {/* Category-Specific Tables */}
+                                    <div style={{
+                                        background: 'rgba(0, 0, 0, 0.2)',
+                                        borderRadius: '8px',
+                                        overflow: 'hidden'
+                                    }}>
+                                        <table style={{
+                                            width: '100%',
+                                            borderCollapse: 'collapse',
+                                            fontSize: '11px'
+                                        }}>
+                                            <thead style={{
+                                                background: currentCategory === 'all' ? 'linear-gradient(135deg, #1e40af, #7c3aed)' :
+                                                           currentCategory === 'pwr' ? 'linear-gradient(135deg, #ef4444, #f59e0b)' :
+                                                           currentCategory === 'trn' ? 'linear-gradient(135deg, #3b82f6, #1e40af)' :
+                                                           currentCategory === 'utl' ? 'linear-gradient(135deg, #f59e0b, #eab308)' :
+                                                           'linear-gradient(135deg, #ef4444, #dc2626)'
+                                            }}>
+                                                <tr>
+                                                    {currentCategory === 'all' && (
+                                                        <>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'left', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Node</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'left', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Type</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Score</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Risk</th>
+                                                        </>
+                                                    )}
+                                                    {currentCategory === 'pwr' && (
+                                                        <>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'left', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Plant</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Capacity</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Efficiency</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Queue</th>
+                                                        </>
+                                                    )}
+                                                    {currentCategory === 'trn' && (
+                                                        <>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'left', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Station</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Voltage</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Reliability</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Redundancy</th>
+                                                        </>
+                                                    )}
+                                                    {currentCategory === 'utl' && (
+                                                        <>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'left', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Utility</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Service</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Coverage</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Response</th>
+                                                        </>
+                                                    )}
+                                                    {currentCategory === 'risk' && (
+                                                        <>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'left', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Asset</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Risk Level</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Resilience</th>
+                                                            <th style={{ padding: '8px 6px', textAlign: 'center', color: '#ffffff', fontWeight: '600', borderBottom: '1px solid rgba(255, 255, 255, 0.1)' }}>Redundancy</th>
+                                                        </>
+                                                    )}
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {finalFilteredNodes.map((node, index) => {
+                                                    const capacityMatch = node.content.match(/\*\*Available Capacity:\*\* (.+?)(?:\n|$)/);
+                                                    const queueMatch = node.content.match(/\*\*Transmission Queue Depth:\*\* (.+?)(?:\n|$)/);
+                                                    const resilienceMatch = node.content.match(/\*\*Weather Resilience:\*\* (.+?)(?:\n|$)/);
+                                                    const redundancyMatch = node.content.match(/\*\*Redundancy:\*\* (.+?)(?:\n|$)/);
+                                                    
+                                                    return (
+                                                        <tr key={node.id} style={{
+                                                            borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+                                                            transition: 'background 0.2s ease'
+                                                        }}
+                                                        onMouseEnter={(e) => {
+                                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                                                        }}
+                                                        onMouseLeave={(e) => {
+                                                            e.currentTarget.style.background = 'transparent';
+                                                        }}>
+                                                            {currentCategory === 'all' && (
+                                                                <>
+                                                                    <td style={{ padding: '8px 6px', color: '#ffffff', fontWeight: '500' }}>{node.id}</td>
+                                                                    <td style={{ padding: '8px 6px', color: '#d1d5db' }}>{getTypeAbbreviation(node.type)}</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: node.powerScore >= 8 ? '#10b981' : node.powerScore >= 6 ? '#f59e0b' : '#ef4444', fontWeight: '600' }}>{node.powerScore}/10</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: node.risk === 'Low' ? '#10b981' : node.risk === 'Medium' ? '#f59e0b' : '#ef4444', fontWeight: '500' }}>{node.risk}</td>
+                                                                </>
+                                                            )}
+                                                            {currentCategory === 'pwr' && (
+                                                                <>
+                                                                    <td style={{ padding: '8px 6px', color: '#ffffff', fontWeight: '500' }}>{node.name.split(' ')[0]}</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: '#d1d5db' }}>{capacityMatch ? capacityMatch[1].trim() : 'N/A'}</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: node.powerScore >= 8 ? '#10b981' : node.powerScore >= 6 ? '#f59e0b' : '#ef4444', fontWeight: '600' }}>{node.powerScore}/10</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: '#d1d5db' }}>{queueMatch ? queueMatch[1].trim() : 'N/A'}</td>
+                                                                </>
+                                                            )}
+                                                            {currentCategory === 'trn' && (
+                                                                <>
+                                                                    <td style={{ padding: '8px 6px', color: '#ffffff', fontWeight: '500' }}>{node.name.split(' ')[0]}</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: '#d1d5db' }}>345 kV</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: node.powerScore >= 8 ? '#10b981' : node.powerScore >= 6 ? '#f59e0b' : '#ef4444', fontWeight: '600' }}>{node.powerScore}/10</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: redundancyMatch ? (redundancyMatch[1].includes('Dual') ? '#10b981' : '#f59e0b') : '#6b7280' }}>{redundancyMatch ? redundancyMatch[1].trim() : 'N/A'}</td>
+                                                                </>
+                                                            )}
+                                                            {currentCategory === 'utl' && (
+                                                                <>
+                                                                    <td style={{ padding: '8px 6px', color: '#ffffff', fontWeight: '500' }}>{node.name.split(' ')[0]}</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: '#d1d5db' }}>Water</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: '#d1d5db' }}>Local</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: node.powerScore >= 7 ? '#10b981' : '#f59e0b', fontWeight: '600' }}>{node.powerScore}/10</td>
+                                                                </>
+                                                            )}
+                                                            {currentCategory === 'risk' && (
+                                                                <>
+                                                                    <td style={{ padding: '8px 6px', color: '#ffffff', fontWeight: '500' }}>{node.name.split(' ')[0]}</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: node.risk === 'Low' ? '#10b981' : node.risk === 'Medium' ? '#f59e0b' : '#ef4444', fontWeight: '600' }}>{node.risk}</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: resilienceMatch ? (parseInt(resilienceMatch[1]) >= 90 ? '#10b981' : parseInt(resilienceMatch[1]) >= 80 ? '#f59e0b' : '#ef4444') : '#6b7280' }}>{resilienceMatch ? resilienceMatch[1].trim() : 'N/A'}</td>
+                                                                    <td style={{ padding: '8px 6px', textAlign: 'center', color: redundancyMatch ? (redundancyMatch[1].includes('Dual') ? '#10b981' : redundancyMatch[1].includes('Single') ? '#f59e0b' : '#ef4444') : '#6b7280' }}>{redundancyMatch ? redundancyMatch[1].trim() : 'N/A'}</td>
+                                                                </>
+                                                            )}
+                                                        </tr>
+                                                    );
+                                                })}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    {/* Category-Specific Insights */}
+                                    <div style={{
+                                        marginTop: '16px',
+                                        padding: '12px',
+                                        background: currentCategory === 'all' ? 'rgba(59, 130, 246, 0.1)' :
+                                                   currentCategory === 'pwr' ? 'rgba(239, 68, 68, 0.1)' :
+                                                   currentCategory === 'trn' ? 'rgba(59, 130, 246, 0.1)' :
+                                                   currentCategory === 'utl' ? 'rgba(245, 158, 11, 0.1)' :
+                                                   'rgba(239, 68, 68, 0.1)',
+                                        borderRadius: '8px',
+                                        border: currentCategory === 'all' ? '1px solid rgba(59, 130, 246, 0.2)' :
+                                               currentCategory === 'pwr' ? '1px solid rgba(239, 68, 68, 0.2)' :
+                                               currentCategory === 'trn' ? '1px solid rgba(59, 130, 246, 0.2)' :
+                                               currentCategory === 'utl' ? '1px solid rgba(245, 158, 11, 0.2)' :
+                                               '1px solid rgba(239, 68, 68, 0.2)'
+                                    }}>
+                                        <div style={{
+                                            fontSize: '12px',
+                                            fontWeight: '600',
+                                            color: currentCategory === 'all' ? '#60a5fa' :
+                                                   currentCategory === 'pwr' ? '#fca5a5' :
+                                                   currentCategory === 'trn' ? '#60a5fa' :
+                                                   currentCategory === 'utl' ? '#fbbf24' :
+                                                   '#fca5a5',
+                                            marginBottom: '8px'
+                                        }}>
+                                            {currentCategory === 'all' && '🎯 Key Insights'}
+                                            {currentCategory === 'pwr' && '⚡ Power Generation Insights'}
+                                            {currentCategory === 'trn' && '🔌 Transmission Insights'}
+                                            {currentCategory === 'utl' && '🏢 Utility Insights'}
+                                            {currentCategory === 'risk' && '⚠️ Risk Assessment'}
+                                        </div>
+                                        <div style={{
+                                            fontSize: '11px',
+                                            color: '#d1d5db',
+                                            lineHeight: '1.4'
+                                        }}>
+                                            {currentCategory === 'all' && (
+                                                <>
+                                                    • <strong>Primary Recommendation:</strong> Node 2 (Whitney Substation) - Highest score, lowest risk<br/>
+                                                    • <strong>Capacity Leader:</strong> Node 1 (Whitney Power Plant) - 1,200 MW available<br/>
+                                                    • <strong>Queue Status:</strong> 1.8-4.1 years across all nodes
+                                                </>
+                                            )}
+                                            {currentCategory === 'pwr' && (
+                                                <>
+                                                    • <strong>Total Capacity:</strong> {finalFilteredNodes.reduce((sum, node) => {
+                                                        const match = node.content.match(/\*\*Available Capacity:\*\* (.+?)(?:\n|$)/);
+                                                        return sum + (match ? parseInt(match[1]) : 0);
+                                                    }, 0)} MW across {finalFilteredNodes.length} plants<br/>
+                                                    • <strong>Efficiency Range:</strong> {Math.min(...finalFilteredNodes.map(n => n.powerScore))}-{Math.max(...finalFilteredNodes.map(n => n.powerScore))}/10<br/>
+                                                    • <strong>Queue Pressure:</strong> {finalFilteredNodes.map(node => {
+                                                        const match = node.content.match(/\*\*Transmission Queue Depth:\*\* (.+?)(?:\n|$)/);
+                                                        return match ? match[1].trim() : 'N/A';
+                                                    }).join(', ')} average wait time
+                                                </>
+                                            )}
+                                            {currentCategory === 'trn' && (
+                                                <>
+                                                    • <strong>Transmission Capacity:</strong> High-voltage 345kV infrastructure<br/>
+                                                    • <strong>Reliability Score:</strong> {Math.max(...finalFilteredNodes.map(n => n.powerScore))}/10 average<br/>
+                                                    • <strong>Redundancy Status:</strong> {finalFilteredNodes.filter(n => n.content.includes('Dual')).length}/{finalFilteredNodes.length} dual-circuit
+                                                </>
+                                            )}
+                                            {currentCategory === 'utl' && (
+                                                <>
+                                                    • <strong>Service Coverage:</strong> Local municipal utilities<br/>
+                                                    • <strong>Response Time:</strong> {Math.max(...finalFilteredNodes.map(n => n.powerScore))}/10 average<br/>
+                                                    • <strong>Infrastructure:</strong> Water treatment and distribution systems
+                                                </>
+                                            )}
+                                            {currentCategory === 'risk' && (
+                                                <>
+                                                    • <strong>Risk Distribution:</strong> {finalFilteredNodes.filter(n => n.risk === 'Low').length} Low, {finalFilteredNodes.filter(n => n.risk === 'Medium').length} Medium, {finalFilteredNodes.filter(n => n.risk === 'High').length} High<br/>
+                                                    • <strong>Resilience Average:</strong> {Math.round(finalFilteredNodes.reduce((sum, node) => {
+                                                        const match = node.content.match(/\*\*Weather Resilience:\*\* (.+?)(?:\n|$)/);
+                                                        return sum + (match ? parseInt(match[1]) : 0);
+                                                    }, 0) / finalFilteredNodes.length)}%<br/>
+                                                    • <strong>Redundancy Coverage:</strong> {finalFilteredNodes.filter(n => n.content.includes('Dual')).length}/{finalFilteredNodes.length} assets have dual redundancy
+                                                </>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })()}
+                    </div>
+
+                    {/* Node List Toggle */}
+                    <button
+                        onClick={() => setNodeListOpen(!nodeListOpen)}
+                        style={{
+                            marginTop: '16px',
+                            padding: '8px 16px',
+                            borderRadius: '8px',
+                            border: '1px solid rgba(255, 255, 255, 0.2)',
+                            background: 'rgba(255, 255, 255, 0.05)',
+                            color: '#ffffff',
+                            cursor: 'pointer',
+                            fontSize: '12px',
+                            transition: 'all 0.2s ease'
+                        }}
+                    >
+                        📋 Nodes ({nodeData.length})
+                    </button>
+                </div>
+            );
+        };
+
+        // Mock LegendContainer component
+        const LegendContainer = ({ isVisible, onToggle, handleMarkerClick }) => {
+            const [legendData, setLegendData] = useState({
+                serpFeatures: [],
+                featureCounts: {},
+                totalFeatures: 0,
+                lastUpdated: null
+            });
+
+            // Mock infrastructure data
+            useEffect(() => {
+                const mockFeatures = [
+                    { properties: { category: 'power plants', title: 'Whitney Power Plant' } },
+                    { properties: { category: 'electric utilities', title: 'Whitney Substation' } },
+                    { properties: { category: 'data centers', title: 'Whitney Data Center' } }
+                ];
+                
+                setLegendData({
+                    serpFeatures: mockFeatures,
+                    featureCounts: { 'power plants': 1, 'electric utilities': 1, 'data centers': 1 },
+                    totalFeatures: 3,
+                    lastUpdated: Date.now()
+                });
+            }, []);
+
+            if (!isVisible) return null;
+
+            return (
+                <div style={{
+                    position: 'absolute',
+                    left: '340px',
+                    top: '0px',
+                    height: 'auto',
+                    zIndex: 1001,
+                    background: 'rgba(255, 255, 255, 0.06)',
+                    border: '1px solid rgba(255, 255, 255, 0.15)',
+                    borderRadius: '12px',
+                    padding: '16px',
+                    color: '#f9fafb',
+                    fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif',
+                    fontSize: '12px',
+                    backdropFilter: 'blur(20px)',
+                    boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
+                    minWidth: '200px',
+                    maxWidth: '280px'
+                }}>
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        marginBottom: '16px',
+                        paddingBottom: '8px',
+                        borderBottom: '1px solid rgba(75, 85, 99, 0.3)'
+                    }}>
+                        <h3 style={{
+                            margin: 0,
+                            fontSize: '14px',
+                            fontWeight: '600',
+                            color: '#f9fafb'
+                        }}>
+                            Infrastructure {legendData.totalFeatures > 0 && (
+                                <span style={{ color: '#9ca3af', fontWeight: '400' }}>
+                                    [{legendData.totalFeatures}]
+                                </span>
+                            )}
+                        </h3>
+                        <button
+                            onClick={onToggle}
+                            style={{
+                                background: 'none',
+                                border: 'none',
+                                color: '#9ca3af',
+                                cursor: 'pointer',
+                                padding: '4px',
+                                borderRadius: '4px'
+                            }}
+                        >
+                            ×
+                        </button>
+                    </div>
+
+                    {Object.entries(legendData.featureCounts).map(([category, count]) => (
+                        <div key={category} style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            marginBottom: '8px',
+                            padding: '4px 8px',
+                            borderRadius: '4px',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s ease'
+                        }}>
+                            <div style={{
+                                width: '12px',
+                                height: '12px',
+                                borderRadius: '50%',
+                                marginRight: '8px',
+                                backgroundColor: category === 'power plants' ? '#ef4444' : 
+                                               category === 'electric utilities' ? '#f59e0b' : '#8b5cf6'
+                            }} />
+                            <span style={{ color: '#d1d5db', flex: 1 }}>
+                                {category.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                            </span>
+                            <span style={{ color: '#6b7280', fontSize: '10px' }}>
+                                ({count})
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            );
+        };
+
+        // Main Test Component
+        const TestApp = () => {
+            const [viewMode, setViewMode] = useState('node');
+            const [selectedMarker, setSelectedMarker] = useState(null);
+            const [showLegend, setShowLegend] = useState(true);
+
+            const handleViewModeChange = (newViewMode) => {
+                setViewMode(newViewMode);
+            };
+
+            const handleMarkerClick = (markerData) => {
+                setSelectedMarker(markerData);
+                setViewMode('node');
+            };
+
+            const handleBackToAnalysis = () => {
+                setSelectedMarker(null);
+                setViewMode('site');
+            };
+
+            const toggleLegend = () => {
+                setShowLegend(!showLegend);
+            };
+
+            // Mock AI state
+            const aiState = {
+                isLoading: false,
+                response: null,
+                responses: [],
+                citations: [],
+                currentQuestions: 'initial',
+                selectedCard: null,
+                showFollowupButtons: false,
+                showFollowupContent: false,
+                hasShownFollowup: false,
+                sourcesExpanded: false,
+                responseExpanded: false,
+                selectedAIProvider: 'perplexity',
+                aiProviderDropdownOpen: false,
+                collapsedResponses: new Set(),
+                showCollapsedResponses: false,
+                pendingRequests: [],
+                selectedMarker
+            };
+
+            return (
+                <div className="test-container">
+                    {/* BaseCard equivalent */}
+                    <div style={{
+                        position: 'fixed',
+                        left: 0,
+                        top: 0,
+                        zIndex: 1000,
+                        userSelect: 'none',
+                        fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif'
+                    }}>
+                        <AIQuestionsSection 
+                            aiState={aiState}
+                            handleAIQuery={() => {}}
+                            viewMode={viewMode}
+                            onViewModeChange={handleViewModeChange}
+                            selectedMarker={selectedMarker}
+                            handleMarkerClick={handleMarkerClick}
+                            handleBackToAnalysis={handleBackToAnalysis}
+                        />
+                    </div>
+
+                    {/* LegendContainer */}
+                    <LegendContainer 
+                        isVisible={showLegend}
+                        onToggle={toggleLegend}
+                        handleMarkerClick={handleMarkerClick}
+                    />
+                </div>
+            );
+        };
+
+        // Render the app
+        ReactDOM.render(<TestApp />, document.getElementById('root'));
+    </script>
+</body>
+</html>

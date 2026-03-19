@@ -1,0 +1,3 @@
+-- Placeholder migration to match remote migration history.
+-- Remote database has version 20260304162000 recorded; this repo did not previously include it.
+-- No-op.

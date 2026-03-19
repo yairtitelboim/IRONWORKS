@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Grid Analysis - Test Frontend</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@tanstack/react-virtual@3.11.2/dist/umd/index.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .control-label {
+            color: #94a3b8;
+            font-weight: 500;
+        }
+
+        .toggle-button {
+            padding: 8px 16px;
+            border: 2px solid #334155;
+            background: #1e293b;
+            color: #f1f5f9;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .toggle-button:hover {
+            background: #334155;
+            border-color: #475569;
+        }
+
+        .toggle-button.active {
+            background: #3b82f6;
+            border-color: #3b82f6;
+            color: white;
+        }
+
+        .toggle-button.broken {
+            background: #dc2626;
+            border-color: #dc2626;
+            color: white;
+        }
+
+        .node-list-panel {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 400px;
+            height: 100vh;
+            background: #1e293b;
+            border-left: 2px solid #334155;
+            padding: 20px;
+            transition: right 0.3s ease;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .node-list-panel.open {
+            right: 0;
+        }
+
+        .node-list-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #334155;
+        }
+
+        .node-list-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+
+        .close-button {
+            background: none;
+            border: none;
+            color: #94a3b8;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .node-item {
+            padding: 12px;
+            margin-bottom: 8px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .node-item:hover {
+            background: #334155;
+            border-color: #475569;
+        }
+
+        .node-item.selected {
+            background: #3b82f6;
+            border-color: #3b82f6;
+            color: white;
+        }
+
+        .response-container {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+        }
+
+        .table-container {
+            background: #0f172a;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #0f172a;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table thead {
+            background: linear-gradient(135deg, #1e40af, #7c3aed);
+        }
+
+        .data-table th {
+            padding: 16px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #f1f5f9;
+            border-bottom: 2px solid #334155;
+        }
+
+        .data-table td {
+            padding: 16px 12px;
+            border-bottom: 1px solid #334155;
+            color: #f1f5f9;
+            font-size: 0.9rem;
+        }
+
+        .data-table tr:hover {
+            background: #1e293b;
+        }
+
+        .type-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .type-pwr { background: #dc2626; color: white; }
+        .type-txm { background: #2563eb; color: white; }
+        .type-dst { background: #059669; color: white; }
+        .type-utl { background: #7c3aed; color: white; }
+
+        .score-high { color: #10b981; }
+        .score-medium { color: #f59e0b; }
+        .score-low { color: #ef4444; }
+        .score-na { color: #6b7280; }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-excellent { background: #10b981; }
+        .status-good { background: #3b82f6; }
+        .status-limited { background: #f59e0b; }
+        .status-poor { background: #ef4444; }
+
+        .insights-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: #0f172a;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .insights-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 15px;
+        }
+
+        .insight-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px 0;
+        }
+
+        .insight-icon {
+            font-size: 1.2rem;
+            margin-right: 12px;
+        }
+
+        .insight-text {
+            color: #e2e8f0;
+        }
+
+        .recommendation {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 8px;
+            border: 2px solid;
+        }
+
+        .recommendation.viable {
+            background: #064e3b;
+            border-color: #10b981;
+            color: #a7f3d0;
+        }
+
+        .recommendation.marginal {
+            background: #451a03;
+            border-color: #f59e0b;
+            color: #fde68a;
+        }
+
+        .recommendation.high-risk {
+            background: #7f1d1d;
+            border-color: #ef4444;
+            color: #fecaca;
+        }
+
+        .recommendation-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .source-link {
+            color: #3b82f6;
+            text-decoration: none;
+            border-bottom: 1px solid #3b82f6;
+        }
+
+        .source-link:hover {
+            color: #60a5fa;
+            border-bottom-color: #60a5fa;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useMemo } = React;
+        const useVirtualizer = window.useVirtualizer;
+
+        // Test data
+        const testData = {
+            "nodeLevel": `Below is a structured reliability analysis for each specified infrastructure node near Whitney, Texas, using only the required public data sources. Where plant-level data is unavailable, regional Texas data from EIA, ERCOT, or FERC is provided as instructed.
+
+## NODE 1: **Whitney Power Plant**
+**Type:** Power Plant (Coal-fired)
+⚡ **Power Score:** 8/10
+🔧 **Stability Score:** 7/10
+📊 **Nameplate Capacity:** 1,200 MW [EIA-860][1]
+📈 **Capacity Factor:** 45.2% (2023, Texas coal average) [EIA Electric Power Monthly]
+⚡ **Recent Generation:** ~4,700,000 MWh (2023) [EIA State Electricity Data]
+⚡ **Voltage Level:** 345 kV [FERC Transmission Studies]
+🔌 **Transmission Lines:** 345 kV lines to ERCOT grid [EIA Transmission Data]
+📊 **Available Capacity:** High relative to regional load [ERCOT Resource Adequacy]
+🏭 **Regional Load:** ~2,500 MW (Hill Country area) [ERCOT Public Reports]
+✅ **Power Availability:** Reliable, primary supply [EIA Generation Data][1]
+🔄 **Transmission Redundancy:** Multiple 345 kV connections [FERC Transmission Studies]
+⚠️ **Weather Resilience:** Vulnerable to extreme heat [FERC Reliability Studies]
+
+**Source Links:**
+- [EIA-860 Form Data](https://www.eia.gov/electricity/data/eia860/)
+- [EIA Electric Power Monthly](https://www.eia.gov/electricity/monthly/)
+- [FERC Transmission Studies](https://www.ferc.gov/industries-data/electric/power-sales-and-markets/transmission-planning)
+
+## NODE 2: **Whitney Substation**
+**Type:** Transmission Substation
+⚡ **Power Score:** 9/10
+🔧 **Stability Score:** 9/10
+📊 **Voltage Level:** 345/138 kV [FERC Transmission Studies]
+🔌 **Transmission Lines:** 345 kV to ERCOT, 138 kV local distribution [EIA Transmission Data]
+📊 **Available Capacity:** Excellent transmission access [ERCOT Resource Adequacy]
+🏭 **Regional Load:** Serves ~3,000 MW load [ERCOT Public Reports]
+✅ **Power Availability:** Highly reliable, grid backbone [FERC Reliability Studies]
+🔄 **Transmission Redundancy:** Multiple redundant paths [FERC Transmission Studies]
+⚠️ **Weather Resilience:** Hardened infrastructure [FERC Reliability Studies]
+
+**Source Links:**
+- [FERC Transmission Studies](https://www.ferc.gov/industries-data/electric/power-sales-and-markets/transmission-planning)
+- [EIA Transmission Data](https://www.eia.gov/electricity/data/eia860/)
+
+## NODE 3: **Whitney Data Center**
+**Type:** Data Center
+⚡ **Power Score:** 6/10
+🔧 **Stability Score:** 8/10
+📊 **Power Consumption:** ~50 MW [ERCOT Load Data]
+🔌 **Transmission Access:** 138 kV connection [EIA Transmission Data]
+📊 **Available Capacity:** Limited by local infrastructure [ERCOT Resource Adequacy]
+🏭 **Regional Load:** Part of ~3,000 MW local load [ERCOT Public Reports]
+✅ **Power Availability:** Dependent on local grid [ERCOT Load Data]
+🔄 **Transmission Redundancy:** Single 138 kV feed [FERC Transmission Studies]
+⚠️ **Weather Resilience:** Requires backup systems [FERC Reliability Studies]
+
+**Source Links:**
+- [ERCOT Load Data](https://www.ercot.com/gridmktinfo/load)
+- [EIA Transmission Data](https://www.eia.gov/electricity/data/eia860/)
+
+## NODE 4: **Lake Whitney Power Plant**
+**Type:** Power Plant (Hydroelectric)
+⚡ **Power Score:** 6/10
+🔧 **Stability Score:** 7/10
+📊 **Nameplate Capacity:** 48 MW [EIA-860][4]
+📈 **Capacity Factor:** 28.5% (2023, Texas hydro average) [EIA Electric Power Monthly]
+⚡ **Recent Generation:** ~120,000 MWh (2023, hydro estimate) [EIA State Electricity Data]
+⚡ **Voltage Level:** 69/138 kV [FERC Transmission Studies]
+🔌 **Transmission Lines:** 69 kV/138 kV lines to regional substations [EIA Transmission Data]
+📊 **Available Capacity:** Small relative to regional load [ERCOT Resource Adequacy]
+🏭 **Regional Load:** See Node 1 [ERCOT Public Reports]
+✅ **Power Availability:** Limited, not primary supply [EIA Generation Data][4]
+🔄 **Transmission Redundancy:** Supported by larger grid [FERC Transmission Studies]
+⚠️ **Weather Resilience:** Subject to drought risk [FERC Reliability Studies]
+
+**Source Links:**
+- [EIA-860 Form Data](https://www.eia.gov/electricity/data/eia860/)
+- [EIA Electric Power Monthly](https://www.eia.gov/electricity/monthly/)
+- [FERC Transmission Studies](https://www.ferc.gov/industries-data/electric/power-sales-and-markets/transmission-planning)`
+        };
+
+        function DataCenterAnalysis() {
+            const [currentViewMode, setCurrentViewMode] = useState('node');
+            const [currentCategory, setCurrentCategory] = useState('all');
+            const [selectedNode, setSelectedNode] = useState(null);
+            const [nodeListOpen, setNodeListOpen] = useState(false);
+
+            // Parse node data for the table
+            const nodeData = useMemo(() => {
+                const nodes = [];
+                const nodeRegex = /## NODE (\d+): \*\*(.*?)\*\*/g;
+                let match;
+                
+                while ((match = nodeRegex.exec(testData.nodeLevel)) !== null) {
+                    const nodeNumber = match[1];
+                    const nodeName = match[2];
+                    
+                    // Extract data for this node
+                    const nodeStart = match.index;
+                    const nextNodeMatch = nodeRegex.exec(testData.nodeLevel);
+                    const nodeEnd = nextNodeMatch ? nextNodeMatch.index : testData.nodeLevel.length;
+                    nodeRegex.lastIndex = nodeStart; // Reset for next iteration
+                    
+                    const nodeContent = testData.nodeLevel.substring(nodeStart, nodeEnd);
+                    
+                    const typeMatch = nodeContent.match(/\*\*Type:\*\* (.+?)(?:\n|$)/);
+                    const powerScoreMatch = nodeContent.match(/⚡ \*\*Power Score:\*\* (\d+)\/10/);
+                    const capacityMatch = nodeContent.match(/📊 \*\*Nameplate Capacity:\*\* ([^[]+)/);
+                    const voltageMatch = nodeContent.match(/⚡ \*\*Voltage Level:\*\* ([^[]+)/);
+                    const availabilityMatch = nodeContent.match(/✅ \*\*Power Availability:\*\* (.+?)(?:\n|$)/);
+                    const riskMatch = nodeContent.match(/⚠️ \*\*Weather Resilience:\*\* (.+?)(?:\n|$)/);
+                    
+                    nodes.push({
+                        id: nodeNumber,
+                        name: nodeName,
+                        type: typeMatch ? typeMatch[1] : 'Unknown',
+                        powerScore: powerScoreMatch ? parseInt(powerScoreMatch[1]) : 0,
+                        capacity: capacityMatch ? capacityMatch[1].trim() : 'N/A',
+                        voltage: voltageMatch ? voltageMatch[1].trim() : 'N/A',
+                        availability: availabilityMatch ? availabilityMatch[1].trim() : 'N/A',
+                        risk: riskMatch ? riskMatch[1].trim() : 'N/A',
+                        content: nodeContent
+                    });
+                }
+                
+                return nodes;
+            }, []);
+
+            const getTypeAbbreviation = (type) => {
+                if (type.includes('Power Plant')) return 'PWR';
+                if (type.includes('Substation')) return 'TXM';
+                if (type.includes('Data Center')) return 'DST';
+                if (type.includes('Utility')) return 'UTL';
+                return 'UNK';
+            };
+
+            const getScoreClass = (score) => {
+                if (score >= 8) return 'score-high';
+                if (score >= 6) return 'score-medium';
+                if (score >= 4) return 'score-low';
+                return 'score-na';
+            };
+
+            const getAvailabilityClass = (availability) => {
+                if (availability.includes('Highly reliable') || availability.includes('Reliable')) return 'status-excellent';
+                if (availability.includes('Limited')) return 'status-limited';
+                if (availability.includes('Dependent')) return 'status-good';
+                return 'status-poor';
+            };
+
+            const getRiskClass = (risk) => {
+                if (risk.includes('Hardened') || risk.includes('Multiple')) return 'status-excellent';
+                if (risk.includes('Supported')) return 'status-good';
+                if (risk.includes('Subject to') || risk.includes('Vulnerable')) return 'status-poor';
+                return 'status-limited';
+            };
+
+            const generateSummaryResponse = (nodes) => {
+                const totalCapacity = nodes.reduce((sum, node) => {
+                    const capacityMatch = node.capacity.match(/(\d+(?:,\d+)*)/);
+                    return sum + (capacityMatch ? parseInt(capacityMatch[1].replace(/,/g, '')) : 0);
+                }, 0);
+
+                const powerNodes = nodes.filter(n => n.type.includes('Power Plant'));
+                const transmissionNodes = nodes.filter(n => n.type.includes('Substation'));
+                const dataCenterNodes = nodes.filter(n => n.type.includes('Data Center'));
+                const utilityNodes = nodes.filter(n => n.type.includes('Utility'));
+
+                const bestPowerNode = powerNodes.reduce((best, node) => 
+                    node.powerScore > best.powerScore ? node : best, powerNodes[0] || { powerScore: 0 });
+
+                const highRiskNodes = nodes.filter(n => n.risk.includes('Vulnerable') || n.risk.includes('Subject to'));
+                const mediumRiskNodes = nodes.filter(n => n.risk.includes('Supported') || n.risk.includes('Limited'));
+
+                let recommendation = 'HIGH RISK SITE';
+                let recommendationClass = 'high-risk';
+                
+                if (powerNodes.length >= 2 && transmissionNodes.length >= 1 && highRiskNodes.length === 0) {
+                    recommendation = 'VIABLE SITE';
+                    recommendationClass = 'viable';
+                } else if (powerNodes.length >= 1 && transmissionNodes.length >= 1 && highRiskNodes.length <= 1) {
+                    recommendation = 'MARGINAL SITE';
+                    recommendationClass = 'marginal';
+                }
+
+                return {
+                    totalCapacity,
+                    powerNodes: powerNodes.length,
+                    transmissionNodes: transmissionNodes.length,
+                    dataCenterNodes: dataCenterNodes.length,
+                    utilityNodes: utilityNodes.length,
+                    bestPowerNode,
+                    highRiskNodes,
+                    mediumRiskNodes,
+                    recommendation,
+                    recommendationClass
+                };
+            };
+
+            const insights = useMemo(() => {
+                return generateSummaryResponse(nodeData);
+            }, [nodeData]);
+
+            const toggleViewMode = () => {
+                if (currentViewMode === 'node') {
+                    setCurrentViewMode('site');
+                    // Auto-revert after 2 seconds to show it's broken
+                    setTimeout(() => setCurrentViewMode('node'), 2000);
+                } else {
+                    setCurrentViewMode('node');
+                }
+            };
+
+            const toggleNodeList = () => {
+                setNodeListOpen(!nodeListOpen);
+            };
+
+            const selectNode = (node) => {
+                setSelectedNode(node);
+                setCurrentCategory('all');
+                setNodeListOpen(false);
+            };
+
+            const filterNodeLevelResponse = (category) => {
+                if (category === 'all') {
+                    return generateSummaryResponse(selectedNode ? [selectedNode] : nodeData);
+                }
+                
+                const keywords = {
+                    'power_generation': ['Power Plant', 'Generation', 'Coal-fired', 'Hydroelectric', 'Natural Gas'],
+                    'transmission': ['Substation', 'Transmission', '345 kV', '138 kV', 'Grid'],
+                    'local_utilities': ['Utility', 'Distribution', 'Local', 'Municipal'],
+                    'risk_redundancy': ['Weather', 'Resilience', 'Redundancy', 'Risk', 'Vulnerable']
+                };
+
+                const categoryKeywords = keywords[category] || [];
+                const filteredNodes = nodeData.filter(node => 
+                    categoryKeywords.some(keyword => 
+                        node.content.toLowerCase().includes(keyword.toLowerCase())
+                    )
+                );
+
+                if (category === 'local_utilities') {
+                    // Exclude transmission operators from local utilities
+                    return filteredNodes.filter(node => 
+                        !node.type.includes('Substation') && 
+                        !node.type.includes('Transmission')
+                    );
+                }
+
+                if (category === 'transmission') {
+                    // Exclude power plants and local utilities from transmission
+                    return filteredNodes.filter(node => 
+                        !node.type.includes('Power Plant') && 
+                        !node.type.includes('Data Center') &&
+                        !node.type.includes('Utility')
+                    );
+                }
+
+                return filteredNodes;
+            };
+
+            const displayResponse = (response) => {
+                if (typeof response === 'object' && response.totalCapacity !== undefined) {
+                    // This is a summary response
+                    return (
+                        <div className="insights-section">
+                            <div className="insights-title">📊 Infrastructure Analysis Summary</div>
+                            
+                            <div className="table-container">
+                                <table className="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Node</th>
+                                            <th>Type</th>
+                                            <th>Power Score</th>
+                                            <th>Capacity</th>
+                                            <th>Availability</th>
+                                            <th>Voltage</th>
+                                            <th>Risk Level</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {(selectedNode ? [selectedNode] : nodeData).map(node => (
+                                            <tr key={node.id}>
+                                                <td><strong>{node.id}: {node.name}</strong></td>
+                                                <td>
+                                                    <span className={`type-badge type-${getTypeAbbreviation(node.type).toLowerCase()}`}>
+                                                        {getTypeAbbreviation(node.type)}
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span className={getScoreClass(node.powerScore)}>
+                                                        {node.powerScore}/10
+                                                    </span>
+                                                </td>
+                                                <td>{node.capacity}</td>
+                                                <td>
+                                                    <span className={`status-indicator ${getAvailabilityClass(node.availability)}`}></span>
+                                                    {node.availability}
+                                                </td>
+                                                <td>{node.voltage}</td>
+                                                <td>
+                                                    <span className={`status-indicator ${getRiskClass(node.risk)}`}></span>
+                                                    {node.risk}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div className="insights-section">
+                                <div className="insights-title">🔍 Key Insights</div>
+                                
+                                <div className="insight-item">
+                                    <span className="insight-icon">🏭</span>
+                                    <span className="insight-text">
+                                        <strong>Primary Power Source:</strong> {insights.bestPowerNode.name} ({insights.bestPowerNode.powerScore} power score)
+                                    </span>
+                                </div>
+                                
+                                <div className="insight-item">
+                                    <span className="insight-icon">⚡</span>
+                                    <span className="insight-text">
+                                        <strong>Transmission Access:</strong> {insights.transmissionNodes} high-voltage connection(s) available
+                                    </span>
+                                </div>
+                                
+                                <div className="insight-item">
+                                    <span className="insight-icon">📊</span>
+                                    <span className="insight-text">
+                                        <strong>Total Available Capacity:</strong> ~{insights.totalCapacity.toFixed(0)} MW
+                                    </span>
+                                </div>
+                                
+                                <div className="insight-item">
+                                    <span className="insight-icon">⚠️</span>
+                                    <span className="insight-text">
+                                        <strong>Risk Status:</strong> {
+                                            insights.highRiskNodes.length > 0 
+                                                ? `${insights.highRiskNodes.length} high-risk component(s)`
+                                                : insights.mediumRiskNodes.length > 0
+                                                ? `${insights.mediumRiskNodes.length} medium-risk component(s) - manageable`
+                                                : 'Low risk infrastructure profile'
+                                        }
+                                    </span>
+                                </div>
+
+                                <div className={`recommendation ${insights.recommendationClass}`}>
+                                    <div className="recommendation-title">
+                                        📋 Site Recommendation: {insights.recommendation}
+                                    </div>
+                                    <div>
+                                        {insights.recommendation === 'VIABLE SITE' 
+                                            ? 'Multiple reliable power sources and transmission access'
+                                            : insights.recommendation === 'MARGINAL SITE'
+                                            ? 'Limited redundancy, consider backup options'
+                                            : 'Insufficient reliable infrastructure'
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                }
+                
+                // Regular text response
+                let processedResponse = response;
+                
+                // Convert source links to clickable links
+                processedResponse = processedResponse.replace(
+                    /\[([^\]]+)\]\(([^)]+)\)/g, 
+                    '<a href="$2" class="source-link" target="_blank">$1</a>'
+                );
+                
+                return (
+                    <div dangerouslySetInnerHTML={{ __html: processedResponse.replace(/\n/g, '<br>') }} />
+                );
+            };
+
+            const filteredResponse = useMemo(() => {
+                if (currentViewMode === 'node') {
+                    return filterNodeLevelResponse(currentCategory);
+                }
+                return testData.siteLevel || 'Site-level analysis not available';
+            }, [currentViewMode, currentCategory, selectedNode]);
+
+            return (
+                <div className="container">
+                    <div className="header">
+                        <h1>Power Grid Analysis</h1>
+                        <p>NODE-level infrastructure analysis with category filtering</p>
+                    </div>
+
+                    <div className="controls">
+                        <div className="control-group">
+                            <span className="control-label">View Mode:</span>
+                            <button 
+                                className={`toggle-button ${currentViewMode === 'node' ? 'active' : ''}`}
+                                onClick={() => setCurrentViewMode('node')}
+                            >
+                                NODE
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentViewMode === 'site' ? 'broken' : ''}`}
+                                onClick={toggleViewMode}
+                            >
+                                SITE
+                            </button>
+                        </div>
+
+                        <div className="control-group">
+                            <span className="control-label">Categories:</span>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'all' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('all')}
+                            >
+                                ALL
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'power_generation' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('power_generation')}
+                            >
+                                PWR
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'transmission' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('transmission')}
+                            >
+                                TRN
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'local_utilities' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('local_utilities')}
+                            >
+                                UTL
+                            </button>
+                            <button 
+                                className={`toggle-button ${currentCategory === 'risk_redundancy' ? 'active' : ''}`}
+                                onClick={() => setCurrentCategory('risk_redundancy')}
+                            >
+                                RISK
+                            </button>
+                        </div>
+
+                        <div className="control-group">
+                            <button 
+                                className="toggle-button"
+                                onClick={toggleNodeList}
+                            >
+                                📋 Nodes
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="response-container">
+                        {displayResponse(filteredResponse)}
+                    </div>
+
+                    <div className={`node-list-panel ${nodeListOpen ? 'open' : ''}`}>
+                        <div className="node-list-header">
+                            <div className="node-list-title">Infrastructure Nodes</div>
+                            <button className="close-button" onClick={toggleNodeList}>×</button>
+                        </div>
+                        {nodeData.map(node => (
+                            <div 
+                                key={node.id}
+                                className={`node-item ${selectedNode?.id === node.id ? 'selected' : ''}`}
+                                onClick={() => selectNode(node)}
+                            >
+                                <strong>{node.id}: {node.name}</strong><br/>
+                                <small>{node.type} • {node.powerScore}/10 power score</small>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<DataCenterAnalysis />, document.getElementById('root'));
+    </script>
+</body>
+</html>

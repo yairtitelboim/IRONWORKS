@@ -1,0 +1,114 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "layer_type": "labels",
+    "geography": "Stafford, Spotsylvania, Culpeper, and Frederick Counties, VA",
+    "source": "County BOS/PC ordinance packets / county planning pages (public DocumentCenter/cdn links), Aug 2025–Feb 2026 scan",
+    "source_url": "https://staffordcountyva.gov/ ; https://www.spotsylvania.va.us/ ; https://web.culpepercounty.gov/ ; https://www.fcva.us/",
+    "created": "2026-02-09",
+    "feature_count": 3,
+    "data_date": "2025-08 to 2026-02",
+    "notes": "LOSS-only regional layer (excludes WIN counties Loudoun/Fairfax/Fauquier). Coordinates are county centroid geocodes (OSM Nominatim) for policy-level events."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-21",
+        "jurisdiction": "Stafford County, VA",
+        "county": "Stafford",
+        "layer": "Regulation",
+        "event_type": "ordinance_update",
+        "outcome": "Adopted",
+        "summary": "Board of Supervisors approved Comprehensive Plan Amendment R25-208 and zoning ordinance update O25-29 updating standards for data centers (setbacks/buffers/noise controls).",
+        "quote": "On October 21, 2025 the Board of Supervisors approved Comp Plan Amendment (R25-208) and Zoning Ordinance (O25-29) which updated Stafford County's standards for data centers.",
+        "source_url": "https://staffordcountyva.gov/government/departments_p-z/planning_and_zoning/data_centers/index.php",
+        "source_doc_title": "Stafford County Planning & Zoning – Data Centers (timeline / summary page)",
+        "source_doc_date": "2026-02-09",
+        "tags": [
+          "RUNWAY_POLICY",
+          "DC_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Stafford County, Virginia",
+        "geocode_source": "nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4579783,
+          38.4167265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "jurisdiction": "Stafford County, VA",
+        "county": "Stafford",
+        "layer": "Regulation",
+        "event_type": "ordinance_update",
+        "outcome": "Adopted",
+        "summary": "Board approved Ordinance O25-29(R) revising data center standards; Planning Commission had recommended larger setbacks/buffers and stronger noise/security controls.",
+        "quote": "On July 23, 2025, the Planning Commission ... recommended ... Increase the minimum setback between primary data center buildings and residential property lines from 100 feet to 500 feet ... Expand the vegetative buffer ... from 50 feet to 200 feet ... Require post-occupancy noise evaluations ... annually for 10 years.",
+        "source_url": "https://cdn.staffordcountyva.gov/Community%20Engagement/O25-29R.pln%20Data%20Centers.pdf",
+        "source_doc_title": "Stafford County Ordinance O25-29(R) – Data Centers",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_POLICY",
+          "DC_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Stafford County, Virginia",
+        "geocode_source": "nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4579783,
+          38.4167265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "jurisdiction": "Spotsylvania County, VA",
+        "county": "Spotsylvania",
+        "layer": "Regulation",
+        "event_type": "ordinance_update",
+        "outcome": "Proposed",
+        "summary": "Draft ordinance (Ord. 23-190) circulated for BOS action/public hearing to add “Data Center” definition and establish data center permissions and development standards across zoning districts.",
+        "quote": "AN ORDINANCE No. 23-190 ... adding a definition for Data Center ... to add Data Center as a Special Use in ... O-1, O-2, C-1, C-2, C-3, RC, and V ... and ... to add Data Center as a permitted use and to establish development standards specific to Data Center development in the Industrial 1 (I-1) and Industrial 2 (I-2) districts.",
+        "source_url": "https://www.spotsylvania.va.us/DocumentCenter/View/36127/BOS---Draft-Ord-REDLINE-Final-11-18-2025",
+        "source_doc_title": "Spotsylvania County Draft Ordinance 23-190 (BOS draft redline)",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_POLICY",
+          "DC_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Spotsylvania County, Virginia",
+        "geocode_source": "nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6741751,
+          38.1880936
+        ]
+      }
+    }
+  ]
+}

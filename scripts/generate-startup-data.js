@@ -1,0 +1,253 @@
+/**
+ * Generate startup data JSON with real coordinates
+ * Processes the CSV file and geocodes all company addresses
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+// Configuration
+const CSV_FILE = path.join(__dirname, '../public/companies-9-13-2025.csv');
+const OUTPUT_FILE = path.join(__dirname, '../public/startup-companies.json');
+const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
+
+// Categories mapping
+const CATEGORIES = {
+  'AI/ML': ['Artificial Intelligence (AI)', 'Machine Learning', 'Generative AI', 'Computer Vision', 'Natural Language Processing'],
+  'Biotech/Health': ['Biotechnology', 'Health Care', 'Medical', 'Pharmaceutical', 'Therapeutics', 'Life Science', 'Medical Device'],
+  'FinTech': ['Financial Services', 'FinTech', 'Payments', 'Insurance', 'InsurTech', 'Wealth Management'],
+  'CleanTech': ['Clean Energy', 'Renewable Energy', 'Environmental Engineering', 'CleanTech', 'Sustainability'],
+  'Enterprise': ['SaaS', 'Software', 'Enterprise Software', 'Information Technology', 'Analytics', 'Big Data'],
+  'Hardware': ['Hardware', 'Manufacturing', 'Semiconductor', 'Robotics', 'Medical Device'],
+  'Other': []
+};
+
+const FUNDING_STAGES = {
+  'Early Stage': ['Pre-Seed', 'Seed'],
+  'Growth Stage': ['Series A', 'Series B', 'Venture - Series Unknown'],
+  'Late Stage': ['Series C', 'Series D', 'Series E'],
+  'Unknown': []
+};
+
+// Parse CSV line handling quoted fields
+function parseCSVLine(line) {
+  const values = [];
+  let current = '';
+  let inQuotes = false;
+  
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    
+    if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === ',' && !inQuotes) {
+      values.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+  
+  values.push(current.trim());
+  return values;
+}
+
+// Categorize company based on industries
+function categorizeCompany(company) {
+  const industries = company.Industries ? company.Industries.split(',').map(i => i.trim()) : [];
+  
+  for (const [category, keywords] of Object.entries(CATEGORIES)) {
+    if (keywords.some(keyword => 
+      industries.some(industry => 
+        industry.toLowerCase().includes(keyword.toLowerCase())
+      )
+    )) {
+      return category;
+    }
+  }
+  
+  return 'Other';
+}
+
+// Categorize funding stage
+function categorizeFundingStage(company) {
+  const stage = company.Stage || '';
+  
+  for (const [stageCategory, stages] of Object.entries(FUNDING_STAGES)) {
+    if (stages.some(s => stage.includes(s))) {
+      return stageCategory;
+    }
+  }
+  
+  return 'Unknown';
+}
+
+// Geocode address using Mapbox API
+async function geocodeAddress(address) {
+  if (!MAPBOX_TOKEN) {
+    console.warn('⚠️ No Mapbox token found, using fallback coordinates');
+    return { lat: 42.3601, lng: -71.0589, address: address }; // Default to Boston
+  }
+
+  try {
+    const response = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(address)}.json?access_token=${MAPBOX_TOKEN}&limit=1`);
+    const data = await response.json();
+    
+    if (data.features && data.features.length > 0) {
+      const [lng, lat] = data.features[0].center;
+      return { lat, lng, address: data.features[0].place_name };
+    }
+  } catch (error) {
+    console.warn(`⚠️ Geocoding failed for ${address}:`, error.message);
+  }
+  
+  return null;
+}
+
+// Get icon for company category
+function getCategoryIcon(category) {
+  const icons = {
+    'AI/ML': '🤖',
+    'Biotech/Health': '🧬',
+    'FinTech': '💰',
+    'CleanTech': '🌱',
+    'Enterprise': '🏢',
+    'Hardware': '⚙️',
+    'Other': '🏭'
+  };
+  return icons[category] || '🏭';
+}
+
+// Main processing function
+async function generateStartupData() {
+  console.log('🚀 Starting startup data generation...');
+  
+  // Read CSV file
+  const csvContent = fs.readFileSync(CSV_FILE, 'utf8');
+  const lines = csvContent.split('\n');
+  const headers = lines[0].split(',').map(h => h.trim());
+  
+  console.log(`📊 Found ${lines.length - 1} companies in CSV`);
+  
+  const companies = [];
+  const geocodedCompanies = [];
+  
+  // Parse CSV data
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+
+    const values = parseCSVLine(line);
+    if (values.length >= headers.length) {
+      const company = {};
+      headers.forEach((header, index) => {
+        company[header] = values[index] || '';
+      });
+      companies.push(company);
+    }
+  }
+  
+  console.log(`✅ Parsed ${companies.length} companies`);
+  
+  // Process companies with geocoding
+  for (let i = 0; i < companies.length; i++) {
+    const company = companies[i];
+    const address = company['Headquarters Location'];
+    
+    console.log(`🔄 Processing ${i + 1}/${companies.length}: ${company['Organization Name']} - ${address}`);
+    
+    // Geocode address
+    const coordinates = await geocodeAddress(address);
+    
+    if (coordinates) {
+      const processedCompany = {
+        id: `company_${company['Organization Name'].replace(/\s+/g, '_').toLowerCase()}`,
+        name: company['Organization Name'],
+        url: company['Organization Name URL'],
+        description: company.Description,
+        headquarters: address,
+        coordinates: coordinates,
+        category: categorizeCompany(company),
+        fundingStage: categorizeFundingStage(company),
+        industries: company.Industries ? company.Industries.split(',').map(i => i.trim()) : [],
+        lastFundingDate: company['Last Funding Date'],
+        lastFundingType: company['Last Funding Type'],
+        cbRank: parseInt(company['CB Rank (Organization)']) || 0,
+        isActive: company['Operating Status'] === 'Active',
+        icon: getCategoryIcon(categorizeCompany(company)),
+        // Additional metadata
+        companyType: company['Company Type'],
+        operatingStatus: company['Operating Status']
+      };
+      
+      geocodedCompanies.push(processedCompany);
+      console.log(`✅ Geocoded: ${company['Organization Name']} -> ${coordinates.lat}, ${coordinates.lng}`);
+    } else {
+      console.warn(`❌ Failed to geocode: ${company['Organization Name']} - ${address}`);
+    }
+    
+    // Add delay to avoid rate limiting
+    if (i % 10 === 0) {
+      await new Promise(resolve => setTimeout(resolve, 100));
+    }
+  }
+  
+  console.log(`✅ Successfully geocoded ${geocodedCompanies.length} companies`);
+  
+  // Generate statistics
+  const stats = {
+    total: geocodedCompanies.length,
+    categories: {},
+    fundingStages: {},
+    locations: {}
+  };
+  
+  geocodedCompanies.forEach(company => {
+    // Count categories
+    stats.categories[company.category] = (stats.categories[company.category] || 0) + 1;
+    
+    // Count funding stages
+    stats.fundingStages[company.fundingStage] = (stats.fundingStages[company.fundingStage] || 0) + 1;
+    
+    // Count locations (city level)
+    const city = company.coordinates.address.split(',')[0];
+    stats.locations[city] = (stats.locations[city] || 0) + 1;
+  });
+  
+  // Create final data structure
+  const startupData = {
+    metadata: {
+      generatedAt: new Date().toISOString(),
+      totalCompanies: geocodedCompanies.length,
+      source: 'companies-9-13-2025.csv',
+      geocodingService: 'Mapbox',
+      version: '1.0.0'
+    },
+    statistics: stats,
+    companies: geocodedCompanies
+  };
+  
+  // Write to JSON file
+  fs.writeFileSync(OUTPUT_FILE, JSON.stringify(startupData, null, 2));
+  
+  console.log(`🎉 Successfully generated startup data JSON!`);
+  console.log(`📁 Output file: ${OUTPUT_FILE}`);
+  console.log(`📊 Statistics:`, stats);
+  
+  return startupData;
+}
+
+// Run the script
+if (require.main === module) {
+  generateStartupData()
+    .then(() => {
+      console.log('✅ Script completed successfully');
+      process.exit(0);
+    })
+    .catch(error => {
+      console.error('❌ Script failed:', error);
+      process.exit(1);
+    });
+}
+
+module.exports = { generateStartupData };

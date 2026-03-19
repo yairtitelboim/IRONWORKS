@@ -1,0 +1,96 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "layer_type": "memphis_hypothesis",
+    "geography": "Memphis, TN + Southaven, MS (Memphis metro)",
+    "source": "Local news reporting (addresses) + OpenStreetMap Nominatim geocoding (coordinates)",
+    "source_url": "https://www.localmemphis.com/article/news/local/xai-acquires-new-property-in-southaven/522-3f676031-1341-4b33-9e8c-0b22ae34097e",
+    "created": "2026-02-02",
+    "feature_count": 3,
+    "data_date": "2025-07 to 2025-12",
+    "notes": [
+      "Public-only. Coordinates are derived via OpenStreetMap Nominatim geocoding of addresses cited in sources.",
+      "This layer is intended to be paired with the MLGW substation work layer to visualize proximity/timing relationships."
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "xai-southaven-2875-stanton",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.043289,
+          34.9843538
+        ]
+      },
+      "properties": {
+        "kind": "xai_site",
+        "name": "2875 Stanton Road site (Southaven, MS)",
+        "facility_type": "data_center_power_site",
+        "address": "2875 Stanton Road, Southaven, MS",
+        "status": "acquired",
+        "phase": "Southaven",
+        "capacity_mw": null,
+        "narrative": "Southaven (former power plant). Part of 2 GW push; same firm-power + substation process as Colossus.",
+        "source": "Action News 5 (WMC) reporting + Nominatim geocoding",
+        "source_url": "https://www.actionnews5.com/2025/07/18/xai-buys-former-power-plant-southaven/",
+        "data_date": "2025-07-18",
+        "geocoding_source": "https://nominatim.openstreetmap.org/search",
+        "geocoding_display_name": "2875, Stanton Road South, Southaven, DeSoto County, Mississippi, 38671, United States"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "xai-southaven-2400-stateline",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.034358,
+          34.991886
+        ]
+      },
+      "properties": {
+        "kind": "xai_site",
+        "name": "2400 Stateline Rd West site (Southaven, MS)",
+        "facility_type": "data_center",
+        "address": "2400 Stateline Rd West, Southaven, MS",
+        "status": "acquired",
+        "phase": "Southaven",
+        "capacity_mw": null,
+        "narrative": "Stateline (Southaven). Part of 2 GW push. Constraint: firm power contract + MLGW delivery timing, not TVA generation.",
+        "source": "LocalMemphis (ABC24/TEGNA) reporting + Nominatim geocoding",
+        "source_url": "https://www.localmemphis.com/article/news/local/xai-acquires-new-property-in-southaven/522-3f676031-1341-4b33-9e8c-0b22ae34097e",
+        "data_date": "2025-12-30",
+        "geocoding_source": "https://nominatim.openstreetmap.org/search",
+        "geocoding_display_name": "2400, Stateline Road West, Southaven, DeSoto County, Mississippi, 38671, United States"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "xai-memphis-5420-tulane",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0348674,
+          34.9979829
+        ]
+      },
+      "properties": {
+        "kind": "xai_site",
+        "name": "5420 Tulane Road site (Memphis, TN)",
+        "facility_type": "data_center",
+        "address": "5420 Tulane Road, Memphis, TN",
+        "status": "reported",
+        "phase": "Phase 3",
+        "capacity_mw": 150,
+        "narrative": "Colossus (third building). First 150 MW had TVA board approval: demand response, new substation, reserve margin. That blueprint applies to next projects (18–36 mo). 2 GW push = here + Southaven.",
+        "source": "512 Pixels quoting MLGW statement + Nominatim geocoding",
+        "source_url": "https://512pixels.net/2025/08/xai-turbines-southaven/",
+        "data_date": "2025-08",
+        "geocoding_source": "https://nominatim.openstreetmap.org/search",
+        "geocoding_display_name": "xAI Macrohard Colossus 2, 5420, Tulane Road, Memphis, Shelby County, West Tennessee, Tennessee, 38109, United States"
+      }
+    }
+  ]
+}

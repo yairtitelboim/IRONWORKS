@@ -1,0 +1,530 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "layer_type": "memphis_hypothesis",
+    "geography": "Memphis, Tennessee (MLGW)",
+    "source": "MLGW 2026 Budget Book (projects) + OpenStreetMap (coordinates where verifiable)",
+    "source_url": "https://www.mlgw.com/images/content/files/pdf/2026BudgetBook.pdf",
+    "created": "2026-02-02",
+    "feature_count": 7,
+    "data_date": "2026",
+    "notes": [
+      "Substation coordinates are from OpenStreetMap where there is a clear ref/name match, OR from Shelby County ReGIS geocoder when an address is available from MLGW/public documents.",
+      "All FY2026 project tagging is from MLGW 2026 Budget Book line items.",
+      "Advantage polygon: 2.0 km buffer around the substation points in this layer, then hull."
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "mlgw-substation-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0077212,
+          35.100724
+        ]
+      },
+      "properties": {
+        "kind": "substation_upgrade",
+        "operator": "MLGW",
+        "substation_number": 1,
+        "name": "Southgate Substation",
+        "budget_fy": 2026,
+        "projects": [
+          "Replace Reactor Substation 1"
+        ],
+        "source": "OpenStreetMap (coordinates) + MLGW 2026 Budget Book (project list)",
+        "source_url": "https://www.mlgw.com/images/content/files/pdf/2026BudgetBook.pdf",
+        "coordinate_source": "OpenStreetMap via Overpass API",
+        "timeline_note": "FY2026 budget → construction starts 2026. Sites near this expansion: ~12–18 month advantage to energization. Constraint is delivery timing, not TVA generation.",
+        "display": {
+          "marker": "substation",
+          "color": "#60a5fa",
+          "size": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mlgw-substation-33",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.8996279,
+          35.190979
+        ]
+      },
+      "properties": {
+        "kind": "substation_upgrade",
+        "operator": "MLGW",
+        "substation_number": 33,
+        "name": "Northeast Gate Substation",
+        "budget_fy": 2026,
+        "projects": [
+          "AC Service for Breaker Storage Yard @ Substation 33",
+          "Substation 33"
+        ],
+        "source": "OpenStreetMap (coordinates) + MLGW 2026 Budget Book (project list)",
+        "source_url": "https://www.mlgw.com/images/content/files/pdf/2026BudgetBook.pdf",
+        "coordinate_source": "OpenStreetMap via Overpass API",
+        "timeline_note": "FY2026 budget → construction starts 2026. Sites near this expansion: ~12–18 month advantage to energization. Constraint is delivery timing, not TVA generation.",
+        "display": {
+          "marker": "substation",
+          "color": "#60a5fa",
+          "size": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mlgw-substation-83",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6611409,
+          35.0233456
+        ]
+      },
+      "properties": {
+        "kind": "substation_upgrade",
+        "operator": "MLGW",
+        "substation_number": 83,
+        "name": "MLGW Substation 83",
+        "budget_fy": 2026,
+        "projects": [
+          "Sub 83 Ckt Ties",
+          "Sub 83 Cabling (6 ckts)"
+        ],
+        "source": "OpenStreetMap (coordinates) + MLGW 2026 Budget Book (project list)",
+        "source_url": "https://www.mlgw.com/images/content/files/pdf/2026BudgetBook.pdf",
+        "coordinate_source": "OpenStreetMap via Overpass API",
+        "timeline_note": "FY2026 budget → construction starts 2026. Sites near this expansion: ~12–18 month advantage to energization. Constraint is delivery timing, not TVA generation.",
+        "display": {
+          "marker": "substation",
+          "color": "#60a5fa",
+          "size": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mlgw-substation-21",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0536154,
+          35.0865418
+        ]
+      },
+      "properties": {
+        "kind": "substation_upgrade",
+        "operator": "MLGW",
+        "substation_number": 21,
+        "name": "MLGW Substation 21",
+        "address": "290 E Mallory Ave, Memphis, TN",
+        "budget_fy": 2026,
+        "projects": [
+          "Replace 12 kV Breakers 1617 and 1631 @ Substation 21",
+          "Substation 21"
+        ],
+        "source": "MLGW 2026 Budget Book (project list) + MLGW 2020 Budget Book (address) + geocoding",
+        "source_url": "https://www.mlgw.com/images/content/files/pdf/2026BudgetBook.pdf",
+        "location_source_url": "https://www.mlgw.com/images/content/files/pdf/2020CityCouncilApprovedBudgetBook.pdf",
+        "location_source_note": "MLGW 2020 City Council Approved Budget Book includes: \"Substation #21, 290 E. Mallory\"",
+        "geocoding_source": "https://nominatim.openstreetmap.org/search",
+        "geocoding_display_name": "290, East Mallory Avenue, Memphis, Shelby County, West Tennessee, Tennessee, 38109, United States",
+        "display": {
+          "marker": "substation",
+          "color": "#60a5fa",
+          "size": 0.9
+        },
+        "location_source_quote": "Substation #21, 290 E. Mallory",
+        "timeline_note": "FY2026 budget → construction starts 2026. Nearest FY2026 sub for xAI Southaven sites. Sites near this expansion: ~12–18 month advantage; elsewhere: 24–36 mo + board."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mlgw-substation-4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0501723,
+          35.154318
+        ]
+      },
+      "properties": {
+        "kind": "substation_upgrade",
+        "operator": "MLGW",
+        "substation_number": 4,
+        "name": "MLGW Substation 4",
+        "address": "67 Jackson Ave, Memphis, TN",
+        "budget_fy": 2026,
+        "projects": [
+          "Sub 4 Lighting Enhancement Project",
+          "Sub 4 Fence Replacement Project"
+        ],
+        "source": "MLGW 2026 Budget Book (project list) + MLGW 2020 Budget Book (address) + Nominatim geocoding",
+        "source_url": "https://www.mlgw.com/images/content/files/pdf/2026BudgetBook.pdf",
+        "location_source_url": "https://www.mlgw.com/images/content/files/pdf/2020CityCouncilApprovedBudgetBook.pdf",
+        "location_source_note": "MLGW 2020 City Council Approved Budget Book includes: \"Substation # 4 67 Jackson\"",
+        "location_source_quote": "Substation # 4 67 Jackson",
+        "geocoding_source": "https://nominatim.openstreetmap.org/search",
+        "geocoding_display_name": "67, Jackson Avenue, Lauderdale Courts, Memphis, Shelby County, West Tennessee, Tennessee, 38103, United States",
+        "timeline_note": "FY2026 budget → construction starts 2026. Sites near this expansion: ~12–18 month advantage to energization. Constraint is delivery timing, not TVA generation.",
+        "display": {
+          "marker": "substation",
+          "color": "#60a5fa",
+          "size": 0.9
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mlgw-substation-68",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.71011387568937,
+          35.27229291525849
+        ]
+      },
+      "properties": {
+        "kind": "substation_upgrade",
+        "operator": "MLGW",
+        "substation_number": 68,
+        "name": "MLGW Substation 68",
+        "address": "10600 Highway 70, Lakeland/Arlington area, TN 38002",
+        "budget_fy": 2026,
+        "projects": [
+          "Install Substation 68 third 161/23 kV transformer",
+          "Sub 68 New Ckt Ties",
+          "Sub 68 Cabling (3 ckts)",
+          "Install Substation 68 Third 161/23 kV",
+          "Substation 68 Third 161/23 kV transformer"
+        ],
+        "source": "MLGW news release (address) + Shelby County ReGIS geocoder (coordinates) + MLGW 2026 budget book (project list)",
+        "source_url": "https://www.mlgw.com/images/content/files/pdf/2026BudgetBook.pdf",
+        "location_source_url": "https://www.mlgw.com/news/news_sub68_july2016",
+        "location_source_quote": "Substation 68, located at 10600 Highway 70 (Arlington area) ...",
+        "geocoding_source": "https://gis.shelbycountytn.gov/arcgis/rest/services/Geoprocessing/SC_Locator/GeocodeServer",
+        "geocoding_match_addr": "10600 US HIGHWAY 70, LAKELAND, 38002",
+        "geocoding_score": 95.08,
+        "timeline_note": "FY2026 budget → construction starts 2026. Sites near this expansion: ~12–18 month advantage to energization. Constraint is delivery timing, not TVA generation.",
+        "display": {
+          "marker": "substation",
+          "color": "#60a5fa",
+          "size": 0.95
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "mlgw-2026-substation-advantage-zone",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.66114089999999,
+              35.00863134026404
+            ],
+            [
+              -89.66290190590527,
+              35.00870219978985
+            ],
+            [
+              -89.66464595236101,
+              35.00891409558511
+            ],
+            [
+              -90.057120452361,
+              35.07212145771119
+            ],
+            [
+              -90.05883074324645,
+              35.07247207666841
+            ],
+            [
+              -90.06049080752544,
+              35.07295820423477
+            ],
+            [
+              -90.06208465787148,
+              35.07357515636383
+            ],
+            [
+              -90.06359694463447,
+              35.07431698857867
+            ],
+            [
+              -90.06501310366612,
+              35.07517655333162
+            ],
+            [
+              -90.06631949658087,
+              35.07614556896565
+            ],
+            [
+              -90.06750354210078,
+              35.07721469960886
+            ],
+            [
+              -90.06855383722024,
+              35.078373645226975
+            ],
+            [
+              -90.06946026702308,
+              35.07961124096133
+            ],
+            [
+              -90.0702141020948,
+              35.08091556479007
+            ],
+            [
+              -90.07080808259155,
+              35.08227405247053
+            ],
+            [
+              -90.0712364881565,
+              35.08367361865085
+            ],
+            [
+              -90.07149519300982,
+              35.08510078298025
+            ],
+            [
+              -90.07158170568238,
+              35.086541799999985
+            ],
+            [
+              -90.06813860568238,
+              35.154318
+            ],
+            [
+              -90.06805209300983,
+              35.15575779313503
+            ],
+            [
+              -90.0677933881565,
+              35.15718369516156
+            ],
+            [
+              -90.06736498259156,
+              35.158581974949776
+            ],
+            [
+              -90.0667710020948,
+              35.15993916806515
+            ],
+            [
+              -90.06601716702308,
+              35.16124220637047
+            ],
+            [
+              -90.06511073722024,
+              35.16247854378798
+            ],
+            [
+              -90.06406044210078,
+              35.163636277013715
+            ],
+            [
+              -90.06287639658088,
+              35.16470426002601
+            ],
+            [
+              -90.06157000366612,
+              35.16567221129008
+            ],
+            [
+              -90.06015384463447,
+              35.166530812631656
+            ],
+            [
+              -90.05864155787148,
+              35.167271798832914
+            ],
+            [
+              -90.05704770752544,
+              35.16788803709332
+            ],
+            [
+              -89.71698928321483,
+              35.28584324315714
+            ],
+            [
+              -89.71532921893584,
+              35.286328096309234
+            ],
+            [
+              -89.71361892805038,
+              35.2866777925015
+            ],
+            [
+              -89.71187488159465,
+              35.286888965735855
+            ],
+            [
+              -89.71011387568937,
+              35.286959583387
+            ],
+            [
+              -89.7083528697841,
+              35.286888965735855
+            ],
+            [
+              -89.70660882332837,
+              35.2866777925015
+            ],
+            [
+              -89.70489853244291,
+              35.286328096309234
+            ],
+            [
+              -89.70323846816392,
+              35.28584324315714
+            ],
+            [
+              -89.70164461781788,
+              35.285227900067596
+            ],
+            [
+              -89.7001323310549,
+              35.284487990232726
+            ],
+            [
+              -89.69871617202324,
+              35.283630636082215
+            ],
+            [
+              -89.69740977910848,
+              35.28266409081754
+            ],
+            [
+              -89.69622573358858,
+              35.281597659066954
+            ],
+            [
+              -89.69517543846914,
+              35.28044160742031
+            ],
+            [
+              -89.6942690086663,
+              35.27920706569947
+            ],
+            [
+              -89.69351517359458,
+              35.27790591991004
+            ],
+            [
+              -89.6929211930978,
+              35.27655069789958
+            ],
+            [
+              -89.69249278753286,
+              35.275154448818974
+            ],
+            [
+              -89.64351981184348,
+              35.02621590102163
+            ],
+            [
+              -89.64326110699017,
+              35.02478770718718
+            ],
+            [
+              -89.64317459431761,
+              35.02334559999999
+            ],
+            [
+              -89.64326110699017,
+              35.02190346737477
+            ],
+            [
+              -89.64351981184348,
+              35.020475198203805
+            ],
+            [
+              -89.64394821740842,
+              35.019074548585195
+            ],
+            [
+              -89.6445421979052,
+              35.017715009302414
+            ],
+            [
+              -89.6452960329769,
+              35.016409675832946
+            ],
+            [
+              -89.64620246277975,
+              35.01517112214054
+            ],
+            [
+              -89.6472527578992,
+              35.01401127947008
+            ],
+            [
+              -89.64843680341912,
+              35.012941321316475
+            ],
+            [
+              -89.64974319633386,
+              35.011971555680404
+            ],
+            [
+              -89.65115935536552,
+              35.011111325653744
+            ],
+            [
+              -89.65267164212851,
+              35.01036891929759
+            ],
+            [
+              -89.65426549247455,
+              35.00975148968629
+            ],
+            [
+              -89.65592555675354,
+              35.009264985892855
+            ],
+            [
+              -89.65763584763899,
+              35.00891409558511
+            ],
+            [
+              -89.65937989409471,
+              35.00870219978985
+            ],
+            [
+              -89.66114089999999,
+              35.00863134026404
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "advantage_zone",
+        "name": "MLGW FY2026 substation work \u2014 proximity advantage (buffer + hull)",
+        "buffer_meters": 2000,
+        "basis": "Computed: 2km buffer around included substation points, then hull (clean outline). Not an official utility boundary.",
+        "narrative": "Within this zone: sites near MLGW planned expansion → ~12–18 month advantage. Outside: ~24–36 months + TVA board approval. Price on substation proximity, not just 'cheap TVA.'",
+        "display": {
+          "fill": "#22c55e",
+          "fillOpacity": 0.12,
+          "stroke": "#22c55e",
+          "strokeWidth": 2
+        },
+        "animation": {
+          "type": "pulse",
+          "period_ms": 1800,
+          "min_opacity": 0.05,
+          "max_opacity": 0.22
+        },
+        "source": "MLGW 2026 budget book + MLGW docs + Shelby County ReGIS geocoder",
+        "source_url": "https://www.mlgw.com/images/content/files/pdf/2026BudgetBook.pdf"
+      }
+    }
+  ]
+}

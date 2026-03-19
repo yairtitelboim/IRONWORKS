@@ -1,0 +1,121 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "layer_type": "memphis_hypothesis",
+    "geography": "Memphis, TN + Southaven, MS (Memphis metro)",
+    "source": "Computed from mlgw_2026_substation_work.geojson + xai_sites_public.geojson",
+    "created": "2026-02-03",
+    "feature_count": 3,
+    "data_date": "2026-02-03",
+    "notes": [
+      "Lines encode nearest distance, not an actual electrical path."
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "rel:xai-southaven-2875-stanton->mlgw-substation-21",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -90.043289,
+            34.9843538
+          ],
+          [
+            -90.0536154,
+            35.0865418
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "relationship",
+        "relationship_type": "nearest_substation_with_fy2026_work",
+        "from_id": "xai-southaven-2875-stanton",
+        "to_id": "mlgw-substation-21",
+        "from_name": "2875 Stanton Road site (Southaven, MS)",
+        "to_name": "MLGW Substation 21",
+        "distance_km": 11.402,
+        "basis": "Nearest distance to an FY2026 substation-work node. Not an electrical path.",
+        "display": {
+          "stroke": "#a78bfa",
+          "width": 2,
+          "dash": [
+            2,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel:xai-southaven-2400-stateline->mlgw-substation-21",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -90.034358,
+            34.991886
+          ],
+          [
+            -90.0536154,
+            35.0865418
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "relationship",
+        "relationship_type": "nearest_substation_with_fy2026_work",
+        "from_id": "xai-southaven-2400-stateline",
+        "to_id": "mlgw-substation-21",
+        "from_name": "2400 Stateline Rd West site (Southaven, MS)",
+        "to_name": "MLGW Substation 21",
+        "distance_km": 10.67,
+        "basis": "Nearest distance to an FY2026 substation-work node. Not an electrical path.",
+        "display": {
+          "stroke": "#a78bfa",
+          "width": 2,
+          "dash": [
+            2,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rel:xai-memphis-5420-tulane->mlgw-substation-21",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -90.0348674,
+            34.9979829
+          ],
+          [
+            -90.0536154,
+            35.0865418
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "relationship",
+        "relationship_type": "nearest_substation_with_fy2026_work",
+        "from_id": "xai-memphis-5420-tulane",
+        "to_id": "mlgw-substation-21",
+        "from_name": "5420 Tulane Road site (Memphis, TN)",
+        "to_name": "MLGW Substation 21",
+        "distance_km": 9.994,
+        "basis": "Nearest distance to an FY2026 substation-work node. Not an electrical path.",
+        "display": {
+          "stroke": "#a78bfa",
+          "width": 2,
+          "dash": [
+            2,
+            2
+          ]
+        }
+      }
+    }
+  ]
+}

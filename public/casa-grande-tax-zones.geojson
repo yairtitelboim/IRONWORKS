@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "dfw7-campus",
+      "type": "Feature",
+      "properties": {
+        "zone_name": "Whitney Technology Campus",
+        "designation": "Data Center / Light Industrial",
+        "notes": "Planned CyrusOne DFW7 footprint with supporting utility easements"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.358,
+              31.941
+            ],
+            [
+              -97.332,
+              31.941
+            ],
+            [
+              -97.332,
+              31.922
+            ],
+            [
+              -97.358,
+              31.922
+            ],
+            [
+              -97.358,
+              31.941
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "downtown-core",
+      "type": "Feature",
+      "properties": {
+        "zone_name": "Whitney Downtown Core",
+        "designation": "Civic / Mixed-Use",
+        "notes": "Retail, municipal, and service corridor along Washington Ave and FM 933"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.329,
+              31.957
+            ],
+            [
+              -97.315,
+              31.957
+            ],
+            [
+              -97.315,
+              31.944
+            ],
+            [
+              -97.329,
+              31.944
+            ],
+            [
+              -97.329,
+              31.957
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lake-gateway",
+      "type": "Feature",
+      "properties": {
+        "zone_name": "Lake Whitney Recreation & Energy Gateway",
+        "designation": "Recreation / Hydro Operations",
+        "notes": "Encompasses USACE dam, hydro units, and marina access supporting tourism"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.40,
+              31.876
+            ],
+            [
+              -97.354,
+              31.876
+            ],
+            [
+              -97.354,
+              31.842
+            ],
+            [
+              -97.40,
+              31.842
+            ],
+            [
+              -97.40,
+              31.876
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

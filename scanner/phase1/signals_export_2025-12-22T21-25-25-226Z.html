@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Scanner Signals Export</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #e0e0e0;
+    }
+    h1 {
+      color: #ffffff;
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 10px;
+    }
+    .stats {
+      background: #2d2d2d;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      color: #e0e0e0;
+    }
+    .signal {
+      background: #2d2d2d;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      border-left: 4px solid #555;
+    }
+    .signal.constraint {
+      border-left-color: #ff5252;
+    }
+    .signal.commitment {
+      border-left-color: #4CAF50;
+    }
+    .signal.context {
+      border-left-color: #64b5f6;
+    }
+    .signal-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .lane {
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .lane.constraint {
+      background: rgba(255, 82, 82, 0.2);
+      color: #ff5252;
+      border: 1px solid rgba(255, 82, 82, 0.3);
+    }
+    .lane.commitment {
+      background: rgba(76, 175, 80, 0.2);
+      color: #4CAF50;
+      border: 1px solid rgba(76, 175, 80, 0.3);
+    }
+    .lane.context {
+      background: rgba(100, 181, 246, 0.2);
+      color: #64b5f6;
+      border: 1px solid rgba(100, 181, 246, 0.3);
+    }
+    .confidence {
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    .confidence.high {
+      background: rgba(255, 82, 82, 0.2);
+      color: #ff5252;
+      border: 1px solid rgba(255, 82, 82, 0.3);
+    }
+    .confidence.med {
+      background: rgba(255, 183, 77, 0.2);
+      color: #ffb74d;
+      border: 1px solid rgba(255, 183, 77, 0.3);
+    }
+    .confidence.low {
+      background: rgba(186, 104, 200, 0.2);
+      color: #ba68c8;
+      border: 1px solid rgba(186, 104, 200, 0.3);
+    }
+    .headline {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 10px 0;
+    }
+    .meta {
+      color: #b0b0b0;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 10px 0;
+    }
+    .tag {
+      background: #3d3d3d;
+      color: #e0e0e0;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      border: 1px solid #555;
+    }
+    .url {
+      color: #64b5f6;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .url:hover {
+      color: #90caf9;
+      text-decoration: underline;
+    }
+    .summary {
+      background: #1e1e1e;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #d0d0d0;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Scanner Signals Export - Projects (South Central US)</h1>
+  <div class="stats">
+    <strong>Projects:</strong> 26<br>
+    <strong>Filter:</strong> COMMITMENT signals in South Central US (TX, OK, AR, LA, NM, KS, MO)<br>
+    <em>Note: CONTEXT signals (static content) are hidden by default</em><br>
+    <strong>Date Range:</strong> 12/15/2025 - 12/22/2025<br>
+    <strong>Exported:</strong> 12/22/2025, 3:25:25 PM
+  </div>
+  
+  
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Data center project filing / registration with Texas Comptroller</span>
+      </div>
+      <div class="headline">Data Centers in Texas - Texas Comptroller</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://comptroller.texas.gov/taxes/data-centers/data-center-lists.php" target="_blank" class="url">https://comptroller.texas.gov/taxes/data-centers/data-center-lists.php</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary">| Giga Texas Datacenter | 03/25/2024 | Tesla, Inc<br>• | DC541552-OW1 | Tesla, Inc<br>• | DC541552-OC1 | Tesla, Inc</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:24:08 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">APPROVED</span>
+      </div>
+      <div class="headline">Red hot Texas gets so many data center requests that some ... - CNBC</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.cnbc.com/2025/12/12/ai-data-center-flood-texas-on-massive-scale.html" target="_blank" class="url">https://www.cnbc.com/2025/12/12/ai-data-center-flood-texas-on-massive-scale.html</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">approved</span></div>
+      <div class="summary">"We know it's not all real<br>• The question is how much is real," said Michael Hogan, a senior advisor at the Regulatory Assistance Project, which advises governments and regulators on energy policy<br>• The huge numbers in Texas reflect a broader data center bubble in the U</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:24:08 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Texas BESS: GridStor inks tolling agreement for 350 MWh ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.ess-news.com/2025/12/17/texas-bess-gridstor-inks-tolling-agreement-for-350-mwh-project-sunrun-teams-up-with-nrg-energy-for-low-cost-home-storage/" target="_blank" class="url">https://www.ess-news.com/2025/12/17/texas-bess-gridstor-inks-tolling-agreement-for-350-mwh-project-sunrun-teams-up-with-nrg-energy-for-low-cost-home-storage/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">“At a time of rapidly increasing power demand, battery energy storage helps ensure affordable, reliable power to households and Lower Rio Grande Valley businesses,” said Chris Taylor, CEO of GridStor<br>• “We are proud to increase our commitment to building battery storage facilities that help Texas sustain its historic economic expansion and deliver cost-effective power<br>• ] Residential battery storage, solar, and home-to-grid power plants provider Sunrun is partnering with NRG Energy to deliver distributed energy solutions to Texan consumers</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:28 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">GridStor Begins Construction on 150 MW Texas Battery ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.constructionowners.com/news/gridstor-begins-construction-on-150-mw-texas-battery-project" target="_blank" class="url">https://www.constructionowners.com/news/gridstor-begins-construction-on-150-mw-texas-battery-project</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">Upon completion, the Hidalgo County project will become GridStor’s second operating battery energy storage facility in Texas<br>• The company’s Hidden Lakes Reliability Project, a 220 MW battery storage facility in Galveston County, entered operation earlier this year<br>• The company continues to focus on delivering near-term, cost-effective energy solutions for utilities, data centers, and large industrial customers in regions with fast-growing power needs</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:28 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Ørsted Announces New Battery Energy Storage System in Fort ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://us.orsted.com/news-archive/2025/04/orsted-announces-new-battery-energy-storage-system-in-fort-bend-county" target="_blank" class="url">https://us.orsted.com/news-archive/2025/04/orsted-announces-new-battery-energy-storage-system-in-fort-bend-county</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">With more than 11 GW of U<br>• ] The 430 MW Old 300 Solar project, one of the largest to come online in the U<br>• in 2024, reached commercial operations last year and is providing power to roughly 80,000 homes and businesses in Texas</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:28 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Companies Announce Major Energy Storage Projects in ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.powermag.com/companies-announce-major-energy-storage-projects-in-texas/" target="_blank" class="url">https://www.powermag.com/companies-announce-major-energy-storage-projects-in-texas/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">The company said construction of the project is underway, with commercial operation expected by year-end 2026<br>• ] The Texas Comptroller’s office, an executive branch of the state’s government, has said the state is second only to California in the amount of battery energy storage deployed<br>• Officials said the state added about 6</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:28 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Completion of battery storage infrastructure projects</span>
+      </div>
+      <div class="headline">RWE completes three U.S. battery storage projects in ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.rwe.com/en/press/rwe-clean-energy/2024-02-14-rwe-supercharges-us-battery-storage-platform/" target="_blank" class="url">https://www.rwe.com/en/press/rwe-clean-energy/2024-02-14-rwe-supercharges-us-battery-storage-platform/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary">RWE continues to deliver on its Growing Green Strategy<br>• The three BESS projects – Bright Arrow, Big Star and Mesquite 4 – bring RWE’s total battery storage capacity in the U<br>• The company has in the U</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:28 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence med">MED confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">INTERCONNECTION_UPDATE</span>
+      </div>
+      <div class="headline">Battery Storage Projects in Texas</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://cleanview.co/battery-storage-projects/texas" target="_blank" class="url">https://cleanview.co/battery-storage-projects/texas</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">interconnection_update</span></div>
+      <div class="summary">On this page, you can explore our real-time database of battery storage projects in Texas<br>• Each month, we track battery projects in the state and update our list of the largest battery storage projects in Texas<br>• As of December 2025, there are 181 utility-scale battery storage projects in Texas, according to Cleanview's project tracker</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:28 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Infrastructure Investment</span>
+      </div>
+      <div class="headline">Battery energy storage in Texas - Texas Comptroller</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://comptroller.texas.gov/economy/fiscal-notes/infrastructure/2024/battery-store/" target="_blank" class="url">https://comptroller.texas.gov/economy/fiscal-notes/infrastructure/2024/battery-store/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary">Texas — the fastest growing battery storage market — is projected to add the most capacity of any state this year, with an additional 6<br>• 4 gigawatts (GW) expected to come online in 2024<br>• Texas is second to California in overall installed battery storage capacity (Exhibit 2)</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:28 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">APPROVED</span>
+      </div>
+      <div class="headline">Entergy Texas receives PUCT approval for two power plants to ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.entergy.com/news/entergy-texas-receives-puct-approval-for-two-power-plants-to-support-southeast-texas-growth" target="_blank" class="url">https://www.entergy.com/news/entergy-texas-receives-puct-approval-for-two-power-plants-to-support-southeast-texas-growth</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">approved</span></div>
+      <div class="summary">## Entergy Texas receives PUCT approval for two power plants to support Southeast Texas growth<br>• By adding more than 1<br>• Entergy produces, transmits and distributes electricity to power life for 3 million customers through our operating companies in Arkansas, Louisiana, Mississippi and Texas</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:10 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Government-backed energy infrastructure investment</span>
+      </div>
+      <div class="headline">Governor Abbott Announces NRG Energy Expansion In Chambers ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://gov.texas.gov/news/post/governor-abbott-announces-nrg-energy-expansion-in-chambers-county" target="_blank" class="url">https://gov.texas.gov/news/post/governor-abbott-announces-nrg-energy-expansion-in-chambers-county</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary">With power demand surging across Texas, it takes public-private partnerships to meet that demand, and NRG is grateful that the Cedar Bayou project is part of Governor Abbott’s innovative JETI program</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:10 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Chevron to Build Its First Data Center Power Plant in Texas Permian ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.enr.com/articles/61972-chevron-to-build-its-first-data-center-power-plant-in-texas-permian-area" target="_blank" class="url">https://www.enr.com/articles/61972-chevron-to-build-its-first-data-center-power-plant-in-texas-permian-area</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary"># Chevron to Build Its First Data Center Power Plant in Texas Permian Area<br>• has chosen West Texas as the location for its first power-generation facility aimed to support an artificial-intelligence data center, marking a significant pivot by the oil giant<br>• The natural gas-fired facility located in the Permian Basin marks Chevron's first move into powering AI workloads</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:10 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Infrastructure Development - Energy Generation Capacity Expansion</span>
+      </div>
+      <div class="headline">New natural gas plant in Permian to produce 1350 MW of power for ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.thecentersquare.com/texas/article_ed884fc8-254e-43e4-8637-77c58607f1b3.html" target="_blank" class="url">https://www.thecentersquare.com/texas/article_ed884fc8-254e-43e4-8637-77c58607f1b3.html</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary"># New natural gas plant in Permian to produce 1,350 MW of power for Texas grid<br>• After these agreements were signed, the TxEF has now financed more than 3,100 MW of new, reliable additional power for the Texas grid</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:10 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Our Projects - Southern Power</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.southernpowercompany.com/our-projects.html" target="_blank" class="url">https://www.southernpowercompany.com/our-projects.html</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">### Alternative Clean Technologies<br>• Southern Company is a leading energy company serving 9 million customers through their subsidiaries, like us<br>• Learn More About Our Parent Company</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:10 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Developers propose more than 100 new gas power plants in Texas</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.tpr.org/environment/2025-06-16/developers-propose-more-than-100-new-gas-power-plants-in-texas" target="_blank" class="url">https://www.tpr.org/environment/2025-06-16/developers-propose-more-than-100-new-gas-power-plants-in-texas</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">The research reviewed permit applications, government data, public announcements and records from Texas’ grid operator to tally 108 proposed new gas plants and 17 expansions<br>• The Environmental Integrity Project report found, in some cases, Texas allowed developers of large gas power plants to circumvent big parts of the permit process for major pollution sources<br>• “If new gas-fired plants that are major sources of criteria pollutants are constructed without the required Clean Air Act construction permits, that construction would be unlawful,” the letter said</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:10 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Danish Fields: a Solar Power Plant Operated by TotalEnergies in ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://totalenergies.com/company/projects/solar/danish-fields-texas-united-states" target="_blank" class="url">https://totalenergies.com/company/projects/solar/danish-fields-texas-united-states</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">One of the projects was the Danish Fields solar power plant, which was under construction at the time<br>• * Through a 1-GW PPA, Danish Fields and Myrtle (another 380 MW Texan solar power plant) cover part of the electricity used by our American industrial sites<br>• ## Danish Fields: a project driving our Integrated Power strategy in the United States</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:10 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Final investment decision to build 860 MW gas power units</span>
+      </div>
+      <div class="headline">Vistra Announces Plans to Build New Gas-Fueled Dispatchable ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://investor.vistracorp.com/2025-09-29-Vistra-Announces-Plans-to-Build-New-Gas-Fueled-Dispatchable-Power-Units-in-the-Permian-Basin" target="_blank" class="url">https://investor.vistracorp.com/2025-09-29-Vistra-Announces-Plans-to-Build-New-Gas-Fueled-Dispatchable-Power-Units-in-the-Permian-Basin</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary">[Image 1](https://investor<br>• com/images/Vistra-Energy<br>• *   [Our Company](https://www</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:10:10 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence med">MED confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">FILED</span>
+      </div>
+      <div class="headline">Qualifying Data Centers Frequently Asked Questions</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://comptroller.texas.gov/taxes/data-centers/faq.php" target="_blank" class="url">https://comptroller.texas.gov/taxes/data-centers/faq.php</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">filed</span></div>
+      
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:09:59 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">APPROVED</span>
+      </div>
+      <div class="headline">God Blessed Texas - Proposed Data Centers in Texas Would Be ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://rbnenergy.com/daily-posts/blog/proposed-data-centers-texas-would-be-enormous-how-many-will-be-built" target="_blank" class="url">https://rbnenergy.com/daily-posts/blog/proposed-data-centers-texas-would-be-enormous-how-many-will-be-built</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">approved</span></div>
+      <div class="summary">It is in Taylor County and was approved by the Taylor County Commissioners<br>• We are changing this now<br>• Thanks for reaching out to us</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:09:59 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence med">MED confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">INTERCONNECTION_UPDATE</span>
+      </div>
+      <div class="headline">Important Texas Regulatory Updates for Data Centers - Mayer Brown</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.mayerbrown.com/en/insights/publications/2025/07/important-texas-regulatory-updates-for-data-centers" target="_blank" class="url">https://www.mayerbrown.com/en/insights/publications/2025/07/important-texas-regulatory-updates-for-data-centers</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">interconnection_update</span></div>
+      <div class="summary">SB-6 primarily aims to ensure that large-load customers contribute fairly to the recovery of costs incurred by electric utilities when interconnecting and serving these loads<br>• SB-6 also aims to support economic growth and [<br>• ] maintain grid reliability</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:09:59 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence med">MED confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">FILED</span>
+      </div>
+      <div class="headline">34 Tex. Admin. Code § 3.335 - Property Used in a Qualifying Data ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.law.cornell.edu/regulations/texas/34-Tex-Admin-Code-SS-3-335" target="_blank" class="url">https://www.law.cornell.edu/regulations/texas/34-Tex-Admin-Code-SS-3-335</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">filed</span></div>
+      <div class="summary">The application must include: [<br>• (1) The exemption under this subsection for qualifying data centers only applies to Texas state sales and use taxes<br>• 359 (Property Used in Certain Data Centers; Temporary Exemption)</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:09:59 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence med">MED confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">FILED</span>
+      </div>
+      <div class="headline">Texas bets big on $2.1B data center that will employ just 37 people</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.chron.com/news/article/data-center-fort-worth-texas-21247910.php" target="_blank" class="url">https://www.chron.com/news/article/data-center-fort-worth-texas-21247910.php</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">filed</span></div>
+      <div class="summary">Earlier this spring, the Fort Worth City Council approved a tax incentive agreement with ACS Group that would provide property tax abatements for up to 10 years<br>• Under the deal, the city would rebate 35 percent of the incremental value of business personal property after phase one and 70 percent after phase two<br>• ] ACS Group–a global infrastructure group behind the development–submitted an application for a preliminary grading permit to the city, which, as of Dec</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:09:59 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Data center tax exemption</span>
+      </div>
+      <div class="headline">Texas Enacts Data Center Exemption for Certain Property</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.salestaxinstitute.com/resources/texas-enacts-data-center-exemption-certain-property" target="_blank" class="url">https://www.salestaxinstitute.com/resources/texas-enacts-data-center-exemption-certain-property</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary">Texas has enacted a temporary sales and use tax exemption for certain tangible personal property used in data centers that meet certain capital investment and new employment requirements<br>• A qualifying job means a full time, permanent job [<br>• ] Skip to Main Content<br><br>News & Tips | Software/Hi-Tech<br><br># Texas Enacts Data Center Exemption for Certain Property [</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 3:09:59 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Controversial southwest Fort Worth data center gets ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://fortworthreport.org/2024/09/17/controversial-southwest-fort-worth-data-center-gets-approval-but-more-steps-remain/" target="_blank" class="url">https://fortworthreport.org/2024/09/17/controversial-southwest-fort-worth-data-center-gets-approval-but-more-steps-remain/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">The council voted 7-2 to approve a zoning change that was required before the site could be used for construction of the five-building data</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Data center project approval</span>
+      </div>
+      <div class="headline">Fort Worth Data Center Approved Over Residents' Opposition</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.govtech.com/infrastructure/fort-worth-data-center-approved-over-residents-opposition" target="_blank" class="url">https://www.govtech.com/infrastructure/fort-worth-data-center-approved-over-residents-opposition</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">opposition</span></div>
+      <div class="summary">govtech-logo-rev-no-block<br>• The developer said it would be an economic boon, not a threat<br>• Aerial view of Fort Worth</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">APPROVED</span>
+      </div>
+      <div class="headline">City Council denies preferred scenario change for a data ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://universitystar.com/32459/news/city-council-denies-zoning-change-for-a-data-center-passes-land-annexation/" target="_blank" class="url">https://universitystar.com/32459/news/city-council-denies-zoning-change-for-a-data-center-passes-land-annexation/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">approved</span></div>
+      <div class="summary">The PSA was tied with the zoning amendment for the data center; one could not pass without the other<br>• Both needed a super majority vote, at least six yes votes, to pass<br>• The PSA was denied two votes for no by council members Amanda Rodriguez and Saul Gonzales</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+</body>
+</html>

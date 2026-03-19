@@ -1,0 +1,2602 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "layer_type": "runway_events",
+    "geography": "Virginia (LOSS region: Prince William + Stafford + Spotsylvania)",
+    "source": "County BOS/PC packets (Prince William, Stafford, Spotsylvania)",
+    "source_url": null,
+    "created": "2026-02-07",
+    "updated": "2026-02-09",
+    "feature_count": 62,
+    "data_date": "2025-08_to_2026-02",
+    "notes": "Merged Prince William LOSS layer with additional Stafford/Spotsylvania LOSS policy events for non-overlapping side-by-side map vs WIN region layer."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-24",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "B. Rezoning#REZ2025-00004, Kings Grove: This is a request to rezone on \u00b115.48-acre from O(M), Office Medium, B-1, General Business, and A-1, Agricultural to PMR, Planned Mixed Residential, to allow for the development of 202 multifamily units (2 over 2 units) and 37 single family attached units, with associated waivers and height modification from 35ft to 45ft in single-family detached and from 50ft to 55ft for multifamily units. The subject property is located at 4575 and 4471, Prince William Parkway, and 12760 and 12780 Black Forest Lane. and is identified on County maps as GPINs 8193-21-3045, 8193-30-0793, 8193-21-2423, & 8193-21-4716. The site is zoned O(M), Office Medium, B-1, General Business, and A-1, Agricultural; and is designated MU-4, Mixed Use Urban Community with Transect 4, in the Comprehensive Plan; and is located within the Land Use Special Planning Areas (Government Comp",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20250924.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-09-24",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Kings Grove: This is a request to rezone on \u00b115.48",
+        "case_id": "REZ2025-00004",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-24",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "C. Special Use Permit #SUP2023-00022, Tariq Automotive: This is a request for a special use permit to allow motor vehicle sales (limited) and motor vehicle service. The property is located at 10708, 10714, and 10712 Balls Ford Road, on the north side of Balls Ford Road, approximately 450 feet of the intersection of Balls Ford Road and Sudley Road. The subject \u00b11.58-acre property is identified on County\u2019s maps as GPIN\u2019s 7697-35-0371, 7697-35-0662 (pt), 7697-35-2566 and 7697-35-1457; is zoned B-1, General Business and is designated MU-4, Mixed Use (Community) in the Comprehensive Plan. The property is in the Data Center Opportunity Overlay District, the Environmental Resource Protection Area Overlay (pt.), and the Sudley Road Corridor Study Area. Gainesville Magisterial District",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20250924.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-09-24",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2023-00022",
+        "anchor_type": "site",
+        "geocode_query": "10712 Balls Ford Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5164001,
+          38.7990927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-24",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "D. Proffer Amendment #REZ2024-00022, Yarbrough PRA: This is a request to amend the proffers associated with #REZ1983-0041 and #REZ79-9, to permit religious institutions as an allowed use on the property. The application also requests associated waivers and modifications. The \u00b10.93-acre site is developed with three existing one-story office buildings totaling approximately 8,500 square feet. The property is located on the west side of Occoquan Road, approximately 280 feet south of its intersection with Old Bridge Road; is addressed as 12908 Occoquan Road; and is identified on County maps as GPIN 8393-60-6912. The property is part of Yarborough Business Park, is zoned B-1, General Business, and is subject to existing proffers. Although religious institutions are a by-right use in the B-1 district, the existing proffers on the site do not include this use, making the amendment necessary. Th",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20250924.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-09-24",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Yarbrough PRA: This is a request to amend the proffers associated with #REZ1983",
+        "case_id": "REZ2024-00022",
+        "anchor_type": "site",
+        "geocode_query": "12908 Occoquan Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2603727,
+          38.67235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-24",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "E. Rezoning #REZ2025-00014 Hornbaker Road: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data center uses consistent with the M-2 Zoning District. Permitted uses would include both by-right and Special Use Permit (SUP) uses, along with secondary and ancillary uses, subject to proffered limitations. The application also requests associated waivers and modifications. The proposal establishes a maximum overall Floor Area Ratio (FAR) of 0.5 across the property, which falls within the I-3 designation target range of between 0.23 and 0.57 FAR, as outlined in the Comprehensive Plan. Data center buildings may reach a maximum height of 80 feet (inclusive of mechanical rooftop equipment), while non-data center buildings will be limited to 75 feet. The subject property is located imm",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20250924.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-09-24",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-09-24",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "F. Special Use permit #SUP2025-00016 Hornbaker Road: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to permit research and development (HAZMAT) and testing/experimental laboratories (HAZMAT) uses onsite. The subject \u00b140.02 acres property is located immediately west of Prince William Parkway, immediately South of Wellington Road and immediately East of Hornbaker Road; is identified on County maps as GPIN 7596-81-5396. The property is designated I-3, T/F Technology/Flex with a T-3 Transect in the Comprehensive Plan; is located within Airport Safety Overlay District, Technology Overlay District with subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Rezoning #REZ2025-00014 Horn",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20250924.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-09-24",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-15",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "C. Rezoning #REZ2024-00036, LONG LEAF at KETTLE RUN: This is a request to rezone \u00b1325.679 acres from A-1, Agricultural to PMR, Planned Mixed Residential with associated waivers and modifications to allow for the development of 325 single-family detached and 104 single-family attached residential dwelling units. The Property is located on Vint Hill Road, with the majority of the proposal located on the south side Vint Hill Road. The western portion of the proposal abuts the Prince William Golf Course, with a \u00b110-acre portion on the east of the Owls Nest Road intersection. This also includes a \u00b122-acre parcel on the north side of Vint Hill Road on the northwest corner of the intersection with Broadlands Lane. The subject property identified on the County Map as GPINs 7395-26-6905, 7395-45-9158, 7395-56-0528, 7395-56-0961, 7395-74-9444, 7395-76-3775, 7395-28-5113, 7395-27-5592, 7395-28-8212",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251015.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-15",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "LONG LEAF at KETTLE RUN: This is a request to rezone \u00b1325.679 acres from A",
+        "case_id": "REZ2024-00036",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-15",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "D. Rezoning #REZ2024-00035, ALDERWOOD at KETTLE RUN: This is a request to rezone \u00b1335.38 acres from A-1, Agricultural, to PMR, Planned Mixed Residential, with associated development waivers and modifications, to allow for the development of up to 397 single-family detached residential homes. The subject property is located on the south side Vint Hill Road, \u00b1640 feet west of Reid Lane and \u00b11,900 feet east of Owls Nest Road; identified on the County Map as GPIN\u2019s 7395-93-0223, 7395-91-4884, 7394-88-6498, & 7494-08-4925. The site is designated CRES 1-B, and CRES 1-C, Conservation Residential in the Comprehensive Plan; is located within Agritourism & Arts Overlay, Domestic Fowl Overlay, Environmental Resource Protection Overlay, Resource Protection Overlay and the 100-year Flood Hazard Overlay Districts. Brentsville Magisterial District",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251015.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-15",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "ALDERWOOD at KETTLE RUN: This is a request to rezone \u00b1335.38 acres from A",
+        "case_id": "REZ2024-00035",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-15",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "E. Rezoning #REZ2024-00034, HAWTHORN at KETTLE RUN: This is a request to rezone \u00b1461.95 acres from A-1, Agricultural, to PMR, Planned Mixed Residential, and A-1 with associated waivers and modifications to allow for the development of up to 233 single- PC Agenda October 14, 2025 Page 3 family detached and attached homes. The subject property is located \u00b11,116 west of the intersection of Vint Hill Rd. and Kettle Run Rd. and approximately \u00b1244 ft. south of intersection of Kettle Run Road and Schaeffer Lane; is identified on the County Map as GPIN\u2019s 7495-40-4383, 7494-39-9292, 7494-26-6598, 7494-46-4904, and 7494-24-1567. The site is designated CRES 1-B, Conservation Residential in the Comprehensive Plan; is located within Domestic Fowl Overlay, Environmental Resource Protection Overlay, Agritourism & Arts Overlay and 100-year and 500-year Flood Hazard Overlay. Brentsville Magisterial Distr",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251015.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-15",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "HAWTHORN at KETTLE RUN: This is a request to rezone \u00b1461.95 acres from A",
+        "case_id": "REZ2024-00034",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Agenda, as listed below. The following items have been deferred to date certain of this agenda or are continued from a previous agenda with the public hearings having been closed. Deferred A. Rezoning, REZ 2024-00028, Moreland Meadows - Deferred from 9-10-25 PUBLIC",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "agenda or are continued from a previous agenda with the public hearings having been closed. Deferred A. Rezoning, REZ 2024-00028, Moreland Meadows - Deferred from 9-10-25 PUBLIC HEARING CLOSED: This is a request to rezone the \u00b115.36 acres from A-1, Agricultural, to",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "closed. Deferred A. Rezoning, REZ 2024-00028, Moreland Meadows - Deferred from 9-10-25 PUBLIC HEARING CLOSED: This is a request to rezone the \u00b115.36 acres from A-1, Agricultural, to PMR, Planned Mixed Residential, for the development of 63 residential units. The 48",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Deferred A. Rezoning, REZ 2024-00028, Moreland Meadows - Deferred from 9-10-25 PUBLIC HEARING CLOSED: This is a request to rezone the \u00b115.36 acres from A-1, Agricultural, to PMR, Planned Mixed Residential, for the development of 63 residential units. The 48 units are single-family attached, and 15 units are single-family detached. The 7 (seven)",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "A. Rezoning, REZ 2024-00028, Moreland Meadows - Deferred from 9-10-25 PUBLIC HEARING CLOSED: This is a request to rezone the \u00b115.36 acres from A-1, Agricultural, to PMR, Planned Mixed Residential, for the development of 63 residential units. The 48 units are single-family attached, and 15 units are single-family detached. The 7 (seven) 5 County Complex Court, Suite 210, Prince William, Virginia 22192 \u2022 (703) 792-7615 | www.pwcva.gov/pc",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "site",
+        "geocode_query": "County Complex Court, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.352104,
+          38.6791731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Request for Deferral to date certain November 5, 2025 B. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 9-24-25 PUBLIC HEARING",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Deferral to date certain November 5, 2025 B. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "certain November 5, 2025 B. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "5, 2025 B. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data center uses consistent with the M-2 Zoning District. Permitted uses would include both",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "B. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data center uses consistent with the M-2 Zoning District. Permitted uses would include both by-right and Special Use Permit (SUP) uses, along with secondary and ancillary uses,",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Plan; is located within Airport Safety Overlay District, Technology Overlay District with subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Special Use permit #SUP2025-00016 Hornbaker Road) Brentsville Magisterial District C. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 9-24-25 PUBLIC",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Special Use permit #SUP2025-00016 Hornbaker Road) Brentsville Magisterial District C. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Special Use permit #SUP2025-00016 Hornbaker Road) Brentsville Magisterial District C. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to permit",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Special Use permit #SUP2025-00016 Hornbaker Road) Brentsville Magisterial District C. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to permit research and development (HAZMAT) and testing/experimental laboratories (HAZMAT)",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "C. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to permit research and development (HAZMAT) and testing/experimental laboratories (HAZMAT) uses onsite. The subject \u00b140.02 acres property is located immediately west of Prince",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "located within Airport Safety Overlay District, Technology Overlay District with subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Rezoning #REZ2025-00014 Hornbaker Road) Brentsville Magisterial District Continuation",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Rezoning #REZ2025-00014 Hornbaker Road) Brentsville Magisterial District Continuation D. SUP2025-00009, Vint Hill Substation - Heard at the 9-10-25 hearing PUBLIC HEARING",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_INFRA_POWER"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00009",
+        "anchor_type": "site",
+        "geocode_query": "13405 Vint Hill Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7495-21-4209",
+        "site_address": null,
+        "applicant": "VIRGINIA ELECTRIC AND POWER COMPANY",
+        "owner": "Virginia Electric and Power Company",
+        "planner": "Alex Vanegas/Vanessa Watson",
+        "staff_report_doc": "SUP2025-00009_staff_report.pdf",
+        "staff_report_date": "2025-10-29",
+        "staff_sources": [
+          {
+            "source_doc_title": "SUP2025-00009_staff_report.pdf",
+            "source_doc_date": "2025-10-29"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5902437,
+          38.7346533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Rezoning #REZ2025-00014 Hornbaker Road) Brentsville Magisterial District Continuation D. SUP2025-00009, Vint Hill Substation - Heard at the 9-10-25 hearing PUBLIC HEARING CLOSED: This is a request for a special use permit to allow an electrical substation. The",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_INFRA_POWER"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00009",
+        "anchor_type": "site",
+        "geocode_query": "13405 Vint Hill Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7495-21-4209",
+        "site_address": null,
+        "applicant": "VIRGINIA ELECTRIC AND POWER COMPANY",
+        "owner": "Virginia Electric and Power Company",
+        "planner": "Alex Vanegas/Vanessa Watson",
+        "staff_report_doc": "SUP2025-00009_staff_report.pdf",
+        "staff_report_date": "2025-10-29",
+        "staff_sources": [
+          {
+            "source_doc_title": "SUP2025-00009_staff_report.pdf",
+            "source_doc_date": "2025-10-29"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5902437,
+          38.7346533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Rezoning #REZ2025-00014 Hornbaker Road) Brentsville Magisterial District Continuation D. SUP2025-00009, Vint Hill Substation - Heard at the 9-10-25 hearing PUBLIC HEARING CLOSED: This is a request for a special use permit to allow an electrical substation. The property is addressed as 13405 Vint Hill Road, and located \u00b10.45 miles west from Sudley",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_INFRA_POWER"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00009",
+        "anchor_type": "site",
+        "geocode_query": "13405 Vint Hill Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7495-21-4209",
+        "site_address": null,
+        "applicant": "VIRGINIA ELECTRIC AND POWER COMPANY",
+        "owner": "Virginia Electric and Power Company",
+        "planner": "Alex Vanegas/Vanessa Watson",
+        "staff_report_doc": "SUP2025-00009_staff_report.pdf",
+        "staff_report_date": "2025-10-29",
+        "staff_sources": [
+          {
+            "source_doc_title": "SUP2025-00009_staff_report.pdf",
+            "source_doc_date": "2025-10-29"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5902437,
+          38.7346533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Continuation D. SUP2025-00009, Vint Hill Substation - Heard at the 9-10-25 hearing PUBLIC HEARING CLOSED: This is a request for a special use permit to allow an electrical substation. The property is addressed as 13405 Vint Hill Road, and located \u00b10.45 miles west from Sudley Manor and Vint Hill Road. The subject site is identified on County maps as GPIN 7495-214209 on approximately \u00b123.41 acres; is zoned A-1, Agricultural and is designated CRes-1B,",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_INFRA_POWER"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00009",
+        "anchor_type": "site",
+        "geocode_query": "13405 Vint Hill Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7495-21-4209",
+        "site_address": null,
+        "applicant": "VIRGINIA ELECTRIC AND POWER COMPANY",
+        "owner": "Virginia Electric and Power Company",
+        "planner": "Alex Vanegas/Vanessa Watson",
+        "staff_report_doc": "SUP2025-00009_staff_report.pdf",
+        "staff_report_date": "2025-10-29",
+        "staff_sources": [
+          {
+            "source_doc_title": "SUP2025-00009_staff_report.pdf",
+            "source_doc_date": "2025-10-29"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5902437,
+          38.7346533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "B. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data center uses consistent with the M-2 Zoning District. Permitted uses would include both by-right and Special Use Permit (SUP) uses, along with secondary and ancillary uses, subject to proffered limitations. The application also requests associated waivers and modifications. The proposal establishes a maximum overall Floor Area Ratio (FAR) of 0.5 across the property, which falls within the I-3 designation target range of between 0.23 and 0.57 FAR, as outlined in the Comprehensive Plan. Data center buildings may reach a maximum height of 80 feet (inclusive of mechanical rooftop equipment), while non-data center buildings will be limited to",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "C. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 9-24-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to permit research and development (HAZMAT) and testing/experimental laboratories (HAZMAT) uses onsite. The subject \u00b140.02 acres property is located immediately west of Prince William Parkway, immediately South of Wellington Road and immediately East of Hornbaker Road; is identified on County maps as GPIN 7596-81-5396. The property is designated I-3, T/F Technology/Flex with a T-3 Transect in the Comprehensive Plan; is located within Airport Safety Overlay District, Technology Overlay District with subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently bei",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Hornbaker Road",
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "D. SUP2025-00009, Vint Hill Substation - Heard at the 9-10-25 hearing PUBLIC HEARING CLOSED: This is a request for a special use permit to allow an electrical substation. The property is addressed as 13405 Vint Hill Road, and located \u00b10.45 miles west from Sudley Manor and Vint Hill Road. The subject site is identified on County maps as GPIN 7495-214209 on approximately \u00b123.41 acres; is zoned A-1, Agricultural and is designated CRes-1B, Conservation Residential in the Comprehensive Plan; is located within the Domestic Fowl and Agritourism and Arts Overlay Districts. Brentsville Magisterial District. PC Agenda October 29, 2025 Page 3 9. Planning Director\u2019s Time 10. Public Hearings To register to speak remotely on the following projects, please click HERE! (Please Note: Signup for this meeting opens on Thursday, October 23, 2025, and closes at 5:00 p.m. on Tuesday, October 28, 2025.) (In-pe",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_INFRA_POWER",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Vint Hill Substation",
+        "case_id": "SUP2025-00009",
+        "anchor_type": "site",
+        "geocode_query": "13405 Vint Hill Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7495-21-4209",
+        "site_address": null,
+        "applicant": "VIRGINIA ELECTRIC AND POWER COMPANY",
+        "owner": "Virginia Electric and Power Company",
+        "planner": "Alex Vanegas/Vanessa Watson",
+        "staff_report_doc": "SUP2025-00009_staff_report.pdf",
+        "staff_report_date": "2025-10-29",
+        "staff_sources": [
+          {
+            "source_doc_title": "SUP2025-00009_staff_report.pdf",
+            "source_doc_date": "2025-10-29"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5902437,
+          38.7346533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "A. Special Use Permit #SUP2026-00003, Ashland Grocery Pharmacy Drive-Up Window: A request for special use permit to allow a drive-through facility in connection with a pharmacy located with a proposed grocery store in an in-line unit of a proposed retail building on approximately \u00b11.92 acres (a part of a \u00b113.48 acres parcel). The property is located at 5545 Fincastle Dr, southwest quadrant of the intersection of Spriggs Road and Fincastle Drive: and is identified on County Mapper as a portion of GPIN 8090-58-0729. The subject site is currently zoned B-1, General Business and is subject to proffers associated with PLN200000001; and is designated MU-3, Mixed Use with Transect 3, in the Comprehensive Plan, and located in the Highway Corridor Overlay Districts. Potomac Magisterial District.",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Ashland Grocery Pharmacy Drive",
+        "case_id": "SUP2026-00003",
+        "anchor_type": "site",
+        "geocode_query": "5545 Fincastle Dr, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.3721308,
+          38.6141446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "B. Special Use Permit #SUP2019-00023, Fairmont Fuel Station Avenue: To allow a motor vehicle fuel station on a \u00b11.92-acre parcel with sign modifications. The property is located east of the intersection of Sudley Rd. and Fairmont Ave.; it is addressed as 9909 Blairmore Dr.; and is identified on County maps as GPIN 7696-85-8187. The subject site is zoned B-1, General Business, PMR, Planned Mixed Residential, and is subject to proffers pursuant to Heritage Crossing #PLN2014-00020. The subject site is designated MU-4, Mixed Use (Transect 4) in the Comprehensive Plan and is located in the Land Use Special Planning Areas (Sudley Road), Planned Districts, Environmental Resource Protection Overlay, Historic Land Records - 1860s, FEMA Floodways, 100-year Flood Hazard Overlay, and 500-year Flood Hazard Overlay. Coles Magisterial District",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Fairmont Fuel Station Avenue: To allow a motor vehicle fuel station on a \u00b11.92",
+        "case_id": "SUP2019-00023",
+        "anchor_type": "site",
+        "geocode_query": "9909 Blairmore Dr., Prince William County, VA",
+        "geocode_source": "nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4967871,
+          38.7727088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-29",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "C. Special Use Permit # SUP2024-00040, Deckscapes of Virginia: This is a request for a special use permit in the \u00b17.68 acres to remove and update the existing building and business operation, which currently functions as a garden center, and to expand the use to include nursery activities associated with the operation of a garden center and landscaping service. The Property is located on the north side of Sudley Road, approximately \u00bd mile west of Gum Springs Road. The area address, 5003 Sudley Road, is identified on the County map as GPIN 7599-33-0540. The site is currently zoned A-1, Agricultural, and the land use of the location in the Comprehensive Plan is AF, Agricultural and Forestry. The area is within the Environmental Resource Protection Overlay (ERPO), Agritourism and Art Overlay District, and Highway Corridor Overlay District (HCOD). Gainesville Magisterial District. D. Public ",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251029.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-10-29",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2024-00040",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "the request for deferral/continuation is denied that case will be moved to the Public Hearing Agenda, as listed below. The following items have been deferred to date certain of this agenda or are continued from a previous agenda with the public hearings having been closed. A. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 10-29-25 PUBLIC HEARING",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Agenda, as listed below. The following items have been deferred to date certain of this agenda or are continued from a previous agenda with the public hearings having been closed. A. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "agenda or are continued from a previous agenda with the public hearings having been closed. A. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "closed. A. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data center uses consistent with the M-2 Zoning District. Permitted uses would include both",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "A. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data center uses consistent with the M-2 Zoning District. Permitted uses would include both by-right and Special Use Permit (SUP) uses, along with secondary and ancillary uses,",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00014",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Plan; is located within Airport Safety Overlay District, Technology Overlay District with subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Special Use permit #SUP2025-00016 Hornbaker Road) Brentsville Magisterial District B. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 10-29-25",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Special Use permit #SUP2025-00016 Hornbaker Road) Brentsville Magisterial District B. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently being processed with Special Use permit #SUP2025-00016 Hornbaker Road) Brentsville Magisterial District B. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "Special Use permit #SUP2025-00016 Hornbaker Road) Brentsville Magisterial District B. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to permit research and development (HAZMAT) and testing/experimental laboratories",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "deferral",
+        "outcome": "Deferred",
+        "summary": "Agenda indicates deferral/continuation.",
+        "quote": "B. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to permit research and development (HAZMAT) and testing/experimental laboratories (HAZMAT) uses onsite. The subject \u00b140.02 acres property is located immediately west of",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "A. Rezoning #REZ2025-00014 Hornbaker Road- Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request to rezone \u00b140.02 acres from A-1, Agricultural and PBD, Planned Business District to M-2, Light Industrial to permit a mix of data center and non-data center uses consistent with the M-2 Zoning District. Permitted uses would include both by-right and Special Use Permit (SUP) uses, along with secondary and ancillary uses, subject to proffered limitations. The application also requests associated waivers and modifications. The proposal establishes a maximum overall Floor Area Ratio (FAR) of 0.5 5 County Complex Court, Suite 210, Prince William, Virginia 22192 \u2022 (703) 792-7615 | www.pwcva.gov/pc PC Agenda November 5, 2025 Page 2 across the property, which falls within the I-3 designation target range of between 0.23 and 0.57 FAR, as outlined in the Comprehensive Plan. Data center buildi",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "B. Special Use Permit #SUP2025-00016 Hornbaker Road - Deferred from 10-29-25 PUBLIC HEARING CLOSED: This is a request for a special use permit to allow data center uses outside of the designated Data Center Opportunity Zone Overlay Districts, and to permit research and development (HAZMAT) and testing/experimental laboratories (HAZMAT) uses onsite. The subject \u00b140.02 acres property is located immediately west of Prince William Parkway, immediately South of Wellington Road and immediately East of Hornbaker Road; is identified on County maps as GPIN 7596-81-5396. The property is designated I-3, T/F Technology/Flex with a T-3 Transect in the Comprehensive Plan; is located within Airport Safety Overlay District, Technology Overlay District with subdistricts, Employment Center Office/R&D High Profile (EH) and Employment Center Office/R&D (EO), Innovation Park Small Area Plan. (Concurrently be",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Hornbaker Road",
+        "case_id": "SUP2025-00016",
+        "anchor_type": "site",
+        "geocode_query": "9001 Hornbaker Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "7596-81-5396",
+        "site_address": "9001 HORNBAKER ROAD",
+        "applicant": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "owner": "MJV Parcel A, LLC, PWC \u2013 Parcel B, LLC",
+        "planner": "Christopher Perez, Principal Planner",
+        "staff_report_doc": "REZ2025-00014_staff_report.pdf",
+        "staff_report_date": "2025-11-05",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00014_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          },
+          {
+            "source_doc_title": "SUP2025-00016_staff_report.pdf",
+            "source_doc_date": "2025-11-05"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5335841,
+          38.7601551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "A. Special Use Permit #SUP2024-00024, Iglesia de Dios Pentecostal Puerta del Cielo LED Sign: This is a request for a special use permit to allow an electronic message board sign and amendment to PLN2007-00197. The property is located at 14615 General Washington Drive, approximately 470 feet from the intersection of General Washinton Drive and Minnieville Road. The subject \u00b13.128-acre property is identified on County\u2019s maps as GPIN 8091-76-8924; is zoned A-1, Agricultural, and is designated RN-2, Residential, in the Comprehensive Plan. The property is in the Minnieville Highway Corridor Overlay District. Neabsco Magisterial District.",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2024-00024",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-05",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "B. Rezoning #REZ2024-00023 Hoadly Square Rezoning: This is a request to rezone \u00b157.96 acres from A-1, Agricultural, and SR-1, Semi- Rural to PMR, Planned Mixed Residential District, to allow for the development of \u00b1279 residential dwelling units to include 265 single-family attached units and 14 duplexes with one existing single-family unit to remain on the property. Several development waivers and modifications are being proposed, including a height modification to increase the height of the townhouse from 35 feet to 45 feet. The subject property is located north of Hoadly Road and West of Prince William Parkway, approximately 645 ft. west of the intersection of Hoadly Road, Galveston Court, and Ridgefield Village Drive, and is identified on County maps as GPINs: PC Agenda November 5, 2025 Page 3 8093-53-4346, 8093-52-8034, 8093-61-6698, 8093-61-8799, 8093-62-4844, 8093-626720,8093-52-2",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251105.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-05",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Hoadly Square Rezoning: This is a request to rezone \u00b157.96 acres from A",
+        "case_id": "REZ2024-00023",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-19",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "B. Special Use Permit #SUP2025-00030, Home Depot SUP: This is a request for a special use permit to allow truck and trailer rental and outdoor merchandise storage. The \u00b110.77-acre property is located at 14025 Foulger Square, at the northeastern corner of the intersection of Smoketown Road and Great Oaks Drive, and is identified on County Mapper as GPIN 8292-43-5655. The subject property is Zoned B-1, General Business, and designated MU-4, Mixed Use with Transect 4, in the Comprehensive Plan. The property is located within the Quartz District Activity Center and the Highway Corridor Overlay District. Occoquan Magisterial District.",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251119.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-19",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "SUP2025-00030",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-19",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "C. Special Use Permit #SUP2025-00026, Navy Federal Drive-through ATM: This is a request for a Special Use Permit to allow a drive-through facility in connection with a by-right financial institution, specifically for the installation of a standalone, single-lane drive-through ATM facility with an overhead canopy, to be located within the existing Walmart parking lot, with associated waivers. The property is located at 17041 Richmond Highway on the southeast corner of Richmond Highway and River Heritage Blvd. The site consists of approximately 4,800 square feet, which is a portion of the larger 24.3-acre property. The property is zoned B-1, General Business; and is identified on County maps as GPIN 8289-37-5811, and is designated as MU-4, Mixed Use Transect-4, in the Comprehensive Plan. The property is within the Southbridge Activity Center, Prehistoric Sensitivity Area, and Highway Corri",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251119.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-19",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Navy Federal Drive",
+        "case_id": "SUP2025-00026",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-19",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "D. Rezoning #REZ2024-00048, Maple Valley Grove: This is a request to rezone PC Agenda November 19, 2025 Page 3 \u00b123.44 acres from A-1, Agricultural, and M-2, Light Industrial, to PMR, Planned Mixed Residential, to allow for the development of up to 242 multi-family stacked (townhouse style) and 32 multi-family traditional residential units, and with associated development waivers and modi\ufb01cations, including increases to building heights. The subject \u00b123.44-acre property is located on the south side of Prince William Pkwy. and approximately 575 feet west of the intersection of Hoadly Rd. and Prince William Pkwy.; and is identi\ufb01ed on County maps as GPINs 8093-63-4515, 8093-73-1831, and 8093-73-4522. The site is designated MU-3, Neighborhood Mixed Use, with a Transect 3 that recommends a density range of 4 to 12 dwelling units per acre in the Comprehensive Plan. The site is currently zoned A",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251119.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-19",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2024-00048",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-19",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "F. Rezoning #REZ2024-00023 Hoadly Square Rezoning: This is a request to rezone \u00b157.96 acres from A-1, Agricultural, and SR-1, Semi- Rural to PMR, Planned Mixed Residential District, to allow for the development of \u00b1279 residential dwelling units to include 265 single-family attached units and 14 duplexes with one existing single-family unit to remain on the property. Several development waivers and modifications are being proposed, including a height modification to increase the height of the townhouse from 35 feet to 45 feet. The subject property is located north of Hoadly Road and West of Prince William Parkway, approximately 645 ft. west of the intersection of Hoadly Road, Galveston Court, and Ridgefield Village Drive, and is identified on County maps as GPINs: 8093-534346, 8093-52-8034, 8093-61-6698, 8093-61-8799, 8093-62-4844, 8093-626720,8093-52-2616, and 8093-62-8840. The site is ",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251119.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-11-19",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Hoadly Square Rezoning: This is a request to rezone \u00b157.96 acres from A",
+        "case_id": "REZ2024-00023",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-10",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "A. Special Use Permit Amendment, SUP2024-00036 Belmont Bay: This is a request for a special use permit amendment to SUP#99-0014, within the town center to amend the uses within the Marina Overlook district and to remove areas from the special use permit that are no longer part of the Town Center area. The proffer amendment request is proposing to modify the land bays and uses from Rezoning #99-0022. The Applicant is seeking to construct the remaining approved units within Belmont Bay in the areas and reduce the remaining commercial uses within Belmont Bay to \u00b120,500 sq. ft. In addition, the Applicant is proposing a height modification as previously approved by with the original rezoning and special use permit. The properties are identified as GPINs 8492-43-5597, 8492-44-0370, 8492-44-5722, 8492-44-1022, 8492-53-7716, 8492-32-4965 (part), 8492-34-3596, 8492-43-4228 (part), and 8492-32-519",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251210.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-12-10",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": "Belmont Bay: This is a request for a special use permit amendment to SUP#99",
+        "case_id": "SUP2024-00036",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-10",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "B. Proffer Amendment, REZ2024-00040 Belmont Bay: The proffer amendment request is proposing to modify the land bays and uses from Rezoning #99-0022. The Applicant is seeking to construct the remaining approved units within Belmont Bay in the areas and reduce the remaining commercial uses within Belmont Bay to \u00b120,500 sq. ft. In addition, the Applicant is proposing a height modification as previously approved by with the original rezoning and special use permit. The properties are identified as GPINs 8492-43-5597, 8492-44-0370, 8492-445722, 8492-44-1022, 8492-53-7716, 8492-32-4965 (part), 8492-34-3596, 8492-43-4228 (part), and 8492-32-5196 (part) (collectively the \u201cProperty\u201d). The Property is comprised of \u00b1159.76 acres and is located east of Route 1 and northeast of the intersection of Route 1 and Dawsons Beach Road. Woodbridge Magisterial District",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251210.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-12-10",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2024-00040",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-10",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "C. Rezoning #REZ2025-00011, Cabin Branch at Quantico Creek: This is a request to rezone \u00b131.50 acres from PBD, Planned Business District, to PMR, Planned Mixed Residential, to allow for up to 191 townhome units with associated development waivers and modifications. The project area is located south of the intersection of Van Buren Road and Fettler Park Drive; is identified on County maps as GPIN 8189-76-4257, 8189-85-2463, 8189-75-7513, and 8189-76-7857 and is addressed as 17151, 173301 Van Buren Road and 3600, 3801 Fettler Park Drive. The site is designated MU, Mixed Use, with Transect 5, in the Comprehensive Plan, and is located within The Dumfries Road Activity Center. The site is also located within the HCOD, Highway Corridor Overlay District (pt.), and the ERPO, Environmental Resource Protection Overlay (pt.). Potomac Magisterial District PC Agenda December 10, 2025 Page 3",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251210.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-12-10",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": "REZ2025-00011",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-10",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "D. Special Use Permit #SUP2025-00013, Reuter Quarry: This is a request to allow storage/disposal of non-agricultural excavation material to fill an abandoned borrow pit to bring it level with the rest of the surrounding undisturbed land, and to revegetate the property to use/restore for agriculture and open space purposes. The \u00b16.92-acre SUP site is located at the southeastern corner of the entire \u00b1160.32-acre property. The subject site is located at the northwestern intersection of Mountain Road and Loudoun Drive, is currently addressed as 1000 Loudoun Drive, and is identified on County maps as GPIN 7202-65-4973 (portion). The site is designated POS, Parks and Open Space, and is partially located within the Environmental Resource Protection Overlay of the Comprehensive Plan; and is currently zoned A-1, Agricultural, and is located within the Domestic Fowl Overlay District. Gainesville M",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251210.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-12-10",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Reuter Quarry: This is a request to allow storage/disposal of non",
+        "case_id": "SUP2025-00013",
+        "anchor_type": "site",
+        "geocode_query": "1000 Loudoun Drive, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6360312,
+          38.9375079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-10",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "E. Rezoning #REZ2025-00012, Carver Road Subdivision: This is a request to rezone \u00b141.27 acres from A-1, Agricultural, to PMR, Planned Mixed Residential, to allow for up to 110 single -family detached units with associated development waivers and modifications. The project area is located east of the intersection of Old Carolina Road and Mercury Avenue; is addressed as 7405, 7305, 7313, 7213 Old Carolina Road and 7332, 7338, 7334, 7336, 7330, 7328, 7344, 7346, 7315, 7317, 7321, and 7319 Carver Road; is identified on County maps as GPIN 7297-74-5573; 7297-74-4191; 7297-75-5314; 7297-74-1850; 7297-74-8553; 7297-74-7730; 7297-74-6418; 7297-74-8209; 7297-74-5433; 7297-84-2264; 7297-84-4447; 7297-85-4618; 7297-85-2080; 7297-85-2557; 7297-85-6136; 7297-74-8340. The site is designated RN-2, Residential Neighborhood with Transect 2, and RN-3, Residential Neighborhood with Transect 3, in the Compr",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251210.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-12-10",
+        "tags": [
+          "RUNWAY_PERMISSION"
+        ],
+        "operator": null,
+        "project_name": "Carver Road Subdivision: This is a request to rezone \u00b141.27 acres from A",
+        "case_id": "REZ2025-00012",
+        "anchor_type": "site",
+        "geocode_query": "7213 Old Carolina Road and 7332, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6419423,
+          38.7987366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-10",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "F. Rezoning #REZ2025-00002, Chinn Landing: This is a request to rezone \u00b115.39 acres from A-1, Agricultural, to PMR, Planned Mixed Residential, to allow for the development of up to 47 single-family attached (townhouse) units with other associated development waivers and modifications, including a building height increase of up to 45 feet. The project area is located \u00b1650 feet northeast of the Sturbridge Road and Minnieville Road intersection. The subject site is addressed as 13015 Minnieville Road and is identified on County maps as GPIN 8292-98-6549. The site is designated RN-2, Residential Neighborhood, with Transect 2 that recommends a density of 1 to 4 dwelling units per acre in the Comprehensive Plan; and is located within The Landing at Prince William Small Area Plan special planning area. The site is also located partially within the Minnieville Road (Davis Ford Road) Highway Corr",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251210.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-12-10",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "DC_CASE",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "Chinn Landing: This is a request to rezone \u00b115.39 acres from A",
+        "case_id": "REZ2025-00002",
+        "anchor_type": "site",
+        "geocode_query": "13015 Minnieville Road, Prince William County, VA",
+        "geocode_source": "nominatim",
+        "gpin": "8292-98-6549",
+        "site_address": "13015 Minnieville Road and is",
+        "applicant": "Long Company of Virginia, Inc",
+        "owner": null,
+        "planner": null,
+        "staff_report_doc": "REZ2025-00002_staff_report.pdf",
+        "staff_report_date": "2025-12-10",
+        "staff_sources": [
+          {
+            "source_doc_title": "REZ2025-00002_staff_report.pdf",
+            "source_doc_date": "2025-12-10"
+          }
+        ],
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2871427,
+          38.668417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-10",
+        "layer": "Permission",
+        "event_type": "case_block",
+        "outcome": "Info",
+        "summary": "Agenda contains runway-relevant case description.",
+        "quote": "G. Rezoning #REZ2024-00037, North Carters Grove: This request is to rezone approximately 5.24 acres from A-1, Agricultural, to R-4, Suburban Residential, Low/Moderate, to permit the development of 13 (thirteen) single-family detached (SFD) units. The property is located at the corner of Spriggs Road and Olender Park Court, and the County Map identifies the site as GPIN 7992-92-7571. The site is zoned A-1, Agricultural, and the Long-Range land Use of the proposed development is RN-2, Residential Neighborhood. The Property is within the Highway Corridor Overlay Districts. Coles Magisterial District 11. Planning Commission Procedures A. Old Business B. New Business 12. Commission Members\u2019 Time 13. Adjourn Meeting Upcoming Public Hearings & Work Sessions James J. McCoart Administration Building \u2013 Board Chambers 1 County Complex Court, Prince William, VA 22192",
+        "source_url": "file:///Users/yairtitelboim/clawd/data/runway/pwc/pdf/PC_Agenda_20251210.pdf",
+        "source_doc_title": "Prince William County Planning Commission Agenda",
+        "source_doc_date": "2025-12-10",
+        "tags": [
+          "RUNWAY_PERMISSION",
+          "RUNWAY_POLICY"
+        ],
+        "operator": null,
+        "project_name": "North Carters Grove: This request is to rezone approximately 5.24 acres from A",
+        "case_id": "REZ2024-00037",
+        "anchor_type": "aoi",
+        "geocode_query": "Prince William County, Virginia",
+        "geocode_source": "county_centroid_nominatim",
+        "jurisdiction": "Prince William County, VA",
+        "county": "Prince William"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.5536743,
+          38.7389846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-10-21",
+        "jurisdiction": "Stafford County, VA",
+        "county": "Stafford",
+        "layer": "Regulation",
+        "event_type": "ordinance_update",
+        "outcome": "Adopted",
+        "summary": "Board of Supervisors approved Comprehensive Plan Amendment R25-208 and zoning ordinance update O25-29 updating standards for data centers (setbacks/buffers/noise controls).",
+        "quote": "On October 21, 2025 the Board of Supervisors approved Comp Plan Amendment (R25-208) and Zoning Ordinance (O25-29) which updated Stafford County's standards for data centers.",
+        "source_url": "https://staffordcountyva.gov/government/departments_p-z/planning_and_zoning/data_centers/index.php",
+        "source_doc_title": "Stafford County Planning & Zoning \u2013 Data Centers (timeline / summary page)",
+        "source_doc_date": "2026-02-09",
+        "tags": [
+          "RUNWAY_POLICY",
+          "DC_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Stafford County, Virginia",
+        "geocode_source": "nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4579783,
+          38.4167265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-12-02",
+        "jurisdiction": "Stafford County, VA",
+        "county": "Stafford",
+        "layer": "Regulation",
+        "event_type": "ordinance_update",
+        "outcome": "Adopted",
+        "summary": "Board approved Ordinance O25-29(R) revising data center standards; Planning Commission had recommended larger setbacks/buffers and stronger noise/security controls.",
+        "quote": "On July 23, 2025, the Planning Commission ... recommended ... Increase the minimum setback between primary data center buildings and residential property lines from 100 feet to 500 feet ... Expand the vegetative buffer ... from 50 feet to 200 feet ... Require post-occupancy noise evaluations ... annually for 10 years.",
+        "source_url": "https://cdn.staffordcountyva.gov/Community%20Engagement/O25-29R.pln%20Data%20Centers.pdf",
+        "source_doc_title": "Stafford County Ordinance O25-29(R) \u2013 Data Centers",
+        "source_doc_date": "2025-12-02",
+        "tags": [
+          "RUNWAY_POLICY",
+          "DC_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Stafford County, Virginia",
+        "geocode_source": "nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4579783,
+          38.4167265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event_date": "2025-11-18",
+        "jurisdiction": "Spotsylvania County, VA",
+        "county": "Spotsylvania",
+        "layer": "Regulation",
+        "event_type": "ordinance_update",
+        "outcome": "Proposed",
+        "summary": "Draft ordinance (Ord. 23-190) circulated for BOS action/public hearing to add \u201cData Center\u201d definition and establish data center permissions and development standards across zoning districts.",
+        "quote": "AN ORDINANCE No. 23-190 ... adding a definition for Data Center ... to add Data Center as a Special Use in ... O-1, O-2, C-1, C-2, C-3, RC, and V ... and ... to add Data Center as a permitted use and to establish development standards specific to Data Center development in the Industrial 1 (I-1) and Industrial 2 (I-2) districts.",
+        "source_url": "https://www.spotsylvania.va.us/DocumentCenter/View/36127/BOS---Draft-Ord-REDLINE-Final-11-18-2025",
+        "source_doc_title": "Spotsylvania County Draft Ordinance 23-190 (BOS draft redline)",
+        "source_doc_date": "2025-11-18",
+        "tags": [
+          "RUNWAY_POLICY",
+          "DC_POLICY"
+        ],
+        "operator": null,
+        "project_name": null,
+        "case_id": null,
+        "anchor_type": "aoi",
+        "geocode_query": "Spotsylvania County, Virginia",
+        "geocode_source": "nominatim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.6741751,
+          38.1880936
+        ]
+      }
+    }
+  ]
+}

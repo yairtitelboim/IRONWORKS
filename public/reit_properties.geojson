@@ -1,0 +1,4545 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "reit-0",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.819519,
+          32.800985
+        ]
+      },
+      "properties": {
+        "address": "1950 North Stemmons Freeway, Suite 3050, Dallas, TX 75207",
+        "company": "Equinix",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "71612",
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/dallas-data-centers/da6",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.821045,
+          32.79104
+        ]
+      },
+      "properties": {
+        "address": "1990 North Stemmons Freeway, Dallas, TX, US, 75207",
+        "company": "Equinix",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "223000",
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/dallas-data-centers/da11",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.794169,
+          32.787249
+        ]
+      },
+      "properties": {
+        "address": "2323 Bryan Street, Suite 1400, Dallas, TX 75201",
+        "company": "Equinix",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "12529",
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/dallas-data-centers/da4",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.85886,
+          32.820861
+        ]
+      },
+      "properties": {
+        "address": "1550 W Mockingbird Ln, Dallas, TX 75235",
+        "company": "Equinix",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "372515",
+        "source_url": "https://www.datacentermap.com/usa/texas/dallas/",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.912761,
+          32.830237
+        ]
+      },
+      "properties": {
+        "address": "2222 East Grauwyler Road, Irving, TX 75061",
+        "company": "Equinix",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": null,
+        "source_url": "https://www.datacentermap.com/usa/texas/dallas/",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.834489,
+          32.933435
+        ]
+      },
+      "properties": {
+        "address": "4407 Alpha Road, Dallas, Texas 75244, United States",
+        "company": "Equinix",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": null,
+        "source_url": "https://www.datacentermap.com/usa/texas/dallas/",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.688064,
+          30.528554
+        ]
+      },
+      "properties": {
+        "address": "1950 North Mays Street, Round Rock, Texas 78664, United States",
+        "company": "Equinix",
+        "market": "Austin",
+        "property_type": "Data Center",
+        "square_footage": null,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/austin-data-centers",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-7",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.737844,
+          30.398332
+        ]
+      },
+      "properties": {
+        "address": "4020 West Braker Lane, Austin, Texas 78758, United States",
+        "company": "Equinix",
+        "market": "Austin",
+        "property_type": "Data Center",
+        "square_footage": null,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/austin-data-centers",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-8",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.70658,
+          30.39089
+        ]
+      },
+      "properties": {
+        "address": "Equinix AU1 Data Center, 1901 W Braker Ln, Austin, TX 78758, United States",
+        "company": "Equinix",
+        "market": "Austin",
+        "property_type": "Data Center",
+        "square_footage": null,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/austin-data-centers",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-9",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.939687,
+          33.046779
+        ]
+      },
+      "properties": {
+        "address": "4025 Midway Rd, Carrollton, TX 75007",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "100600",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-10",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.853498,
+          32.979977
+        ]
+      },
+      "properties": {
+        "address": "2440 Marsh Lane, Carrollton, TX 75006",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "135300",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-11",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.715705,
+          32.96609
+        ]
+      },
+      "properties": {
+        "address": "1232 Alma Road, Richardson, TX 75081, USA",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": 105800,
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-12",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.713354,
+          32.966376
+        ]
+      },
+      "properties": {
+        "address": "900 Quality Way, Richardson, TX 75081, USA",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": 114900,
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-13",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.711949,
+          32.964995
+        ]
+      },
+      "properties": {
+        "address": "1210 Integrity Drive, Richardson, TX 75081, USA",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": 458500,
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-14",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.715715,
+          32.96489
+        ]
+      },
+      "properties": {
+        "address": "1215 Integrity Drive, Richardson, TX 75081",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "118000",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-15",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.894185,
+          33.062874
+        ]
+      },
+      "properties": {
+        "address": "2501 State Highway 121, Lewisville, TX 75056",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "831400",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-16",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.713141,
+          32.967373
+        ]
+      },
+      "properties": {
+        "address": "850 E. Collins Boulevard, Richardson, TX 75081",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "121000",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-17",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.710659,
+          32.967336
+        ]
+      },
+      "properties": {
+        "address": "950 E Collins Boulevard, Richardson, TX 75081, USA",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": 121300,
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-18",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.711949,
+          32.965033
+        ]
+      },
+      "properties": {
+        "address": "907 Security Row, Richardson, TX 75081",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "138500",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-19",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.874049,
+          32.827174
+        ]
+      },
+      "properties": {
+        "address": "8435 N. Stemmons Freeway, Dallas, TX 75247",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": "35000",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-20",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.794169,
+          32.787249
+        ]
+      },
+      "properties": {
+        "address": "2323 Bryan Street, Dallas, TX 75201, USA",
+        "company": "Digital Realty",
+        "market": "Dallas",
+        "property_type": "Data Center",
+        "square_footage": 454000,
+        "source_url": "https://www.costar.com/article/388300943/digital-realty-to-scale-back-investment-plans-in-dallas",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-21",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.901704,
+          32.903093
+        ]
+      },
+      "properties": {
+        "address": "2230 Lyndon B Johnson Fwy, Dallas, TX 75234, United States",
+        "company": "Prologis",
+        "market": "Dallas",
+        "property_type": "Warehouse",
+        "square_footage": 192368,
+        "source_url": "https://www.prologis.com/industrial-properties/building/dal00106-prologis-dallas-corporate-center",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-22",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.062229,
+          32.898586
+        ]
+      },
+      "properties": {
+        "address": "2370 West Airfield Drive, Dallas, TX 75261, United States",
+        "company": "Prologis",
+        "market": "Dallas",
+        "property_type": "Warehouse",
+        "square_footage": "116145",
+        "source_url": "https://www.prologis.com/industrial-properties/building/dal09306-prologis-dfw",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-23",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.064189,
+          32.919105
+        ]
+      },
+      "properties": {
+        "address": "1555 North Airfield Drive, Grapevine, Texas 75261, United States",
+        "company": "Prologis",
+        "market": "Dallas",
+        "property_type": "Industrial Warehouse",
+        "square_footage": null,
+        "source_url": "https://www.prologis.com/industrial-properties/building/dal09305-prologis-dfw",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-24",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.679749,
+          30.47642
+        ]
+      },
+      "properties": {
+        "address": "401-B Parker Drive, Austin, TX 78728, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": 137600,
+        "source_url": "https://www.liveoak.com/listing/prologis-corridor-park-building-9",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-25",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.673255,
+          30.339875
+        ]
+      },
+      "properties": {
+        "address": "8606 Wall Street, Austin, TX 78754, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": 51200,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/austin-industrial-logistics-and-warehouses",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-26",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.671358,
+          30.339982
+        ]
+      },
+      "properties": {
+        "address": "8701 Wall Street, Building 9, Austin, TX 78758, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": 105600,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/austin-industrial-logistics-and-warehouses",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-27",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.67087,
+          30.340768
+        ]
+      },
+      "properties": {
+        "address": "8801 Wall Street, Austin, TX 78754, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": 44800,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/austin-industrial-logistics-and-warehouses",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-28",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.66702,
+          30.343155
+        ]
+      },
+      "properties": {
+        "address": "9101 Wall Street, Austin, TX 78754, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": 31500,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/austin-industrial-logistics-and-warehouses",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-29",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.66331,
+          30.41928
+        ]
+      },
+      "properties": {
+        "address": "605 West Howard Lane, Austin, TX 78753, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": "116211",
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/austin-industrial-logistics-and-warehouses",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-30",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.664291,
+          30.413803
+        ]
+      },
+      "properties": {
+        "address": "401 Center Ridge Drive, Suite 121, Austin, TX 78753, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": 84395,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/austin-industrial-logistics-and-warehouses",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-31",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.713796,
+          30.206225
+        ]
+      },
+      "properties": {
+        "address": "6406 Burleson Road, Austin, TX 78744, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": 168150,
+        "source_url": "https://www.prologis.com/industrial-properties/building/aus00701-prologis-montopolis-1",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-32",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.67072,
+          30.33898
+        ]
+      },
+      "properties": {
+        "address": "8619 Wall Street, Austin, TX 78754, United States",
+        "company": "Prologis",
+        "market": "Austin",
+        "property_type": "Warehouse",
+        "square_footage": null,
+        "source_url": "https://www.commercialsearch.com/commercial-property/us/tx/austin/prologis-walnut-creek-building-14-19/",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-33",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.281822,
+          33.447674
+        ]
+      },
+      "properties": {
+        "address": "101 North 104th Avenue, Suite A, Tolleson, Arizona, 85353",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": "279279",
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-34",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.21328,
+          33.4341
+        ]
+      },
+      "properties": {
+        "address": "1500 S 71st Avenue, Suite 700, Phoenix, Arizona, 85043",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": "98723",
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-35",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.21334,
+          33.434555
+        ]
+      },
+      "properties": {
+        "address": "1250 S 71st Avenue, Suite 900, Phoenix, AZ 85043, United States",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": 56582,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-36",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.198715,
+          33.44362
+        ]
+      },
+      "properties": {
+        "address": "555 S 65th Avenue, Suite 100, Phoenix, AZ 85043, United States",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": 44944,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-37",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.372734,
+          33.434626
+        ]
+      },
+      "properties": {
+        "address": "14555 West Yuma Road, Goodyear, AZ 85338, United States",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": 320380,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-38",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.106397,
+          33.697357
+        ]
+      },
+      "properties": {
+        "address": "23305 N 23rd Avenue, Phoenix, AZ 85027, United States",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": 40801,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-39",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.98431,
+          33.413861
+        ]
+      },
+      "properties": {
+        "address": "4440 East Elwood Street, Phoenix, Arizona 85040",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": "157626",
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-40",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.105603,
+          33.697172
+        ]
+      },
+      "properties": {
+        "address": "23325 N 23rd Avenue, Suite 100, Phoenix, Arizona, 85027",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": "39867",
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-41",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.102721,
+          33.708215
+        ]
+      },
+      "properties": {
+        "address": "24500 North 20th Drive, Phoenix, Arizona 85085",
+        "company": "Prologis",
+        "market": "Phoenix",
+        "property_type": "Warehouse",
+        "square_footage": null,
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/available-warehouse-space-lease-phoenix",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-42",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.88217,
+          32.69011
+        ]
+      },
+      "properties": {
+        "address": "4401 S Westmoreland Road, Dallas, TX 75237",
+        "company": "Public Storage",
+        "market": "Dallas",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-dallas/803.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-43",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.805045,
+          32.93325
+        ]
+      },
+      "properties": {
+        "address": "5959 Alpha Road, Dallas, TX 75240",
+        "company": "Public Storage",
+        "market": "Dallas",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.storage.com/self-storage/texas/dallas/public-storage-dallas-5959-alpha-road-221750/",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-44",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.824499,
+          32.660889
+        ]
+      },
+      "properties": {
+        "address": "7227 S R L Thornton Fwy, Dallas, TX 75232",
+        "company": "Public Storage",
+        "market": "Dallas",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.rentcafe.com/storage/tx/dallas/public-storage-7227-south-rl-thornton-fwy/default.aspx",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-45",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.897007,
+          32.899082
+        ]
+      },
+      "properties": {
+        "address": "11434 Sprowles Street, Dallas, TX 75229",
+        "company": "Public Storage",
+        "market": "Dallas",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-dallas/749.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-46",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.788645,
+          32.805041
+        ]
+      },
+      "properties": {
+        "address": "2420 N Haskell Ave, Dallas, TX 75204",
+        "company": "Public Storage",
+        "market": "Dallas",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-dallas/2044.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-47",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.744707,
+          32.91315
+        ]
+      },
+      "properties": {
+        "address": "Public Storage, 9110 Markville Drive, Dallas, TX 75243-4306, United States",
+        "company": "Public Storage",
+        "market": "Dallas",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.mapquest.com/us/texas/public-storage-9101951",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-48",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.718705,
+          30.297588
+        ]
+      },
+      "properties": {
+        "address": "1033 East 41st Street, Austin, Texas 78751, United States",
+        "company": "Public Storage",
+        "market": "Austin",
+        "property_type": "Self-Storage",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-austin/650.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-49",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.801453,
+          30.20049
+        ]
+      },
+      "properties": {
+        "address": "1507 W William Cannon Dr, Austin, TX 78745",
+        "company": "Public Storage",
+        "market": "Austin",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-austin/6123.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-50",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.840458,
+          30.18088
+        ]
+      },
+      "properties": {
+        "address": "9814 West Gate Blvd, Austin, TX 78748",
+        "company": "Public Storage",
+        "market": "Austin",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-austin/1982.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-51",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.684487,
+          30.365422
+        ]
+      },
+      "properties": {
+        "address": "10100 North I-35, Austin, TX 78753",
+        "company": "Public Storage",
+        "market": "Austin",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-austin/653.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-52",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.772582,
+          30.437061
+        ]
+      },
+      "properties": {
+        "address": "12915 Research Blvd, Austin, TX 78750",
+        "company": "Public Storage",
+        "market": "Austin",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-austin/814.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-53",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.709513,
+          30.318643
+        ]
+      },
+      "properties": {
+        "address": "937 Reinli Street, Austin, TX 78751",
+        "company": "Public Storage",
+        "market": "Austin",
+        "property_type": "Other",
+        "square_footage": 30000,
+        "source_url": "https://www.mapquest.com/us/texas/public-storage-9786202",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-54",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.760646,
+          30.272255
+        ]
+      },
+      "properties": {
+        "address": "1321 W 5th St, Austin, TX 78703",
+        "company": "Public Storage",
+        "market": "Austin",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-austin/2350.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-55",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.029776,
+          33.50098
+        ]
+      },
+      "properties": {
+        "address": "4423 N 24th St, Phoenix, AZ 85016",
+        "company": "Public Storage",
+        "market": "Phoenix",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-az-phoenix/5319.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-56",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.993991,
+          33.306215
+        ]
+      },
+      "properties": {
+        "address": "4140 E Chandler Blvd, Phoenix, AZ 85048",
+        "company": "Public Storage",
+        "market": "Phoenix",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-az-phoenix/915.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-57",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.117699,
+          33.631568
+        ]
+      },
+      "properties": {
+        "address": "16001 N 28th Ave, Phoenix, AZ 85053",
+        "company": "Public Storage",
+        "market": "Phoenix",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-az-phoenix/6345.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-58",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.101373,
+          33.588561
+        ]
+      },
+      "properties": {
+        "address": "11236 N 19th Ave, Phoenix, AZ 85029",
+        "company": "Public Storage",
+        "market": "Phoenix",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.rentcafe.com/storage/az/phoenix/public-storage-11236-north-19th-avenue/default.aspx",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-59",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.002018,
+          33.318301
+        ]
+      },
+      "properties": {
+        "address": "3906 E Ray Rd, Phoenix, AZ 85044",
+        "company": "Public Storage",
+        "market": "Phoenix",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.mapquest.com/us/arizona/public-storage-10384211",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-60",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.994307,
+          33.466647
+        ]
+      },
+      "properties": {
+        "address": "4034 E McDowell Rd, Phoenix, AZ 85008",
+        "company": "Public Storage",
+        "market": "Phoenix",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-az-phoenix/1861.html",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-61",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.706621,
+          32.794943
+        ]
+      },
+      "properties": {
+        "address": "Firewheel Town Center, 245 Cedar Sage Dr, Garland, TX 75040",
+        "company": "Simon Property Group",
+        "market": "Dallas",
+        "property_type": "Retail",
+        "square_footage": 998347,
+        "source_url": "https://en.wikipedia.org/wiki/Firewheel_Town_Center",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-62",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.966299,
+          33.003076
+        ]
+      },
+      "properties": {
+        "address": "2451 South Stemmons Freeway, Lewisville, Texas 75067, United States",
+        "company": "Simon Property Group",
+        "market": "Dallas",
+        "property_type": "Mall",
+        "square_footage": null,
+        "source_url": "https://en.wikipedia.org/wiki/Vista_Ridge_Mall",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-63",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.04241,
+          32.96617
+        ]
+      },
+      "properties": {
+        "address": "Grapevine Mills, 3000 Grapevine Mills Pkwy, Grapevine, TX 76051, United States",
+        "company": "Simon Property Group",
+        "market": "Dallas",
+        "property_type": "Retail",
+        "square_footage": 1781628,
+        "source_url": "https://en.wikipedia.org/wiki/Grapevine_Mills",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-64",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.903203,
+          33.518557
+        ]
+      },
+      "properties": {
+        "address": "8201 Quaker Avenue, Lubbock, Texas 79424, United States",
+        "company": "Simon Property Group",
+        "market": "Dallas",
+        "property_type": "Mall",
+        "square_footage": null,
+        "source_url": "https://en.wikipedia.org/wiki/South_Plain_Mall",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-65",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.875336,
+          30.284222
+        ]
+      },
+      "properties": {
+        "address": "2901 S Capital of Texas Hwy, Austin, TX 78746",
+        "company": "Simon Property Group",
+        "market": "Austin",
+        "property_type": "Retail",
+        "square_footage": 1430000,
+        "source_url": "https://en.wikipedia.org/wiki/List_of_Simon_Property_Group_properties",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-66",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.721565,
+          30.403353
+        ]
+      },
+      "properties": {
+        "address": "The Domain, 11410 Century Oaks Terrace, Austin, TX 78758",
+        "company": "Simon Property Group",
+        "market": "Austin",
+        "property_type": "Retail",
+        "square_footage": null,
+        "source_url": "https://en.wikipedia.org/wiki/List_of_Simon_Property_Group_properties",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-67",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.742806,
+          30.268072
+        ]
+      },
+      "properties": {
+        "address": "11200 Lakeline Mall Dr, Cedar Park, TX 78613",
+        "company": "Simon Property Group",
+        "market": "Austin",
+        "property_type": "Retail",
+        "square_footage": "1099420",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_Simon_Property_Group_properties",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-68",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.96445,
+          33.383035
+        ]
+      },
+      "properties": {
+        "address": "5000 S Arizona Mills Cir, Tempe, AZ 85282",
+        "company": "Simon Property Group",
+        "market": "Phoenix",
+        "property_type": "Retail",
+        "square_footage": null,
+        "source_url": "https://en.wikipedia.org/wiki/Arizona_Mills",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-69",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.973534,
+          33.287815
+        ]
+      },
+      "properties": {
+        "address": "4976 Premium Outlets Way, Chandler, AZ 85226",
+        "company": "Simon Property Group",
+        "market": "Phoenix",
+        "property_type": "Retail",
+        "square_footage": null,
+        "source_url": "https://en.wikipedia.org/wiki/Phoenix_Premium_Outlets",
+        "timestamp": "2025-12-17T20:39:44.676143"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-70",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.002482,
+          40.7411
+        ]
+      },
+      "properties": {
+        "address": "Equinix NY9 Data Center, 111 8th Avenue, New York, NY 10011, USA",
+        "company": "Equinix",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": 61838,
+        "source_url": "https://cloudandcolocation.com/datacenters/equinix-new-york-data-center-ny9/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-71",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.973412,
+          40.672351
+        ]
+      },
+      "properties": {
+        "address": "Equinix NY9, 111 8th Avenue, New York, NY 10011, USA",
+        "company": "Equinix",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": 55721,
+        "source_url": "https://cloudandcolocation.com/datacenters/equinix-new-york-data-center-ny9/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-72",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.820044,
+          41.070813
+        ]
+      },
+      "properties": {
+        "address": "Equinix NY13, 401 Fieldcrest Drive, Elmsford, NY 10523, USA",
+        "company": "Equinix",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": 60234,
+        "source_url": "https://www.datacentermap.com/usa/new-york/westchester-county/equinix-ny13/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-73",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.745243,
+          40.988026
+        ]
+      },
+      "properties": {
+        "address": "401 Fieldcrest Drive, Elmsford, NY 10523, USA",
+        "company": "Equinix",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": 99992,
+        "source_url": "https://www.datacentermap.com/usa/new-york/westchester-county/equinix-ny13/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-74",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.946931,
+          40.68233
+        ]
+      },
+      "properties": {
+        "address": "165 Halsey Street, 8th Floor, Newark, New Jersey 07102",
+        "company": "Equinix",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": "21771",
+        "source_url": "https://cloudandcolocation.com/colocation-provider/equinix/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-75",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.008601,
+          40.717853
+        ]
+      },
+      "properties": {
+        "address": "60 Hudson Street, New York, NY 10013",
+        "company": "Equinix",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": 10073,
+        "source_url": "https://cloudandcolocation.com/datacenters/equinix-new-york-data-center-ny8/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-76",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38399,
+          33.921609
+        ]
+      },
+      "properties": {
+        "address": "445 North Douglas Street, El Segundo, CA 90245, USA",
+        "company": "Equinix",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": 177469,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/los-angeles-data-centers/la4",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-77",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.259363,
+          34.048882
+        ]
+      },
+      "properties": {
+        "address": "818 W 7th Street, 6th Floor, Los Angeles, CA 90017",
+        "company": "Equinix",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": 343000,
+        "source_url": "https://cloudandcolocation.com/datacenters/equinix-los-angeles-data-center-2-la2/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-78",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39414,
+          33.92608
+        ]
+      },
+      "properties": {
+        "address": "1920 East Maple Avenue, El Segundo, CA 90245, USA",
+        "company": "Equinix",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": 106885,
+        "source_url": "https://datacenterhawk.com/marketplace/providers/equinix/1920-east-maple-avenue/la3",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-79",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.304227,
+          33.850557
+        ]
+      },
+      "properties": {
+        "address": "1501 Francisco Street, Torrance, CA 90501, United States",
+        "company": "Equinix",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": 74983,
+        "source_url": "https://baxtel.com/data-center/equinix-los-angeles-la7",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-80",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.445999,
+          34.057996
+        ]
+      },
+      "properties": {
+        "address": "10960 Wilshire Boulevard, Los Angeles, California 90024, United States",
+        "company": "Equinix",
+        "market": "Los Angeles",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.equinox.com/clubs/southern-california/los-angeles/losangeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-81",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618405,
+          41.853697
+        ]
+      },
+      "properties": {
+        "address": "350 East Cermak Road, Chicago, IL 60616",
+        "company": "Equinix",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": null,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/chicago-data-centers/ch1",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-82",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.940353,
+          42.00838
+        ]
+      },
+      "properties": {
+        "address": "1905 Lunt Avenue, Elk Grove Village, IL 60007",
+        "company": "Equinix",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": 114457,
+        "source_url": "https://www.equinix.lat/content/dam/eqxcorp/en_us/documents/resources/ibx-tech-specs/ibx_ch3_en_feb2021.pdf",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-83",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.702231,
+          41.75938
+        ]
+      },
+      "properties": {
+        "address": "7345 South Kedzie Avenue, Chicago, Illinois 60629, United States",
+        "company": "Equinix",
+        "market": "Chicago",
+        "property_type": null,
+        "square_footage": 172,
+        "source_url": "https://www.loopnet.com/Listing/CHICAGO-FIVE-PORTFOLIO/34481119/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-84",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.364276,
+          29.935845
+        ]
+      },
+      "properties": {
+        "address": "1515 Aldine Meadows Road, Houston, TX 77032",
+        "company": "Equinix",
+        "market": "Houston",
+        "property_type": "Data Center",
+        "square_footage": "76606",
+        "source_url": "https://www.datacenters.com/equinix-ho1-houston",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-85",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.792955,
+          35.733715
+        ]
+      },
+      "properties": {
+        "address": "200 Regency Forest Drive, Cary, NC 27518",
+        "company": "Equinix",
+        "market": "Houston",
+        "property_type": "Office",
+        "square_footage": 102991,
+        "source_url": "https://adler-partners.com/properties/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-86",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.578705,
+          35.859455
+        ]
+      },
+      "properties": {
+        "address": "3645 Trust Drive, Raleigh, North Carolina 27616, United States",
+        "company": "Equinix",
+        "market": "Houston",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://adler-partners.com/properties/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-87",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.388211,
+          33.759024
+        ]
+      },
+      "properties": {
+        "address": "180 Peachtree Street NW, Atlanta, GA 30303",
+        "company": "Equinix",
+        "market": "Atlanta",
+        "property_type": "Data Center",
+        "square_footage": 111000,
+        "source_url": "https://www.semanticnet.net/facility/ekmHgnED8MXAmszmMfPx/equinix-atlanta-at1",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-88",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.45358,
+          33.895412
+        ]
+      },
+      "properties": {
+        "address": "450 Interstate North Parkway, Atlanta, GA 30339",
+        "company": "Equinix",
+        "market": "Atlanta",
+        "property_type": "Data Center",
+        "square_footage": "66774",
+        "source_url": "https://www.datacenters.com/location_brochures/at4-atlanta-data-center-pioneering-advanced-data-solutions",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-89",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.391556,
+          33.755467
+        ]
+      },
+      "properties": {
+        "address": "56 Marietta Street NW, Atlanta, GA 30303",
+        "company": "Equinix",
+        "market": "Atlanta",
+        "property_type": "Data Center",
+        "square_footage": "13999",
+        "source_url": "https://cloudandcolocation.com/datacenters/equinix-atlanta-data-center-at2/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-90",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.22738,
+          33.93902
+        ]
+      },
+      "properties": {
+        "address": "2836 Peterson Place Northwest, Norcross, GA 30071",
+        "company": "Equinix",
+        "market": "Atlanta",
+        "property_type": "Data Center",
+        "square_footage": 40949,
+        "source_url": "https://www.datacenterdynamics.com/en/news/equinix-exiting-eight-leased-data-centers-in-us-will-move-customers-to-nearby-facilities/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-91",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.459463,
+          39.015195
+        ]
+      },
+      "properties": {
+        "address": "21721 Filigree Court, Ashburn, VA 20147",
+        "company": "Equinix",
+        "market": "Washington DC",
+        "property_type": "Data Center",
+        "square_footage": 230000,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc11",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-92",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.039386,
+          38.90253
+        ]
+      },
+      "properties": {
+        "address": "21721 Filigree Court, Ashburn, VA 20147, USA",
+        "company": "Equinix",
+        "market": "Washington DC",
+        "property_type": "Data Center",
+        "square_footage": 230000,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc11",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-93",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.459918,
+          39.015839
+        ]
+      },
+      "properties": {
+        "address": "21701 Filigree Court, Building D, Ashburn, VA 20147, USA",
+        "company": "Equinix",
+        "market": "Washington DC",
+        "property_type": "Data Center",
+        "square_footage": 92037,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc5",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-94",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.45448,
+          39.01185
+        ]
+      },
+      "properties": {
+        "address": "22175 Beaumeade Circle, Ashburn, VA 20147, USA",
+        "company": "Equinix",
+        "market": "Washington DC",
+        "property_type": "Data Center",
+        "square_footage": 156458,
+        "source_url": "https://www.equinix.com.au/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc21",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-95",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.45023,
+          39.02251
+        ]
+      },
+      "properties": {
+        "address": "Equinix DC15, 44780 Performance Circle, Ashburn, VA 20147, USA",
+        "company": "Equinix",
+        "market": "Washington DC",
+        "property_type": "Data Center",
+        "square_footage": null,
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc15",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-96",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.459077,
+          39.016488
+        ]
+      },
+      "properties": {
+        "address": "21715 Filigree Court, Ashburn, VA 20147",
+        "company": "Equinix",
+        "market": "Washington DC",
+        "property_type": "Data Center",
+        "square_footage": "147600",
+        "source_url": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc2",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-97",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.460344,
+          39.015549
+        ]
+      },
+      "properties": {
+        "address": "Equinix DC1, 21711 Filigree Court, Suite C, Ashburn, VA 20147, USA",
+        "company": "Equinix",
+        "market": "Washington DC",
+        "property_type": "Data Center",
+        "square_footage": 43346,
+        "source_url": "https://www.datacenters.com/location_brochures/dc1-ashburn-data-center-elevating-digital-infrastructure-in-the-capital-region",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-98",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.130865,
+          40.831563
+        ]
+      },
+      "properties": {
+        "address": "100 Delawanna Avenue, Clifton, NJ 07014",
+        "company": "Digital Realty",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": "183000",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/new-york",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-99",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.125369,
+          40.830998
+        ]
+      },
+      "properties": {
+        "address": "2 Peekay Drive, Clifton, NJ 07014, USA",
+        "company": "Digital Realty",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": 214900,
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/new-york",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-100",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.997862,
+          40.741056
+        ]
+      },
+      "properties": {
+        "address": "111 8th Avenue, New York, NY 10011",
+        "company": "Digital Realty",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": "109600",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/new-york",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-101",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.465247,
+          42.751211
+        ]
+      },
+      "properties": {
+        "address": "365 S. Randolphville Road, Piscataway Township, NJ 08854, USA",
+        "company": "Digital Realty",
+        "market": "New York",
+        "property_type": "Data Center",
+        "square_footage": 351000,
+        "source_url": "https://www.digitalrealty.co.uk/data-centers/americas/new-york/ewr12",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-102",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.257031,
+          34.047298
+        ]
+      },
+      "properties": {
+        "address": "600 West 7th Street, Los Angeles, CA 90017",
+        "company": "Digital Realty",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": 70300,
+        "source_url": "https://www.digitalrealty.com/resources/articles/digital-realtys-600-west-7th-street-facility-proud-to-be-an-la-green-business",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-103",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38741,
+          33.923225
+        ]
+      },
+      "properties": {
+        "address": "200 North Nash Street, El Segundo, CA 90245, USA",
+        "company": "Digital Realty",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": 60000,
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/los-angeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-104",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.415952,
+          33.919065
+        ]
+      },
+      "properties": {
+        "address": "2260 East El Segundo Boulevard, El Segundo, CA 90245, USA",
+        "company": "Digital Realty",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": 132000,
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/los-angeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-105",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.394946,
+          33.916299
+        ]
+      },
+      "properties": {
+        "address": "2260 East El Segundo Boulevard, El Segundo, CA 90245",
+        "company": "Digital Realty",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": "135000",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/los-angeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-106",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.343756,
+          34.199849
+        ]
+      },
+      "properties": {
+        "address": "3015 Winona Avenue, Burbank, CA 91504, USA",
+        "company": "Digital Realty",
+        "market": "Los Angeles",
+        "property_type": "Data Center",
+        "square_footage": 15350,
+        "source_url": "https://ch.digitalrealty.com/data-centers/americas/los-angeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-107",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.961458,
+          41.994361
+        ]
+      },
+      "properties": {
+        "address": "2200 Busse Road, Elk Grove Village, IL 60007, USA",
+        "company": "Digital Realty",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": 485000,
+        "source_url": "https://ch.digitalrealty.com/data-centers/americas/chicago",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-108",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.086934,
+          42.385271
+        ]
+      },
+      "properties": {
+        "address": "600 South Federal Street, Chicago, IL 60605",
+        "company": "Digital Realty",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": "142000",
+        "source_url": "https://www.digitalrealty.com/data-centers/americas/chicago/ord11",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-109",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.476681,
+          22.199166
+        ]
+      },
+      "properties": {
+        "address": "505 North Railroad Avenue, Northlake, IL 60164, USA",
+        "company": "Digital Realty",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": 251000,
+        "source_url": "https://www.datacentermap.com/usa/illinois/chicago/505-north-railroad-avenue/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-110",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.618405,
+          41.853697
+        ]
+      },
+      "properties": {
+        "address": "350 East Cermak Road, Chicago, IL 60616",
+        "company": "Digital Realty",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": "1133000",
+        "source_url": "https://www.datacenters.com/location_brochures/chicago-ord10-data-center-chicago-s-premier-data-center-at-350-east-cermak-road",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-111",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.867669,
+          41.929768
+        ]
+      },
+      "properties": {
+        "address": "9333 Grand Avenue, Franklin Park, IL 60131",
+        "company": "Digital Realty",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": 124700,
+        "source_url": "https://www.digitalrealty.co.uk/data-centers/americas/chicago",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-112",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.859368,
+          41.927406
+        ]
+      },
+      "properties": {
+        "address": "9355 Grand Avenue, Franklin Park, IL 60131",
+        "company": "Digital Realty",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": 292000,
+        "source_url": "https://www.digitalrealty.co.uk/data-centers/americas/chicago",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-113",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.638059,
+          41.891526
+        ]
+      },
+      "properties": {
+        "address": "9377 Grand Avenue, Franklin Park, IL 60131",
+        "company": "Digital Realty",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": "179000",
+        "source_url": "https://www.digitalrealty.co.uk/data-centers/americas/chicago",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-114",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.940353,
+          42.00838
+        ]
+      },
+      "properties": {
+        "address": "1400 East Devon Avenue, Elk Grove Village, IL 60007",
+        "company": "Digital Realty",
+        "market": "Chicago",
+        "property_type": "Data Center",
+        "square_footage": "305000",
+        "source_url": "https://www.digitalrealty.co.uk/data-centers/americas/chicago",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-115",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.41576,
+          29.94259
+        ]
+      },
+      "properties": {
+        "address": "12001 North Freeway, Houston, TX 77060",
+        "company": "Digital Realty",
+        "market": "Houston",
+        "property_type": "Data Center",
+        "square_footage": "50000",
+        "source_url": "https://ch.digitalrealty.com/data-centers/americas/houston",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-116",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.190674,
+          39.016518
+        ]
+      },
+      "properties": {
+        "address": "12235 North Freeway, Houston, TX 77090",
+        "company": "Digital Realty",
+        "market": "Houston",
+        "property_type": "Data Center",
+        "square_footage": "42400",
+        "source_url": "https://datacenterhawk.com/marketplace/providers/digital-realty/12235-north-freeway/1601",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-117",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.364917,
+          -7.801194
+        ]
+      },
+      "properties": {
+        "address": "12031 North Freeway, Houston, TX 77067, USA",
+        "company": "Digital Realty",
+        "market": "Houston",
+        "property_type": "Data Center",
+        "square_footage": 30000,
+        "source_url": "https://datacenterhawk.com/marketplace/providers/digital-realty/12031-north-freeway/1418",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-118",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.88155,
+          19.100277
+        ]
+      },
+      "properties": {
+        "address": "33 Chun Choi Street, Tseung Kwan O Industrial Estate, Hong Kong",
+        "company": "Digital Realty",
+        "market": "Houston",
+        "property_type": "Data Center",
+        "square_footage": "200000",
+        "source_url": "https://www.datacenters.com/providers/digital-realty/data-center-locations",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-119",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.410772,
+          29.80353
+        ]
+      },
+      "properties": {
+        "address": "1919 North Shepherd Drive, Houston, Texas 77008, United States",
+        "company": "Digital Realty",
+        "market": "Houston",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.realhoustonproperties.com/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-120",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.579718,
+          33.746286
+        ]
+      },
+      "properties": {
+        "address": "101 Aquila Way, Austell, GA 30168",
+        "company": "Digital Realty",
+        "market": "Atlanta",
+        "property_type": "Data Center",
+        "square_footage": "313000",
+        "source_url": "https://ch.digitalrealty.com/data-centers/americas/atlanta",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-121",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.391243,
+          33.761537
+        ]
+      },
+      "properties": {
+        "address": "250 Williams Street NW, Atlanta, GA 30303",
+        "company": "Digital Realty",
+        "market": "Atlanta",
+        "property_type": "Data Center",
+        "square_footage": null,
+        "source_url": "https://www.digitalrealty.asia/data-centers/americas/atlanta",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-122",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.392034,
+          33.755222
+        ]
+      },
+      "properties": {
+        "address": "10 Forsyth St NW, Atlanta, GA 30303, USA",
+        "company": "Digital Realty",
+        "market": "Atlanta",
+        "property_type": "Data Center",
+        "square_footage": 300000,
+        "source_url": "https://www.datacentermap.com/usa/georgia/atlanta/10-forsyth-street-nw/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-123",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.97925,
+          38.86209
+        ]
+      },
+      "properties": {
+        "address": "1759 West Street Southeast, Washington, District of Columbia 20020, United States",
+        "company": "Digital Realty",
+        "market": "Washington DC",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.mirrorrealestate.com/homes/details/1751-w-st-street-se-washington-district-of-columbia-county-dc-20020-washington-dc-us4602",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-124",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04127,
+          38.902834
+        ]
+      },
+      "properties": {
+        "address": "1775 K Street Northwest, Washington, District of Columbia 20006, United States",
+        "company": "Digital Realty",
+        "market": "Washington DC",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://usearch.com/property/1775-k-st-nw-washington-dc",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-125",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.039386,
+          38.90253
+        ]
+      },
+      "properties": {
+        "address": "Washington, District of Columbia, United States",
+        "company": "Digital Realty",
+        "market": "Washington DC",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.digitalrealty.com/contact",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-126",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.993697,
+          38.842569
+        ]
+      },
+      "properties": {
+        "address": "3230 Wheeler Rd SE, Washington, DC 20032",
+        "company": "Digital Realty",
+        "market": "Washington DC",
+        "property_type": "Other",
+        "square_footage": 2668,
+        "source_url": "https://www.zillow.com/district-of-columbia-dc/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-127",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.005994,
+          40.712749
+        ]
+      },
+      "properties": {
+        "address": "3500 New York Avenue, Arlington, TX 76014, United States",
+        "company": "Prologis",
+        "market": "New York",
+        "property_type": "Warehouse",
+        "square_footage": 198200,
+        "source_url": "https://www.prologis.com/industrial-logistics-warehouse-space/americas/united-states/dallas-texas",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-128",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.755244,
+          40.649727
+        ]
+      },
+      "properties": {
+        "address": "230-59 International Airport Center Blvd, Springfield Gardens, New York, 11413, United States",
+        "company": "Prologis",
+        "market": "New York",
+        "property_type": "Warehouse",
+        "square_footage": "177870",
+        "source_url": "https://beta.prologis.com/industrial-properties/building/nyc00303-prologis-jfk-logistics-center-c",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-129",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99581,
+          40.67094
+        ]
+      },
+      "properties": {
+        "address": "12-18 38th Avenue, Long Island City, NY 11101",
+        "company": "Prologis",
+        "market": "New York",
+        "property_type": "Warehouse",
+        "square_footage": "391500",
+        "source_url": "https://www.commercialsearch.com/commercial-property/us/ny/long-island-city/prologis-queensboro-crossing/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-130",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.377279,
+          33.94491
+        ]
+      },
+      "properties": {
+        "address": "5540 W Century Blvd, Los Angeles, CA 90045, United States",
+        "company": "Prologis",
+        "market": "Los Angeles",
+        "property_type": "Warehouse",
+        "square_footage": 75000,
+        "source_url": "https://www.prologis.com/industrial-properties/building/lax07710-prologis-aviation-logistics-center",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-131",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.018017,
+          33.865573
+        ]
+      },
+      "properties": {
+        "address": "6545 Caballero Boulevard, Buena Park, California 90620, United States",
+        "company": "Prologis",
+        "market": "Los Angeles",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.prologis.com/industrial-properties/building/lax07710-prologis-aviation-logistics-center",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-132",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3839,
+          33.93216
+        ]
+      },
+      "properties": {
+        "address": "5795 W Imperial Highway, Los Angeles, CA 90045, United States",
+        "company": "Prologis",
+        "market": "Los Angeles",
+        "property_type": "Warehouse",
+        "square_footage": null,
+        "source_url": "https://property.compstak.com/5795-West-Imperial-Highway-Los-Angeles/p/833490",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-133",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.365008,
+          33.900637
+        ]
+      },
+      "properties": {
+        "address": "4910 West Rosecrans Avenue, Hawthorne, California 90250, United States",
+        "company": "Prologis",
+        "market": "Los Angeles",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://property.compstak.com/5795-West-Imperial-Highway-Los-Angeles/p/833490",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-134",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.016266,
+          41.699034
+        ]
+      },
+      "properties": {
+        "address": "10351 Rising Court, Woodridge, Illinois 60517, United States",
+        "company": "Prologis",
+        "market": "Chicago",
+        "property_type": null,
+        "square_footage": 41470,
+        "source_url": "https://www.prologis.com/industrial-properties/building/chi03221-prologis-internationale-center-21",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-135",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.193532,
+          41.812079
+        ]
+      },
+      "properties": {
+        "address": "2235 Corporate Lane, Naperville, Illinois 60563, United States",
+        "company": "Prologis",
+        "market": "Chicago",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.prologis.com/industrial-properties/building/chi06724-prologis-naperville-2",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-136",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.632362,
+          41.881953
+        ]
+      },
+      "properties": {
+        "address": "250 East Old Chicago Road, Bolingbrook, Illinois 60440, United States",
+        "company": "Prologis",
+        "market": "Chicago",
+        "property_type": "Warehouse",
+        "square_footage": 158400,
+        "source_url": "https://www.prologis.com/industrial-properties/building/chi06724-prologis-naperville-2",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-137",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.769104,
+          39.184901
+        ]
+      },
+      "properties": {
+        "address": "6735 Business Parkway, Elkridge, MD 21075, United States",
+        "company": "Prologis",
+        "market": "Chicago",
+        "property_type": "Warehouse",
+        "square_footage": 84000,
+        "source_url": "https://beta.prologis.com/industrial-properties/building/bal01601-prologis-meadowridge",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-138",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.679055,
+          41.863911
+        ]
+      },
+      "properties": {
+        "address": "2059 W Hastings Street, Unit D, Chicago, IL 60608",
+        "company": "Prologis",
+        "market": "Chicago",
+        "property_type": "Warehouse",
+        "square_footage": "10210",
+        "source_url": "https://www.prologis.com/industrial-properties/united-states/chicago-industrial-logistics-and-warehouses",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-139",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.078129,
+          41.67306
+        ]
+      },
+      "properties": {
+        "address": "335 W Crossroads Pkwy, Bolingbrook, IL 60440, United States",
+        "company": "Prologis",
+        "market": "Chicago",
+        "property_type": "Warehouse",
+        "square_footage": 288000,
+        "source_url": "https://beta.prologis.com/industrial-properties/building/chi02033-prologis-bolingbrook-33",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-140",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.568875,
+          43.76324
+        ]
+      },
+      "properties": {
+        "address": "15550 Milner Rd, Houston, TX 77032",
+        "company": "Prologis",
+        "market": "Houston",
+        "property_type": "Warehouse",
+        "square_footage": 325200,
+        "source_url": "https://www.prologis.com/industrial-properties/building/hou04704-prologis-presidents-park-bldg-4",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-141",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.363433,
+          29.760496
+        ]
+      },
+      "properties": {
+        "address": "15600 Morales Rd, Houston, TX 77032",
+        "company": "Prologis",
+        "market": "Houston",
+        "property_type": "Warehouse",
+        "square_footage": "162600",
+        "source_url": "https://www.prologis.com/industrial-properties/building/hou04704-prologis-presidents-park-bldg-4",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-142",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.27011,
+          29.831438
+        ]
+      },
+      "properties": {
+        "address": "845 Greens Parkway, Houston, Texas, 77067, United States",
+        "company": "Prologis",
+        "market": "Houston",
+        "property_type": "Warehouse",
+        "square_footage": null,
+        "source_url": "https://www.prologis.com/industrial-properties/building/hou06008-prologis-greens-crossing-ii",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-143",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.340727,
+          29.947968
+        ]
+      },
+      "properties": {
+        "address": "2928 Greens Road, Building B, Houston, TX 77032, United States",
+        "company": "Prologis",
+        "market": "Houston",
+        "property_type": "Warehouse",
+        "square_footage": 232775,
+        "source_url": "https://www.loopnet.com/Listing/2928-Greens-Rd-Houston-TX/22713816/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-144",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.506444,
+          29.939491
+        ]
+      },
+      "properties": {
+        "address": "14200 Hollister Rd, Houston, TX 77066",
+        "company": "Prologis",
+        "market": "Houston",
+        "property_type": "Warehouse",
+        "square_footage": 88170,
+        "source_url": "https://www.loopnet.com/Listing/14200-Hollister-Rd-Houston-TX/27927409/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-145",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.550161,
+          29.858429
+        ]
+      },
+      "properties": {
+        "address": "10425 Okanella Street, Houston, TX 77041",
+        "company": "Prologis",
+        "market": "Houston",
+        "property_type": "Warehouse",
+        "square_footage": 140000,
+        "source_url": "https://www.propertyshark.com/cre/commercial-property/us/tx/houston/prologis-park-west-by-northwest-industrial-park-21/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-146",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.896011,
+          37.423118
+        ]
+      },
+      "properties": {
+        "address": "637 Gibraltar Court, Milpitas, California 95035, United States",
+        "company": "Prologis",
+        "market": "Atlanta",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.prologis.com/industrial-properties/building/sba05501-prologis-power-building-1",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-147",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.411997,
+          28.430025
+        ]
+      },
+      "properties": {
+        "address": "9550 Parksouth Court, Orlando, FL 32837, United States",
+        "company": "Prologis",
+        "market": "Atlanta",
+        "property_type": "Warehouse",
+        "square_footage": 203900,
+        "source_url": "https://www.prologis.com/industrial-properties/building/orl01810-parksouth-dist-ctr-9550",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-148",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.585129,
+          33.71588
+        ]
+      },
+      "properties": {
+        "address": "6070 Fulton Industrial Boulevard Southwest, Atlanta, Georgia 30336, United States",
+        "company": "Prologis",
+        "market": "Atlanta",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.propertyshark.com/mason/Property/34095665/6070-Fulton-Industrial-Blvd-Atlanta-GA-30336/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-149",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.389855,
+          33.750801
+        ]
+      },
+      "properties": {
+        "address": "575 Forest Parkway, Suite G, Atlanta, GA 30349, United States",
+        "company": "Prologis",
+        "market": "Atlanta",
+        "property_type": "Warehouse",
+        "square_footage": 99200,
+        "source_url": "https://www.prologis.com/industrial-properties/building/atl01304-prologis-atlanta-airport-4",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-150",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.046788,
+          53.539998
+        ]
+      },
+      "properties": {
+        "address": "Belarus",
+        "company": "Prologis",
+        "market": "Washington DC",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.prologis.com/industrial-properties/building/de000628-dortmund-dc2-kaiserstuhl-strasse",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-151",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.90258,
+          38.918752
+        ]
+      },
+      "properties": {
+        "address": "6100 Columbia Park Road, Hyattsville, Maryland, 20785, United States",
+        "company": "Prologis",
+        "market": "Washington DC",
+        "property_type": "Warehouse",
+        "square_footage": 149860,
+        "source_url": "https://www.prologis.com/industrial-properties/building/sum00406-prologis-washington-gateway",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-152",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.995728,
+          38.760555
+        ]
+      },
+      "properties": {
+        "address": "9405 Livingston Road, Fort Washington, MD 20744, United States",
+        "company": "Prologis",
+        "market": "Washington DC",
+        "property_type": "Warehouse",
+        "square_footage": 140000,
+        "source_url": "https://www.prologis.com/industrial-properties/build-suit/g-iig172-prologis-capital-beltway-ii",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-153",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.800775,
+          39.148887
+        ]
+      },
+      "properties": {
+        "address": "8301 Patuxent Range Road, Jessup, Maryland 20794, United States",
+        "company": "Prologis",
+        "market": "Washington DC",
+        "property_type": "Warehouse",
+        "square_footage": 71983,
+        "source_url": "https://beta.prologis.com/industrial-properties/building/bal02401-prologis-baltimore-washington-industrial-park",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-154",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.921901,
+          40.667704
+        ]
+      },
+      "properties": {
+        "address": "1223 E New York Ave, Brooklyn, NY 11212",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ny-brooklyn/cheap-storage-units",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-155",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.827766,
+          40.891458
+        ]
+      },
+      "properties": {
+        "address": "60 E Kingsbridge Road, Mount Vernon, NY 10550",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ny-mount-vernon/1248.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-156",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.056144,
+          42.429066
+        ]
+      },
+      "properties": {
+        "address": "490 Eastern Ave, Malden, MA 02148-4202",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": "Other",
+        "square_footage": 125577,
+        "source_url": "https://www.radiusplus.com/post/public-storage-snags-big-properties-in-nyc-and-boston/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-157",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.017506,
+          40.649042
+        ]
+      },
+      "properties": {
+        "address": "5002 2nd Ave, Brooklyn, NY 11232",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": "Warehouse",
+        "square_footage": 139264,
+        "source_url": "https://www.radiusplus.com/post/public-storage-snags-big-properties-in-nyc-and-boston/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-158",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.994439,
+          40.723755
+        ]
+      },
+      "properties": {
+        "address": "262 Mott St, New York, NY 10012",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.chamberofcommerce.com/business-directory/new-york/new-york/self-storage-facility/2012976546-public-storage",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-159",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.982862,
+          40.696474
+        ]
+      },
+      "properties": {
+        "address": "269 Gold Street, Brooklyn, NY 11201",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/on/demandware.store/Sites-publicstorage-Site/default/ListingPage-State?state=ny",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-160",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.02258,
+          40.831459
+        ]
+      },
+      "properties": {
+        "address": "951 HorseBlock Road, Farmingville, NY 11738",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ny-farmingville/1521.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-161",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.295406,
+          34.166659
+        ]
+      },
+      "properties": {
+        "address": "701 Western Ave, Glendale, CA 91201",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://pscommercialrealestate.com/corporate_info.php",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-162",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.005994,
+          40.712749
+        ]
+      },
+      "properties": {
+        "address": "New York, New York, United States",
+        "company": "Public Storage",
+        "market": "New York",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.crexi.com/properties/NY/Self-Storage",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-163",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.436784,
+          34.035633
+        ]
+      },
+      "properties": {
+        "address": "11200 W Pico Blvd, Los Angeles, CA 90064",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/305.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-164",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.234444,
+          34.045187
+        ]
+      },
+      "properties": {
+        "address": "300 Avery St, Los Angeles, CA 90013",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/2223.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-165",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.254187,
+          34.048051
+        ]
+      },
+      "properties": {
+        "address": "620 East Arques Ave, Sunnyvale, CA 94085",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-sunnyvale/363.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-166",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.373032,
+          34.036532
+        ]
+      },
+      "properties": {
+        "address": "5917 Burchard Ave, Los Angeles, CA 90034",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/7.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-167",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.195893,
+          34.073957
+        ]
+      },
+      "properties": {
+        "address": "4002 N Mission Rd, Los Angeles, CA 90032",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/89.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-168",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2799,
+          33.96024
+        ]
+      },
+      "properties": {
+        "address": "365 W Manchester Ave, Los Angeles, CA 90003-3327",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/25.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-169",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.334697,
+          34.017833
+        ]
+      },
+      "properties": {
+        "address": "3770 Crenshaw Blvd, Los Angeles, CA 90016",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/134.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-170",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39401,
+          34.02717
+        ]
+      },
+      "properties": {
+        "address": "3773 S Durango Ave, Los Angeles, CA 90034",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/2058.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-171",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2594,
+          34.085281
+        ]
+      },
+      "properties": {
+        "address": "1712 Glendale Blvd, Los Angeles, CA 90026",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/17.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-172",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.326458,
+          34.047551
+        ]
+      },
+      "properties": {
+        "address": "4174 W Pico Blvd, Los Angeles, CA 90019",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-173",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.218163,
+          34.139469
+        ]
+      },
+      "properties": {
+        "address": "2370 Colorado Blvd, Los Angeles, CA 90041",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-174",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.244275,
+          34.114083
+        ]
+      },
+      "properties": {
+        "address": "3017 N San Fernando Rd, Los Angeles, CA 90065",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-175",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.362,
+          34.0443
+        ]
+      },
+      "properties": {
+        "address": "5570 Airdrome Street, Los Angeles, CA 90019",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/4.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-176",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.20998,
+          34.09308
+        ]
+      },
+      "properties": {
+        "address": "4101 North Figueroa Street, Los Angeles, CA 90065",
+        "company": "Public Storage",
+        "market": "Los Angeles",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-los-angeles/80.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-177",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.638159,
+          41.89681
+        ]
+      },
+      "properties": {
+        "address": "362 W Chicago Ave, Chicago, IL 60654",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-il-chicago/1268.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-178",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.662235,
+          40.891475
+        ]
+      },
+      "properties": {
+        "address": "4 Orben Drive, Ledgewood, New Jersey 07852, United States",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-nj-ledgewood/999.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-179",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.996754,
+          40.439375
+        ]
+      },
+      "properties": {
+        "address": "Pittsburgh, Pennsylvania, United States",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": "storage facility",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-pa-pittsburgh/5462.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-180",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.500486,
+          42.788198
+        ]
+      },
+      "properties": {
+        "address": "1600 Southwood Drive, Nashua, NH 03063",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-nh-nashua/908.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-181",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.28675,
+          20.241774
+        ]
+      },
+      "properties": {
+        "address": "2710 East Garvey Avenue South, West Covina, CA 91791",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-west-covina/10x15-storage-units",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-182",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.632362,
+          41.881953
+        ]
+      },
+      "properties": {
+        "address": "5733 North Broadway St, Chicago, IL 60660",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-il-chicago/1223.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-183",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.70845,
+          41.977276
+        ]
+      },
+      "properties": {
+        "address": "5251 N Kedzie Ave, Chicago, IL 60625",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-il-chicago/6209.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-184",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.72718,
+          41.92951
+        ]
+      },
+      "properties": {
+        "address": "2638 N Pulaski Road, Chicago, IL 60639",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-il-chicago/1501.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-185",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.664698,
+          41.814411
+        ]
+      },
+      "properties": {
+        "address": "4343 S Ashland Ave, Chicago, IL 60609",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": "Other",
+        "square_footage": 62923,
+        "source_url": "https://www.crexi.com/properties/IL/Self-Storage",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-186",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.54851,
+          35.165918
+        ]
+      },
+      "properties": {
+        "address": "2601 Laughlin View Drive, Bullhead City, Arizona 86429, United States",
+        "company": "Public Storage",
+        "market": "Chicago",
+        "property_type": null,
+        "square_footage": 696,
+        "source_url": "https://www.crexi.com/properties/IL/Self-Storage",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-187",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.440221,
+          29.705919
+        ]
+      },
+      "properties": {
+        "address": "9420 South Main Street, Houston, TX 77025",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-houston/802.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-188",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.38035,
+          33.721245
+        ]
+      },
+      "properties": {
+        "address": "72150 Fred Waring Drive, Palm Desert, CA 92260",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-palm-desert/2064.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-189",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.600804,
+          30.88063
+        ]
+      },
+      "properties": {
+        "address": "465 S Main St, West Creek, NJ 08092",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-nj-west-creek/10x15-storage-units",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-190",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.775433,
+          39.36132
+        ]
+      },
+      "properties": {
+        "address": "8514 Liberty Road, Randallstown, MD 21133",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-md-randallstown/5527.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-191",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.219894,
+          26.037653
+        ]
+      },
+      "properties": {
+        "address": "2710 E Garvey Ave S, West Covina, CA 91791",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ca-west-covina/10x30-storage-units",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-192",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.411098,
+          29.728948
+        ]
+      },
+      "properties": {
+        "address": "4121 Greenbriar St, Houston, TX 77098-5205",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-houston/2014.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-193",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.506455,
+          29.7356
+        ]
+      },
+      "properties": {
+        "address": "2801 Hullsmith Drive, Houston, TX 77063-4608",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-houston/2002.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-194",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.584128,
+          29.955215
+        ]
+      },
+      "properties": {
+        "address": "10944 Millridge North Drive, Houston, TX 77070",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-houston/782.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-195",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.530192,
+          29.642276
+        ]
+      },
+      "properties": {
+        "address": "8633 W Airport Blvd, Houston, TX 77071",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.storagecafe.com/storage/tx/houston/public-storage-8633-west-airport-blvd/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-196",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.416193,
+          29.693687
+        ]
+      },
+      "properties": {
+        "address": "8100 Main St, Houston, TX 77025",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-houston/6113.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-197",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.60498,
+          29.751365
+        ]
+      },
+      "properties": {
+        "address": "1611 S Dairy Ashford Rd, Houston, TX 77077",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-houston/6111.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-198",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.363433,
+          29.760496
+        ]
+      },
+      "properties": {
+        "address": "9710 Plainfield Road, Houston, TX 77036-8012, USA",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-houston/672.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-199",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.484634,
+          29.866721
+        ]
+      },
+      "properties": {
+        "address": "6400 W Little York Rd, Houston, TX 77091",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-tx-houston/2356.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-200",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.47327,
+          29.86825
+        ]
+      },
+      "properties": {
+        "address": "7365 Antoine Drive, Houston, Texas 77088, United States",
+        "company": "Public Storage",
+        "market": "Houston",
+        "property_type": null,
+        "square_footage": 1734,
+        "source_url": "https://www.zillow.com/houston-tx/storage-unit_att/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-201",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.371413,
+          33.810158
+        ]
+      },
+      "properties": {
+        "address": "2115 Monroe Drive NE, Atlanta, GA 30324",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ga-atlanta/1609.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-202",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.349708,
+          33.823288
+        ]
+      },
+      "properties": {
+        "address": "2519 Chantilly Drive, Atlanta, GA 30324",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ga-atlanta/643.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-203",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.378114,
+          33.91081
+        ]
+      },
+      "properties": {
+        "address": "5711 Roswell Road NE, Atlanta, GA 30342",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ga-atlanta/624.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-204",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.797237,
+          -0.590945
+        ]
+      },
+      "properties": {
+        "address": "268 Westminster Drive NE, Atlanta, GA 30309-3377",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": 90138,
+        "source_url": "https://www.selfstorage.com/self-storage/georgia/atlanta/public-storage-atlanta-268-westminster-drive-ne-214894/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-205",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.371044,
+          33.793939
+        ]
+      },
+      "properties": {
+        "address": "268 Westminster Drive NE, Atlanta, GA 30309",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": 90138,
+        "source_url": "https://www.selfstorage.com/self-storage/georgia/atlanta/public-storage-atlanta-268-westminster-drive-ne-214894/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-206",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.487643,
+          33.824734
+        ]
+      },
+      "properties": {
+        "address": "5301 S Cobb Drive SE, Atlanta, GA 30339",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ga-atlanta/594.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-207",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.416125,
+          33.795918
+        ]
+      },
+      "properties": {
+        "address": "1506 Howell Mill Road NW, Atlanta, GA 30318",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ga-atlanta/1602.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-208",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.33555,
+          33.86893
+        ]
+      },
+      "properties": {
+        "address": "4300 Peachtree Road NE, Atlanta, GA 30319",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ga-atlanta/1961.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-209",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.457206,
+          33.82187
+        ]
+      },
+      "properties": {
+        "address": "2436 Bolton Road NW, Atlanta, GA 30318",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ga-atlanta/695.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-210",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.310014,
+          33.867615
+        ]
+      },
+      "properties": {
+        "address": "3692 Clairmont Road, Atlanta, GA 30341",
+        "company": "Public Storage",
+        "market": "Atlanta",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-ga-atlanta/1726.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-211",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.008622,
+          38.875517
+        ]
+      },
+      "properties": {
+        "address": "1230 S Capitol Street SE, Washington, DC 20003",
+        "company": "Public Storage",
+        "market": "Washington DC",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-dc-washington/1081.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-212",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.25734,
+          39.17593
+        ]
+      },
+      "properties": {
+        "address": "12423 Middlebrook Road, Germantown, MD 20874",
+        "company": "Public Storage",
+        "market": "Washington DC",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-md-germantown/1752.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-213",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.238482,
+          39.938133
+        ]
+      },
+      "properties": {
+        "address": "4628 Northwestern Dr, Zionsville, IN 46077",
+        "company": "Public Storage",
+        "market": "Washington DC",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/self-storage-in-zionsville/5916.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-214",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.976743,
+          38.912063
+        ]
+      },
+      "properties": {
+        "address": "1618 Bladensburg Road NE, Washington, DC 20002",
+        "company": "Public Storage",
+        "market": "Washington DC",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.selfstorage.com/self-storage/district-of-columbia/washington/public-storage-washington-1618-bladensburg-road-ne-214051/",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-215",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.976077,
+          38.92022
+        ]
+      },
+      "properties": {
+        "address": "2301 Lawrence Ave NE, Washington, DC 20018",
+        "company": "Public Storage",
+        "market": "Washington DC",
+        "property_type": "Warehouse",
+        "square_footage": 92000,
+        "source_url": "https://www.chamberofcommerce.com/business-directory/district-of-columbia/washington/self-storage-facility/2013741754-public-storage",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-216",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.971179,
+          38.953219
+        ]
+      },
+      "properties": {
+        "address": "2308 Chillum Road, Hyattsville, MD 20782",
+        "company": "Public Storage",
+        "market": "Washington DC",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/on/demandware.store/Sites-publicstorage-Site/default/ListingPage-State?state=dc",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-217",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.046128,
+          38.86815
+        ]
+      },
+      "properties": {
+        "address": "398 Long Bridge Drive, Arlington, VA 22202",
+        "company": "Public Storage",
+        "market": "Washington DC",
+        "property_type": "Other",
+        "square_footage": null,
+        "source_url": "https://www.publicstorage.com/on/demandware.store/Sites-publicstorage-Site/default/ListingPage-State?state=dc",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-218",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.162288,
+          39.766876
+        ]
+      },
+      "properties": {
+        "address": "225 West Washington Street, Indianapolis, IN 46204",
+        "company": "Simon Property Group",
+        "market": "New York",
+        "property_type": "Office",
+        "square_footage": null,
+        "source_url": "https://www.simon.com/contact",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-219",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.451602,
+          40.796415
+        ]
+      },
+      "properties": {
+        "address": "60 Columbia Road, Building B, Morristown, NJ 07960, United States",
+        "company": "Simon Property Group",
+        "market": "New York",
+        "property_type": "Office",
+        "square_footage": null,
+        "source_url": "https://www.simon.com/contact",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-220",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.32812,
+          42.33733
+        ]
+      },
+      "properties": {
+        "address": "225 West Washington Street, Bath, New York 14810, United States",
+        "company": "Simon Property Group",
+        "market": "New York",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://craft.co/simon-property-group/locations",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-221",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.92027,
+          40.176151
+        ]
+      },
+      "properties": {
+        "address": "2300 E Lincoln Hwy, Langhorne, PA 19047-3305",
+        "company": "Simon Property Group",
+        "market": "Los Angeles",
+        "property_type": "Retail",
+        "square_footage": 197000,
+        "source_url": "https://fillogic.com/locations",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-222",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.377669,
+          34.07537
+        ]
+      },
+      "properties": {
+        "address": "Beverly Center, 8500 Beverly Blvd, Los Angeles, CA 90048",
+        "company": "Simon Property Group",
+        "market": "Los Angeles",
+        "property_type": "Retail",
+        "square_footage": 883000,
+        "source_url": "https://fillogic.com/locations",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-223",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.464611,
+          29.739248
+        ]
+      },
+      "properties": {
+        "address": "5075 Westheimer Rd Ste 4850, Houston, TX 77056",
+        "company": "Simon Property Group",
+        "market": "Houston",
+        "property_type": "Retail",
+        "square_footage": "2400000",
+        "source_url": "https://www.mapquest.com/us/texas/simon-property-group-534754062",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-224",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.034209,
+          38.903104
+        ]
+      },
+      "properties": {
+        "address": "1015 15th Street Northwest, Washington, District of Columbia 20005, United States",
+        "company": "Simon Property Group",
+        "market": "Washington DC",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.bizapedia.com/dc/simon-property-group-inc.html",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-225",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.217889,
+          33.790847
+        ]
+      },
+      "properties": {
+        "address": "1901 Pacific Coast Highway, Long Beach, California 90810, United States",
+        "company": "Prologis",
+        "market": "Los Angeles",
+        "property_type": null,
+        "square_footage": null,
+        "source_url": "https://www.prologis.com/logistics-real-estate/united-states/los-angeles",
+        "timestamp": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "reit-226",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.41448,
+          29.941594
+        ]
+      },
+      "properties": {
+        "address": "12001 North Freeway, Houston, TX 77060",
+        "company": "Digital Realty",
+        "market": "Houston",
+        "property_type": "Data Center",
+        "square_footage": "50000",
+        "source_url": "https://www.digitalrealty.com/data-centers/houston",
+        "timestamp": null
+      }
+    }
+  ]
+}

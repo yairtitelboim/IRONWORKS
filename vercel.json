@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "framework": "create-react-app",
+  "buildCommand": "CI= npm run build",
+  "outputDirectory": "build",
+  "installCommand": "npm install",
+  "public": true,
+  "functions": {
+    "api/serp.js": {
+      "maxDuration": 30
+    },
+    "api/scanner-signals.js": {
+      "maxDuration": 30,
+      "includeFiles": "./scanner/**"
+    },
+    "api/scanner-ingest-news.js": {
+      "maxDuration": 60,
+      "includeFiles": "./scanner/**"
+    },
+    "api/scanner-ingest-ercot.js": {
+      "maxDuration": 300,
+      "includeFiles": "./scanner/**"
+    },
+    "api/scanner-cron-daily.js": {
+      "maxDuration": 300,
+      "includeFiles": "./scanner/**"
+    },
+    "api/ui-events.js": {
+      "maxDuration": 15
+    },
+    "api/scanner-runs.js": {
+      "maxDuration": 30
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/scanner-cron-daily",
+      "schedule": "15 13 * * *"
+    },
+    {
+      "path": "/api/notion-sync-daily-usage",
+      "schedule": "5 12 * * *"
+    },
+    {
+      "path": "/api/notion-sync-access-daily",
+      "schedule": "15 12 * * *"
+    },
+    {
+      "path": "/api/notion-sync-access-sessions",
+      "schedule": "25 */6 * * *"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/scanner/signals",
+      "destination": "/api/scanner-signals"
+    },
+    {
+      "source": "/api/scanner/runs",
+      "destination": "/api/scanner-runs"
+    },
+    {
+      "source": "/api/scanner/ingest/news",
+      "destination": "/api/scanner-ingest-news"
+    },
+    {
+      "source": "/api/scanner/ingest/ercot",
+      "destination": "/api/scanner-ingest-ercot"
+    },
+    {
+      "source": "/api/scanner/cron-daily",
+      "destination": "/api/scanner-cron-daily"
+    },
+    {
+      "source": "/api/ui/events",
+      "destination": "/api/ui-events"
+    },
+    {
+      "source": "/api/assets/cohort",
+      "destination": "/api/assets-cohort"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
+}

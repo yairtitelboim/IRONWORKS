@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Scanner Signals Export</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #e0e0e0;
+    }
+    h1 {
+      color: #ffffff;
+      border-bottom: 3px solid #4CAF50;
+      padding-bottom: 10px;
+    }
+    .stats {
+      background: #2d2d2d;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      color: #e0e0e0;
+    }
+    .signal {
+      background: #2d2d2d;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      border-left: 4px solid #555;
+    }
+    .signal.constraint {
+      border-left-color: #ff5252;
+    }
+    .signal.commitment {
+      border-left-color: #4CAF50;
+    }
+    .signal.context {
+      border-left-color: #64b5f6;
+    }
+    .signal-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .lane {
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .lane.constraint {
+      background: rgba(255, 82, 82, 0.2);
+      color: #ff5252;
+      border: 1px solid rgba(255, 82, 82, 0.3);
+    }
+    .lane.commitment {
+      background: rgba(76, 175, 80, 0.2);
+      color: #4CAF50;
+      border: 1px solid rgba(76, 175, 80, 0.3);
+    }
+    .lane.context {
+      background: rgba(100, 181, 246, 0.2);
+      color: #64b5f6;
+      border: 1px solid rgba(100, 181, 246, 0.3);
+    }
+    .confidence {
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+    .confidence.high {
+      background: rgba(255, 82, 82, 0.2);
+      color: #ff5252;
+      border: 1px solid rgba(255, 82, 82, 0.3);
+    }
+    .confidence.med {
+      background: rgba(255, 183, 77, 0.2);
+      color: #ffb74d;
+      border: 1px solid rgba(255, 183, 77, 0.3);
+    }
+    .confidence.low {
+      background: rgba(186, 104, 200, 0.2);
+      color: #ba68c8;
+      border: 1px solid rgba(186, 104, 200, 0.3);
+    }
+    .headline {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin: 10px 0;
+    }
+    .meta {
+      color: #b0b0b0;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 10px 0;
+    }
+    .tag {
+      background: #3d3d3d;
+      color: #e0e0e0;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      border: 1px solid #555;
+    }
+    .url {
+      color: #64b5f6;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .url:hover {
+      color: #90caf9;
+      text-decoration: underline;
+    }
+    .summary {
+      background: #1e1e1e;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #d0d0d0;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Scanner Signals Export</h1>
+  <div class="stats">
+    <strong>Signals (Last 7 Days):</strong> 20<br>
+    <strong>Date Range:</strong> 12/15/2025 - 12/22/2025<br>
+    <strong>Exported:</strong> 12/22/2025, 1:15:16 PM
+  </div>
+  
+  
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence med">MED confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">INTERCONNECTION_UPDATE</span>
+      </div>
+      <div class="headline">Important Texas Regulatory Updates for Data Centers - Mayer Brown</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.mayerbrown.com/en/insights/publications/2025/07/important-texas-regulatory-updates-for-data-centers" target="_blank" class="url">https://www.mayerbrown.com/en/insights/publications/2025/07/important-texas-regulatory-updates-for-data-centers</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">interconnection_update</span></div>
+      <div class="summary">maintain grid reliability<br>• SB-6 was signed by Texas governor Greg Abbott on June 20<br>• SB-6 primarily aims to ensure that large-load customers contribute fairly to the recovery of costs incurred by electric utilities when interconnecting and serving these loads</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">MORATORIUM</span>
+      </div>
+      <div class="headline">Texas environmental agency struggles with backlogs after years of ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.keranews.org/energy-environment/2025-12-18/texas-environmental-agency-struggles-with-backlogs-following-decade-of-s" target="_blank" class="url">https://www.keranews.org/energy-environment/2025-12-18/texas-environmental-agency-struggles-with-backlogs-following-decade-of-s</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">moratorium</span></div>
+      <div class="summary">Emmanuel Rivas Valenzuela joins KERA News from El Paso, Texas where he graduated as a first-generation immigrant from the University of Texas at El Paso<br>• Prior to joining KERA, Emmanuel worked at KFOX/KDBC El Paso, El Paso Matters and KERA News as an intern<br>• Outside of work, Emmanuel enjoys collecting physical media like movies, music and comics</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">LAWSUIT</span>
+      </div>
+      <div class="headline">Texas' Data Center Boom—and the Local Backlash</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://texasscorecard.com/state/texas-data-center-boom-and-the-local-backlash/" target="_blank" class="url">https://texasscorecard.com/state/texas-data-center-boom-and-the-local-backlash/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">lawsuit</span></div>
+      <div class="summary">] Residents of Taylor filed a lawsuit against Blueprint’s parent company on July 31<br>• However, Judge Ryan Lawson of the 395th district court dismissed all of the residents’ claims and denied the residents’ request for an injunction on October 8<br>• Terry Cook, a Williamson County Commissioner, told Texas Scorecard “the case was dismissed claiming residents didn’t have jurisdiction—I don’t agree but I’m not a lawyer</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">MORATORIUM</span>
+      </div>
+      <div class="headline">[PDF] Org Letter: National Data Center Moratorium - Friends of the Earth</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://foe.org/resources/national-data-center-moratorium-letter/" target="_blank" class="url">https://foe.org/resources/national-data-center-moratorium-letter/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">moratorium</span></div>
+      <div class="summary">] National Data Center Moratorium Now<br>• ] environmental, climate and water security<br>• For more information, contact Food & Water Watch Policy Director Jim Walsh – jwalsh@fwwatch</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">MORATORIUM</span>
+      </div>
+      <div class="headline">As EPA moves to fast-track data centers, some cities are moving to ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.constructiondive.com/news/epa-fast-track-data-centers-cities-push-back/808245/" target="_blank" class="url">https://www.constructiondive.com/news/epa-fast-track-data-centers-cities-push-back/808245/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">moratorium</span></div>
+      <div class="summary">] “We are seeing how difficult it is to move any policies forward at the federal level,” Jim Walsh, policy director for Food and Water Watch, told Smart Cities Dive<br>• ] Walsh said Trump’s executive order “doesn’t do anything to prevent local communities from exercising their existing powers” to enact moratoriums on building new data centers in their jurisdictions<br>• Local governments are beginning to push back</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Resource strain from AI data centers</span>
+      </div>
+      <div class="headline">AI Data Centers Are Taking Texas Resources. Residents Without ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.reddit.com/r/texas/comments/1ps7wy1/ai_data_centers_are_taking_texas_resources/" target="_blank" class="url">https://www.reddit.com/r/texas/comments/1ps7wy1/ai_data_centers_are_taking_texas_resources/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary">r/texas icon<br><br># AI Data Centers Are Taking Texas Resources<br>• Residents Without Reliable Water Are Sounding the Alarm<br>• r/texas - AI Data Centers Are Taking Texas Resources</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">MORATORIUM</span>
+      </div>
+      <div class="headline">Saginaw moratorium proactively blocks data center projects - ABC12</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.abc12.com/news/local/saginaw-moratorium-proactively-blocks-data-center-projects/article_7b230f5d-0639-443c-a499-1a5a281bad49.html" target="_blank" class="url">https://www.abc12.com/news/local/saginaw-moratorium-proactively-blocks-data-center-projects/article_7b230f5d-0639-443c-a499-1a5a281bad49.html</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">moratorium</span></div>
+      <div class="summary">site-logo<br>site-logo<br>site-logo<br><br>#### Log In Using Your Account<br><br>OpenAI Stargate<br><br>An entrance to the Stargate artificial intelligence data center complex in Abilene, Texas on Monday, Sept<br>• (AP Photo/Matt O'Brien) [<br>• No data center projects have been announced in the Saginaw area, but they are increasingly popping up across the country as the artificial intelligence industry expands</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">MORATORIUM</span>
+      </div>
+      <div class="headline">Can the grid handle data centers? Look to Texas. - Politico</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.politico.com/newsletters/power-switch/2025/12/10/can-the-grid-handle-data-centers-look-to-texas-00684298" target="_blank" class="url">https://www.politico.com/newsletters/power-switch/2025/12/10/can-the-grid-handle-data-centers-look-to-texas-00684298</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">moratorium</span></div>
+      <div class="summary">No takers on data center moratorium  <br>Activist groups calling for a moratorium on new data center construction are running into a wall — progressive Democrats, Amelia Davidson writes<br>• While many Democrats have expressed concerns about the rapid rise of data centers, none so far has sought a moratorium, as over 200 climate groups did this week in a letter to Congress<br>• ] Energy analysts are quick to note that not all the data centers seeking to plug into Texas’ grid will actually get built</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">MORATORIUM</span>
+      </div>
+      <div class="headline">Data centers pose energy challenge for Texas - Environment America</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://environmentamerica.org/texas/center/articles/data-centers-pose-energy-challenge-for-texas/" target="_blank" class="url">https://environmentamerica.org/texas/center/articles/data-centers-pose-energy-challenge-for-texas/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">moratorium</span></div>
+      <div class="summary">Curtail unnecessary activity<br>• Texas could pursue this legislation to stop crypto miners from abusing this energy conservation program<br>• Furthermore, Texas could also consider a moratorium on crypto mining, as its environmental and energy costs are simply too high to justify</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">MORATORIUM</span>
+      </div>
+      <div class="headline">The Real Race for an AI Moratorium: Stopping Data Centers</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://techpolicy.press/the-real-race-for-an-ai-moratorium-stopping-data-centers" target="_blank" class="url">https://techpolicy.press/the-real-race-for-an-ai-moratorium-stopping-data-centers</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">moratorium</span></div>
+      <div class="summary">Confronted with similar stakes, cities and counties across the US are pulling the emergency brake<br>• From Maryland to Missouri, at least fourteen states are home to towns or counties that have implemented moratoriums: a complete pause on data center development<br>• In early December, over 200 groups – from faith groups in Florida and Louisiana to physicians in Texas – publicly called for a moratorium on new data center construction nationwide</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:58:49 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">CONSTRUCTION</span>
+      </div>
+      <div class="headline">Controversial southwest Fort Worth data center gets ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://fortworthreport.org/2024/09/17/controversial-southwest-fort-worth-data-center-gets-approval-but-more-steps-remain/" target="_blank" class="url">https://fortworthreport.org/2024/09/17/controversial-southwest-fort-worth-data-center-gets-approval-but-more-steps-remain/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">construction</span></div>
+      <div class="summary">The council voted 7-2 to approve a zoning change that was required before the site could be used for construction of the five-building data</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Data center project approval</span>
+      </div>
+      <div class="headline">Fort Worth Data Center Approved Over Residents' Opposition</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.govtech.com/infrastructure/fort-worth-data-center-approved-over-residents-opposition" target="_blank" class="url">https://www.govtech.com/infrastructure/fort-worth-data-center-approved-over-residents-opposition</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">opposition</span></div>
+      <div class="summary">govtech-logo-rev-no-block<br>• The developer said it would be an economic boon, not a threat<br>• Aerial view of Fort Worth</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal commitment">
+      <div class="signal-header">
+        <span class="lane commitment">COMMITMENT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">APPROVED</span>
+      </div>
+      <div class="headline">City Council denies preferred scenario change for a data ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://universitystar.com/32459/news/city-council-denies-zoning-change-for-a-data-center-passes-land-annexation/" target="_blank" class="url">https://universitystar.com/32459/news/city-council-denies-zoning-change-for-a-data-center-passes-land-annexation/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">approved</span></div>
+      <div class="summary">The PSA was tied with the zoning amendment for the data center; one could not pass without the other<br>• Both needed a super majority vote, at least six yes votes, to pass<br>• The PSA was denied two votes for no by council members Amanda Rodriguez and Saul Gonzales</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">Voters reject incorporation to curb data center noise</span>
+      </div>
+      <div class="headline">Hood County, Texas, set to reject proposal to incorporate ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.datacenterdynamics.com/en/news/hood-county-texas-set-to-reject-proposal-to-incorporate-community-as-a-city-to-curb-data-center-noise/" target="_blank" class="url">https://www.datacenterdynamics.com/en/news/hood-county-texas-set-to-reject-proposal-to-incorporate-community-as-a-city-to-curb-data-center-noise/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">noise</span></div>
+      <div class="summary">The data center, operated by cryptomining company MARA Holdings, is located at the former Wolf Hollow Gas plant in Granbury, which is Hood County’s main city<br>• It is unclear whether further measures will be taken by residents opposed to the data center</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">data center rejection</span>
+      </div>
+      <div class="headline">The grid is planning for data centers that will never exist - Paces</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.paces.com/white-papers/grid-planning-data-centers-transmission-investment" target="_blank" class="url">https://www.paces.com/white-papers/grid-planning-data-centers-transmission-investment</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      
+      <div class="summary">These risks are already beginning to manifest<br>• In August 2025, Hays County rejected a rezoning request for a 200-acre data center near the Edwards Aquifer, citing water stress and existing drought restrictions<br>• ] We leverage Paces' comprehensive environmental and permitting datasets alongside our in-house power engineering team to map where development can credibly occur and how the grid can support it</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">ZONING_DENIAL</span>
+      </div>
+      <div class="headline">San Marcos Rejects “CyrusOne” Data Center Over Water ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.sosalliance.org/news/san-marcos-rejects-cyrusone-data-center-over-water-energy-concerns" target="_blank" class="url">https://www.sosalliance.org/news/san-marcos-rejects-cyrusone-data-center-over-water-energy-concerns</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">zoning_denial</span></div>
+      <div class="summary">| San Marcos Rejects “CyrusOne” Data Center Over Water, Energy Concerns 8/20/2025    |  |  |  --- | |  | In a dramatic and decisive 1 a<br>• The project sparked widespread concern from San Marcos residents and environmental advocates, especially after new details revealed that the data center [<br>• 5 times more energy than the entire city’s peak energy usage, while also requiring a staggering 75,000 gallons per day of non-curtailable water use</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">ZONING_DENIAL</span>
+      </div>
+      <div class="headline">Plans for southwest Fort Worth data center rejected by ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://fortworthreport.org/2024/07/10/plans-for-southwest-fort-worth-data-center-rejected-by-zoning-commission/" target="_blank" class="url">https://fortworthreport.org/2024/07/10/plans-for-southwest-fort-worth-data-center-rejected-by-zoning-commission/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">zoning_denial</span></div>
+      <div class="summary">Fort Worth zoning commissioners narrowly voted against a proposal to build a data center across the road from Tarleton State University's</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence med">MED confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">PUBLIC_HEARING</span>
+      </div>
+      <div class="headline">Fort Worth planning commission greenlights previously ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.datacenterdynamics.com/en/news/fort-worth-planning-commission-greenlights-previously-rejected-data-center-campus/" target="_blank" class="url">https://www.datacenterdynamics.com/en/news/fort-worth-planning-commission-greenlights-previously-rejected-data-center-campus/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">public_hearing</span></div>
+      <div class="summary">During a September 17 City Council meeting, the proposed five-building campus received a 7-2 vote to approve the necessary zoning change before construction<br>• 10375 Old Granbury Road fort worth [<br>• ] The data centers will be located at least 1,400 feet away from the nearest homes</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">ZONING_DENIAL</span>
+      </div>
+      <div class="headline">Proposed data center denied by San Marcos Planning and ...</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://communityimpact.com/austin/san-marcos-buda-kyle/government/2025/03/27/proposed-data-center-denied-by-san-marcos-planning-and-zoning-commission/" target="_blank" class="url">https://communityimpact.com/austin/san-marcos-buda-kyle/government/2025/03/27/proposed-data-center-denied-by-san-marcos-planning-and-zoning-commission/</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">zoning_denial</span></div>
+      <div class="summary">(Jamie Moore/Community Impact) [<br>• ] The land that the data center is proposed to be on is currently undeveloped and designated as “Conservation/Cluster” on San Marcos' Preferred Scenario Map<br>• (Jamie Moore/Community Impact)<br><br>Hays Energy, located at 1601 Francis Harris Lane, will be close to the potential data center</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+    <div class="signal constraint">
+      <div class="signal-header">
+        <span class="lane constraint">CONSTRAINT</span>
+        <span class="confidence high">HIGH confidence</span>
+        <span style="color: #b0b0b0; font-size: 12px;">ZONING_DENIAL</span>
+      </div>
+      <div class="headline">Briefing 04/03/2025</div>
+      <div class="meta"><strong>URL:</strong> <a href="https://www.datacenterwatch.org/newsletter/u2hem0d3zeqgwk8t1r302p5gl2dtgp" target="_blank" class="url">https://www.datacenterwatch.org/newsletter/u2hem0d3zeqgwk8t1r302p5gl2dtgp</a></div>
+      <div class="meta"><strong>Source:</strong> TAVILY</div>
+      <div class="tags"><span class="tag">zoning_denial</span></div>
+      <div class="summary">One site is within San Marcos city limits, while the other lies just outside<br>• The San Marcos Planning and Zoning Commission recently recommended denying the zoning and land-use changes for the 199-acre proposal at 904 Francis Harris Lane<br>• ] This week’s round up: Two proposed data centers near San Marcos, TX, triggered community backlash over environmental concerns—one was rejected by city planners</div>
+      <div class="meta" style="margin-top: 10px; font-size: 12px; color: #999;">Ingested: 12/22/2025, 12:55:35 PM</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+curl -X POST "https://api.perplexity.ai/chat/completions" \
+  -H "Authorization: Bearer $PERPLEXITY_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "llama-3.1-sonar-large-128k-online",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a spatial analysis expert. Always respond with specific geographic coordinates in GeoJSON format when analyzing urban development scenarios."
+      },
+      {
+        "role": "user", 
+        "content": "Analyze office-to-residential conversion potential in Downtown Houston FIFA zone. Context: Downtown Core zone (center: 29.7604, -95.3698, radius: 1500m) contains 45 office buildings for sale, 23% vacancy rate, 340 residential listings averaging $2.1M, and 8 active construction projects completing Q2 2026. FIFA infrastructure includes 258 priority-3 developments and main street promenade improvements. REQUIRED OUTPUT: Return your analysis as GeoJSON features with specific coordinates for high-conversion-potential office buildings within the zone boundaries. Include properties: conversion_probability (0-1), reasoning, timeline. Focus on buildings within 0.5 miles of FIFA infrastructure."
+      }
+    ],
+    "max_tokens": 1000,
+    "temperature": 0.3
+  }'

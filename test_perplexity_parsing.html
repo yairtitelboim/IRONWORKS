@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perplexity Parsing Test</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            padding: 20px;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .test-title {
+            color: #60a5fa;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .console-output {
+            background: #000;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        th {
+            background: rgba(59, 130, 246, 0.2);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // Sample Perplexity response (from the logs)
+        const samplePerplexityResponse = `Below is a reliability analysis for the top 5 most critical power infrastructure nodes near Whitney, Texas, using only publicly available data from EIA, FERC, ERCOT, and Texas PUC sources. Where facility-specific data is unavailable, regional Texas data is provided as required.
+
+---
+
+## NODE 1: **Lake Whitney Power Plant (Bosque Power Co LLC)**
+- **Type:** Hydro Power Plant (EIA-860 database)
+- **EIA Plant ID:** **6414** ([Open Infrastructure Map][3])
+- **Current Status:** Operational ([Open Infrastructure Map][3])
+
+**1. POWER SCORE:** **6/10**  
+- **Nameplate Capacity:** **48.00 MW** ([Open Infrastructure Map][3])
+- **Recent Generation:** Data not available from public EIA/FERC/ERCOT sources for 2023-2024.
+- **Capacity Factor:** Data not available from public EIA/FERC/ERCOT sources.
+- **Source Link:** [https://openinframap.org/stats/area/United%20States/plants/508017023][3]
+- **Last Updated:** Not specified; Open Infrastructure Map references EIA data.
+
+**2. STABILITY SCORE:** **7/10**  
+- **ERCOT Zone:** ERCOT North Zone (regional assignment; specific plant zone not listed in public ERCOT reports)[4]
+- **Grid Integration:** Integrated into ERCOT grid; hydro plants provide ancillary services but are not primary baseload in Texas[4].
+- **Reliability Metrics:** Texas hydro plants have high reliability but limited output during droughts; no recent outage data for Lake Whitney[4].
+- **Source Link:** [https://www.ercot.com/gridinfo][4]
+
+## NODE 2: **Hill County Water Supply Corporation**
+- **Type:** Electric Utility (distribution; not a generation plant)
+- **EIA Plant ID:** Data not available from public EIA/FERC/ERCOT sources.
+- **Current Status:** Operational (listed as critical infrastructure by Texas PUC)[2]
+
+**1. POWER SCORE:** **5/10**  
+- **Nameplate Capacity:** Not applicable; utility does not generate power.
+- **Recent Generation:** Not applicable.
+- **Capacity Factor:** Not applicable.
+- **Source Link:** [https://www.puc.texas.gov/industry/maps/supplychain/Default.aspx][2]
+- **Last Updated:** April 2022 (Texas PUC map)[2]
+
+**2. STABILITY SCORE:** **5/10**  
+- **ERCOT Zone:** ERCOT North Zone (regional assignment)[4]
+- **Grid Integration:** Receives power from ERCOT grid; distribution reliability depends on upstream transmission[4].
+- **Reliability Metrics:** Distribution utilities in Texas average SAIDI of 120-180 minutes/year[2].
+- **Source Link:** [https://www.puc.texas.gov/industry/maps/supplychain/Default.aspx][2]
+
+## NODE 3: **Oncor Electric Delivery**
+- **Type:** Transmission/Distribution Utility (TDSP)
+- **EIA Plant ID:** Not applicable (transmission/distribution utility)
+- **Current Status:** Operational; major transmission/distribution provider in ERCOT North Zone[2]
+
+**1. POWER SCORE:** **8/10**  
+- **Nameplate Capacity:** Not applicable; Oncor does not own generation assets.
+- **Recent Generation:** Not applicable.
+- **Capacity Factor:** Not applicable.
+- **Source Link:** [https://www.puc.texas.gov/industry/maps/supplychain/Default.aspx][2]
+- **Last Updated:** April 2024[2]
+
+**2. STABILITY SCORE:** **9/10**  
+- **ERCOT Zone:** North Zone[4]
+- **Grid Integration:** Oncor is the primary transmission/distribution operator for North Texas[2]
+- **Reliability Metrics:** High reliability; subject to ERCOT and PUC oversight[4]
+- **Source Link:** [https://www.ercot.com/gridinfo][4]
+
+## NODE 4: **Whitney Data Center (Hypothetical)**
+- **Type:** Data Center Facility
+- **EIA Plant ID:** Not applicable
+- **Current Status:** Hypothetical for analysis
+
+**1. POWER SCORE:** **7/10**  
+- **Nameplate Capacity:** 200 MW (typical for large data center)
+- **Recent Generation:** N/A (consumer, not generator)
+- **Capacity Factor:** N/A
+- **Source Link:** Regional analysis based on ERCOT data[4]
+
+**2. STABILITY SCORE:** **8/10**  
+- **ERCOT Zone:** North Zone[4]
+- **Grid Integration:** Would connect via Oncor transmission network[2]
+- **Reliability Metrics:** High reliability expected with proper design[4]
+
+## NODE 5: **Regional Transmission Hub**
+- **Type:** Transmission Infrastructure
+- **EIA Plant ID:** Not applicable
+- **Current Status:** Operational
+
+**1. POWER SCORE:** **9/10**  
+- **Nameplate Capacity:** Not applicable (transmission only)
+- **Recent Generation:** Not applicable
+- **Capacity Factor:** Not applicable
+
+**2. STABILITY SCORE:** **9/10**  
+- **ERCOT Zone:** North Zone[4]
+- **Grid Integration:** Critical transmission infrastructure[4]
+- **Reliability Metrics:** High reliability transmission system[4]`;
+
+        // Mock data structures to test parsing
+        const mockDualAnalysisData = {
+            nodeLevel: {
+                results: [
+                    { tool: 'SERP', success: true, data: 'serp data' },
+                    { tool: 'OSM', success: true, data: 'osm data' },
+                    { 
+                        tool: 'PERPLEXITY', 
+                        success: true, 
+                        data: {
+                            success: ['true', 'true', 'true'],
+                            tool: ['PERPLEXITY', 'PERPLEXITY', 'PERPLEXITY'],
+                            queries: ['Whitney TX power plants', 'Brazos Electric Power infrastructure', 'CyrusOne Whitney TX power supply'],
+                            coordinates: [31.9315, -97.347, 0],
+                            data: ['some data', 'more data', 'even more data'],
+                            timestamp: [1757033187250, 1757033187251, 1757033187252]
+                        }
+                    }
+                ]
+            }
+        };
+
+        const PerplexityParsingTest = () => {
+            const [testResults, setTestResults] = useState([]);
+            const [parsedNodes, setParsedNodes] = useState([]);
+
+            // Test function 1: Parse table data from sample response
+            const testParseTableData = () => {
+                console.log('🧪 Test 1: Parsing sample Perplexity response');
+                const nodes = [];
+                const nodeRegex = /## NODE (\d+): \*\*(.*?)\*\*/g;
+                let match;
+                
+                while ((match = nodeRegex.exec(samplePerplexityResponse)) !== null) {
+                    const nodeNumber = match[1];
+                    const nodeName = match[2];
+                    
+                    // Extract data for this node
+                    const nodeStart = match.index;
+                    const remainingText = samplePerplexityResponse.substring(nodeStart + match[0].length);
+                    const nextNodeMatch = /## NODE (\d+): \*\*(.*?)\*\*/.exec(remainingText);
+                    const nodeEnd = nextNodeMatch ? nodeStart + match[0].length + nextNodeMatch.index : samplePerplexityResponse.length;
+                    
+                    const nodeContent = samplePerplexityResponse.substring(nodeStart, nodeEnd);
+                    
+                    // Test regex patterns
+                    const typeMatch = nodeContent.match(/\*\*Type:\*\* (.+?)(?:\s*\(|$)/);
+                    const powerScoreMatch = nodeContent.match(/\*\*1\. POWER SCORE:\*\* \*\*(\d+)\/10\*\*/);
+                    const stabilityScoreMatch = nodeContent.match(/\*\*2\. STABILITY SCORE:\*\* \*\*(\d+)\/10\*\*/);
+                    const capacityMatch = nodeContent.match(/\*\*Nameplate Capacity:\*\* \*\*(.+?)\*\*/);
+                    
+                    const nodeData = {
+                        id: nodeNumber,
+                        name: nodeName,
+                        type: typeMatch ? typeMatch[1].trim() : 'Unknown',
+                        powerScore: powerScoreMatch ? parseInt(powerScoreMatch[1]) : 
+                                   (stabilityScoreMatch ? parseInt(stabilityScoreMatch[1]) : 0),
+                        capacity: capacityMatch ? capacityMatch[1].trim() : 'N/A',
+                        content: nodeContent.substring(0, 300) + '...'
+                    };
+                    
+                    console.log(`✅ Parsed node ${nodeNumber}:`, nodeData);
+                    nodes.push(nodeData);
+                }
+                
+                setTestResults(prev => [...prev, `✅ Test 1: Found ${nodes.length} nodes in sample response`]);
+                setParsedNodes(nodes);
+                return nodes;
+            };
+
+            // Test function 2: Try to extract data from mock dual analysis structure
+            const testDataExtraction = () => {
+                console.log('🧪 Test 2: Extracting data from mock dual analysis structure');
+                
+                const perplexityResult = mockDualAnalysisData.nodeLevel.results.find(result => result.tool === 'PERPLEXITY');
+                console.log('🔍 Mock Perplexity result:', perplexityResult);
+                
+                if (perplexityResult?.data && typeof perplexityResult.data === 'object') {
+                    console.log('🔍 Mock data object keys:', Object.keys(perplexityResult.data));
+                    console.log('🔍 Mock data object values:', Object.entries(perplexityResult.data).map(([key, value]) => [key, typeof value, Array.isArray(value) ? `Array(${value.length})` : value?.length || 'N/A']));
+                    
+                    // Try to find the analysis content
+                    let foundContent = null;
+                    Object.entries(perplexityResult.data).forEach(([key, value]) => {
+                        if (Array.isArray(value)) {
+                            console.log(`🔍 Checking array ${key}:`, value);
+                            value.forEach((item, index) => {
+                                console.log(`  ${key}[${index}]:`, typeof item, item?.length || 'N/A', typeof item === 'string' ? item.substring(0, 50) : item);
+                                if (typeof item === 'string' && item.length > 1000) {
+                                    foundContent = item;
+                                }
+                            });
+                        }
+                    });
+                    
+                    setTestResults(prev => [...prev, foundContent ? `✅ Test 2: Found content in mock data` : `❌ Test 2: No content found in mock data`]);
+                    return foundContent;
+                }
+                
+                setTestResults(prev => [...prev, `❌ Test 2: No data object in mock structure`]);
+                return null;
+            };
+
+            // Test function 3: Test the actual data structure from console logs
+            const testRealDataStructure = () => {
+                console.log('🧪 Test 3: Testing real data structure pattern');
+                
+                // Simulate the structure we see in logs: all values are Array(3)
+                const realStructure = {
+                    success: [true, true, true],
+                    tool: ['PERPLEXITY', 'PERPLEXITY', 'PERPLEXITY'],
+                    queries: ['Whitney TX power plants', 'Brazos Electric Power infrastructure', 'CyrusOne Whitney TX power supply'],
+                    coordinates: [31.9315, -97.347, 0],
+                    data: [
+                        'Below is a reliability analysis for the top 5 most critical power infrastructure nodes near Whitney, Texas...',
+                        'some other data',
+                        'more data'
+                    ],
+                    timestamp: [1757033187250, 1757033187251, 1757033187252]
+                };
+                
+                // Test if the analysis is in the data array
+                let foundInDataArray = null;
+                if (Array.isArray(realStructure.data)) {
+                    realStructure.data.forEach((item, index) => {
+                        console.log(`🔍 data[${index}]:`, typeof item, item?.length || 'N/A');
+                        if (typeof item === 'string' && item.includes('## NODE')) {
+                            foundInDataArray = item;
+                            console.log(`🎯 Found analysis in data[${index}]!`);
+                        }
+                    });
+                }
+                
+                setTestResults(prev => [...prev, foundInDataArray ? `✅ Test 3: Analysis found in data array` : `❌ Test 3: No analysis in data array`]);
+                return foundInDataArray;
+            };
+
+            const runAllTests = () => {
+                setTestResults([]);
+                setParsedNodes([]);
+                console.clear();
+                
+                console.log('🧪 Starting Perplexity parsing tests...');
+                
+                // Run tests
+                testParseTableData();
+                testDataExtraction();
+                testRealDataStructure();
+            };
+
+            return (
+                <div>
+                    <h1 style={{ color: '#60a5fa', marginBottom: '20px' }}>Perplexity Parsing Test</h1>
+                    
+                    <div className="test-section">
+                        <div className="test-title">Test Controls</div>
+                        <button 
+                            onClick={runAllTests}
+                            style={{
+                                padding: '10px 20px',
+                                background: '#3b82f6',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: '6px',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            Run All Tests
+                        </button>
+                    </div>
+
+                    <div className="test-section">
+                        <div className="test-title">Test Results</div>
+                        <div className="console-output">
+                            {testResults.map((result, index) => (
+                                <div key={index}>{result}</div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="test-section">
+                        <div className="test-title">Parsed Nodes ({parsedNodes.length})</div>
+                        {parsedNodes.length > 0 ? (
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Node</th>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Power Score</th>
+                                        <th>Capacity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {parsedNodes.map(node => (
+                                        <tr key={node.id}>
+                                            <td>{node.id}</td>
+                                            <td>{node.name}</td>
+                                            <td>{node.type}</td>
+                                            <td>{node.powerScore}/10</td>
+                                            <td>{node.capacity}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        ) : (
+                            <div style={{ color: '#6b7280' }}>No nodes parsed yet. Click "Run All Tests" to start.</div>
+                        )}
+                    </div>
+
+                    <div className="test-section">
+                        <div className="test-title">Sample Response Preview</div>
+                        <div style={{ 
+                            background: 'rgba(0, 0, 0, 0.3)', 
+                            padding: '10px', 
+                            borderRadius: '4px',
+                            fontSize: '12px',
+                            maxHeight: '200px',
+                            overflow: 'auto'
+                        }}>
+                            {samplePerplexityResponse.substring(0, 1000)}...
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<PerplexityParsingTest />, document.getElementById('root'));
+    </script>
+</body>
+</html>

@@ -6,7 +6,6 @@ import CategoryToggleSkeleton from './CategoryToggleSkeleton';
 import LoadingCard from './LoadingCard';
 import GeoAIChangeSummaryCard from './GeoAIChangeSummaryCard';
 import { getLocationDisplayName } from '../../../../config/geographicConfig.js';
-import { formatTexasDataCenterForCard } from '../TexasDataCentersLayer';
 import { useIsMobile } from '../../../../hooks/useIsMobile';
 import { MOBILE_CONFIG } from '../../constants';
 import {
@@ -57,45 +56,6 @@ const AIQuestionsSection = ({
   const isMobile = useIsMobile(MOBILE_CONFIG.breakpoint);
   const responseCardWidth = isMobile ? '340px' : '320px';
   const responseCardRef = useRef(null);
-
-  // On mobile: scroll response card into view when marker response appears (match position of address search flow)
-  useEffect(() => {
-    if (!isMobile || !aiState.responses?.length) return;
-    const latest = aiState.responses[aiState.responses.length - 1];
-    const meta = latest?.metadata || {};
-    if (meta.responseType !== 'texas_data_center_detail') return;
-    const t = setTimeout(() => {
-      responseCardRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'end' });
-    }, 100);
-    return () => clearTimeout(t);
-  }, [isMobile, aiState.responses?.length, aiState.responses]);
-
-  // Listen for Texas Data Center marker clicks and show them in the AI response card.
-  useEffect(() => {
-    if (!window.mapEventBus || !addResponse) return;
-    const handleTexasDCShowInCard = (data) => {
-      const props = data?.properties;
-      if (!props) return;
-      const content = formatTexasDataCenterForCard(props);
-      addResponse({
-        response: content,
-        content,
-        query: `Texas Data Center: ${props.project_name || 'Project'}`,
-        citations: [],
-        isLoading: false,
-        metadata: {
-          responseType: 'texas_data_center_detail',
-          source: 'texas-data-centers',
-          projectId: props.project_id,
-          properties: props,
-          coordinates: data?.coordinates,
-          timestamp: Date.now()
-        }
-      });
-    };
-    const unsubscribe = window.mapEventBus.on('texas-data-center:showInCard', handleTexasDCShowInCard);
-    return () => { if (unsubscribe) unsubscribe(); };
-  }, [addResponse]);
 
   // Listen for ERCOT County selection and show county data in response card
   useEffect(() => {
@@ -624,7 +584,6 @@ const AIQuestionsSection = ({
           return (
             <div 
               key={index}
-              ref={isMobile && responseMeta.responseType === 'texas_data_center_detail' ? responseCardRef : undefined}
               style={{
                 background: 'rgba(30, 41, 59, 0.95)',
                 backdropFilter: 'blur(20px)',
@@ -632,14 +591,10 @@ const AIQuestionsSection = ({
                 borderRadius: '12px',
                 padding: responseMeta.responseType === 'location_search'
                   ? '10px 12px'
-                  : responseMeta.responseType === 'texas_data_center_detail'
-                    ? '8px 10px'
-                    : '16px',
+                  : '16px',
                 paddingBottom: responseMeta.responseType === 'location_search'
                   ? '10px'
-                  : responseMeta.responseType === 'texas_data_center_detail'
-                    ? '8px'
-                    : '16px',
+                  : '16px',
                 marginBottom: index === aiState.responses.length - 1 ? '24px' : '12px',
                 marginTop: '0px',
                 boxShadow: viewMode === 'node' ? '0 0 12px rgba(139, 92, 246, 0.2)' : '0 8px 32px rgba(0, 0, 0, 0.1)',

@@ -7,7 +7,6 @@ import { MapContainer, ToggleButton } from './styles/MapStyles';
 import { useAIConsensusAnimation } from './hooks/useAIConsensusAnimation';
 import { useMapInitialization } from './hooks/useMapInitialization';
 import { PopupManager } from './components/PopupManager';
-import { getTexasCardsForScene } from './components/Cards';
 import { 
     highlightPOIBuildings,
     initializeRoadGrid,
@@ -43,10 +42,8 @@ const PlanningAnalysisLayer = React.lazy(() => import('./components/PlanningAnal
 const AITransmissionNav = React.lazy(() => import('./components/AITransmissionNav'));
 const HIFLDTransmissionLayer = React.lazy(() => import('./components/HIFLDTransmissionLayer'));
 const ERCOTGISReportsLayer = React.lazy(() => import('./components/ERCOTGISReportsLayer'));
-const ERCOTCountiesLayer = React.lazy(() => import('./components/ERCOTCountiesLayer'));
 const ProducerConsumerCountiesLayer = React.lazy(() => import('./components/ProducerConsumerCountiesLayer'));
 const SpatialMismatchCountiesLayer = React.lazy(() => import('./components/SpatialMismatchCountiesLayer'));
-const TexasDataCentersLayer = React.lazy(() => import('./components/TexasDataCentersLayer'));
 const REITLayer = React.lazy(() => import('./components/REITLayer'));
 
 
@@ -383,26 +380,19 @@ const MapComponent = () => {
   // HIFLD US Power Grid Transmission Layer State
   const [showHIFLDTransmission, setShowHIFLDTransmission] = useState(false);
 
-  // Texas Data Centers Layer State
-  const [showTexasDataCenters, setShowTexasDataCenters] = useState(false);
   const [showREIT, setShowREIT] = useState(false);
 
   // ERCOT / Texas power layers (from Tx DRAFT)
   const [showERCOTGISReports, setShowERCOTGISReports] = useState(false);
-  const [showERCOTCounties, setShowERCOTCounties] = useState(false);
   const [showProducerConsumerCounties, setShowProducerConsumerCounties] = useState(false);
   const [showSpatialMismatchCounties, setShowSpatialMismatchCounties] = useState(false);
 
-  // Staggered layer mount: Producer/Consumer, Spatial Mismatch, Texas Data Centers (REIT stays off)
-  // ERCOT Counties starts immediately — it is the primary data layer and its 15 MB GeoJSON
-  // must not race with any other deferred fetch.
+  // Staggered layer mount: Producer/Consumer, Spatial Mismatch (REIT stays off)
   useEffect(() => {
-    setShowERCOTCounties(true);
-    const delays = [400, 800, 1200]; // ms after app load
+    const delays = [400, 800]; // ms after app load
     const timers = [
       setTimeout(() => setShowProducerConsumerCounties(true), delays[0]),
-      setTimeout(() => setShowSpatialMismatchCounties(true), delays[1]),
-      setTimeout(() => setShowTexasDataCenters(true), delays[2])
+      setTimeout(() => setShowSpatialMismatchCounties(true), delays[1])
     ];
     return () => timers.forEach(t => clearTimeout(t));
   }, []);
@@ -544,8 +534,7 @@ const MapComponent = () => {
   // Load default cards for scene-0 when component mounts
   useEffect(() => {
     if (showCards && activeCards.length === 0) {
-      const defaultCards = getTexasCardsForScene('scene-0');
-      setActiveCards(defaultCards);
+      setActiveCards([]);
     }
   }, [showCards, activeCards.length]);
   
@@ -690,8 +679,6 @@ const MapComponent = () => {
     if (typeof window === 'undefined' || !window.mapEventBus) return;
 
     const handleEnsureLayers = (payload = {}) => {
-      if (payload.showTexasDataCenters !== undefined) setShowTexasDataCenters(Boolean(payload.showTexasDataCenters));
-      if (payload.showERCOTCounties !== undefined) setShowERCOTCounties(Boolean(payload.showERCOTCounties));
       if (payload.showERCOTGISReports !== undefined) setShowERCOTGISReports(Boolean(payload.showERCOTGISReports));
       if (payload.showProducerConsumerCounties !== undefined) setShowProducerConsumerCounties(Boolean(payload.showProducerConsumerCounties));
       if (payload.showSpatialMismatchCounties !== undefined) setShowSpatialMismatchCounties(Boolean(payload.showSpatialMismatchCounties));
@@ -704,8 +691,6 @@ const MapComponent = () => {
       window.mapEventBus?.off('map:ensure-layers', handleEnsureLayers);
     };
   }, [
-    setShowTexasDataCenters,
-    setShowERCOTCounties,
     setShowERCOTGISReports,
     setShowProducerConsumerCounties,
     setShowSpatialMismatchCounties,
@@ -713,23 +698,6 @@ const MapComponent = () => {
     setShowMainRoads
   ]);
 
-  // Ensure Texas Data Centers layer is visible before opening a project popup.
-  useEffect(() => {
-    if (typeof window === 'undefined' || !window.mapEventBus) return;
-
-    const handleDataCenterShowPopup = (payload) => {
-      if (!payload?.project_id || showTexasDataCenters) return;
-      setShowTexasDataCenters(true);
-      setTimeout(() => {
-        window.mapEventBus?.emit('data-center:show-popup', payload);
-      }, 250);
-    };
-
-    window.mapEventBus.on('data-center:show-popup', handleDataCenterShowPopup);
-    return () => {
-      window.mapEventBus?.off('data-center:show-popup', handleDataCenterShowPopup);
-    };
-  }, [showTexasDataCenters, setShowTexasDataCenters]);
 
   // Helper functions to generate realistic infrastructure data based on node properties
   const generateInfrastructureCount = (nodeData, type) => {
@@ -2639,10 +2607,8 @@ const MapComponent = () => {
         <Suspense fallback={null}>
           <HIFLDTransmissionLayer key={`hifld-${mapThemeStyleKey}`} map={map} visible={!!showHIFLDTransmission} />
           <ERCOTGISReportsLayer key={`ercot-reports-${mapThemeStyleKey}`} map={map} visible={!!showERCOTGISReports} />
-          <ERCOTCountiesLayer key={`ercot-counties-${mapThemeStyleKey}`} map={map} visible={!!showERCOTCounties} />
           <ProducerConsumerCountiesLayer key={`producer-consumer-${mapThemeStyleKey}`} map={map} visible={!!showProducerConsumerCounties} />
           <SpatialMismatchCountiesLayer key={`spatial-mismatch-${mapThemeStyleKey}`} map={map} visible={!!showSpatialMismatchCounties} />
-          <TexasDataCentersLayer key={`tx-dc-${mapThemeStyleKey}`} map={map} visible={!!showTexasDataCenters} mapTheme={mapTheme} />
           <REITLayer key={`reit-${mapThemeStyleKey}`} map={map} visible={!!showREIT} />
         </Suspense>
       )}
@@ -2705,19 +2671,14 @@ const MapComponent = () => {
           
           showHIFLDTransmission={showHIFLDTransmission}
           setShowHIFLDTransmission={setShowHIFLDTransmission}
-          // Texas Data Centers Layer State
-          showTexasDataCenters={showTexasDataCenters}
-          setShowTexasDataCenters={setShowTexasDataCenters}
-          
+
           // REIT Properties Layer State
           showREIT={showREIT}
           setShowREIT={setShowREIT}
-          
+
           // ERCOT / Texas power layers
           showERCOTGISReports={showERCOTGISReports}
           setShowERCOTGISReports={setShowERCOTGISReports}
-          showERCOTCounties={showERCOTCounties}
-          setShowERCOTCounties={setShowERCOTCounties}
           showProducerConsumerCounties={showProducerConsumerCounties}
           setShowProducerConsumerCounties={setShowProducerConsumerCounties}
           showSpatialMismatchCounties={showSpatialMismatchCounties}

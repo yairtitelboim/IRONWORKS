@@ -5,7 +5,6 @@ import { createStartupEcosystemToolExecutor, setGlobalToolExecutor, getGlobalToo
 import { cleanExpiredResponseCache } from '../utils/ResponseCache';
 import { getGeographicConfig } from '../config/geographicConfig.js';
 import { geocodeQuery } from '../utils/geocodeQuery';
-import { getTexasPrecomputedInsight } from '../utils/txQuestionInsights';
 import { logEvent } from '../services/analyticsApi';
 import {
   buildLocationSearchMetadataFromPrecomputedCluster,
@@ -1081,121 +1080,6 @@ export const useAIQuery = (map, updateToolFeedback, handleMarkerClick = null, lo
       return;
     }
 
-    // Texas precomputed question path (deterministic local datasets, no remote AI dependency)
-    if (
-      questionData.id === 'largest_tx_data_center_cluster' ||
-      questionData.id === 'tx_opposition_hotspot' ||
-      questionData.id === 'best_tx_low_risk_corridor'
-    ) {
-      updateResponseOnly(queryId, null, [], true);
-      try {
-        const insight = await getTexasPrecomputedInsight(questionData.id);
-        if (!insight) {
-          throw new Error(`No precomputed insight mapped for ${questionData.id}`);
-        }
-
-        let responseContent = insight.content;
-        let responseMetadata = insight.metadata || null;
-
-        // Render the cluster question as a location_search card so Opposition/Cluster Map UI is available.
-        if (questionData.id === 'largest_tx_data_center_cluster' && Array.isArray(insight.metadata?.coordinates)) {
-          responseMetadata = buildLocationSearchMetadataFromPrecomputedCluster({
-            insightMetadata: insight.metadata,
-            query: questionData.text || questionData.id
-          });
-          responseContent = formatLocationSearchResponseContent(
-            responseMetadata.coordinates,
-            responseMetadata.displayName || 'Texas Cluster Focus'
-          );
-        }
-
-        updateResponseOnly(queryId, responseContent, insight.citations || [], false, {
-          metadata: responseMetadata
-        });
-
-        const ensureLayers = insight.mapAction?.ensureLayers;
-        if (ensureLayers && window.mapEventBus) {
-          window.mapEventBus.emit('map:ensure-layers', ensureLayers);
-        }
-
-        if (insight.mapAction?.focusProjectId && window.mapEventBus) {
-          window.mapEventBus.emit('data-center:show-popup', {
-            project_id: insight.mapAction.focusProjectId
-          });
-        }
-
-        if (
-          questionData.id === 'largest_tx_data_center_cluster' &&
-          map?.current &&
-          Array.isArray(insight.mapAction?.coordinates)
-        ) {
-          const [targetLng, targetLat] = insight.mapAction.coordinates;
-          const mapInstance = map.current;
-          const targetCenter = [targetLng, targetLat];
-
-          const triggerPowerCircleAfterLanding = () => {
-            if (typeof window !== 'undefined' && window.mapEventBus) {
-              window.mapEventBus.emit('power-circle:activate', {
-                center: targetCenter,
-                address: responseMetadata?.displayName || 'Texas Cluster Focus',
-                coordinates: targetCenter,
-                source: 'location_search'
-              });
-            }
-          };
-
-          const triggerClusterCardAutoOpen = () => {
-            if (typeof window !== 'undefined' && window.mapEventBus) {
-              window.mapEventBus.emit('opposition:cluster-map:auto-open', {
-                source: 'largest_tx_data_center_cluster',
-                coordinates: targetCenter,
-                skipPowerCircle: true,
-                radius: 5
-              });
-            }
-          };
-
-          const onMoveEnd = () => {
-            mapInstance.off('moveend', onMoveEnd);
-            setTimeout(() => {
-              triggerPowerCircleAfterLanding();
-              setTimeout(triggerClusterCardAutoOpen, 1000);
-            }, 1000);
-          };
-
-          mapInstance.on('moveend', onMoveEnd);
-          mapInstance.flyTo({
-            center: targetCenter,
-            zoom: 11.5,
-            duration: 1100,
-            essential: true
-          });
-        } else if (
-          Array.isArray(insight.mapAction?.coordinates) &&
-          map?.current &&
-          questionData.id !== 'largest_tx_data_center_cluster'
-        ) {
-          map.current.flyTo({
-            center: insight.mapAction.coordinates,
-            zoom: questionData.id === 'best_tx_low_risk_corridor' ? 7.5 : 9.5,
-            duration: 900
-          });
-        }
-
-      } catch (error) {
-        const fallback = `## Texas Insight Unavailable\n\nCould not compute this local insight right now: ${error.message || 'Unknown error'}`;
-        updateResponseOnly(queryId, fallback, [], false, {
-          metadata: {
-            responseType: 'tx_precomputed_error',
-            source: 'local_precomputed',
-            questionId: questionData.id,
-            timestamp: Date.now()
-          }
-        });
-      }
-      return;
-    }
-    
     // Check complete workflow cache first (highest priority)
     const workflowCache = getWorkflowCache(questionData.id, simpleLocationKey, coordinates);
     console.log('🔍 Workflow cache check:', {

@@ -16,13 +16,9 @@ import { NeighborhoodPopup } from './NeighborhoodPopup';
 import { setMainRoadsEmphasis } from '../../../utils/mapStyleController';
 import { useIsMobile } from '../../../hooks/useIsMobile';
 import { logEvent } from '../../../services/analyticsApi';
-import { fetchTexasDataCentersGeoJson, TEXAS_DATA_CENTERS_DATASET_VERSION } from '../../../utils/texasDataCentersDataset';
-
 const HIFLDTransmissionLayer = React.lazy(() => import('./HIFLDTransmissionLayer'));
-const TexasDataCentersLayer = React.lazy(() => import('./TexasDataCentersLayer'));
 const REITLayer = React.lazy(() => import('./REITLayer'));
 const ERCOTGISReportsLayer = React.lazy(() => import('./ERCOTGISReportsLayer'));
-const ERCOTCountiesLayer = React.lazy(() => import('./ERCOTCountiesLayer'));
 const ProducerConsumerCountiesLayer = React.lazy(() => import('./ProducerConsumerCountiesLayer'));
 const SpatialMismatchCountiesLayer = React.lazy(() => import('./SpatialMismatchCountiesLayer'));
 
@@ -47,12 +43,8 @@ const LayerToggle = forwardRef(({
   setShowDevelopmentPotential,
   showHIFLDTransmission,
   setShowHIFLDTransmission,
-  showTexasDataCenters,
-  setShowTexasDataCenters,
   showREIT,
   setShowREIT,
-  showERCOTCounties,
-  setShowERCOTCounties,
   showERCOTGISReports,
   setShowERCOTGISReports,
   showProducerConsumerCounties,
@@ -66,14 +58,13 @@ const LayerToggle = forwardRef(({
   const [selectedNeighborhood, setSelectedNeighborhood] = useState(null);
   const [neighborhoodMarkers, setNeighborhoodMarkers] = useState(null);
   const [isSceneSidebarOpen, setIsSceneSidebarOpen] = useState(false);
-  const [texasDataCenterCount, setTexasDataCenterCount] = useState(null);
   const isMobile = useIsMobile();
 
   const prevLayersRef = React.useRef(null);
   useEffect(() => {
     const current = {
-      roads: showMainRoads, hifld: showHIFLDTransmission, dataCenters: showTexasDataCenters,
-      reit: showREIT, ercotCounties: showERCOTCounties, ercotGIS: showERCOTGISReports,
+      roads: showMainRoads, hifld: showHIFLDTransmission,
+      reit: showREIT, ercotGIS: showERCOTGISReports,
       producerConsumer: showProducerConsumerCounties, spatialMismatch: showSpatialMismatchCounties,
       flow: !!showRoadParticles,
     };
@@ -86,8 +77,8 @@ const LayerToggle = forwardRef(({
       }
     }
     prevLayersRef.current = current;
-  }, [showMainRoads, showHIFLDTransmission, showTexasDataCenters, showREIT,
-      showERCOTCounties, showERCOTGISReports, showProducerConsumerCounties,
+  }, [showMainRoads, showHIFLDTransmission, showREIT,
+      showERCOTGISReports, showProducerConsumerCounties,
       showSpatialMismatchCounties, showRoadParticles]);
 
   useEffect(() => {
@@ -101,9 +92,7 @@ const LayerToggle = forwardRef(({
         showAdaptiveReuse,
         showDevelopmentPotential,
         showHIFLDTransmission,
-        showTexasDataCenters,
         showREIT,
-        showERCOTCounties,
         showERCOTGISReports,
         showProducerConsumerCounties,
         showSpatialMismatchCounties,
@@ -119,9 +108,7 @@ const LayerToggle = forwardRef(({
     showAdaptiveReuse,
     showDevelopmentPotential,
     showHIFLDTransmission,
-    showTexasDataCenters,
     showREIT,
-    showERCOTCounties,
     showERCOTGISReports,
     showProducerConsumerCounties,
     showSpatialMismatchCounties,
@@ -134,25 +121,6 @@ const LayerToggle = forwardRef(({
     setMainRoadsEmphasis(map.current, showMainRoads);
   }, [map, showMainRoads]);
 
-  useEffect(() => {
-    let cancelled = false;
-    const loadTexasDataCenterCount = async () => {
-      try {
-        const response = await fetchTexasDataCentersGeoJson();
-        if (!response.ok) throw new Error(`Failed with status ${response.status}`);
-        const data = await response.json();
-        const count = Array.isArray(data?.features) ? data.features.length : null;
-        if (!cancelled) setTexasDataCenterCount(Number.isFinite(Number(count)) ? Number(count) : null);
-      } catch {
-        if (!cancelled) setTexasDataCenterCount(null);
-      }
-    };
-    void loadTexasDataCenterCount();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
   useImperativeHandle(ref, () => ({
     updateLayerStates: (newStates) => {
       try {
@@ -163,9 +131,7 @@ const LayerToggle = forwardRef(({
         if (newStates.showAdaptiveReuse !== undefined) setShowAdaptiveReuse(newStates.showAdaptiveReuse);
         if (newStates.showDevelopmentPotential !== undefined) setShowDevelopmentPotential(newStates.showDevelopmentPotential);
         if (newStates.showHIFLDTransmission !== undefined) setShowHIFLDTransmission(newStates.showHIFLDTransmission);
-        if (newStates.showTexasDataCenters !== undefined) setShowTexasDataCenters(newStates.showTexasDataCenters);
         if (newStates.showREIT !== undefined) setShowREIT(newStates.showREIT);
-        if (newStates.showERCOTCounties !== undefined) setShowERCOTCounties(newStates.showERCOTCounties);
         if (newStates.showERCOTGISReports !== undefined) setShowERCOTGISReports(newStates.showERCOTGISReports);
         if (newStates.showProducerConsumerCounties !== undefined) setShowProducerConsumerCounties(newStates.showProducerConsumerCounties);
         if (newStates.showSpatialMismatchCounties !== undefined) setShowSpatialMismatchCounties(newStates.showSpatialMismatchCounties);
@@ -182,9 +148,7 @@ const LayerToggle = forwardRef(({
     setShowAdaptiveReuse,
     setShowDevelopmentPotential,
     setShowHIFLDTransmission,
-    setShowTexasDataCenters,
     setShowREIT,
-    setShowERCOTCounties,
     setShowERCOTGISReports,
     setShowProducerConsumerCounties,
     setShowSpatialMismatchCounties,
@@ -312,28 +276,6 @@ const LayerToggle = forwardRef(({
         <ERCOTGISReportsLayer map={map} visible={!!showERCOTGISReports} />
 
         <CategorySection>
-          <CategoryHeader onClick={() => setShowERCOTCounties(v => !v)} style={{ cursor: 'pointer' }}>
-            <CategoryIcon>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
-                <path d="M3 3h18v18H3z" />
-                <path d="M3 9h18M9 3v18" />
-              </svg>
-            </CategoryIcon>
-            <CategoryTitle>ERCOT Counties</CategoryTitle>
-            <ToggleSwitch>
-              <input
-                type="checkbox"
-                checked={!!showERCOTCounties}
-                onClick={e => e.stopPropagation()}
-                onChange={() => setShowERCOTCounties(v => !v)}
-              />
-              <span></span>
-            </ToggleSwitch>
-          </CategoryHeader>
-        </CategorySection>
-        <ERCOTCountiesLayer map={map} visible={!!showERCOTCounties} />
-
-        <CategorySection>
           <CategoryHeader onClick={() => setShowProducerConsumerCounties(v => !v)} style={{ cursor: 'pointer' }}>
             <CategoryIcon>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
@@ -403,7 +345,7 @@ const LayerToggle = forwardRef(({
               </div>
             </div>
             <div style={{ fontSize: '11px', color: '#9CA3AF', lineHeight: 1.4 }}>
-              Texas marker dataset: {Number.isFinite(texasDataCenterCount) ? texasDataCenterCount.toLocaleString() : '...'} tracked projects (dataset version {TEXAS_DATA_CENTERS_DATASET_VERSION}).
+              Spatial mismatch between generation sources and data center demand across Texas counties.
             </div>
           </div>
         )}
@@ -429,29 +371,6 @@ const LayerToggle = forwardRef(({
         </CategorySection>
         <REITLayer map={map} visible={!!showREIT} />
 
-        <CategorySection>
-          <CategoryHeader onClick={() => setShowTexasDataCenters(v => !v)} style={{ cursor: 'pointer' }}>
-            <CategoryIcon>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="24" height="24">
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <path d="M8 21h8" />
-                <path d="M12 17v4" />
-                <circle cx="12" cy="8" r="1" />
-              </svg>
-            </CategoryIcon>
-            <CategoryTitle>Texas Data Centers</CategoryTitle>
-            <ToggleSwitch>
-              <input
-                type="checkbox"
-                checked={!!showTexasDataCenters}
-                onClick={e => e.stopPropagation()}
-                onChange={() => setShowTexasDataCenters(v => !v)}
-              />
-              <span></span>
-            </ToggleSwitch>
-          </CategoryHeader>
-        </CategorySection>
-        <TexasDataCentersLayer map={map} visible={!!showTexasDataCenters} mapTheme={mapTheme} />
       </LayerToggleContainer>
 
       {!isMobile && (
@@ -473,10 +392,8 @@ const LayerToggle = forwardRef(({
           showParks,
           showHIFLDTransmission,
           showERCOTGISReports,
-          showERCOTCounties,
           showProducerConsumerCounties,
           showSpatialMismatchCounties,
-          showTexasDataCenters,
           showREIT,
         }}
         onLoadScene={(sceneLayerStates) => {
@@ -484,10 +401,8 @@ const LayerToggle = forwardRef(({
           if (sceneLayerStates.showParks !== undefined) setShowParks(sceneLayerStates.showParks);
           if (sceneLayerStates.showHIFLDTransmission !== undefined) setShowHIFLDTransmission(sceneLayerStates.showHIFLDTransmission);
           if (sceneLayerStates.showERCOTGISReports !== undefined) setShowERCOTGISReports(sceneLayerStates.showERCOTGISReports);
-          if (sceneLayerStates.showERCOTCounties !== undefined) setShowERCOTCounties(sceneLayerStates.showERCOTCounties);
           if (sceneLayerStates.showProducerConsumerCounties !== undefined) setShowProducerConsumerCounties(sceneLayerStates.showProducerConsumerCounties);
           if (sceneLayerStates.showSpatialMismatchCounties !== undefined) setShowSpatialMismatchCounties(sceneLayerStates.showSpatialMismatchCounties);
-          if (sceneLayerStates.showTexasDataCenters !== undefined) setShowTexasDataCenters(sceneLayerStates.showTexasDataCenters);
           if (sceneLayerStates.showREIT !== undefined) setShowREIT(sceneLayerStates.showREIT);
         }}
         isOpen={isSceneSidebarOpen}

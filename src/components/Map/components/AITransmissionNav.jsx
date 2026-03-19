@@ -7,11 +7,9 @@ import browserOptimizations from '../utils/browserOptimizations';
 import PerformanceMonitor from '../utils/PerformanceMonitor';
 import AnimationBatcher from '../utils/AnimationBatcher';
 import ScenePopupManager from './ScenePopupManager';
-import { getTexasCardsForScene } from './Cards/config/TexasCardConfig';
 import sceneBackupManager from '../../../utils/sceneBackupManager';
 import { loadDefaultScenes, forceLoadDefaultScenes } from '../../../utils/defaultScenes';
 import { mapBus } from '../../../utils/mapBus';
-import { fetchTexasDataCentersGeoJson } from '../../../utils/texasDataCentersDataset';
 import MarketSignal from './marketSignal';
 // Task animation CSS
 const taskAnimationStyles = `
@@ -1435,12 +1433,7 @@ const AITransmissionNav = ({
     // Add card system methods
     window.mapComponent.cards = {
       showCards: (sceneId) => {
-        // Import the card function dynamically to avoid circular dependencies
-        import('./Cards/config/TexasCardConfig').then(({ getTexasCardsForScene }) => {
-          const cards = getTexasCardsForScene(sceneId);
-          // Emit event for main map component to show cards
-          window.mapEventBus.emit('cards:show', { sceneId, cards });
-        });
+        window.mapEventBus.emit('cards:show', { sceneId, cards: [] });
       },
       hideCards: () => {
         window.mapEventBus.emit('cards:hide');
@@ -1510,46 +1503,7 @@ const AITransmissionNav = ({
     const success = await playScene(sceneId);
     
     if (success) {
-      // Find the scene to get its name for card lookup
-      const scene = scenes.find(s => s.id === sceneId);
-      if (scene) {
-        // Find the scene index (workflow index) for card mapping
-        const sceneIndex = scenes.findIndex(s => s.id === sceneId);
-        
-        // Use the new Texas card system
-        let dynamicCards = null;
-        
-        // Strategy 1: Use scene index (scene-0, scene-1, etc.)
-        if (sceneIndex >= 0) {
-          dynamicCards = getTexasCardsForScene(`scene-${sceneIndex}`);
-        }
-        
-        // Strategy 2: Use scene name as key
-        if (!dynamicCards || dynamicCards.length === 0) {
-          dynamicCards = getTexasCardsForScene(scene.name);
-        }
-        
-        // Strategy 3: Use scene ID
-        if (!dynamicCards || dynamicCards.length === 0) {
-          dynamicCards = getTexasCardsForScene(sceneId);
-        }
-        
-        // Strategy 4: Try common scene name patterns
-        if (!dynamicCards || dynamicCards.length === 0) {
-          const sceneName = scene.name.toLowerCase().replace(/\s+/g, '-');
-          dynamicCards = getTexasCardsForScene(sceneName);
-        }
-        
-        // Show cards using the new card system
-        if (dynamicCards && dynamicCards.length > 0) {
-          setTimeout(() => {
-            // Use the new card system via window.mapComponent.cards
-            if (window.mapComponent?.cards?.showCards) {
-              window.mapComponent.cards.showCards(`scene-${sceneIndex}`);
-            }
-          }, 2000); // 2 second delay to let scene transition complete
-        }
-      }
+      // Scene played successfully
     }
     
     // Clear playing state
@@ -1697,50 +1651,6 @@ const AITransmissionNav = ({
     };
   }, []);
 
-  // Load Texas Data Centers projects
-  useEffect(() => {
-    if (!isOpen) return;
-    
-    const loadProjects = async () => {
-      setIsLoadingProjects(true);
-      try {
-        const response = await fetchTexasDataCentersGeoJson();
-        if (!response.ok) throw new Error('Failed to fetch projects');
-        const data = await response.json();
-        const features = data.features || [];
-        
-        // Sort: projects with real company name first, then "Unknown" or missing companies at the bottom
-        const sortedFeatures = [...features].sort((a, b) => {
-          const aCompany = a.properties?.company?.trim() || '';
-          const bCompany = b.properties?.company?.trim() || '';
-          
-          // Check if company is a real company (not empty, not "Unknown")
-          const aHasRealCompany = aCompany !== '' && aCompany.toLowerCase() !== 'unknown';
-          const bHasRealCompany = bCompany !== '' && bCompany.toLowerCase() !== 'unknown';
-          
-          // If both have real company or both don't, maintain original order
-          if (aHasRealCompany === bHasRealCompany) {
-            return 0;
-          }
-          // If a has real company and b doesn't, a comes first
-          if (aHasRealCompany && !bHasRealCompany) {
-            return -1;
-          }
-          // If b has real company and a doesn't, b comes first
-          return 1;
-        });
-        
-        setDataCenterProjects(sortedFeatures);
-      } catch (error) {
-        console.error('Failed to load data center projects:', error);
-        setDataCenterProjects([]);
-      } finally {
-        setIsLoadingProjects(false);
-      }
-    };
-    
-    loadProjects();
-  }, [isOpen]);
 
   // Listen for marker clicks to highlight table rows
   useEffect(() => {

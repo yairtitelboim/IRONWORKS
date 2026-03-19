@@ -6,15 +6,6 @@ import LocationFocusBlock from './LocationFocusBlock';
 import NearbyDataCenterCarousel from './NearbyDataCenterCarousel';
 import Opposition from './opposition';
 import { createOncePerKeyEmitter, logEvent } from '../../../../services/analyticsApi';
-import {
-  fetchTexasDataCentersAddressSearchIndex,
-  fetchFacilityLatestSignals,
-  fetchFacilitySignalLinks
-} from '../../../../utils/texasDataCentersDataset';
-import {
-  deriveTexasDataCenterStatus,
-  formatTexasDataCenterStatusLabel
-} from '../../../../utils/texasDataCenterStatus';
 
 const SEARCH_MARKET_RADIUS_OPTIONS_MI = [15, 25, 50];
 const DEFAULT_SEARCH_MARKET_RADIUS_MI = SEARCH_MARKET_RADIUS_OPTIONS_MI[1];
@@ -225,31 +216,7 @@ const LocationSearchCard = ({
   const hasRealQueueMetrics = queueMetricsStatus === 'ready' && Number.isFinite(Number(queueMetrics?.activeQueueCount));
   const isTexasSupported = Boolean(isTexasSupportedAddress);
   const responseQuery = responseMetadata?.query || '';
-  const persistedSelectedDataCenter = useMemo(() => {
-    const isTexasDataCenterDetail = responseMetadata?.responseType === 'texas_data_center_detail';
-    const metadataProps = responseMetadata?.properties;
-    const metadataCoords = Array.isArray(responseMetadata?.coordinates) ? responseMetadata.coordinates : null;
-    if (
-      isTexasDataCenterDetail &&
-      metadataProps &&
-      (metadataProps.project_id || metadataProps.project_name || metadataProps.company)
-    ) {
-      return {
-        ...metadataProps,
-        _coordinates: metadataCoords || metadataProps._coordinates || null
-      };
-    }
-    if (isTexasDataCenterDetail && typeof window !== 'undefined') {
-      const fallback = window.__lastSelectedTexasDataCenterCardPayload;
-      if (fallback?.properties) {
-        return {
-          ...fallback.properties,
-          _coordinates: Array.isArray(fallback.coordinates) ? fallback.coordinates : fallback.properties._coordinates || null
-        };
-      }
-    }
-    return null;
-  }, [responseMetadata]);
+  const persistedSelectedDataCenter = null;
 
   const previewModel = useMemo(() => {
     const latSeed = lat != null ? Math.abs(Math.round(Number(lat) * 1000)) : 0;
@@ -1448,138 +1415,10 @@ const LocationSearchCard = ({
     let cancelled = false;
 
     const loadNearbySites = async () => {
-      setNearbySites([]);
-      setAllNearbySites([]);
-      setNearbySitesLoading(true);
-      console.log('[LocationSearchCard] loadNearbySites start', {
-        baseDisplayName,
-        lat,
-        lng
-      });
-      try {
-        const response = await fetchTexasDataCentersAddressSearchIndex();
-        if (!response.ok) {
-          if (!cancelled) setNearbySites([]);
-          return;
-        }
-
-        const contentType = String(response.headers.get('content-type') || '').toLowerCase();
-        if (!contentType.includes('json') && !contentType.includes('geo+json')) {
-          if (!cancelled) setNearbySites([]);
-          return;
-        }
-
-        const [dataset, latestSignalsDataset, signalLinksDataset] = await Promise.all([
-          response.json(),
-          fetchFacilityLatestSignals().catch(() => null),
-          fetchFacilitySignalLinks().catch(() => null)
-        ]);
-        const facilities = Array.isArray(dataset?.facilities) ? dataset.facilities : [];
-        const latestSignalsByProjectId = latestSignalsDataset?.by_project_id || {};
-        const signalLinksByProjectId = signalLinksDataset?.by_project_id || {};
-        const basePlaceKey = normalizePlaceKey((baseDisplayName || responseMetadata?.query || '').split(',')[0]);
-
-        const resolved = facilities
-          .map((facility) => {
-            const siteLat = facility?.latitude;
-            const siteLng = facility?.longitude;
-            const hasCoords = siteLat != null
-              && siteLng != null
-              && Number.isFinite(Number(siteLat))
-              && Number.isFinite(Number(siteLng))
-              && Number(siteLat) !== 0
-              && Number(siteLng) !== 0;
-            const distanceMi = hasCoords ? haversineMiles(lat, lng, Number(siteLat), Number(siteLng)) : null;
-            const display = String(facility?.display_name || '').trim() || 'Data center project';
-            const status = String(facility?.status_label || '').trim()
-              || formatTexasDataCenterStatusLabel(deriveTexasDataCenterStatus(facility));
-            const totalMw = Number(facility?.total_mw);
-            const installedMw = Number(facility?.installed_mw);
-            const projectId = facility?.project_id || null;
-            const latestSignal = projectId ? latestSignalsByProjectId?.[projectId] : null;
-            const signalLinks = projectId ? signalLinksByProjectId?.[projectId]?.links : null;
-            const facilityCityKey = normalizePlaceKey(facility?.city);
-            const facilityMarketKey = normalizePlaceKey(facility?.market);
-            const isPlaceFallback = !hasCoords
-              && basePlaceKey
-              && (facilityCityKey === basePlaceKey || facilityMarketKey === basePlaceKey);
-            const matchSource = hasCoords ? 'radius' : (isPlaceFallback ? 'place_fallback' : 'unmapped');
-
-            return {
-              lat: hasCoords ? Number(siteLat) : null,
-              lng: hasCoords ? Number(siteLng) : null,
-              distanceMi,
-              projectId,
-              displayName: display,
-              status,
-              owner: null,
-              location: [facility?.city, facility?.county].filter(Boolean).join(', ') || facility?.city || facility?.county || null,
-              sizeMw: Number.isFinite(totalMw) ? totalMw : null,
-              totalMw: Number.isFinite(totalMw) ? totalMw : null,
-              installedMw: Number.isFinite(installedMw) ? installedMw : null,
-              plannedMw: Number.isFinite(Number(facility?.planned_mw)) ? Number(facility.planned_mw) : null,
-              announcedDate: null,
-              articleTitle: latestSignal?.headline || null,
-              sourceUrl: latestSignal?.url || null,
-              sourceName: latestSignal?.source || null,
-              publishedAt: latestSignal?.published_at || null,
-              latestSignalKind: latestSignal?.kind || null,
-              latestSignalReason: latestSignal?.reason || null,
-              latestSignalSummary: latestSignal?.summary || null,
-              latestSignalGemini: latestSignal?.gemini || null,
-              signalLinks: Array.isArray(signalLinks)
-                ? signalLinks.filter((link) => link && link.excluded !== true)
-                : [],
-              sourceCount: null,
-              probabilityScore: null,
-              dataSource: 'address_search_index',
-              statusConfidence: null,
-              geocodeConfidence: null,
-              city: facility?.city || null,
-              county: facility?.county || null,
-              tenant: facility?.tenant || null,
-              endUser: facility?.end_user || null,
-              powerSource: facility?.power_source || null,
-              type: facility?.type || null,
-              typeLabel: facility?.type_label || null,
-              matchSource
-            };
-          })
-          .filter(Boolean)
-          .sort((a, b) => {
-            const aDistance = Number.isFinite(Number(a.distanceMi)) ? Number(a.distanceMi) : Number.POSITIVE_INFINITY;
-            const bDistance = Number.isFinite(Number(b.distanceMi)) ? Number(b.distanceMi) : Number.POSITIVE_INFINITY;
-            return aDistance - bDistance;
-          });
-
-        const nearbyResolved = resolved
-          .filter((site) => site.matchSource === 'radius')
-          .slice(0, 12)
-          .map((site, index) => ({ ...site, rank: index + 1 }));
-
-        if (!cancelled) {
-          setAllNearbySites(resolved);
-          setNearbySites(nearbyResolved);
-          console.log('[LocationSearchCard] loadNearbySites resolved', {
-            baseDisplayName,
-            resolvedCount: resolved.length,
-            nearbyResolvedCount: nearbyResolved.length,
-            firstNearby: nearbyResolved.slice(0, 5).map((site) => ({
-              displayName: site?.displayName || null,
-              city: site?.city || null,
-              distanceMi: site?.distanceMi ?? null,
-              matchSource: site?.matchSource || null
-            }))
-          });
-          emitAnalyticsEventRef.current?.('nearby_sites_shown', { count: nearbyResolved.length, source: 'texas_data_centers' });
-        }
-      } catch {
-        if (!cancelled) {
-          setNearbySites([]);
-          setAllNearbySites([]);
-        }
-      } finally {
-        if (!cancelled) setNearbySitesLoading(false);
+      if (!cancelled) {
+        setNearbySites([]);
+        setAllNearbySites([]);
+        setNearbySitesLoading(false);
       }
     };
 

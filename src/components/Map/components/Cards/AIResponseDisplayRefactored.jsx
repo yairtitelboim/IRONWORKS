@@ -34,7 +34,6 @@ import {
   Cell
 } from 'recharts';
 import LocationSearchCard from './LocationSearchCard';
-import TexasDataCenterCard from './TexasDataCenterCard';
 import { MOBILE_CONFIG } from '../../constants';
 import MarketSignal from '../marketSignal';
 
@@ -246,7 +245,6 @@ const AIResponseDisplay = ({
 
       const isLocationContext =
         responseMetadata?.responseType === 'location_search' ||
-        responseMetadata?.responseType === 'texas_data_center_detail' ||
         responseMetadata?.responseType === 'ercot_county_detail';
 
       const coords = Array.isArray(responseMetadata?.coordinates) ? responseMetadata.coordinates : [];
@@ -356,13 +354,10 @@ const AIResponseDisplay = ({
   }, [fetchDailyMotion]);
 
   const shouldRenderMarketSignal = (() => {
-    const isTexasDataCenterResponse = responseMetadata?.responseType === 'texas_data_center_detail';
     const isLegacyCountyDetailResponse = responseMetadata?.responseType === 'ercot_county_detail';
     const isLocationSearchResponse =
       responseMetadata?.responseType === 'location_search' || isLegacyCountyDetailResponse;
-    const isMobileViewport = typeof window !== 'undefined' && window.innerWidth <= MOBILE_CONFIG.breakpoint;
-    const showLocationCardForTexasMobile = isTexasDataCenterResponse && isMobileViewport;
-    return isLocationSearchResponse || showLocationCardForTexasMobile;
+    return isLocationSearchResponse;
   })();
 
   useEffect(() => {
@@ -407,8 +402,7 @@ const AIResponseDisplay = ({
     if (typeof document === 'undefined' || typeof window === 'undefined') return undefined;
     const isMobile = window.innerWidth <= MOBILE_CONFIG.breakpoint;
     const isLocationType =
-      responseMetadata?.responseType === 'location_search' ||
-      (responseMetadata?.responseType === 'texas_data_center_detail' && isMobile);
+      responseMetadata?.responseType === 'location_search';
     if (!(isMobile && isLocationCardFullscreenMobile && isLocationType)) return undefined;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
@@ -2939,7 +2933,6 @@ const AIResponseDisplay = ({
                        responseMetadata?.source === 'mcp' ||
                        (response && typeof response === 'string' && response.includes('Found **') && response.includes('infrastructure feature'));
 
-  const isTexasDataCenter = responseMetadata?.responseType === 'texas_data_center_detail';
   const isLegacyCountyDetail = responseMetadata?.responseType === 'ercot_county_detail';
   const isLocationSearch = responseMetadata?.responseType === 'location_search' || isLegacyCountyDetail;
   const legacyCountyLocationMetadata = isLegacyCountyDetail
@@ -2958,26 +2951,11 @@ const AIResponseDisplay = ({
         geometry: responseMetadata?.geometry
       }
     : null;
-  const locationCardMetadata = isTexasDataCenter
-    ? {
-        ...responseMetadata,
-        responseType: 'location_search',
-        displayName:
-          responseMetadata?.displayName ||
-          responseMetadata?.properties?.project_name ||
-          responseMetadata?.properties?.company ||
-          'Texas Data Center',
-        source: responseMetadata?.source || 'texas-data-centers'
-      }
-    : (isLegacyCountyDetail ? legacyCountyLocationMetadata : responseMetadata);
+  const locationCardMetadata = isLegacyCountyDetail ? legacyCountyLocationMetadata : responseMetadata;
   const isMobileViewport = typeof window !== 'undefined' && window.innerWidth <= MOBILE_CONFIG.breakpoint;
-  const showLocationCardForTexasMobile = isTexasDataCenter && isMobileViewport;
-  const useCompactTexasCardLayout = isTexasDataCenter && isMobileViewport;
-  const isTexasSupportedLocation = isTexasDataCenter
-    ? true
-    : isLocationSearch
-      ? isTexasLocationMetadata(locationCardMetadata)
-      : true;
+  const isTexasSupportedLocation = isLocationSearch
+    ? isTexasLocationMetadata(locationCardMetadata)
+    : true;
   const locationContextForMarketSignal = shouldRenderMarketSignal
     ? {
         label: locationCardMetadata?.displayName || locationCardMetadata?.query || 'Selected location',
@@ -2987,8 +2965,8 @@ const AIResponseDisplay = ({
   const isLocationMobileFullscreen =
     isMobileViewport &&
     isLocationCardFullscreenMobile &&
-    (isLocationSearch || showLocationCardForTexasMobile);
-  const shouldRenderLocationCard = isLocationSearch || isTexasDataCenter || showLocationCardForTexasMobile;
+    isLocationSearch;
+  const shouldRenderLocationCard = isLocationSearch;
   const isMobileFlipExpandedLocationCard =
     isMobileViewport &&
     isCarouselFlipActive &&
@@ -3016,17 +2994,11 @@ const AIResponseDisplay = ({
       style={{
         maxHeight: shouldRenderLocationCard
           ? 0
-          : useCompactTexasCardLayout
-            ? locationSearchMaxHeight
-            : (isExpanded ? `${maxHeight + 30}px` : `${maxHeight}px`),
+          : (isExpanded ? `${maxHeight + 30}px` : `${maxHeight}px`),
         overflow: shouldRenderLocationCard ? 'hidden' : 'auto',
         padding: shouldRenderLocationCard
           ? 0
-          : useCompactTexasCardLayout
-            ? '8px 12px 8px 12px'
-            : isTexasDataCenter
-              ? '8px 16px 16px 16px'
-              : '16px',
+          : '16px',
         borderRadius: '12px',
         marginBottom: shouldRenderLocationCard ? 0 : '2px',
         marginTop: shouldRenderLocationCard ? 0 : (isExpanded ? '5px' : '0px'),
@@ -3213,8 +3185,8 @@ const AIResponseDisplay = ({
       })()}
 
 
-      {/* Response Content - location_search and texas_data_center_detail use LocationSearchCard (mobile + desktop); other types use generic response */}
-      {responseMetadata?.responseType !== 'location_search' && responseMetadata?.responseType !== 'texas_data_center_detail' && (
+      {/* Response Content - location_search uses LocationSearchCard (mobile + desktop); other types use generic response */}
+      {responseMetadata?.responseType !== 'location_search' && (
         <div style={{
           lineHeight: '1.6',
           color: '#e5e7eb',
@@ -3227,8 +3199,7 @@ const AIResponseDisplay = ({
 
       {/* Controls - skip for cards that render specialized compact UIs */}
       {needsTruncation &&
-        responseMetadata?.responseType !== 'location_search' &&
-        responseMetadata?.responseType !== 'texas_data_center_detail' && (
+        responseMetadata?.responseType !== 'location_search' && (
         <div style={{
           marginTop: isExpanded ? '28px' : '28px',
           marginBottom: '0px',

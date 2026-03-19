@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState, useCallback, Suspense } from 'react';
+import { getCardsForScene } from './components/Cards/config/MemphisCardConfig';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -569,7 +570,8 @@ const MapComponent = () => {
   // Load default cards for scene-0 when component mounts
   useEffect(() => {
     if (showCards && activeCards.length === 0) {
-      setActiveCards([]);
+      const defaultCards = getCardsForScene('scene-0');
+      setActiveCards(defaultCards);
     }
   }, [showCards, activeCards.length]);
   

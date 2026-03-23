@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback, Suspense } from 'react';
 import { getCardsForScene } from './components/Cards/config/MemphisCardConfig';
+import { useMemphisAssetCards } from '../../hooks/useGridPulse';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -560,20 +561,25 @@ const MapComponent = () => {
   // Add state for card system
   const [activeCards, setActiveCards] = useState([]);
   const [showCards, setShowCards] = useState(true);
-  
+
   // Add state for detail expanded modal
   const [showDetailModal, setShowDetailModal] = useState(false);
   const [selectedNodeData, setSelectedNodeData] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedToolData, setSelectedToolData] = useState(null);
 
-  // Load default cards for scene-0 when component mounts
+  // Load live GridPulse assets as the default card on mount
+  const { cards: gridpulseCards, loading: gpLoading } = useMemphisAssetCards();
   useEffect(() => {
     if (showCards && activeCards.length === 0) {
-      const defaultCards = getCardsForScene('scene-0');
-      setActiveCards(defaultCards);
+      if (!gpLoading && gridpulseCards.length > 0) {
+        setActiveCards(gridpulseCards);
+      } else if (!gpLoading) {
+        // Fallback to static config if DB returns nothing
+        setActiveCards(getCardsForScene('scene-0'));
+      }
     }
-  }, [showCards, activeCards.length]);
+  }, [showCards, activeCards.length, gpLoading, gridpulseCards]);
   
       // Add state for scene management - only essential layers
   const [layerStates, setLayerStates] = useState({
